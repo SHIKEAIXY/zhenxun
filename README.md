@@ -1,37 +1,233 @@
 # 真寻安装教程
 
-#### 介绍
-一个win系统安装真寻的教程
+### 介绍
+一个win系统的zhenxun_bot安装教程
 
-#### 软件架构
-软件架构说明
+真寻bot非常可爱 嗯 非常可爱！！！
+
+# 准备工作
+
+需要有一定的基础 如果没有一些基础的话可会困难重重哒 骚年我看好你加油！
+
+## 安装python3.8/3.9/3.10和poetry
+
+### 安装python
+[点击下载py3.10.8（密码0000）](https://yshs.lanzouy.com/b09zlrj8f)
+具体步骤不教了 应该不会有人不会吧
+安装完成打开cmd输入py 查看是否有py版本输出
+
+### 安装poetry
+
+1.最好挂个梯子
+
+这里我推荐白鲸[白鲸VPN](https://m.bjch999.com/)
+
+下载后打开vpn 火速下一步
+
+2.打开Powershell（需要管理员权限）运行
+
+不会打开？不要慌 点击此处 [如何在Windows 10/11中打开PowerShell](https://www.51cto.com/article/696873.html)
+
+```
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+```
+
+然后将**`%APPDATA%\Python\Scripts`**添加到PATH环境变量(位置在右键此电脑→属性→高级系统设置→环境变量)
+<br>
+    <img src="图片/变量.png" width="70%">
+
+**打开cmd发送poetry查看是否有版本输出**
+
+# 安装go-cqhttp
+[点击此处下载go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases)
+
+点击Show all 25 assets
+<br>
+    <img src="图片/更多.png" width="70%">
+
+下载go-cqhttp_windows_amd64.zip
+<br>
+    <img src="图片/下载.png" width="70%">
+
+## 配置go-cqhttp
+
+1.解压后会得到，首次运行会让你选择通信方式，选择 （反向 Websocket 通信），会生成一个配置文件`config.ymlgo-cqhttp3` 
+<br>
+    <img src="图片/方式.png" width="70%">
+
+打开config.yml文件，将uin修改为bot账号
+<br>
+    <img src="图片/账号.png" width="70%">
+_
+在config.yml文件中将
+
+修改为`universal: ws://your_websocket_universal.server`
+
+`universal: ws://127.0.0.1:8080/onebot/v11/ws/`
 
 
-#### 安装教程
+## 启动go-cqhttp
+重启go-cqhttp后选择扫码登录（服务器无法扫码请使用密码登录）
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+显示账号被冻结/密码错误？  请更换协议 ip协议寄了
 
-#### 使用说明
+显示连接出现错误？ 这个没事 安装完真寻后会消失
+<br>
+    <img src="图片/连接错误.png" width="70%">
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+ok速度下一步
 
-#### 参与贡献
+# 安装postgresql
+## 下载postgresql数据库
+[点击此处将下载Postgresql-15.1-1版本安装包](https://hibikier.github.io/zhenxun_bot/docs/installation_doc/psql_win.html#_1-%E4%B8%8B%E8%BD%BD)
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+## 安装postgresql数据库
+1.双击安装程序，点击Next
+<br>
+    <img src="图片/安装数据库.png" width="70%">
+
+2.选择安装路径（没有特殊情况一般默认即可），继续Next
+
+安装路径请不要出现中文！！！
+<br>
+    <img src="图片/数据库安装路径.png" width="70%">
+
+3.去掉即可，不影响使用，Stack BuilderNext
+<br>
+    <img src="取消Stack Builder安装.png" width="70%">
+
+4.数据存储路径（没有特殊情况一般默认即可），Next
+<br>
+    <img src="数据存储路径.png" width="70%">
+
+5.输入postgres用户的密码，例如：zhenxun（防止后期问题请安装本教程的密码输入 上下全部输入zhenxun）
+<br>
+    <img src="数据库密码.png" width="70%">
+
+6.默认端口，Next
+<br>
+    <img src="数据库端口.png" width="70%">
+
+7.接下来一路直到进入安装Next
+<br>
+    <img src="一路下一步.png" width="70%">
+
+8.显示下面的图 代表你安装完成
+<br>
+    <img src="数据库安装完成.png" width="70%">
+
+## 3.配置连接
+1.找到安装的pgAdmin，直接启动！
+<br>
+    <img src="启动数据库.png" width="70%">
+
+[是英文怎么办？点击此处解决](https://blog.csdn.net/weixin_46329056/article/details/125929563?ydreferer=aHR0cHM6Ly93d3cuYmFpZHUuY29tL2xpbms%2FdXJsPUwzNmhIRml6RjMwd2QzWnFEanFpY0NLYzFGbmlGUktRTXhCU21UTmFObjZNM0NxLUY5YzJzYV9IY2kzekV5bEVlTTctNzZnWjVmNC15aTI3ZjE3V3JJVDRnUzMtejdlTHp6aFJPY1Y2Tm9XJndkPSZlcWlkPTgyNjY3OTdjMDAwZTA0NGEwMDAwMDAwMjY0M2FiNDZj)
+
+2.新建连接
+
+左侧栏右键点击后选择，在点击ServersRegister服务器
+<br>
+    <img src="添加数据库.png" width="70%">
+
+3.随便给它起一个响亮的名字（
+<br>
+    <img src="真寻名字.png" width="70%">
+
+4.填写配置 填写，如果是连接远程服务器的话对应的服务器IP，本地的话可以直接填写 就是安装时配置的端口，没有修改的话默认
+
+就是安装时配置
+的密码主机名称/地址127.0.0.1端口5432密码
+<br>
+    <img src="编辑数据库1.png" width="70%">
+
+5. ✨✨ 点击保存 ✨✨
+左侧栏会出现一头 🐘
+<br>
+    <img src="编辑数据库2.png" width="70%">
+
+## 4.新建数据库
+1.点击展开
+右击，选择后点击数据库创建数据库
+<br>
+    <img src="新建数据库.png" width="70%">
+
+2. ✨✨ 直接创建！ ✨✨
+设置数据库名称后点击保存 
+<br>
+    <img src="保存数据库.png" width="70%">
+
+ok火速下一步
+
+# 安装真寻本体
+
+github下载
+
+```
+git clone https://github.com/HibiKier/zhenxun_bot
+```
+
+下面内容依次执行
+
+```
+pip3 install poetry     # 使用poetry管理python包
+
+poetry install          # 安装依赖
+
+poetry shell            # 进入虚拟环境（每次启动真寻都要输入）
+```
+
+设置超级用户，打开 .env.dev 文件，在中添加自己的QQSUPERUSERS
+    SUPERUSERS=["123456789"]
+
+打开 configs/config.py 填写数据库数据
+
+```
+# 数据库（必要）
+# 如果填写了bind就不需要再填写后面的字段了#）
+# 示例："bind": "postgres://user:password@127.0.0.1:5432/database"
+bind: str = ""  # 数据库连接链接
+sql_name: str = "postgres"
+user: str = ""  # 数据用户名
+password: str = ""  # 数据库密码
+address: str = ""  # 数据库地址
+port: str = ""  # 数据库端口
+database: str = ""  # 数据库名称
+
+############################################################
+### 如果你是与教程一模一样的命令代码，且数据库也在该服务器上 ###
+############################################################
+# 可以直接复制以下配置
+bind: str = ""  # 数据库连接链接
+sql_name: str = "postgres"
+user: str = "postgres"
+password: str = "zhenxun"
+address: str = "127.0.0.1"
+port: str = "5432"
+database: str = "zhenxun"
+```
 
 
-#### 特技
+启动真寻，会在 configs 和 data/configs 目录下生成各种配置文件
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+```
+python3 bot.py
+# or
+python bot.py
+```
+
+打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
+
+# 启动真寻
+
+1.双击打开go-cqhttp.bat
+
+2.打开真寻根目录cmd运行
+
+```
+poetry shell
+# or
+python3 bot.py
+# or
+python bot.py
+```
+
