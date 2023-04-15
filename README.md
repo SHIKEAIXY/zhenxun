@@ -231,3 +231,7 @@ python3 bot.py
 python bot.py
 ```
 
+# 真寻插件
+
+[真寻索引库](https://hibikier.github.io/zhenxun_bot/docs/installation_doc/install_webui.html)
+
