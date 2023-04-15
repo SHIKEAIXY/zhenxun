@@ -94,32 +94,32 @@ ok速度下一步
 
 3.去掉即可，不影响使用，Stack BuilderNext
 <br>
-    <img src="取消Stack Builder安装.png" width="70%">
+    <img src="图片/取消Stack Builder安装.png" width="70%">
 
 4.数据存储路径（没有特殊情况一般默认即可），Next
 <br>
-    <img src="数据存储路径.png" width="70%">
+    <img src="图片/数据存储路径.png" width="70%">
 
 5.输入postgres用户的密码，例如：zhenxun（防止后期问题请安装本教程的密码输入 上下全部输入zhenxun）
 <br>
-    <img src="数据库密码.png" width="70%">
+    <img src="图片/数据库密码.png" width="70%">
 
 6.默认端口，Next
 <br>
-    <img src="数据库端口.png" width="70%">
+    <img src="图片/数据库端口.png" width="70%">
 
 7.接下来一路直到进入安装Next
 <br>
-    <img src="一路下一步.png" width="70%">
+    <img src="图片/一路下一步.png" width="70%">
 
 8.显示下面的图 代表你安装完成
 <br>
-    <img src="数据库安装完成.png" width="70%">
+    <img src="图片/数据库安装完成.png" width="70%">
 
 ## 3.配置连接
 1.找到安装的pgAdmin，直接启动！
 <br>
-    <img src="启动数据库.png" width="70%">
+    <img src="图片/启动数据库.png" width="70%">
 
 [是英文怎么办？点击此处解决](https://blog.csdn.net/weixin_46329056/article/details/125929563?ydreferer=aHR0cHM6Ly93d3cuYmFpZHUuY29tL2xpbms%2FdXJsPUwzNmhIRml6RjMwd2QzWnFEanFpY0NLYzFGbmlGUktRTXhCU21UTmFObjZNM0NxLUY5YzJzYV9IY2kzekV5bEVlTTctNzZnWjVmNC15aTI3ZjE3V3JJVDRnUzMtejdlTHp6aFJPY1Y2Tm9XJndkPSZlcWlkPTgyNjY3OTdjMDAwZTA0NGEwMDAwMDAwMjY0M2FiNDZj)
 
@@ -127,34 +127,34 @@ ok速度下一步
 
 左侧栏右键点击后选择，在点击ServersRegister服务器
 <br>
-    <img src="添加数据库.png" width="70%">
+    <img src="图片/添加数据库.png" width="70%">
 
 3.随便给它起一个响亮的名字（
 <br>
-    <img src="真寻名字.png" width="70%">
+    <img src="图片/真寻名字.png" width="70%">
 
 4.填写配置 填写，如果是连接远程服务器的话对应的服务器IP，本地的话可以直接填写 就是安装时配置的端口，没有修改的话默认
 
 就是安装时配置
 的密码主机名称/地址127.0.0.1端口5432密码
 <br>
-    <img src="编辑数据库1.png" width="70%">
+    <img src="图片/编辑数据库1.png" width="70%">
 
 5. ✨✨ 点击保存 ✨✨
 左侧栏会出现一头 🐘
 <br>
-    <img src="编辑数据库2.png" width="70%">
+    <img src="图片/编辑数据库2.png" width="70%">
 
 ## 4.新建数据库
 1.点击展开
 右击，选择后点击数据库创建数据库
 <br>
-    <img src="新建数据库.png" width="70%">
+    <img src="图片/新建数据库.png" width="70%">
 
 2. ✨✨ 直接创建！ ✨✨
 设置数据库名称后点击保存 
 <br>
-    <img src="保存数据库.png" width="70%">
+    <img src="图片/保存数据库.png" width="70%">
 
 ok火速下一步
 
