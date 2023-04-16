@@ -124,7 +124,7 @@
 
 1.显示连接出现错误？ 这个没事 安装完真寻后会消失
 <br>
-    <img src="图片/连接错误.png" width="50%">
+    <img src="图片/连接错误.png" width="80%">
 
 ok速度下一步
 
@@ -172,7 +172,7 @@ ok速度下一步
 
 1.找到安装的pgAdmin启动数据库 并启动
 <br>
-    <img src="图片/启动数据库.png" width="50%">
+    <img src="图片/启动数据库.png" width="80%">
 
 [是英文怎么办？点击此处解决](https://blog.csdn.net/weixin_46329056/article/details/125929563?ydreferer=aHR0cHM6Ly93d3cuYmFpZHUuY29tL2xpbms%2FdXJsPUwzNmhIRml6RjMwd2QzWnFEanFpY0NLYzFGbmlGUktRTXhCU21UTmFObjZNM0NxLUY5YzJzYV9IY2kzekV5bEVlTTctNzZnWjVmNC15aTI3ZjE3V3JJVDRnUzMtejdlTHp6aFJPY1Y2Tm9XJndkPSZlcWlkPTgyNjY3OTdjMDAwZTA0NGEwMDAwMDAwMjY0M2FiNDZj)
 
