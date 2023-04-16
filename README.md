@@ -233,5 +233,7 @@ python bot.py
 
 # 真寻插件
 
-[真寻索引库](https://hibikier.github.io/zhenxun_bot/docs/installation_doc/install_webui.html)
+[真寻索引库](AkashiCoin/nonebot_plugins_zhenxun_bot)
+
+[nb商店（不是全部都谦融）](https://nb2.baka.icu/store)
 
