@@ -77,11 +77,11 @@
 
 2.点击Show all 25 assets
 <br>
-    <img src="图片/更多.png" width="50%">
+    <img src="图片/更多.png" width="60%">
 
 3.下载go-cqhttp_windows_amd64.zip
 <br>
-    <img src="图片/下载.png" width="50%">
+    <img src="图片/下载.png" width="60%">
 
 ## 二 2.配置go-cqhttp
 
