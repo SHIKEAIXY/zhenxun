@@ -101,11 +101,28 @@
 
 ## 二 3.启动 go-cqhttp
 
-1.重启 go-cqhttp 后选择扫码登录（服务器无法扫码请使用密码登录）
+1.重启 go-cqhttp.bat 后选择扫码登录（服务器无法扫码请使用密码登录）
 
 显示账号被冻结/密码错误？  请更换协议 因为ip协议寄了
 
-显示连接出现错误？ 这个没事 安装完真寻后会消失
+怎么换？
+
+方法：
+1.打开device.json文件（如果打不开请用电脑自带的记事本打开）
+<br>
+    <img src="图片/换协议.png" width="50%">
+
+2.打开后 点键盘的 ctrl+f 搜索 protocol
+<br>
+    <img src="图片/改协议2.png" width="50%">
+
+3.将后面的数字改成3或者4（因为我改过了所以是3）（3是手表4是mac协议）
+<br>
+    <img src="图片/改协议3.png" width="80%">
+
+4.保存后重新打开 go-cqhttp.bat 进行登录即可
+
+1.显示连接出现错误？ 这个没事 安装完真寻后会消失
 <br>
     <img src="图片/连接错误.png" width="50%">
 
@@ -289,17 +306,17 @@ python3 bot.py
 
 在插件的地址栏链接前面加上https://minhaskamal.github.io/DownGit/#/home?url=
 <br>
-    <img src="图片/真寻安装插件教程.png" width="50%">
+    <img src="图片/真寻安装插件教程.png" width="70%">
 
 比如说 https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CRAZYShimakaze/zhenxun_extensive_plugin
 <br>
-    <img src="图片/真寻安装的插件教程.png" width="50%">
+    <img src="图片/真寻安装的插件教程.png" width="70%">
 
 回车就可以自动跳转单插件下载
 
 点击Download
 <br>
-    <img src="图片/真寻插件下载.png" width="50%">
+    <img src="图片/真寻插件下载.png" width="70%">
 
 下载时长会和你的网络与仓库大小有关系
 
