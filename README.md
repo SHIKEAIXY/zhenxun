@@ -131,7 +131,7 @@ ok速度下一步
 # 三 1.安装postgresql
 
 1.下载postgresql数据库
-[点击此处将下载Postgresql-15.1-1版本安装包](https://hibikier.github.io/zhenxun_bot/docs/installation_doc/psql_win.html#_1-%E4%B8%8B%E8%BD%BD)
+[点击此处将下载Postgresql-15.1-1版本安装包](https://get.enterprisedb.com/postgresql/postgresql-15.1-1-windows-x64.exe)
 
 ## 三 2.安装postgresql数据库
 1.双击安装程序，点击Next
