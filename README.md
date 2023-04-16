@@ -61,7 +61,7 @@
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
 ```
 
-然后将**`%APPDATA%\Python\Scripts`**添加到PATH环境变量(位置在右键此电脑→属性→高级系统设置→环境变量)
+3.然后将**`%APPDATA%\Python\Scripts`**添加到PATH环境变量(位置在右键此电脑→属性→高级系统设置→环境变量)
 <br>
     <img src="图片/变量.png" width="70%">
 
@@ -69,36 +69,36 @@
 
 # 二 1.安装 go-cqhttp 
 
-下载go-cqhttp 
+1.下载go-cqhttp 
 [点击此处下载go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases)
 
-点击Show all 25 assets
+2.点击Show all 25 assets
 <br>
     <img src="图片/更多.png" width="70%">
 
-下载go-cqhttp_windows_amd64.zip
+3.下载go-cqhttp_windows_amd64.zip
 <br>
     <img src="图片/下载.png" width="70%">
 
 ## 二 2.配置go-cqhttp
 
-解压后会得到，首次运行会让你选择通信方式，选择 （反向 Websocket 通信），会生成一个配置文件`config.ymlgo-cqhttp3` 
+1.解压后会得到，首次运行会让你选择通信方式，选择 （反向 Websocket 通信），会生成一个配置文件`config.ymlgo-cqhttp3` 
 <br>
     <img src="图片/方式.png" width="70%">
 
-打开config.yml文件，将uin修改为bot账号
+2.打开config.yml文件，将uin修改为bot账号
 <br>
     <img src="图片/账号.png" width="70%">
-_
-在config.yml文件中将
+
+3.在config.yml文件中将
 
 修改为`universal: ws://your_websocket_universal.server`
 
 `universal: ws://127.0.0.1:8080/onebot/v11/ws/`
 
-
 ## 二 3.启动 go-cqhttp
-重启 go-cqhttp 后选择扫码登录（服务器无法扫码请使用密码登录）
+
+1.重启 go-cqhttp 后选择扫码登录（服务器无法扫码请使用密码登录）
 
 显示账号被冻结/密码错误？  请更换协议 因为ip协议寄了
 
@@ -109,52 +109,54 @@ _
 ok速度下一步
 
 # 三 1.安装postgresql
-## 下载postgresql数据库
+
+1.下载postgresql数据库
 [点击此处将下载Postgresql-15.1-1版本安装包](https://hibikier.github.io/zhenxun_bot/docs/installation_doc/psql_win.html#_1-%E4%B8%8B%E8%BD%BD)
 
 ## 三 2.安装postgresql数据库
-双击安装程序，点击Next
+1.双击安装程序，点击Next
 <br>
     <img src="图片/安装数据库.png" width="70%">
 
-选择安装路径（没有特殊情况一般默认即可），继续Next
+2.选择安装路径（对路径没有要求不用改 默认c盘），继续Next
 
-安装路径请不要出现中文！！！
+安装路径中不要出现英文！（防止报错）
 <br>
     <img src="图片/数据库安装路径.png" width="70%">
 
-去掉即可，不影响使用，Stack BuilderNext
+3.去掉即可，不影响使用，Stack BuilderNext
 <br>
     <img src="图片/取消Stack Builder安装.png" width="70%">
 
-数据存储路径（没有特殊情况一般默认即可），Next
+4.数据存储路径（对路径没有要求不用改 默认c盘），Next
 <br>
     <img src="图片/数据存储路径.png" width="70%">
 
-输入postgres用户的密码，例如：zhenxun（防止后期问题请安装本教程的密码输入 上下全部输入zhenxun）
+5.输入postgres用户的密码，例如：zhenxun（防止后期问题请安装本教程的密码输入 上下全部输入zhenxun）
 <br>
     <img src="图片/数据库密码.png" width="70%">
 
-默认端口，Next
+6.默认端口，Next
 <br>
     <img src="图片/数据库端口.png" width="70%">
 
-接下来一路直到进入安装Next
+7.接下来一路点Next直到进入安装
 <br>
     <img src="图片/一路下一步.png" width="70%">
 
-显示下面的图 代表你安装完成
+8.显示下面的图 代表你安装完成
 <br>
     <img src="图片/数据库安装完成.png" width="70%">
 
 ## 三 3.配置连接
-找到安装的pgAdmin，直接启动！
+
+1.找到安装的pgAdmin启动数据库 并启动
 <br>
     <img src="图片/启动数据库.png" width="70%">
 
 [是英文怎么办？点击此处解决](https://blog.csdn.net/weixin_46329056/article/details/125929563?ydreferer=aHR0cHM6Ly93d3cuYmFpZHUuY29tL2xpbms%2FdXJsPUwzNmhIRml6RjMwd2QzWnFEanFpY0NLYzFGbmlGUktRTXhCU21UTmFObjZNM0NxLUY5YzJzYV9IY2kzekV5bEVlTTctNzZnWjVmNC15aTI3ZjE3V3JJVDRnUzMtejdlTHp6aFJPY1Y2Tm9XJndkPSZlcWlkPTgyNjY3OTdjMDAwZTA0NGEwMDAwMDAwMjY0M2FiNDZj)
 
-新建连接
+2.新建连接
 
 左侧栏右键点击后选择，在点击ServersRegister服务器
 <br>
@@ -171,18 +173,20 @@ ok速度下一步
 <br>
     <img src="图片/编辑数据库1.png" width="70%">
 
- ✨✨ 点击保存 ✨✨
-左侧栏会出现一头 🐘
+ 3.点击保存
+左侧栏会出现一个可爱真寻
 <br>
     <img src="图片/编辑数据库2.png" width="70%">
 
 ## 三 4.新建数据库
-点击展开
-右击，选择后点击数据库创建数据库
+1.点击展开
+
+2.右击，选择后点击数据库创建数据库
 <br>
     <img src="图片/新建数据库.png" width="70%">
 
-✨✨ 直接创建！ ✨✨
+3.直接创建
+
 设置数据库名称后点击保存 
 <br>
     <img src="图片/保存数据库.png" width="70%">
@@ -191,40 +195,27 @@ ok火速下一步
 
 # 四 安装真寻本体
 
-github下载
+1.github下载
 
 ```
 git clone https://github.com/HibiKier/zhenxun_bot
 ```
 
-下面内容依次执行
+1.执行下面内容（直接复制粘贴就可以 ）
 
 ```
-pip3 install poetry     # 使用poetry管理python包
-
-poetry install          # 使用poetry安装依赖
-
-poetry shell            # 进入虚拟环境（每次启动真寻都要输入）
+pip3 install poetry
+poetry install
+poetry shell
 ```
 
-设置超级用户，打开 .env.dev 文件（在真寻根目录），在中添加自己的QQSUPERUSERS
+2.设置超级用户，打开 .env.dev 文件（在真寻根目录），在中添加自己的QQSUPERUSERS
 
     SUPERUSERS=["123456789"]
 
-打开 configs/config.py 填写数据库数据
+3.打开 configs/config.py 填写数据库数据
 
 ```
-# 数据库（必要）
-# 如果填写了bind就不需要再填写后面的字段了#）
-# 示例："bind": "postgres://user:password@127.0.0.1:5432/database"
-bind: str = ""  //数据库连接链接
-sql_name: str = "postgres"
-user: str = ""  //数据用户名
-password: str = ""  //数据库密码
-address: str = ""  //数据库地址
-port: str = ""  //数据库端口
-database: str = ""  //数据库名称
-
 ---------------------------------------------------------------
 ---------------------------------------------------------------
  --如果你听我的话了 密码和名字与我填的一样 且数据库也在该服务器上 -- 
@@ -239,10 +230,29 @@ password: str = "zhenxun"
 address: str = "127.0.0.1"
 port: str = "5432"
 database: str = "zhenxun"
+
+---------------------------------------------------------------
+---------------------------------------------------------------
+ #-------------------如果没有听我的怎么办呢---------------------#
+ #-----------------按照下面的格式进行修改即可-------------------#
+---------------------------------------------------------------
+---------------------------------------------------------------
+
+# 数据库（必要）
+# 如果填写了bind就不需要再填写后面的字段了
+# 示例："bind": "postgres://user:password@127.0.0.1:5432/database"
+bind: str = ""       //数据库连接链接
+sql_name: str = "postgres"
+user: str = ""       //数据用户名
+password: str = ""   //数据库密码
+address: str = ""    //数据库地址
+port: str = ""       //数据库端口
+database: str = ""   //数据库名称
+
 ```
 
 
-启动真寻，会在 configs 和 data/configs 目录下生成各种配置文件
+4.启动真寻，会在 configs 和 data/configs 目录下生成各种配置文件
 
 ```
 python bot.py
@@ -250,7 +260,7 @@ python bot.py
 python3 bot.py
 ```
 
-打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
+5.打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
 
 # 五 启动真寻
 
@@ -262,9 +272,7 @@ python3 bot.py
 
 ```
 poetry shell
-
 python bot.py
-
 python3 bot.py
 ```
 
