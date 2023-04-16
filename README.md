@@ -276,7 +276,7 @@ python bot.py
 python3 bot.py
 ```
 
-# 真寻插件
+# 真寻插件下载
 
 [真寻索引库](AkashiCoin/nonebot_plugins_zhenxun_bot)
 
