@@ -279,13 +279,13 @@ python bot.py
 python3 bot.py
 ```
 
-# 真寻插件下载
+# 六 真寻插件下载
 
 [真寻索引库](https://github.com/zhenxun-org/nonebot_plugins_zhenxun_bot)
 
 [nb商店（不是全部都谦融）](https://nb2.baka.icu/store)
 
-##单个插件的下载方法
+## 单个插件的下载方法
 
 在插件的地址栏链接前面加上https://minhaskamal.github.io/DownGit/#/home?url=
 <br>
@@ -300,6 +300,7 @@ python3 bot.py
 点击Download
 <br>
     <img src="图片/真寻插件下载.png" width="50%">
+
 下载时长会和你的网络与仓库大小有关系
 
 回车就可以自动跳转单插件下载
