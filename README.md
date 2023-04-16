@@ -17,7 +17,7 @@
 
 3.真寻bot非常可爱 嗯 非常可爱！！！非常可爱！！！非常可爱！！！
 
-4.真寻bot是一个基于 Nonebot2 和 go-cqhttp 的开发，以 postgresql 作为数据库，非常可爱的绪山真寻bot
+4.真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [go-cqhttp](https://docs.go-cqhttp.org/) 的开发，以 [postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
 
 <a href='https://gitee.com/SHIKEAIXY/zhenxun'><img src='https://gitee.com/SHIKEAIXY/zhenxun/widgets/widget_3.svg?color=undefined' alt='Fork me on Gitee'></img></a>
 
