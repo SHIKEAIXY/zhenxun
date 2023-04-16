@@ -42,7 +42,7 @@
 
 下面两个对钩点上 然后点击Install Now等待安装完成
 <br>
-    <img src="图片/变量.png" width="70%">
+    <img src="图片/py安装.png" width="70%">
 
 安装完成打开cmd输入py 查看是否有py版本输出
 
