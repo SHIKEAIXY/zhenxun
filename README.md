@@ -1,6 +1,10 @@
 # 真寻安装教程
 
+</div>
+<div align="center">
 <a href='https://gitee.com/SHIKEAIXY/zhenxun'><img src='https://gitee.com/SHIKEAIXY/zhenxun/widgets/widget_3.svg?color=undefined' alt='Fork me on Gitee'></img></a>
+
+</div>
 
 ### 介绍
 一个win系统的zhenxun_bot安装教程
@@ -11,7 +15,6 @@
 <div align="center">
 
 <a href='https://gitee.com/SHIKEAIXY/zhenxun/stargazers'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/star.svg?theme=dark' alt='star'></img></a>
-
 <a href='https://gitee.com/SHIKEAIXY/zhenxun/members'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/fork.svg?theme=dark' alt='fork'></img></a>
 
 [![访问量](https://profile-counter.glitch.me/zhenxun/count.svg)](https://gitee.com/SHIKEAIXY/zhenxun.git)
