@@ -38,7 +38,7 @@
 ### 2.安装python
 
 这里我推荐安装python3.10.8
-[点击下载py3.10.8（密码0000）](https://yshs.lanzouy.com/b09zlrj8f)
+[点击下载py3.10.8](https://developer.lanzoug.com/file/?AWcBPw8+V2YJAFZuBzJQPAY5U2sDLFArBXZTPVVmB2hVeABkDH8DZgRiAnpWOlZ6WmEAaAM4Cz9SYVJ6UGlQKQFkAXAPNFdqCTNWZQcMUDgGOFNrA2RQawU1U2RVPwcwVWwAZwx3AzEEIQJpVjBWb1o5ADIDZAs8UmRSZlAqUCEBcQFrD2BXMwltVjIHfFBgBm1TeQNuUGIFLVNlVT8HNVVjAGcMaANhBGUCZFY2VjNaNgA3Az8LMFIzUmJQalBoATkBYA82VzAJOlYxBzJQYwY/UzMDOVBrBWBTe1VsB35VMABxDCQDJAQ3AiZWa1YzWj0AMwNqCz9SZVJhUDlQdwF1AT8PP1dmCTlWPQdiUGcGZFNnA2pQZgUxU2xVPQc3VXsAeQx3AzEEPgIjVj9WZlo2AD0DbQs/UmFSZlA1UGIBMgFwDydXcwkoVj0HYlBnBmpTbgNlUGMFNVNsVTkHPlVzACIMOAMnBG8CZVYyVmZaLgA2A2wLJ1JjUmxQIlBkATU=)
 
 下面两个对钩点上 然后点击Install Now等待安装完成
 <br>
@@ -50,7 +50,7 @@
 
 1.最好挂个TZ
 
-[这里我推荐白鲸 点击此处下载](https://m.bjch999.com/)
+[这里我推荐白鲸 点击此处下载](https://m.bjch999.com/app/download?platform=3&channel=download_01&mid=false&app=bj)
 
 下载后打开TZ 火速下一步
 
