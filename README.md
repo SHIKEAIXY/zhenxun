@@ -110,7 +110,7 @@
 方法：
 1.打开device.json文件（如果打不开请用电脑自带的记事本打开）
 <br>
-    <img src="图片/换协议.png" width="35%">
+    <img src="图片/换协议.png" width="15%">
 
 2.打开后 点键盘的 ctrl+f 搜索 protocol
 <br>
