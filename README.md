@@ -1,7 +1,7 @@
 </div>
 <div align="center">
 <br>
-    <img src="图片/真寻.png" width="70%">
+    <img src="图片/真寻.png" width="100%">
 
 </div>
 
@@ -42,7 +42,7 @@
 
 下面两个对钩点上 然后点击Install Now等待安装完成
 <br>
-    <img src="图片/py安装.png" width="70%">
+    <img src="图片/py安装.png" width="50%">
 
 安装完成打开cmd输入py 查看是否有py版本输出
 
@@ -66,7 +66,7 @@
 
 3.然后将**`%APPDATA%\Python\Scripts`**添加到PATH环境变量(位置在右键此电脑→属性→高级系统设置→环境变量)
 <br>
-    <img src="图片/变量.png" width="70%">
+    <img src="图片/变量.png" width="50%">
 
 **打开cmd发送poetry查看是否有版本输出**
 
@@ -77,21 +77,21 @@
 
 2.点击Show all 25 assets
 <br>
-    <img src="图片/更多.png" width="70%">
+    <img src="图片/更多.png" width="50%">
 
 3.下载go-cqhttp_windows_amd64.zip
 <br>
-    <img src="图片/下载.png" width="70%">
+    <img src="图片/下载.png" width="50%">
 
 ## 二 2.配置go-cqhttp
 
 1.解压后会得到，首次运行会让你选择通信方式，选择 （反向 Websocket 通信），会生成一个配置文件`config.ymlgo-cqhttp3` 
 <br>
-    <img src="图片/方式.png" width="70%">
+    <img src="图片/方式.png" width="50%">
 
 2.打开config.yml文件，将uin修改为bot账号
 <br>
-    <img src="图片/账号.png" width="70%">
+    <img src="图片/账号.png" width="50%">
 
 3.在config.yml文件中将
 
@@ -107,7 +107,7 @@
 
 显示连接出现错误？ 这个没事 安装完真寻后会消失
 <br>
-    <img src="图片/连接错误.png" width="70%">
+    <img src="图片/连接错误.png" width="50%">
 
 ok速度下一步
 
@@ -119,43 +119,43 @@ ok速度下一步
 ## 三 2.安装postgresql数据库
 1.双击安装程序，点击Next
 <br>
-    <img src="图片/安装数据库.png" width="70%">
+    <img src="图片/安装数据库.png" width="50%">
 
 2.选择安装路径（对路径没有要求不用改 默认c盘），继续Next
 
 安装路径中不要出现英文！（防止报错）
 <br>
-    <img src="图片/数据库安装路径.png" width="70%">
+    <img src="图片/数据库安装路径.png" width="50%">
 
 3.去掉即可，不影响使用，Stack BuilderNext
 <br>
-    <img src="图片/取消Stack Builder安装.png" width="70%">
+    <img src="图片/取消Stack Builder安装.png" width="50%">
 
 4.数据存储路径（对路径没有要求不用改 默认c盘），Next
 <br>
-    <img src="图片/数据存储路径.png" width="70%">
+    <img src="图片/数据存储路径.png" width="50%">
 
 5.输入postgres用户的密码，例如：zhenxun（防止后期问题请安装本教程的密码输入 上下全部输入zhenxun）
 <br>
-    <img src="图片/数据库密码.png" width="70%">
+    <img src="图片/数据库密码.png" width="50%">
 
 6.默认端口，Next
 <br>
-    <img src="图片/数据库端口.png" width="70%">
+    <img src="图片/数据库端口.png" width="50%">
 
 7.接下来一路点Next直到进入安装
 <br>
-    <img src="图片/一路下一步.png" width="70%">
+    <img src="图片/一路下一步.png" width="50%">
 
 8.显示下面的图 代表你安装完成
 <br>
-    <img src="图片/数据库安装完成.png" width="70%">
+    <img src="图片/数据库安装完成.png" width="50%">
 
 ## 三 3.配置连接
 
 1.找到安装的pgAdmin启动数据库 并启动
 <br>
-    <img src="图片/启动数据库.png" width="70%">
+    <img src="图片/启动数据库.png" width="50%">
 
 [是英文怎么办？点击此处解决](https://blog.csdn.net/weixin_46329056/article/details/125929563?ydreferer=aHR0cHM6Ly93d3cuYmFpZHUuY29tL2xpbms%2FdXJsPUwzNmhIRml6RjMwd2QzWnFEanFpY0NLYzFGbmlGUktRTXhCU21UTmFObjZNM0NxLUY5YzJzYV9IY2kzekV5bEVlTTctNzZnWjVmNC15aTI3ZjE3V3JJVDRnUzMtejdlTHp6aFJPY1Y2Tm9XJndkPSZlcWlkPTgyNjY3OTdjMDAwZTA0NGEwMDAwMDAwMjY0M2FiNDZj)
 
@@ -163,36 +163,36 @@ ok速度下一步
 
 左侧栏右键点击后选择，在点击ServersRegister服务器
 <br>
-    <img src="图片/添加数据库.png" width="70%">
+    <img src="图片/添加数据库.png" width="50%">
 
 随便给它起一个响亮的名字（
 <br>
-    <img src="图片/真寻名字.png" width="70%">
+    <img src="图片/真寻名字.png" width="50%">
 
 填写配置 填写，如果是连接远程服务器的话对应的服务器IP，本地的话可以直接填写 就是安装时配置的端口，没有修改的话默认
 
 就是安装时配置
 的密码主机名称/地址127.0.0.1端口5432密码
 <br>
-    <img src="图片/编辑数据库1.png" width="70%">
+    <img src="图片/编辑数据库1.png" width="50%">
 
  3.点击保存
 左侧栏会出现一个可爱真寻
 <br>
-    <img src="图片/编辑数据库2.png" width="70%">
+    <img src="图片/编辑数据库2.png" width="50%">
 
 ## 三 4.新建数据库
 1.点击展开
 
 2.右击，选择后点击数据库创建数据库
 <br>
-    <img src="图片/新建数据库.png" width="70%">
+    <img src="图片/新建数据库.png" width="50%">
 
 3.直接创建
 
 设置数据库名称后点击保存 
 <br>
-    <img src="图片/保存数据库.png" width="70%">
+    <img src="图片/保存数据库.png" width="50%">
 
 ok火速下一步
 
