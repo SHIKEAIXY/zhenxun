@@ -80,18 +80,18 @@
 1.解压后会得到 go-cqhttp.exe 打开他 跟着写的内容去操作即可
 ![输入图片说明](%E6%87%92%E5%BE%97%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E5%8A%A0%E5%9B%BE%E4%BA%86%20%E5%87%91%E5%90%88%E7%9C%8Bimage.png)
 
-然后会自动生成 go-cqhttp.bat 打开他
+2.然后会自动生成 go-cqhttp.bat 打开他
 ![输入图片说明](%E6%87%92%E5%BE%97%E4%B8%80%E4%B8%AA%E4%B8%80%E4%B8%AA%E5%8A%A0%E5%9B%BE%E4%BA%86%20%E5%87%91%E5%90%88%E7%9C%8B2image.png)
 
-首次运行会让你选择通信方式，选择 （反向 Websocket 通信），会生成一个配置文件`config.ymlgo-cqhttp3` 
+3.首次运行会让你选择通信方式，选择 （反向 Websocket 通信），会生成一个配置文件`config.ymlgo-cqhttp3` 
 <br>
     <img src="图片/方式.png" width="50%">
 
-2.打开config.yml文件，将uin修改为bot账号
+4.打开config.yml文件，将uin修改为bot账号
 <br>
     <img src="图片/账号.png" width="50%">
 
-3.在config.yml文件中将
+5.在config.yml文件中将
 
 修改为`universal: ws://your_websocket_universal.server`
 
