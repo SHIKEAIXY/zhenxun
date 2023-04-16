@@ -110,15 +110,15 @@
 方法：
 1.打开device.json文件（如果打不开请用电脑自带的记事本打开）
 <br>
-    <img src="图片/换协议.png" width="50%">
+    <img src="图片/换协议.png" width="35%">
 
 2.打开后 点键盘的 ctrl+f 搜索 protocol
 <br>
-    <img src="图片/改协议2.png" width="60%">
+    <img src="图片/改协议2.png" width="70%">
 
 3.将后面的数字改成3或者4（因为我改过了所以是3）（3是手表4是mac协议）
 <br>
-    <img src="图片/改协议3.png" width="80%">
+    <img src="图片/改协议3.png" width="100%">
 
 4.保存后重新打开 go-cqhttp.bat 进行登录即可
 
