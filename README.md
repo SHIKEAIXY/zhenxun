@@ -114,7 +114,7 @@
 
 2.打开后 点键盘的 ctrl+f 搜索 protocol
 <br>
-    <img src="图片/改协议2.png" width="50%">
+    <img src="图片/改协议2.png" width="60%">
 
 3.将后面的数字改成3或者4（因为我改过了所以是3）（3是手表4是mac协议）
 <br>
