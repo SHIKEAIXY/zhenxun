@@ -276,7 +276,6 @@ database: str = ""   //数据库名称
 
 ```
 python bot.py
-
 python3 bot.py
 ```
 
