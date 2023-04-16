@@ -73,15 +73,7 @@
 # 二 1.安装 go-cqhttp 
 
 1.下载go-cqhttp 
-[点击此处下载go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases)
-
-2.点击Show all 25 assets
-<br>
-    <img src="图片/更多.png" width="60%">
-
-3.下载go-cqhttp_windows_amd64.zip
-<br>
-    <img src="图片/下载.png" width="60%">
+[点击此处下载go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases/download/v1.0.1/go-cqhttp_windows_amd64.zip)
 
 ## 二 2.配置go-cqhttp
 
