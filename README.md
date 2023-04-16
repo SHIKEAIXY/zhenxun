@@ -5,8 +5,6 @@
 
 真寻bot非常可爱 嗯 非常可爱！！！
 
-</div>
-
 <div align="center">
 <a href='https://gitee.com/SHIKEAIXY/zhenxun'><img src='https://gitee.com/SHIKEAIXY/zhenxun/widgets/widget_3.svg?color=undefined' alt='Fork me on Gitee'></img></a>
 <div align="center">
@@ -14,9 +12,9 @@
 <a href='https://gitee.com/SHIKEAIXY/zhenxun/stargazers'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/star.svg?theme=dark' alt='star'></img></a>
 <a href='https://gitee.com/SHIKEAIXY/zhenxun/members'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/fork.svg?theme=dark' alt='fork'></img></a>
 
+统计时间4.16
 [![访问量](https://profile-counter.glitch.me/zhenxun/count.svg)](https://gitee.com/SHIKEAIXY/zhenxun.git)
 
-</div>
 
 # 准备工作
 
