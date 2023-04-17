@@ -159,10 +159,15 @@ ok速度下一步
 ## 三 3.配置连接
 
 1.找到安装的pgAdmin启动数据库 并启动
+
+打开方法一： 在应用中搜索 pgAdmin 点击展开 找到下面图片显示的打开即可
 <br>
     <img src="图片/启动数据库.png" width="80%">
 
-怎么打开就不教了 毕竟很基础（懒得写教程bushi）
+
+方法二：找到你的 pgAdmin 安装位置 默认是下面的安装路径打开即可
+<br>
+    <img src="图片/启动数据库.png" width="80%">
 
 [是英文怎么办？点击此处解决](https://blog.csdn.net/weixin_46329056/article/details/125929563?ydreferer=aHR0cHM6Ly93d3cuYmFpZHUuY29tL2xpbms%2FdXJsPUwzNmhIRml6RjMwd2QzWnFEanFpY0NLYzFGbmlGUktRTXhCU21UTmFObjZNM0NxLUY5YzJzYV9IY2kzekV5bEVlTTctNzZnWjVmNC15aTI3ZjE3V3JJVDRnUzMtejdlTHp6aFJPY1Y2Tm9XJndkPSZlcWlkPTgyNjY3OTdjMDAwZTA0NGEwMDAwMDAwMjY0M2FiNDZj)
 
