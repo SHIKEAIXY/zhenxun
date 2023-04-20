@@ -12,6 +12,7 @@
 lin系统的教程网上一堆 我就不出了
 
 [点击查看zhenxun_bot的介绍](https://github.com/HibiKier/zhenxun_bot/blob/main/README.md)
+
 [点击查看zhenxun_bot的更新内容](https://github.com/HibiKier/zhenxun_bot/releases)
 
 ### 介绍
