@@ -9,7 +9,10 @@
 
 有什么问题可以提Issues
 
-[点击查看简介版zhenxun_bot的md介绍](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/zx.md)
+lin系统的教程网上一堆 我就不出了
+
+[点击查看zhenxun_bot的介绍](https://github.com/HibiKier/zhenxun_bot/blob/main/README.md)
+[点击查看zhenxun_bot的更新内容](https://github.com/HibiKier/zhenxun_bot/releases)
 
 ### 介绍
 
