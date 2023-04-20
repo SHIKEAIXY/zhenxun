@@ -9,6 +9,8 @@
 
 有什么问题可以提Issues
 
+[点击查看简介版zhenxun_bot的md介绍](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/zx.md)
+
 ### 介绍
 
 1.一个win系统的[zhenxun_bot](https://github.com/HibiKier/zhenxun_bot)安装教程
