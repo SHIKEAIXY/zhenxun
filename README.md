@@ -131,6 +131,8 @@ ok速度下一步
 1.下载postgresql数据库
 [点击此处将下载Postgresql-15.1-1版本安装包](https://get.enterprisedb.com/postgresql/postgresql-15.1-1-windows-x64.exe)
 
+不想要15.1版本的可以自行下载别的版本（目前只要是9.0以上的版本都可以）
+
 ## 三 2.安装postgresql数据库
 1.双击安装程序，点击Next
 <br>
