@@ -224,9 +224,9 @@ ok速度下一步
 
 ok火速下一步
 
-# 四 安装真寻本体
+# 四 开始安装真寻
 
-1.github下载
+1.github下载真寻本体
 
 ```
 git clone https://github.com/HibiKier/zhenxun_bot
