@@ -74,7 +74,9 @@ lin系统的教程网上一堆 我就不出了
 <br>
     <img src="图片/变量.png" width="50%">
 
-**打开cmd发送poetry查看是否有版本输出**
+打开cmd发送poetry查看是否有版本输出
+
+如果没有请重启电脑 重新打开cmd输入 poetry
 
 # 二 1.安装 go-cqhttp 
 
