@@ -34,6 +34,7 @@
 
 [![访问量](https://profile-counter.glitch.me/zhenxun/count.svg)](https://gitee.com/SHIKEAIXY/zhenxun.git)
 
+
 # 一 准备工作
 
 ## 安装 版本大于3.8且小于3.11的python 和 poetry
@@ -78,6 +79,9 @@
 
 如果没有请重启电脑 重新打开cmd输入 poetry
 
+# go-cqhttp 安装视频教程
+
+
 # 二 安装 go-cqhttp 
 
 ## ①下载go-cqhttp 
@@ -116,11 +120,6 @@
 1.重启 go-cqhttp.bat 后选择扫码登录（服务器无法扫码请使用密码登录）
 
 2.保存后重新打开 go-cqhttp.bat 进行登录即可
-
-以上部分视频教程
-
-<br>
-    <img src="视频.mp4" width="50%">
 
 3.显示连接出现错误？ 这个没事 安装完真寻后会消失
 <br>
@@ -329,4 +328,3 @@ python3 bot.py
     <img src="图片/真寻插件下载.png" width="70%">
 
 下载时长会和你的网络与仓库大小有关系
-
