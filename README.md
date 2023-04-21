@@ -7,23 +7,23 @@
 
 # 真寻安装教程
 
-有什么问题可以提Issues
+1. 有什么问题可以提Issues
 
-lin系统的教程网上一堆 我就不出了
+2. lin系统的教程网上一堆 我就不出了
 
-[点击查看zhenxun_bot的介绍](https://github.com/HibiKier/zhenxun_bot/blob/main/README.md)
+3. [点击查看zhenxun_bot的介绍](https://github.com/HibiKier/zhenxun_bot/blob/main/README.md)
 
-[点击查看zhenxun_bot的更新内容](https://github.com/HibiKier/zhenxun_bot/releases)
+4. [点击查看zhenxun_bot的更新内容](https://github.com/HibiKier/zhenxun_bot/releases)
 
 ### 介绍
 
-1.一个win系统的[zhenxun_bot](https://github.com/HibiKier/zhenxun_bot)安装教程
+1. 一个win系统的[zhenxun_bot](https://github.com/HibiKier/zhenxun_bot)安装教程
 
-2.需要有一定的基础 如果没有一些基础的话可会困难重重哒 为了自己喜欢的真寻加油！
+2. 需要有一定的基础 如果没有一些基础的话可会困难重重哒 为了自己喜欢的真寻加油！
 
-3.真寻bot非常可爱 嗯 非常可爱！！！非常可爱！！！非常可爱！！！
+3. 真寻bot非常可爱 嗯 非常可爱！！！非常可爱！！！非常可爱！！！
 
-4.真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [go-cqhttp](https://docs.go-cqhttp.org/) 的开发，以 [postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
+4. 真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [go-cqhttp](https://docs.go-cqhttp.org/) 的开发，以 [postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
 
 <a href='https://gitee.com/SHIKEAIXY/zhenxun'><img src='https://gitee.com/SHIKEAIXY/zhenxun/widgets/widget_3.svg?color=1ec1c7' alt='Fork me on Gitee'></img></a>
 
@@ -36,12 +36,12 @@ lin系统的教程网上一堆 我就不出了
 
 # 一 准备工作
 
-## 1.安装 版本大于3.8且小于3.11的python 和 poetry
+## 安装 版本大于3.8且小于3.11的python 和 poetry
 ![maven](https://img.shields.io/badge/python-3.8%2B-blue)
 ![maven](https://img.shields.io/badge/nonebot-2.0.0-yellow)
 ![maven](https://img.shields.io/badge/go--cqhttp-1.0.0-red)
 
-### 2.安装python
+### ①安装python
 
 这里我推荐安装python3.10.8
 [点击下载py3.10.8](https://yshs.lanzouy.com/iFMpG0gdwt9a)
@@ -52,15 +52,15 @@ lin系统的教程网上一堆 我就不出了
 
 安装完成打开cmd输入py 查看是否有py版本输出
 
-### 3.安装poetry
+### ②安装poetry
 
-1.最好挂个TZ
+1. 最好挂个TZ
 
 [这里我推荐白鲸 点击此处下载](https://m.bjch999.com/app/download?platform=3&channel=download_01&mid=false&app=bj)
 
 下载后打开TZ 火速下一步
 
-2.打开Powershell（需要管理员权限）运行
+2. 打开Powershell（需要管理员权限）运行
 
 不会打开？不要慌 点击此处 [如何在Windows 10/11中打开PowerShell](https://www.51cto.com/article/696873.html)
 
@@ -70,20 +70,20 @@ lin系统的教程网上一堆 我就不出了
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
 ```
 
-3.然后将`%APPDATA%\Python\Scripts`添加到PATH环境变量(位置在右键此电脑→属性→高级系统设置→环境变量)
+3. 然后将`%APPDATA%\Python\Scripts`添加到PATH环境变量(位置在右键此电脑→属性→高级系统设置→环境变量)
 <br>
     <img src="图片/变量.png" width="50%">
 
-打开cmd发送poetry查看是否有版本输出
+4. 打开cmd发送poetry查看是否有版本输出
 
 如果没有请重启电脑 重新打开cmd输入 poetry
 
-# 二 1.安装 go-cqhttp 
+# 二 安装 go-cqhttp 
 
-1.下载go-cqhttp 
+## ①下载go-cqhttp 
 [点击此处下载go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases/download/v1.0.1/go-cqhttp_windows_amd64.zip)
 
-## 二 2.配置go-cqhttp
+## ②配置go-cqhttp
 
 如果这几步看不懂可以往下翻 有视频教程
 
@@ -111,7 +111,7 @@ lin系统的教程网上一堆 我就不出了
 
 `universal: ws://127.0.0.1:8080/onebot/v11/ws/`
 
-## 二 3.启动 go-cqhttp
+## ③启动 go-cqhttp
 
 1.重启 go-cqhttp.bat 后选择扫码登录（服务器无法扫码请使用密码登录）
 
@@ -128,14 +128,15 @@ lin系统的教程网上一堆 我就不出了
 
 ok速度下一步
 
-# 三 1.安装postgresql
+# 三 安装postgresql
 
-1.下载postgresql数据库
+## ①下载postgresql数据库
 [点击此处将下载Postgresql-15.1-1版本安装包](https://get.enterprisedb.com/postgresql/postgresql-15.1-1-windows-x64.exe)
 
 不想要15.1版本的可以自行下载别的版本（目前只要是9.0以上的版本都可以）
 
-## 三 2.安装postgresql数据库
+## ②安装postgresql数据库
+
 1.双击安装程序，点击Next
 <br>
     <img src="图片/安装数据库.png" width="50%">
@@ -170,7 +171,7 @@ ok速度下一步
 <br>
     <img src="图片/数据库安装完成.png" width="50%">
 
-## 三 3.配置连接
+## ③配置连接
 
 1.找到安装的pgAdmin启动数据库 并启动
 
@@ -207,7 +208,8 @@ ok速度下一步
 <br>
     <img src="图片/编辑数据库2.png" width="50%">
 
-## 三 4.新建数据库
+## ④新建数据库
+
 1.点击展开
 
 2.右击，选择后点击数据库创建数据库
@@ -230,7 +232,7 @@ ok火速下一步
 git clone https://github.com/HibiKier/zhenxun_bot
 ```
 
-1.执行下面内容（直接复制粘贴就可以 ）
+2.执行下面内容（直接复制粘贴就可以 ）
 
 ```
 pip3 install poetry
@@ -238,11 +240,11 @@ poetry install
 poetry shell
 ```
 
-2.设置超级用户，打开 .env.dev 文件（在真寻根目录），在中添加自己的QQSUPERUSERS
+3.设置超级用户，打开 .env.dev 文件（在真寻根目录），在中添加自己的QQSUPERUSERS
 
     SUPERUSERS=["123456789"]
 
-3.打开 configs/config.py 填写数据库数据
+4.打开 configs/config.py 填写数据库数据
 
 ```
 -----------------------------------------------------------
@@ -281,14 +283,14 @@ database: str = ""   //数据库名称
 ```
 
 
-4.启动真寻，会在 configs 和 data/configs 目录下生成各种配置文件
+5.启动真寻，会在 configs 和 data/configs 目录下生成各种配置文件
 
 ```
 python bot.py
 python3 bot.py
 ```
 
-5.打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
+6.打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
 
 # 五 启动真寻
 
