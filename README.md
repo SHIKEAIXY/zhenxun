@@ -80,7 +80,8 @@
 如果没有请重启电脑 重新打开cmd输入 poetry
 
 # go-cqhttp 安装视频教程
-
+<br>
+    <img src="go-cqhttp安装视频.mp4" width="60%">
 
 # 二 安装 go-cqhttp 
 
