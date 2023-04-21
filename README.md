@@ -79,11 +79,11 @@
 
 如果没有请重启电脑 重新打开cmd输入 poetry
 
-# go-cqhttp 安装视频教程
+# 二 安装 go-cqhttp 
+
+ go-cqhttp 安装视频教程
 <br>
     <img src="go-cqhttp安装视频.mp4" width="60%">
-
-# 二 安装 go-cqhttp 
 
 ## ①下载go-cqhttp 
 [点击此处下载go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases/download/v1.0.1/go-cqhttp_windows_amd64.zip)
