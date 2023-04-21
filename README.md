@@ -81,16 +81,17 @@
 
 # 二 安装 go-cqhttp 
 
- go-cqhttp 安装视频教程
+ go-cqhttp 安装视频教程 不想看视频可以继续按照下面的步骤进行
 <br>
     <img src="go-cqhttp安装视频.mp4" width="60%">
+ 
+ 不想看视频可以继续按照下面的步骤进行
 
 ## ①下载go-cqhttp 
 [点击此处下载go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases/download/v1.0.1/go-cqhttp_windows_amd64.zip)
 
 ## ②配置go-cqhttp
 
-如果这几步看不懂可以往下翻 有视频教程
 
 1.解压后会得到 go-cqhttp.exe 打开他 跟着写的内容去操作即可
 <br>
