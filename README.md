@@ -15,6 +15,8 @@
 
 4. [点击查看zhenxun_bot的更新内容](https://github.com/HibiKier/zhenxun_bot/releases)
 
+5. [点击查看zhenxun_bot使用说明](https://hibikier.github.io/zhenxun_bot/ )
+
 ### 介绍
 
 1. 一个win系统的[zhenxun_bot](https://github.com/HibiKier/zhenxun_bot)安装教程
