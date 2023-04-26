@@ -81,7 +81,7 @@
 
 如果没有请重启电脑 重新打开cmd输入 poetry
 
-还不行？ 自己看报错是什么 或者 baidu.com
+还不行？[点击此处解决](https://baidu.com/)
 
 # 二 安装 go-cqhttp 
 
