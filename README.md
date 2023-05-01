@@ -240,7 +240,7 @@ git clone https://github.com/HibiKier/zhenxun_bot
 gitee下载真寻本体（自己同步的仓库 可能更新会不及时 不超过7天）
 
 ```
-git clone https://github.com/HibiKier/zhenxun_bot
+git clone https://gitee.com/SHIKEAIXY/fork-zhenxun_bot.git ./zhenxun_bot
 ```
 
 2.执行下面内容（直接复制粘贴就可以 ）
