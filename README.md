@@ -313,6 +313,8 @@ python3 bot.py
 
 # 六 真寻插件下载
 
+[插件安装问题](https://github.com/zhenxun-org/nonebot_plugins_zhenxun_bot/issues/27)
+
 [真寻索引库](https://github.com/zhenxun-org/nonebot_plugins_zhenxun_bot)
 
 [nb商店（不是全部都谦融）](https://nb2.baka.icu/store)
