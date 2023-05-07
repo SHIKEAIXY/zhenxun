@@ -21,6 +21,7 @@
 .osc_desc_color {color: #666666 !important;}
 .osc_link_color * {color: #9b9b9b !important;}
 </style>
+
 你看我这么努力可以点点star吗 求求你了
 
 # 真寻安装教程
