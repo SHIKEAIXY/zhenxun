@@ -61,6 +61,8 @@
 
 [这里我推荐白鲸 点击此处下载](https://m.bjch999.com/app/download?platform=3&channel=download_01&mid=false&app=bj)
 
+注册邮箱可以随缘填写（一个设备注册次数有限）
+
 下载后打开TZ 火速下一步
 
 2. 打开Powershell（需要管理员权限）运行
