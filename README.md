@@ -347,3 +347,22 @@ python3 bot.py
     <img src="图片/真寻插件下载.png" width="70%">
 
 下载时长会和你的网络与仓库大小有关系
+
+## 贡献者
+
+感谢以下贡献者
+
+<a href="https://gitee.com/SHIKEAIXY/zhenxun/contributors?ref=master">
+  <img src="https://contrib.rocks/image?repo=SHIKEAIXY/zhenxun" />
+</a>
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+ 
