@@ -239,7 +239,7 @@ ok火速下一步
 git clone https://github.com/HibiKier/zhenxun_bot
 ```
 
-gitee下载真寻本体（自己github同步又gitee同步的仓库 可能更新会不及时）
+gitee下载真寻本体（自己github-gitee同步的仓库 无任何改动）
 
 ```
 git clone https://gitee.com/SHIKEAIXY/fork-zhenxun_bot.git ./zhenxun_bot
