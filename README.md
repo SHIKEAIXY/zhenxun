@@ -87,7 +87,7 @@
 
 # 二 安装 go-cqhttp 
 
- go-cqhttp 安装视频教程 不想看视频可以继续按照下面的步骤进行
+ go-cqhttp 安装视频教程
 <br>
     <img src="go-cqhttp安装视频.mp4" width="60%">
  
@@ -144,7 +144,7 @@ ok速度下一步
 
 ## ②安装postgresql数据库
 
-1.双击安装程序，点击Next
+1.双击安装程序，点击Next（打不开报错？不要找我 我也不会）
 <br>
     <img src="图片/安装数据库.png" width="50%">
 
@@ -239,7 +239,7 @@ ok火速下一步
 git clone https://github.com/HibiKier/zhenxun_bot
 ```
 
-gitee下载真寻本体（自己同步的仓库 可能更新会不及时 不超过7天）
+gitee下载真寻本体（自己github同步又gitee同步的仓库 可能更新会不及时）
 
 ```
 git clone https://gitee.com/SHIKEAIXY/fork-zhenxun_bot.git ./zhenxun_bot
