@@ -1,7 +1,7 @@
 </div>
 <div align="center">
 <br>
-    <img src="图片/真寻.png" width="70%">
+    <img src="图片/真寻.png" width="80%">
 
 </div>
 
