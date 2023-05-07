@@ -25,7 +25,7 @@
 
 3. 真寻bot非常可爱 嗯 非常可爱！！！非常可爱！！！非常可爱！！！
 
-4. 真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [go-cqhttp](https://docs.go-cqhttp.org/) 的开发，以 [postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
+4. 真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp) 的开发，以 [postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
 
 <a href='https://gitee.com/SHIKEAIXY/zhenxun'><img src='https://gitee.com/SHIKEAIXY/zhenxun/widgets/widget_3.svg?color=1ec1c7' alt='Fork me on Gitee'></img></a>
 
@@ -86,6 +86,9 @@
 还不行？[点击此处解决](https://www.baidu.com/s?wd=poetry%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85&rsv_spt=1&rsv_iqid=0xba8c8dad000d7d68&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_dl=tb&rsv_n=2&rsv_sug3=7&rsv_sug1=6&rsv_sug7=100&rsv_sug2=0&rsv_btype=i&prefixsug=poetry%25E6%2580%258E%25E4%25B9%2588%25E5%25AE%2589%25E8%25A3%2585&rsp=1&inputT=3702&rsv_sug4=3703)
 
 # 二 安装 go-cqhttp 
+
+前言：出问题了请去gocq底下提Issues
+[点击此处给go-cqhttp提Issues](https://github.com/Mrs4s/go-cqhttp/issues)
 
  go-cqhttp 安装视频教程
 <br>
