@@ -11,8 +11,16 @@
 
 既然是喜欢真寻的肯定也喜欢真寻的表情包/头像/壁纸吧
 
-[点击此处获取高达900张的真寻图](https://gitee.com/SHIKEAIXY/zhenxun-wallpaper-picture)
-
+<script src='https://gitee.com/SHIKEAIXY/zhenxun-wallpaper-picture/widget_preview' async defer></script>
+<div id="osc-gitee-widget-tag"></div>
+<style>
+.osc_pro_color {color: #4183c4 !important;}
+.osc_panel_color {background-color: #ffffff !important;}
+.osc_background_color {background-color: #ffffff !important;}
+.osc_border_color {border-color: #e3e9ed !important;}
+.osc_desc_color {color: #666666 !important;}
+.osc_link_color * {color: #9b9b9b !important;}
+</style>
 你看我这么努力可以点点star吗 求求你了
 
 # 真寻安装教程
