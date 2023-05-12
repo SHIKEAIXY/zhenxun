@@ -11,7 +11,7 @@
 
 既然是喜欢真寻的肯定也喜欢真寻的表情包/头像/壁纸吧
 
-[点击此处获取高达900张的真寻图](https://gitee.com/SHIKEAIXY/zhenxun-wallpaper-picture)
+[点击此处获取高达2000张的超级可爱的真寻表情包吧！！！](https://gitee.com/SHIKEAIXY/zhenxun-wallpaper-picture)
 
 你看我这么努力可以点点star吗 求求你了
 
