@@ -264,6 +264,7 @@ git clone https://gitee.com/SHIKEAIXY/fork-zhenxun_bot.git ./zhenxun_bot
 pip3 install poetry
 poetry install
 poetry shell
+playwright install chromium
 ```
 
 3.设置超级用户，打开 .env.dev 文件（在真寻根目录），在中添加自己的QQSUPERUSERS
