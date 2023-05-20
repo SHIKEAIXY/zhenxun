@@ -1,6 +1,7 @@
 # 真寻安装遇见的报错/问题总结来源issues
 
-## 使用poetry install命令时报错 
+问题还不全 等待更新
+## 1.使用poetry install命令时报错 
 
 #### 报错图：
 <br>
