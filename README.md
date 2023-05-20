@@ -7,6 +7,8 @@
 
 ## [点击此处查看安装报错解决问题](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/Installation%20issues.md)
 
+还未完善...
+
 # 前言
 
 ## 来下载2000张真寻图片吧~
