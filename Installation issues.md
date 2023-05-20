@@ -2,16 +2,16 @@
 
 ## 使用poetry install命令时报错 
 
-## 报错图：
+#### 报错图：
 <br>
     <img src="图片/
 pyproject.toml.png.png" width="70%">
 
-### 原因：
+#### 原因：
 
 这个报错是你没有pyproject.toml这个文件导致的
 
-### 解决办法
+#### 解决办法
 
 方法一：进入你的项目文件夹，运行
 ```
