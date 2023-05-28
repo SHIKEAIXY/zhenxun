@@ -41,3 +41,33 @@ tx/gocq的问题
 1.更换协议
 
 2.本地下个go-cqhttp，登录一次，把生成的device.json覆盖到服务器上
+
+## 2.首次启动bot报错
+
+报错内容 
+ImportError: cannot import name 'connections' from 'tortoise' 
+
+#### 原因：
+
+tortoise-orm源码一看找不到Tortoise索引
+
+#### 解决办法
+
+进入真寻根目录，运行
+```
+pip install tortoise-orm -U
+
+```
+
+#### 报错图：
+<br>
+    <img src="图片/poetry install.png" width="70%">
+
+#### 解决办法
+
+根目录运行，可以看到所有需要安装的依赖 手动安装即可
+```
+poetry show
+
+```
+# 更多问题请前往真寻提issues
