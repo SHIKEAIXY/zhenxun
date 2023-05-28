@@ -59,7 +59,9 @@ pip install tortoise-orm -U
 
 ```
 
-#### 报错图：
+### 4.使用poetry install报错 
+
+报错图：
 <br>
     <img src="图片/poetry install.png" width="70%">
 
