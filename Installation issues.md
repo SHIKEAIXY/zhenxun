@@ -42,7 +42,7 @@ tx/gocq的问题
 
 2.本地下个go-cqhttp，登录一次，把生成的device.json覆盖到服务器上
 
-## 2.首次启动bot报错
+## 3.首次启动bot报错
 
 报错内容 
 ImportError: cannot import name 'connections' from 'tortoise' 
