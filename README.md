@@ -368,8 +368,6 @@ python3 bot.py
 
 感谢以下贡献者
 
-<a href="https://gitee.com/SHIKEAIXY/zhenxun/graphs/contributors">
-  <img src="https://contrib.rocks/image? Repo=SHIKEAIXY/zhenxun" />
-</a>
+懒 咕咕咕...
 
  
