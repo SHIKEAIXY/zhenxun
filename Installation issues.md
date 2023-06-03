@@ -72,4 +72,4 @@ pip install tortoise-orm -U
 poetry show
 
 ```
-# 更多问题请前往真寻提issues
+# 更多问题请前往真寻github库提issues
