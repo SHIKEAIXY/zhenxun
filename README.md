@@ -17,7 +17,7 @@
 - 但是不建议使用一键脚本，很容易出问题，出了还不好修
 - 所以还是建议手动安装
 
-## 来下载2000张真寻图片吧~
+### 来下载2000张真寻图片吧~
 
 既然是喜欢真寻的肯定也喜欢真寻的表情包/头像/壁纸吧
 
@@ -25,7 +25,8 @@
 
 你看我这么努力可以点点star吗 求求你了
 
-# 真寻安装教程
+
+## 与真寻相关  
 
 1. 有什么问题可以提Issues（本人废物一个 可能不会解决）可以到真寻库提issues
 
@@ -37,7 +38,7 @@
 
 5. [点击查看zhenxun_bot使用说明](https://hibikier.github.io/zhenxun_bot/ )
 
-### 介绍
+## 介绍
 
 1. 一个win系统的[zhenxun_bot](https://github.com/HibiKier/zhenxun_bot)安装教程
 
@@ -56,7 +57,7 @@
 
 [![访问量](https://profile-counter.glitch.me/zhenxun/count.svg)](https://gitee.com/SHIKEAIXY/zhenxun.git)
 
-
+# 正文啦！
 # 一 准备工作
 
 ## 安装 版本大于3.8且小于3.11的python 和 poetry
