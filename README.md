@@ -104,7 +104,7 @@
 
 如果没有请重启电脑 重新打开cmd输入 poetry
 
-还不行？[点击此处解决](https://www.baidu.com/s?wd=poetry%E6%80%8E%E4%B9%88%E5%AE%89%E8%A3%85&rsv_spt=1&rsv_iqid=0xba8c8dad000d7d68&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_dl=tb&rsv_n=2&rsv_sug3=7&rsv_sug1=6&rsv_sug7=100&rsv_sug2=0&rsv_btype=i&prefixsug=poetry%25E6%2580%258E%25E4%25B9%2588%25E5%25AE%2589%25E8%25A3%2585&rsp=1&inputT=3702&rsv_sug4=3703)
+还不行？[点击此处解决](https://www.baidu.com)
 
 # 二 安装 go-cqhttp 
 
