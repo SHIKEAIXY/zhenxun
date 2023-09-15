@@ -122,6 +122,8 @@
 
 ## ①下载go-cqhttp 
 
+ **如果你要使用新版签名请使用** 
+
 [点击此处下载v1.1.0go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases/download/v1.1.0/go-cqhttp_windows_amd64.zip)
 
 由于使用的是github的zip下载 无法访问下载请打开你刚刚安装的TZ
@@ -165,7 +167,31 @@
 
 3.无法登录 签名异常？(这个正常还没有正式教你部署签名)
 
-### 部署签名api（非常简单） 
+### 部署签名api
+
+<details>
+  <summary>最新版签名和gocq下载</summary>
+对了忘记再前面说明 gocq 就下载这个文件里面的吧！
+
+### 下载
+```
+git clone https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg.git /最新签名及gocq
+```
+
+### 下载java 
+
+[点击此处下载17.42的java](https://cloud.tianyi.one/d/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/yunzai/zulu17.42.19-ca-jdk17.0.7-win_x64.msi)
+
+### 使用
+
+打开`最新签名及gocq\新版签名及gocq1.1.9\unidbg-fetch-qsign-1.1.9`双击运行`一键启动.bat`
+
+没有闪退即可使用
+
+</details>
+
+<details>
+  <summary>无需java签名下载</summary>
 
 1.下载一键启动签名api链接
 [点击此处下载v1.1版本签名api](https://pan.baidu.com/s/15-zdyNZorQnBU18NWaqTNw?pwd=3lh4 )
@@ -180,6 +206,8 @@
     <img src="图片/安装签名改名.png" width="50%">
 
 没有闪退代表你的api启动成功了
+
+</details>
 
 3.重新重启 go-cqhttp.bat 登录即可
 
