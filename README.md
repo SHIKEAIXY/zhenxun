@@ -122,7 +122,7 @@
 
 ## ①下载go-cqhttp 
 
- **如果你要使用新版签名请使用** 
+ **如果你要使用新版签名请使用下方新版签名中的gocq，请勿下载此处的** 
 
 [点击此处下载v1.1.0go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases/download/v1.1.0/go-cqhttp_windows_amd64.zip)
 
