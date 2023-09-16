@@ -107,113 +107,8 @@
 
 还不行？[点击此处解决](https://www.baidu.com)
 
-# 不想使用gocq？想使用云崽连真寻？
 
-- 请安装[云崽的ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)连接本地ws地址(端口默认为8080）并保持云崽的运行
-- ws-plugin不适配trss崽，作者目前没有打算适配
-- ws-plugin可连接多个Bot不限制于本地可连接远程的ws地址
-- 云崽与真寻或对个bot可以通过连接ws使用一个登录协议
-- 真寻bot与云崽不可关闭！
-
-# 二 安装 go-cqhttp 
-
-前言：出问题了请去gocq底下提Issues
-[点击此处给go-cqhttp提Issues](https://github.com/Mrs4s/go-cqhttp/issues)
-
-## ①下载go-cqhttp 
-
- **如果你要使用新版签名请使用下方新版签名中的gocq，请勿下载此处的** 
-
-[点击此处下载v1.1.0go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases/download/v1.1.0/go-cqhttp_windows_amd64.zip)
-
-由于使用的是github的zip下载 无法访问下载请打开你刚刚安装的TZ
-
-## ②配置go-cqhttp
-
-
-1.解压后会得到 go-cqhttp.exe 打开他 跟着写的内容去操作即可
-<br>
-    <img src="图片1image.png" width="50%">
-
-
-2.然后会自动生成 go-cqhttp.bat 打开他
-<br>
-    <img src="图片2image.png" width="50%">
-
-
-3.首次运行会让你选择通信方式，选择 （反向 Websocket 通信），会生成一个配置文件`config.ymlgo-cqhttp3` 
-<br>
-    <img src="图片/方式.png" width="50%">
-
-4.打开config.yml文件，将uin修改为bot账号
-<br>
-    <img src="图片/账号.png" width="50%">
-
-5.在config.yml文件中
-
-将`sign-server: 'http://127.0.0.1:8080'`
-
-修改为`sign-server: 'http://127.0.0.1:8809'`
-
-将`universal: ws://your_websocket_universal.server`
-
-修改为`universal: ws://127.0.0.1:8080/onebot/v11/ws/`
-
-## ③启动 go-cqhttp
-
-1.重启 go-cqhttp.bat
-
-2.保存后重新打开 go-cqhttp.bat
-
-3.无法登录 签名异常？(这个正常还没有正式教你部署签名)
-
-### 部署签名api
-
-<details>
-  <summary>最新版签名和gocq下载</summary>
-对了忘记再前面说明 gocq 就下载这个文件里面的吧！
-
-### 下载
-```
-git clone https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg.git /最新签名及gocq
-```
-
-### 下载java 
-
-[点击此处下载17.42的java](https://cloud.tianyi.one/d/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/yunzai/zulu17.42.19-ca-jdk17.0.7-win_x64.msi)
-
-### 使用
-
-打开`最新签名及gocq\新版签名及gocq1.1.9\unidbg-fetch-qsign-1.1.9`双击运行`一键启动.bat`
-
-没有闪退即可使用
-
-</details>
-
-<details>
-  <summary>无需java签名下载</summary>
-
-1.下载一键启动签名api链接
-[点击此处下载v1.1版本签名api](https://pan.baidu.com/s/15-zdyNZorQnBU18NWaqTNw?pwd=3lh4 )
-
-2.打开`gocq`文件夹，找到`device.json`打开，找到`"android_id":"***"`(在最后面)
-
-3.复制刚刚`"android_id":"***"`中的`***`(由数字和字母组成)
-
-4.打开你刚刚下载的`qsign无java一键启动`文件将`一键启动.bat`改名为你刚刚复制的`***`.bat并双击打开`***.bat`
-如：
-<br>
-    <img src="图片/安装签名改名.png" width="50%">
-
-没有闪退代表你的api启动成功了
-
-</details>
-
-3.重新重启 go-cqhttp.bat 登录即可
-
-切记api不要关闭！！！
-
-# 三 安装postgresql
+# 二 安装postgresql
 
 ## ①下载postgresql数据库
 [点击此处将下载Postgresql-15.1-1版本安装包](https://get.enterprisedb.com/postgresql/postgresql-15.1-1-windows-x64.exe)
@@ -309,7 +204,7 @@ git clone https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg.git /最新签名及g
 
 ok火速下一步
 
-# 四 开始安装真寻
+# 三 开始安装真寻本体
 
 1.github下载真寻本体(下载失败建议打开上文中提到的tz)
 
@@ -376,7 +271,143 @@ python bot.py
 
 6.打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
 
-# 五 启动真寻
+
+# 四 安装 go-cqhttp 
+
+### 前言：
+
+1. 出问题了请去gocq底下提[Issues](https://github.com/Mrs4s/go-cqhttp/issues)
+
+2. 如果你是[云崽](https://gitee.com/Le-niao/Yunzai-Bot)用户可以使用[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq连接bot
+<details>
+  <summary>点击此处查看连接教程</summary>
+
+1. 请安装[云崽的ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)连接本地ws地址(端口默认为8080）并保持云崽的运行
+
+打开[云崽](https://gitee.com/Le-niao/Yunzai-Bot)根目录
+```
+cd Yunzai-Bot 
+```
+下载[ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)
+```
+git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
+```
+安装依赖
+```
+pnpm install --filter=ws-plugin
+```
+
+2. #重启 重新启动机器人
+
+3. 连接本地bot(给云崽机器人发送)
+
+```
+#ws添加连接zhenxun_bot,ws://127.0.0.1:8080/onebot/v11/ws/,1,5,0
+``` 
+4. 发送`#ws查看连接`来查看是否连接成功
+
+出现以下内容，则代表连接成功
+```
+连接名字: zhenxun_bot
+连接类型: 1
+当前状态: 已连接
+```
+### 注意不要关闭云崽和真寻本体
+
+</details>
+## ①下载go-cqhttp 
+
+ **如果你要使用新版签名请使用下方新版签名中的gocq，请勿下载此处的** 
+
+[点击此处下载v1.1.0go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases/download/v1.1.0/go-cqhttp_windows_amd64.zip)
+
+由于使用的是github的zip下载 如果无法访问下载请打开你刚刚安装的TZ
+
+## ②配置go-cqhttp
+
+1.解压后会得到 go-cqhttp.exe 打开他 跟着写的内容去操作即可
+<br>
+    <img src="图片1image.png" width="50%">
+
+
+2.然后会自动生成 go-cqhttp.bat 打开他
+<br>
+    <img src="图片2image.png" width="50%">
+
+
+3.首次运行会让你选择通信方式，选择 （反向 Websocket 通信），会生成一个配置文件`config.ymlgo-cqhttp3` 
+<br>
+    <img src="图片/方式.png" width="50%">
+
+4.打开config.yml文件，将uin修改为bot账号
+<br>
+    <img src="图片/账号.png" width="50%">
+5.在config.yml文件中
+
+将`sign-server: 'http://127.0.0.1:8080'`
+
+修改为`sign-server: 'http://127.0.0.1:8809'`
+
+将`universal: ws://your_websocket_universal.server`
+
+修改为`universal: ws://127.0.0.1:8080/onebot/v11/ws/`
+
+## ③启动 go-cqhttp
+
+1.重启 go-cqhttp.bat
+
+2.保存后重新打开 go-cqhttp.bat
+
+3.无法登录 签名异常？(这个正常还没有正式教你部署签名)
+
+# 五 部署签名api
+
+<details>
+  <summary>最新版签名和gocq下载</summary>
+对了忘记再前面说明 gocq 就下载这个文件里面的吧！
+
+### 下载
+```
+git clone https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg.git /最新签名及gocq
+```
+
+### 下载java 
+
+[点击此处下载17.42的java](https://cloud.tianyi.one/d/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/yunzai/zulu17.42.19-ca-jdk17.0.7-win_x64.msi)
+
+### 使用
+
+打开`最新签名及gocq\新版签名及gocq1.1.9\unidbg-fetch-qsign-1.1.9`双击运行`一键启动.bat`
+
+没有闪退即可使用
+
+</details>
+
+<details>
+  <summary>无需java签名下载</summary>
+
+1.下载一键启动签名api链接
+[点击此处下载v1.1版本签名api](https://pan.baidu.com/s/15-zdyNZorQnBU18NWaqTNw?pwd=3lh4 )
+
+2.打开`gocq`文件夹，找到`device.json`打开，找到`"android_id":"***"`(在最后面)
+
+3.复制刚刚`"android_id":"***"`中的`***`(由数字和字母组成)
+
+4.打开你刚刚下载的`qsign无java一键启动`文件将`一键启动.bat`改名为你刚刚复制的`***`.bat并双击打开`***.bat`
+如：
+<br>
+    <img src="图片/安装签名改名.png" width="50%">
+
+没有闪退代表你的api启动成功了
+
+</details>
+
+3.重新重启 go-cqhttp.bat 登录即可
+
+切记api不要关闭！！！
+
+
+# 六 重新启动真寻
 
 关机/页面关上了该怎么重新启动真寻？
 
@@ -386,13 +417,16 @@ python bot.py
 
 ```
 poetry shell
+
+```
+```
 python bot.py
 ```
 #### 启动代码介绍
 - poetry shell 这个是进入虚拟环境
 - python bot.py 这个是用python来运行bot.py这个文件
 
-# 六 真寻插件下载
+# 七 真寻插件下载
 
 [插件安装问题](https://github.com/zhenxun-org/nonebot_plugins_zhenxun_bot/issues/27)
 
@@ -423,5 +457,3 @@ python bot.py
 感谢以下贡献者
 
 [@fafa](https://gitee.com/rushingfafa)
-
- 
