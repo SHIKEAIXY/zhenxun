@@ -319,8 +319,8 @@ pnpm install --filter=ws-plugin
 
 ---
 
-**如果你使用了ws插件连接则跳过此步骤** 
-[点击此处查看签名配置](https://gitee.com/SHIKEAIXY/zhenxun#%E4%BA%94-%E9%83%A8%E7%BD%B2%E7%AD%BE%E5%90%8Dapi)
+**如果你使用了ws插件连接则跳过安装gocq步骤，你云崽因该配置签名了吧...** 
+[点击此处查看真寻启动](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/README.md#%E5%85%AD-%E9%87%8D%E6%96%B0%E5%90%AF%E5%8A%A8%E7%9C%9F%E5%AF%BB)
 
 ## ①下载go-cqhttp 
 
@@ -371,19 +371,25 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 
 # 五 部署签名api
 
-### 下载java 
+### ①下载java 
 
-[点击此处下载17.42的java](https://cloud.tianyi.one/d/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/yunzai/zulu17.42.19-ca-jdk17.0.7-win_x64.msi)
+1.[点击此处下载17.42的java](https://cloud.tianyi.one/d/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/yunzai/zulu17.42.19-ca-jdk17.0.7-win_x64.msi)
 
-### 使用
+2.安装完成后打开cmd运行`java`查看是否有输出
 
-打开`最新签名及gocq\新版签名及gocq1.1.9\unidbg-fetch-qsign-1.1.9`双击运行`一键启动.bat`
+[如果没有输出点击此处查看如何配置变量，如果你看不懂那就没办法了](https://blog.csdn.net/qq_41436122/article/details/82620080)
+
+配置完成后重新启动服务器后再打开cmd运行`java`查看是否有输出
+
+### ②使用
+
+1.打开`1.1.9unidbg_and_gocq\新版签名及gocq1.1.9\unidbg-fetch-qsign-1.1.9`双击运行`一键启动.bat` (就[下载go-cqhttp](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/README.md#%E4%B8%8B%E8%BD%BDgo-cqhttp)下载的那个文件里面)
 
 没有闪退即可使用
 
-签名启动成功后再重新启动 go-cqhttp.bat 登录即可
+2.签名启动成功后再重新启动 go-cqhttp.bat 登录即可
 
-切记api不要关闭！！！
+3.切记api不要关闭！！！
 
 # 六 重新启动真寻
 
