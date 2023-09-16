@@ -317,10 +317,10 @@ pnpm install --filter=ws-plugin
 
 </details>
 
+---
+
 **如果你使用了ws插件连接则跳过此步骤** 
 [点击此处查看签名配置](https://gitee.com/SHIKEAIXY/zhenxun#%E4%BA%94-%E9%83%A8%E7%BD%B2%E7%AD%BE%E5%90%8Dapi)
-
----
 
 ## ①下载go-cqhttp 
 
