@@ -385,9 +385,15 @@ pnpm install --filter=ws-plugin
 
 </details>
 
+&nbsp;
+&nbsp;
+
 **如果你想下载最新版签名则下载此处内容**
+
 **此签名跳过了tx的检测更稳定**
+
 **如果你已经安装了1.1.0的gocq则 重新 下载此处的签名和gocq**
+
 <details>
   <summary>最新版签名和gocq下载</summary>
 对了忘记再前面说明 gocq 就下载这个文件里面的吧！
