@@ -383,13 +383,31 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 
 ### ②使用
 
-1.打开`1.1.9unidbg_and_gocq\新版签名及gocq1.1.9\unidbg-fetch-qsign-1.1.9`双击运行`一键启动.bat` (就[下载go-cqhttp](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/README.md#%E4%B8%8B%E8%BD%BDgo-cqhttp)下载的那个文件里面)
+1.打开`1.1.9unidbg_and_gocq\unidbg-fetch-qsign-1.1.9`双击运行`一键启动.bat` (就[下载go-cqhttp](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/README.md#%E4%B8%8B%E8%BD%BDgo-cqhttp)下载的那个文件里面)
 
 没有闪退即可使用
 
 2.签名启动成功后再重新启动 go-cqhttp.bat 登录即可
 
 3.切记api不要关闭！！！
+
+### ③配置
+
+1.端口默认是`8089`
+
+2.key默认为`114514`
+
+3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.63`则打开`8.9.63\config.json`进行修改即可
+
+<br>
+    <img src="图片/签名配置端口key.png" width="50%">
+
+4.`一键启动.bat`使用的版本是8.9.63，如果使用其他版本可手动更改
+
+用笔记本打开`一键启动.bat`修改`8.9.63`你需要的版本，支持的版本可在`txlib`文件内查看
+
+<br>
+    <img src="图片/签名配置一键启动.png" width="50%">
 
 # 六 重新启动真寻
 
