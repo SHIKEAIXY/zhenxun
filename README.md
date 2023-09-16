@@ -322,10 +322,14 @@ pnpm install --filter=ws-plugin
 
 ## ①下载go-cqhttp 
 
-[点击此处下载v1.1.0go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases/download/v1.1.0/go-cqhttp_windows_amd64.zip)
+### gitee下载
+```
+git clone https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg.git
+```
+### zip下载
+[点击此处下载新版签名和go-cqhttp](https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg/repository/archive/master.zip)
 
-由于使用的是github的zip下载 如果无法访问下载请打开你刚刚安装的TZ
-
+**下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`请先不要删
 ## ②配置go-cqhttp
 
 1.解压后会得到 go-cqhttp.exe 打开他 跟着写的内容去操作即可
@@ -365,40 +369,6 @@ pnpm install --filter=ws-plugin
 
 # 五 部署签名api
 
-**如果你下载的上方教程中的1.1.0版本gocq则下载此1.1.0版本的签名**
-<details>
-  <summary>无需java签名下载</summary>
-
-1.下载一键启动签名api链接
-[点击此处下载v1.1版本签名api](https://pan.baidu.com/s/15-zdyNZorQnBU18NWaqTNw?pwd=3lh4 )
-
-2.打开`gocq`文件夹，找到`device.json`打开，找到`"android_id":"***"`(在最后面)
-
-3.复制刚刚`"android_id":"***"`中的`***`(由数字和字母组成)
-
-4.打开你刚刚下载的`qsign无java一键启动`文件将`一键启动.bat`改名为你刚刚复制的`***`.bat并双击打开`***.bat`
-如：
-<br>
-    <img src="图片/安装签名改名.png" width="50%">
-
-没有闪退代表你的api启动成功了
-
-</details>
-
-&nbsp;
-
----
-
-**1.如果你想下载最新版签名则下载此处内容**
-
-**2.此签名跳过了tx的检测更稳定**
-
-**3.如果你已经安装了1.1.0的gocq则 重新 下载此处的签名和gocq**
-
-<details>
-  <summary>最新版签名和gocq下载</summary>
-对了忘记再前面说明 gocq 就下载这个文件里面的吧！
-
 ### 下载
 ```
 git clone https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg.git /最新签名及gocq
@@ -414,11 +384,7 @@ git clone https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg.git /最新签名及g
 
 没有闪退即可使用
 
-</details>
-
----
-
-3.重新重启 go-cqhttp.bat 登录即可
+签名启动成功后再重新启动 go-cqhttp.bat 登录即可
 
 切记api不要关闭！！！
 
