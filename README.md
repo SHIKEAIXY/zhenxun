@@ -283,7 +283,7 @@ python bot.py
 <details>
   <summary>点击此处查看云崽连接教程</summary>
 
-1. 请安装[云崽的ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)连接本地ws地址(端口默认为8080）并保持云崽的运行
+1. 请安装[云崽的ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)连接本地ws地址（端口默认为8080）并保持云崽的运行
 
 打开[云崽](https://gitee.com/Le-niao/Yunzai-Bot)根目录
 ```
@@ -324,10 +324,10 @@ pnpm install --filter=ws-plugin
 
 ### gitee下载
 ```
-git clone https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg.git
+git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 ```
 ### zip下载
-[点击此处下载新版签名和go-cqhttp](https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg/repository/archive/master.zip)
+[点击此处下载新版签名和go-cqhttp](https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
 
 **下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`请先不要删
 ## ②配置go-cqhttp
@@ -368,11 +368,6 @@ git clone https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg.git
 3.无法登录 签名异常？(这个正常还没有正式教你部署签名)
 
 # 五 部署签名api
-
-### 下载
-```
-git clone https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg.git /最新签名及gocq
-```
 
 ### 下载java 
 
