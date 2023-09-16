@@ -269,6 +269,7 @@ database: str = ""   //数据库名称
 python bot.py
 ```
 
+（如果你没有这些需求可以忽略这步，毕竟默认配置了）
 6.打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
 
 
@@ -280,7 +281,7 @@ python bot.py
 
 2. 如果你是[云崽](https://gitee.com/Le-niao/Yunzai-Bot)用户可以使用[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq连接bot
 <details>
-  <summary>点击此处查看连接教程</summary>
+  <summary>点击此处查看云崽连接教程</summary>
 
 1. 请安装[云崽的ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)连接本地ws地址(端口默认为8080）并保持云崽的运行
 
@@ -315,9 +316,11 @@ pnpm install --filter=ws-plugin
 ### 注意不要关闭云崽和真寻本体
 
 </details>
-## ①下载go-cqhttp 
 
- **如果你要使用新版签名请使用下方新版签名中的gocq，请勿下载此处的** 
+**如果你使用了ws插件连接则跳过此步骤** 
+[点击此处查看签名配置](https://gitee.com/SHIKEAIXY/zhenxun#%E4%BA%94-%E9%83%A8%E7%BD%B2%E7%AD%BE%E5%90%8Dapi)
+
+## ①下载go-cqhttp 
 
 [点击此处下载v1.1.0go-cqhttp](https://github.com/Mrs4s/go-cqhttp/releases/download/v1.1.0/go-cqhttp_windows_amd64.zip)
 
@@ -362,6 +365,29 @@ pnpm install --filter=ws-plugin
 
 # 五 部署签名api
 
+**如果你下载的上方教程中的1.1.0版本gocq则下载此1.1.0版本的签名**
+<details>
+  <summary>无需java签名下载</summary>
+
+1.下载一键启动签名api链接
+[点击此处下载v1.1版本签名api](https://pan.baidu.com/s/15-zdyNZorQnBU18NWaqTNw?pwd=3lh4 )
+
+2.打开`gocq`文件夹，找到`device.json`打开，找到`"android_id":"***"`(在最后面)
+
+3.复制刚刚`"android_id":"***"`中的`***`(由数字和字母组成)
+
+4.打开你刚刚下载的`qsign无java一键启动`文件将`一键启动.bat`改名为你刚刚复制的`***`.bat并双击打开`***.bat`
+如：
+<br>
+    <img src="图片/安装签名改名.png" width="50%">
+
+没有闪退代表你的api启动成功了
+
+</details>
+
+**如果你想下载最新版签名则下载此处内容**
+**此签名跳过了tx的检测更稳定**
+**如果你已经安装了1.1.0的gocq则 重新 下载此处的签名和gocq**
 <details>
   <summary>最新版签名和gocq下载</summary>
 对了忘记再前面说明 gocq 就下载这个文件里面的吧！
@@ -383,29 +409,9 @@ git clone https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg.git /最新签名及g
 
 </details>
 
-<details>
-  <summary>无需java签名下载</summary>
-
-1.下载一键启动签名api链接
-[点击此处下载v1.1版本签名api](https://pan.baidu.com/s/15-zdyNZorQnBU18NWaqTNw?pwd=3lh4 )
-
-2.打开`gocq`文件夹，找到`device.json`打开，找到`"android_id":"***"`(在最后面)
-
-3.复制刚刚`"android_id":"***"`中的`***`(由数字和字母组成)
-
-4.打开你刚刚下载的`qsign无java一键启动`文件将`一键启动.bat`改名为你刚刚复制的`***`.bat并双击打开`***.bat`
-如：
-<br>
-    <img src="图片/安装签名改名.png" width="50%">
-
-没有闪退代表你的api启动成功了
-
-</details>
-
 3.重新重启 go-cqhttp.bat 登录即可
 
 切记api不要关闭！！！
-
 
 # 六 重新启动真寻
 
