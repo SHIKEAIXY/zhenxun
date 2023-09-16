@@ -320,6 +320,8 @@ pnpm install --filter=ws-plugin
 **如果你使用了ws插件连接则跳过此步骤** 
 [点击此处查看签名配置](https://gitee.com/SHIKEAIXY/zhenxun#%E4%BA%94-%E9%83%A8%E7%BD%B2%E7%AD%BE%E5%90%8Dapi)
 
+---
+
 ## ①下载go-cqhttp 
 
 ### gitee下载
@@ -329,7 +331,7 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 ### zip下载
 [点击此处下载新版签名和go-cqhttp](https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
 
-**下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`请先不要删
+下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`请不要删！！！
 ## ②配置go-cqhttp
 
 1.解压后会得到 go-cqhttp.exe 打开他 跟着写的内容去操作即可
