@@ -35,14 +35,12 @@ poetry init
 
 #### 原因：
 
-tx/gocq的问题
+你不按照本教程安装来导致的
 
 #### 解决办法
-1.更换协议
+1.下载新版签名和支持的gocq
 
-2.本地下个go-cqhttp，登录一次，把生成的device.json覆盖到服务器上
-
-3.还是不行？摆烂吧
+[点击此处查看教程](https://gitee.com/SHIKEAIXY/zhenxun#%E5%9B%9B-%E5%AE%89%E8%A3%85-go-cqhttp)
 
 ## 3.首次启动bot报错
 
