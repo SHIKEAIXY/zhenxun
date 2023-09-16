@@ -336,12 +336,12 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 
 1.解压后会得到 go-cqhttp.exe 打开他 跟着写的内容去操作即可
 <br>
-    <img src="图片1image.png" width="50%">
+    <img src="图片/gocq_exe.png" width="50%">
 
 
 2.然后会自动生成 go-cqhttp.bat 打开他
 <br>
-    <img src="图片2image.png" width="50%">
+    <img src="图片/gocq_bat.png" width="50%">
 
 
 3.首次运行会让你选择通信方式，选择 （反向 Websocket 通信），会生成一个配置文件`config.ymlgo-cqhttp3` 
