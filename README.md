@@ -386,13 +386,14 @@ pnpm install --filter=ws-plugin
 </details>
 
 &nbsp;
-&nbsp;
 
-**如果你想下载最新版签名则下载此处内容**
+---
 
-**此签名跳过了tx的检测更稳定**
+**1.如果你想下载最新版签名则下载此处内容**
 
-**如果你已经安装了1.1.0的gocq则 重新 下载此处的签名和gocq**
+**2.此签名跳过了tx的检测更稳定**
+
+**3.如果你已经安装了1.1.0的gocq则 重新 下载此处的签名和gocq**
 
 <details>
   <summary>最新版签名和gocq下载</summary>
@@ -414,6 +415,8 @@ git clone https://gitee.com/SHIKEAIXY/zhenxxun_gocq_unidbg.git /最新签名及g
 没有闪退即可使用
 
 </details>
+
+---
 
 3.重新重启 go-cqhttp.bat 登录即可
 
