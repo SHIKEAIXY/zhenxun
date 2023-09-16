@@ -407,7 +407,7 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 用笔记本打开`一键启动.bat`修改`8.9.63`你需要的版本，支持的版本可在`txlib`文件内查看
 
 <br>
-    <img src="图片/签名配置一键启动.png" width="50%">
+    <img src="图片/签名配置一键启动.png" width="80%">
 
 # 六 重新启动真寻
 
