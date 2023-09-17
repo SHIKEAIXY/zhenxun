@@ -336,12 +336,6 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 <br>
     <img src="图片/账号.png" width="70%">
 
-## ③启动 go-cqhttp
-
-1.双击 `go-cqhttp.bat` 即可
-
-2.无法登录 签名异常？(这个正常还没有正式教你部署签名)
-
 # 五 部署签名api
 
 ### ①下载java 
@@ -379,6 +373,14 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 用笔记本打开`一键启动.bat`修改`8.9.63`你需要的版本，支持的版本可在`txlib`文件内查看
 <br>
     <img src="图片/签名配置一键启动.png" width="80%">
+
+## ④启动 go-cqhttp
+
+1.返回上一目录打开`windows_amd64`文件
+
+2.双击 `go-cqhttp.bat` 进行验证即可
+<br>
+    <img src="图片/gocq_bat.png" width="50%">
 
 # 六 重新启动真寻
 
