@@ -461,4 +461,4 @@ python bot.py
 
 感谢以下贡献者
 
-[@fafa](https://gitee.com/rushingfafa)&nbsp;&nbsp;[@rock8526652](https://gitee.com/rock8526652)
+[@fafa](https://gitee.com/rushingfafa)&nbsp;&nbsp;&nbsp;&nbsp;[@晴风](https://gitee.com/rock8526652)
