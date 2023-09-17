@@ -403,14 +403,12 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 2.key默认为`114514`
 
 3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.63`则打开`8.9.63\config.json`进行修改即可
-
 <br>
     <img src="图片/签名配置端口key.png" width="50%">
 
 4.`一键启动.bat`使用的版本是8.9.63，如果使用其他版本可手动更改
 
 用笔记本打开`一键启动.bat`修改`8.9.63`你需要的版本，支持的版本可在`txlib`文件内查看
-
 <br>
     <img src="图片/签名配置一键启动.png" width="80%">
 
@@ -463,4 +461,4 @@ python bot.py
 
 感谢以下贡献者
 
-[@fafa](https://gitee.com/rushingfafa)
+[@fafa](https://gitee.com/rushingfafa)&nbsp;&nbsp;[@rock8526652](https://gitee.com/rock8526652)
