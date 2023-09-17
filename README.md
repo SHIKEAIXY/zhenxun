@@ -315,14 +315,9 @@ pnpm install --filter=ws-plugin
 
 </details>
 
----
-
 **如果你使用了ws插件连接，则直接在真寻根目录运行下方命令启动真寻，你云崽应该配置签名了吧...** 
 ```
 poetry shell
-
-```
-```
 python bot.py
 ```
 
