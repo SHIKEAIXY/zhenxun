@@ -317,8 +317,17 @@ pnpm install --filter=ws-plugin
 
 ---
 
-**如果你使用了ws插件连接则跳过安装gocq步骤，你云崽应该配置签名了吧...** 
-[点击此处查看真寻启动](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/README.md#%E5%85%AD-%E9%87%8D%E6%96%B0%E5%90%AF%E5%8A%A8%E7%9C%9F%E5%AF%BB)
+**如果你使用了ws插件连接，则直接在真寻根目录运行下方命令启动真寻，你云崽应该配置签名了吧...** 
+```
+poetry shell
+
+```
+```
+python bot.py
+```
+
+---
+
 
 ## ①下载go-cqhttp 
 
