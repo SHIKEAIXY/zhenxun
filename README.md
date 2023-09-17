@@ -364,7 +364,7 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 
 2.key默认为`114514`
 
-3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.63`则打开`8.9.63\config.json`进行修改即可
+3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.71`则打开`8.9.71\config.json`进行修改即可
 <br>
     <img src="图片/签名配置端口key.png" width="50%">
 
