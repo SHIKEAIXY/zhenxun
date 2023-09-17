@@ -89,14 +89,14 @@ poetry shell
 pip install pyyaml==5.3.0
 
 ```
-下载pyproject:toml此文件，链接：https://pan.baidu.com/s/1_V2KWdPv-LqPBlQW88rUeA?pwd=3eqa 
+下载pyproject:toml此文件，链接：https://share.weiyun.com/3lEAAKpr 
 
 覆盖原真寻的文件(防止你这个笨蛋改错了~)
 
 根目录cmd运行
 ```
-exit
-poetry shell
+poetry lock
+poetry install
 
 ```
 
