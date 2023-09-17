@@ -277,7 +277,7 @@ python bot.py
 
 ### 前言：
 
-如果你是[云崽](https://gitee.com/Le-niao/Yunzai-Bot)用户可以使用[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq连接bot
+如果你是[云崽](https://gitee.com/Le-niao/Yunzai-Bot)用户则可以使用[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq连接bot
 <details>
   <summary>点击此处查看云崽连接教程</summary>
 
