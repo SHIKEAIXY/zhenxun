@@ -83,17 +83,15 @@ poetry show
 
 #### 解决办法
 
-```
-下载pyproject:toml此文件，链接：https://share.weiyun.com/3lEAAKpr 
+1.下载pyproject:toml此文件，链接：[https://share.weiyun.com/3lEAAKpr ](https://share.weiyun.com/3lEAAKpr )
 
-覆盖原真寻的文件(防止你这个笨蛋改错了~)
+2.覆盖原真寻的文件(防止你这个笨蛋改错了~)
 
-根目录cmd运行
+3.根目录cmd运行
 ```
 poetry lock
 poetry install
 
 ```
-
 
 # 更多问题请前往真寻github库提issues
