@@ -123,7 +123,7 @@
 
 2.选择安装路径（对路径没有要求不用改 默认c盘），继续Next
 
-安装路径中不要出现英文！（防止报错）
+安装路径中不要出现中文！（防止报错）
 <br>
     <img src="图片/数据库安装路径.png" width="50%">
 
@@ -217,7 +217,7 @@ git clone https://github.com/HibiKier/zhenxun_bot
 ```
 poetry install
 poetry shell
-playwright install
+playwright install chromium
 ```
 
 3.设置超级用户，打开 .env.dev 文件（在真寻根目录），在中添加自己大号（主人）的QQ号，12345678为QQ号
@@ -317,7 +317,7 @@ pnpm install --filter=ws-plugin
 
 ---
 
-**如果你使用了ws插件连接则跳过安装gocq步骤，你云崽因该配置签名了吧...** 
+**如果你使用了ws插件连接则跳过安装gocq步骤，你云崽应该配置签名了吧...** 
 [点击此处查看真寻启动](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/README.md#%E5%85%AD-%E9%87%8D%E6%96%B0%E5%90%AF%E5%8A%A8%E7%9C%9F%E5%AF%BB)
 
 ## ①下载go-cqhttp 
