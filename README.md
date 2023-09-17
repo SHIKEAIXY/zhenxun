@@ -431,4 +431,4 @@ python bot.py
 
 感谢以下贡献者
 
-[@fafa](https://gitee.com/rushingfafa)&nbsp;&nbsp;&nbsp;&nbsp;[@晴风](https://gitee.com/rock8526652)
+[@fafa](https://gitee.com/rushingfafa)&nbsp;&nbsp;&nbsp;&nbsp;[@晴风](https://gitee.com/rock8526652)&nbsp;&nbsp;&nbsp;&nbsp;[@脆脆鲨](https://gitee.com/JMCCS)&nbsp;&nbsp;&nbsp;&nbsp;[@鹤望兰(https://gitee.com/hewang1an)&nbsp;&nbsp;&nbsp;&nbsp;@冀安&nbsp;&nbsp;&nbsp;&nbsp;@花花&nbsp;&nbsp;&nbsp;&nbsp;@多用途歼击坦克-炎黄
