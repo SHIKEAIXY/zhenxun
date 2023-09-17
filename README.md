@@ -277,9 +277,7 @@ python bot.py
 
 ### 前言：
 
-1. 出问题了请去gocq底下提[Issues](https://github.com/Mrs4s/go-cqhttp/issues)
-
-2. 如果你是[云崽](https://gitee.com/Le-niao/Yunzai-Bot)用户可以使用[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq连接bot
+如果你是[云崽](https://gitee.com/Le-niao/Yunzai-Bot)用户可以使用[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq连接bot
 <details>
   <summary>点击此处查看云崽连接教程</summary>
 
@@ -334,45 +332,15 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`请不要删！！！
 ## ②配置go-cqhttp
 
-1.解压后会得到 go-cqhttp.exe 打开他 跟着写的内容去操作即可
+1.打开config.yml文件，修改`QQ账号和密码`保存即可
 <br>
-    <img src="图片/gocq_exe.png" width="50%">
-
-
-2.然后会自动生成 go-cqhttp.bat 打开他
-<br>
-    <img src="图片/gocq_bat.png" width="50%">
-
-
-3.首次运行会让你选择通信方式，选择 （反向 Websocket 通信），会生成一个配置文件`config.ymlgo-cqhttp3` 
-<br>
-    <img src="图片/方式.png" width="50%">
-
-4.打开config.yml文件，将uin修改为bot账号
-<br>
-    <img src="图片/账号.png" width="50%">
-
-5.在config.yml文件中
-
-将`url: '-'`
-
-修改为`url: 'http://127.0.0.1:8809'`
-<br>
-    <img src="图片/签名url.png" width="50%">
-
-将`universal: ws://your_websocket_universal.server`
-
-修改为`universal: ws://127.0.0.1:8080/onebot/v11/ws/`
-<br>
-    <img src="图片/sign-server.png" width="50%">
+    <img src="图片/账号.png" width="70%">
 
 ## ③启动 go-cqhttp
 
-1.重启 go-cqhttp.bat
+1.双击 `go-cqhttp.bat` 即可
 
-2.保存后重新打开 go-cqhttp.bat
-
-3.无法登录 签名异常？(这个正常还没有正式教你部署签名)
+2.无法登录 签名异常？(这个正常还没有正式教你部署签名)
 
 # 五 部署签名api
 
