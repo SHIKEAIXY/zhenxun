@@ -351,15 +351,20 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 4.打开config.yml文件，将uin修改为bot账号
 <br>
     <img src="图片/账号.png" width="50%">
+
 5.在config.yml文件中
 
-将`sign-server: 'http://127.0.0.1:8080'`
+将`url: '-'`
 
-修改为`sign-server: 'http://127.0.0.1:8809'`
+修改为`url: 'http://127.0.0.1:8809'`
+<br>
+    <img src="图片/签名url.png" width="50%">
 
 将`universal: ws://your_websocket_universal.server`
 
 修改为`universal: ws://127.0.0.1:8080/onebot/v11/ws/`
+<br>
+    <img src="图片/sign-server.png" width="50%">
 
 ## ③启动 go-cqhttp
 
