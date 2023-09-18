@@ -368,12 +368,6 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 <br>
     <img src="图片/签名配置端口key.png" width="50%">
 
-4.`一键启动.bat`使用的版本是8.9.71，如果使用其他版本可手动更改
-
-用笔记本打开`一键启动.bat`修改`8.9.71`你需要的版本，支持的版本可在`txlib`文件内查看
-<br>
-    <img src="图片/签名配置一键启动.png" width="80%">
-
 ## ④启动 go-cqhttp
 
 1.返回上一目录打开`windows_amd64`文件
@@ -381,6 +375,33 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 2.双击 `go-cqhttp.bat` 进行验证即可
 <br>
     <img src="图片/gocq_bat.png" width="50%">
+
+## ⑤修改其他签名协议登录
+
+1.修改`一键启动.bat`
+
+用笔记本打开`一键启动.bat`修改`8.9.71`你需要的版本，支持的版本可在`txlib`文件内查看
+<br>
+    <img src="图片/签名配置一键启动.png" width="80%">
+
+2.删除在gocq中适配的8.9.70协议
+
+**注意！！！ 如果你后续还打算使用8.9.70的版本请备份versions内的文件** 
+
+**方法一** 
+
+在与`README.md`同级目录下使用该指令删除文件，并重新启动gocq即可使用其他签名协议
+
+```
+rm -rf windows_amd64/data/versions
+```
+
+**方法二**
+
+手动删除`dada/versions`
+<br>
+    <img src="图片/删除适配的8.9.70.png" width="80%">
+
 
 # 六 重新启动真寻
 
