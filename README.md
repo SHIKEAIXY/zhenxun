@@ -28,7 +28,7 @@
 
 ## 与真寻相关  
 
-1. 有什么问题可以提Issues（本人废物一个 可能不会解决）可以到真寻库提issues
+1. 有什么问题可以提Issues
 
 2. linux系统的教程网上一堆 我就不出了 可以参考别人的安装[点击查看linux安装教程](https://lonelyenderman.top/archives/781)
 
