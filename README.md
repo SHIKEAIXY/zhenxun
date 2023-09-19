@@ -3,7 +3,7 @@
 <br>
     <img src="图片/真寻.png" width="80%">
 
-</div>
+</div>#
 
 ## [点击此处查看真寻bot安装时报错的解决问题](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/Installation%20issues.md)
 
@@ -296,7 +296,7 @@ git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plu
 pnpm install --filter=ws-plugin
 ```
 
-2. #重启 重新启动机器人
+2. 重新启动`云崽`机器人
 
 3. 连接本地bot(给云崽机器人发送)
 
