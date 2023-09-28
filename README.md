@@ -97,6 +97,15 @@
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
 ```
 
+2.1 如无法安装可使用pip安装前先升级pip
+```
+python -m pip install -U pip
+```
+
+```
+pip install poetry
+```
+
 3. 然后将`%APPDATA%\Python\Scripts`添加到PATH环境变量(位置在右键此电脑→属性→高级系统设置→环境变量)
 <br>
     <img src="图片/变量.png" width="50%">
