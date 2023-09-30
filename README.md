@@ -3,7 +3,7 @@
 <br>
     <img src="图片/真寻.png" width="80%">
 
-</div>#
+</div>
 
 ## [点击此处查看真寻bot安装时报错的解决问题](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/Installation%20issues.md)
 
@@ -97,7 +97,7 @@
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
 ```
 
-2.1 如无法安装可使用pip安装前先升级pip
+2.1 如无法安装可使用pip安装前先升级pip（此步骤无需进行3的变量环节）
 ```
 python -m pip install -U pip
 ```
