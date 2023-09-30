@@ -81,7 +81,7 @@
 
 1. 最好挂个TZ
 
-[这里我推荐白鲸 点击此处下载](https://m.bjch999.com/app/download?platform=3&channel=download_01&mid=false&app=bj)
+[这里我推荐白鲸 点击此处下载](https://www.bjch999.com/app/download?platform=3&channel=download_03&mid=false&ts=1694193912977&app=bj)
 
 注册邮箱可以随缘填写（一个设备注册次数有限）
 
