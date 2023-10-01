@@ -342,7 +342,7 @@ git clone --depth 1 https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 
 ## ②配置go-cqhttp
 
-1.打开config.yml文件，修改`QQ账号和密码`保存即可
+1.打开config.yml文件，修改`QQ账号和密码`保存即可（先不要重新启动！！！）
 <br>
     <img src="图片/账号.png" width="70%">
 
@@ -385,6 +385,14 @@ git clone --depth 1 https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 2.双击 `go-cqhttp.bat` 进行验证即可
 <br>
     <img src="图片/gocq_bat.png" width="50%">
+
+3.如果出现以下内容则不用管它，不影响登录和使用
+
+```
+[WARNING]: Callback error: Packet timed out, Or response data is empty
+[ERROR]: Protocol -> parse incoming packet error: return code unsuccessful: -10005
+
+```
 
 ### ⑤关于其他签名协议登录
 
