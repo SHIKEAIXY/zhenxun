@@ -373,6 +373,7 @@ git clone --depth 1 https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 1.端口默认是`520`
 
 2.key默认为`1314`
+
 3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.71`则打开`8.9.71\config.json`进行修改即可
 <br>
     <img src="图片/签名配置端口key.png" width="50%">
