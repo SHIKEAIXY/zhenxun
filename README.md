@@ -218,7 +218,7 @@ ok火速下一步
 1.github下载真寻本体(下载失败建议打开上文中提到的tz)
 
 ```
-git clone https://github.com/HibiKier/zhenxun_bot
+git clone --depth 1 https://github.com/HibiKier/zhenxun_bot
 ```
 
 2.执行下面内容
@@ -333,12 +333,13 @@ pnpm install --filter=ws-plugin
 
 ### gitee下载
 ```
-git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
+git clone --depth 1 https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 ```
 ### zip下载
 [点击此处下载新版签名和go-cqhttp](https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
 
 下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`请不要删！！！
+
 ## ②配置go-cqhttp
 
 1.打开config.yml文件，修改`QQ账号和密码`保存即可
@@ -369,15 +370,14 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 
 ### ③配置
 
-1.端口默认是`8089`
+1.端口默认是`520`
 
-2.key默认为`114514`
-
+2.key默认为`1314`
 3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.71`则打开`8.9.71\config.json`进行修改即可
 <br>
     <img src="图片/签名配置端口key.png" width="50%">
 
-## ④启动 go-cqhttp
+### ④启动 go-cqhttp
 
 1.返回上一目录打开`windows_amd64`文件
 
@@ -385,7 +385,7 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 <br>
     <img src="图片/gocq_bat.png" width="50%">
 
-## ⑤修改其他签名协议登录
+### ⑤修改其他签名协议登录
 
 1.修改`一键启动.bat`
 
@@ -393,24 +393,17 @@ git clone https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 <br>
     <img src="图片/签名配置一键启动.png" width="80%">
 
-2.删除在gocq中适配的8.9.70协议
+### ⑥使用签名`8.9.70`登录
 
-**注意！！！ 如果你后续还打算使用8.9.70的版本请备份versions内的文件** 
+1.签名启动请确保为`8.9.71`
 
-**方法一** 
-
-在与`README.md`同级目录下使用该指令删除文件，并重新启动gocq即可使用其他签名协议
+2.在`1.1.9unidbg_and_gocq`目录下cmd运行
+```
+git clone --depth 1 -b versions https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git ./windows_amd64/data/versions
 
 ```
-rm -rf windows_amd64/data/versions
-```
 
-**方法二**
-
-手动删除`dada/versions`
-<br>
-    <img src="图片/删除适配的8.9.70.png" width="80%">
-
+3.重启签名以及gocq即可
 
 # 六 重新启动真寻
 
