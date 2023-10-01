@@ -386,25 +386,11 @@ git clone --depth 1 https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 <br>
     <img src="图片/gocq_bat.png" width="50%">
 
-### ⑤修改其他签名协议登录
+### ⑤关于其他签名协议登录
 
-1.修改`一键启动.bat`
+1.签名的70协议比较稳定，一般不需要进行更换
 
-用笔记本打开`一键启动.bat`修改`8.9.71`你需要的版本，支持的版本可在`txlib`文件内查看
-<br>
-    <img src="图片/签名配置一键启动.png" width="80%">
-
-### ⑥使用签名`8.9.70`登录
-
-1.签名启动请确保为`8.9.71`
-
-2.在`1.1.9unidbg_and_gocq`目录下cmd运行
-```
-git clone --depth 1 -b versions https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git ./windows_amd64/data/versions
-
-```
-
-3.重启签名以及gocq即可
+2.如果实在想换且不会可以提iss询问，没什么用的教程就不写了（其实是不知道怎么表达）
 
 # 六 重新启动真寻
 
