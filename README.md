@@ -339,7 +339,7 @@ git clone --depth 1 https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 
 [点击此处下载签名和go-cqhttp](https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
 
-下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`请不要删！！！
+下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`和`zulu17.42.19-ca-jdk17.0.7-win_x64.msi`一会要用
 
 ## ②配置go-cqhttp
 
@@ -351,7 +351,9 @@ git clone --depth 1 https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 
 ### ①下载java 
 
-1.[点击此处下载17.42的java](https://cloud.tianyi.one/d/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/yunzai/zulu17.42.19-ca-jdk17.0.7-win_x64.msi)
+1.打开刚刚下的`1.1.9unidbg_and_gocq`文件中`zulu17.42.19-ca-jdk17.0.7-win_x64.msi`的安装包
+
+- 或者[点击此处重新下载17.42的java](https://cloud.tianyi.one/d/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/yunzai/zulu17.42.19-ca-jdk17.0.7-win_x64.msi)
 
 2.安装完成后打开cmd运行`java`查看是否有输出
 
