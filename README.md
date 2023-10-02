@@ -398,6 +398,11 @@ git clone --depth 1 https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 go-cqhttp
 ```
 
+5.自动提交滑块ticket无反应
+- 这个不知道有没有解决办法
+- 如果没反应请使用`2. 手动抓取提交`
+- [使用安卓手机点击此处下载](https://maupdate.rainchan.win/txcaptcha.apk)
+
 ### ⑤关于其他签名协议登录
 
 1.签名的70协议比较稳定，一般不需要进行更换
