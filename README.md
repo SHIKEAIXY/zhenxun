@@ -386,12 +386,16 @@ git clone --depth 1 https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 <br>
     <img src="图片/gocq_bat.png" width="50%">
 
-3.如果出现以下内容则不用管它，不影响登录和使用
+3.如果出现以下内容则不用管它，不影响登录和使用 **（如果你看着变扭请看下一条）** 
 
 ```
 [WARNING]: Callback error: Packet timed out, Or response data is empty
 [ERROR]: Protocol -> parse incoming packet error: return code unsuccessful: -10005
+```
 
+4.在gocq运行的页面中使用`ctrl+c`后输入下方内容回车启动即可
+```
+go-cqhttp
 ```
 
 ### ⑤关于其他签名协议登录
@@ -410,7 +414,6 @@ git clone --depth 1 https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 
 ```
 poetry shell
-
 ```
 ```
 python bot.py
