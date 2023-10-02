@@ -336,7 +336,8 @@ pnpm install --filter=ws-plugin
 git clone --depth 1 https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 ```
 ### zip下载
-[点击此处下载新版签名和go-cqhttp](https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
+
+[点击此处下载签名和go-cqhttp](https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
 
 下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`请不要删！！！
 
