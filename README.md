@@ -331,11 +331,11 @@ pnpm install --filter=ws-plugin
 
 ## ①下载go-cqhttp 
 
-### gitee下载
+### gitee下载（由于本库是qsign+gocq+jdk说以下载会比较慢）
 ```
 git clone --depth 1 https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
 ```
-### zip下载
+### zip下载(不建议！)
 
 [点击此处下载签名和go-cqhttp](https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
 
