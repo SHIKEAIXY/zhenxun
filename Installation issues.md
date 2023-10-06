@@ -38,8 +38,7 @@ poetry init
 你不按照本教程安装来导致的
 
 #### 解决办法
-1.下载新版签名和支持的gocq
-
+1.下载1.1.9签名和支持的gocq
 [点击此处查看教程](https://gitee.com/SHIKEAIXY/zhenxun#%E5%9B%9B-%E5%AE%89%E8%A3%85-go-cqhttp)
 
 ## 3.首次启动bot报错
