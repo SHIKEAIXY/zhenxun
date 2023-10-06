@@ -434,7 +434,7 @@ python bot.py
 
 [真寻索引库](https://github.com/zhenxun-org/nonebot_plugins_zhenxun_bot)
 
-[nb商店（不是全部都谦融）](https://nb2.baka.icu/store)
+[nb商店（不是全部都谦融）](https://nonebot.dev/store/plugins)
 
 ## 单个插件的下载方法
 
