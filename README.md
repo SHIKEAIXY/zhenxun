@@ -61,10 +61,10 @@
 # 一 准备工作
 
 ## 安装 版本大于3.8且小于3.11的python 和 poetry
-[![](https://img.shields.io/badge/python-v3.8+-DeepSkyBlue)](https://gitee.com/SHIKEAIXY/zhenxun)
-[![](https://img.shields.io/badge/poetry-brightgreen.svg)](https://gitee.com/SHIKEAIXY/zhenxun)
-![maven](https://img.shields.io/badge/nonebot-2.0.0-yellow)
-![maven](https://img.shields.io/badge/go--cqhttp-1.0.0-red)
+[![](https://img.shields.io/badge/python-v3.8+-DeepSkyBlue)](https://www.python.org)
+[![](https://img.shields.io/badge/poetry-brightgreen.svg)](https://python-poetry.org)
+[![](https://img.shields.io/badge/nonebot-2.0.0-yellow)](https://nb2.baka.icu)
+[![](https://img.shields.io/badge/go--cqhttp-1.0.0-red)](https://docs.go-cqhttp.org/)
 
 ### ①安装python
 
@@ -333,11 +333,11 @@ pnpm install --filter=ws-plugin
 
 ### gitee下载
 ```
-git clone --depth 1 https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq.git
+git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 ```
 ### zip下载 (不建议!)
 
-[点击此处下载签名和go-cqhttp](https://gitee.com/SHIKEAIXY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
+[点击此处下载签名和go-cqhttp](https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
 
 下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`和`zulu17.42.19-ca-jdk17.0.7-win_x64.msi`一会要用
 
