@@ -81,9 +81,9 @@
 
 1. 最好挂个TZ
 
-[这里我推荐Anycast 点击此处下载](http://s.fx2306.com/share/9oed69)
+[这里我推荐白鲸 点击此处下载](https://m.bj125.com/app/download?platform=3&channel=download_01&mid=false&ts=1697363612810&app=bj)
 
-打开网站点击Windows-新版客户端-注册即可
+打开随便填写一个邮箱注册即可
 
 下载后打开TZ 火速下一步
 
