@@ -46,7 +46,7 @@
 
 3. 真寻bot非常可爱 嗯 非常可爱！！！非常可爱！！！非常可爱！！！
 
-4. 真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [go-cqhttp](https://github.com/Mrs4s/go-cqhttp) 的开发，以 [postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
+4. 真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [~~go-cqhttp~~](https://github.com/Mrs4s/go-cqhttp) 的开发，以 [postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
 
 <a href='https://gitee.com/SHIKEAIXY/zhenxun'><img src='https://gitee.com/SHIKEAIXY/zhenxun/widgets/widget_3.svg?color=1ec1c7' alt='Fork me on Gitee'></img></a>
 
@@ -282,11 +282,11 @@ python bot.py
 
 6.打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
 
-# 四 安装 go-cqhttp 
+# 四 安装 ~~go-cqhttp ~~
 
 ### 前言：
 
-如果你是[云崽](https://gitee.com/Le-niao/Yunzai-Bot)用户则可以使用[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq连接bot
+如果你是[云崽](https://gitee.com/Le-niao/Yunzai-Bot)用户则可以使用[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过~~gocq~~连接bot
 <details>
   <summary>点击此处查看云崽连接教程</summary>
 
@@ -329,7 +329,7 @@ pnpm install --filter=ws-plugin
 ---
 
 
-## ①下载go-cqhttp 
+## ①下载~~go-cqhttp ~~
 
 ### gitee下载
 ```
@@ -337,11 +337,11 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 ```
 ### zip下载 (不建议!)
 
-[点击此处下载签名和go-cqhttp](https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
+[~~点击此处下载签名和go-cqhttp~~](https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
 
 下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`和`zulu17.42.19-ca-jdk17.0.7-win_x64.msi`一会要用
 
-## ②配置go-cqhttp
+## ②配置~~go-cqhttp~~
 
 1.打开config.yml文件，修改`QQ账号和密码`保存即可（先不要重新启动！！！）
 <br>
@@ -361,7 +361,7 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 
 ### ②使用
 
-1.打开`1.1.9unidbg_and_gocq\unidbg-fetch-qsign-1.1.9`双击运行`一键启动.bat` (就[下载go-cqhttp](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/README.md#%E4%B8%8B%E8%BD%BDgo-cqhttp)下载的那个文件里面)
+1.打开`1.1.9unidbg_and_gocq\unidbg-fetch-qsign-1.1.9`双击运行`一键启动.bat` (就[~~下载go-cqhttp~~](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/README.md#%E4%B8%8B%E8%BD%BDgo-cqhttp)下载的那个文件里面)
 
 没有闪退即可使用
 
