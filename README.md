@@ -436,26 +436,14 @@ python bot.py
 
 [nb商店（不是全部都谦融）](https://nonebot.dev/store/plugins)
 
-## 单个插件的下载方法
+## 插件的下载方法
 
-在插件的地址栏链接前面加上https://minhaskamal.github.io/DownGit/#/home?url=
-<br>
-    <img src="图片/真寻安装插件教程.png" width="70%">
+在zhenxun_bot/plugins中cmd运行
 
-比如说 https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/CRAZYShimakaze/zhenxun_extensive_plugin
-<br>
-    <img src="图片/真寻安装的插件教程.png" width="70%">
+简单说明：git clone为拉取，--depth 1为最近一次提交，使用该命令可加快下载速度
+```
+git clone --depth 1 + 仓库地址
+```
 
-回车就可以自动跳转单插件下载
-
-点击Download
-<br>
-    <img src="图片/真寻插件下载.png" width="70%">
 
 下载时长会和你的网络与仓库大小有关系
-
-# 贡献者
-
-感谢以下贡献者
-
-[@fafa](https://gitee.com/rushingfafa)&nbsp;[@晴风](https://gitee.com/rock8526652)&nbsp;[@脆脆鲨](https://gitee.com/JMCCS)&nbsp;[@鹤望兰](https://gitee.com/hewang1an)&nbsp;@冀安&nbsp;@花花&nbsp;@多用途歼击坦克-炎黄
