@@ -286,7 +286,7 @@ python bot.py
 
 ### 前言：
 
-如果你是[云崽](https://gitee.com/Le-niao/Yunzai-Bot)用户则可以使用[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过~~gocq~~连接bot
+如果你是[云崽](https://gitee.com/Le-niao/Yunzai-Bot)用户则可以使用[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq连接bot（gocq目前已寄，可能无法使用gocq登录）
 <details>
   <summary>点击此处查看云崽连接教程</summary>
 
@@ -329,7 +329,7 @@ pnpm install --filter=ws-plugin
 ---
 
 
-## ①下载~~go-cqhttp ~~
+## ①下载go-cqhttp 
 
 ### gitee下载
 ```
@@ -339,9 +339,9 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 
 [~~点击此处下载签名和go-cqhttp~~](https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
 
-下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`和`zulu17.42.19-ca-jdk17.0.7-win_x64.msi`一会要用
+下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`一会要用
 
-## ②配置~~go-cqhttp~~
+## ②配置go-cqhttp
 
 1.打开config.yml文件，修改`QQ账号和密码`保存即可（先不要重新启动！！！）
 <br>
