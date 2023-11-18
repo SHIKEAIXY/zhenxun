@@ -215,6 +215,10 @@ ok火速下一步
 
 # 三 开始安装真寻本体
 
+请安装Git，已有可跳过
+
+[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.43.0-rc0.windows.1/Git-2.43.0-rc0-64-bit.exe)
+
 1.github下载真寻本体(下载失败建议打开上文中提到的tz)
 
 ```
@@ -290,6 +294,11 @@ python bot.py
 ## ①下载go-cqhttp 
 
 ### gitee下载
+
+请安装Git，已有可跳过
+
+[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.43.0-rc0.windows.1/Git-2.43.0-rc0-64-bit.exe)
+
 ```
 git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 ```
@@ -380,11 +389,16 @@ go-cqhttp
 
 ### 安装前置
 
-1. 请安装Git
+1. 请安装Git，已有可跳过
 
 [点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.43.0-rc0.windows.1/Git-2.43.0-rc0-64-bit.exe)
 
-2. 在cmd依次输入以下内容并回车
+2. [点击此处下载bat安装文件](https://gitee.com/SHIKEAIXY/zhenxun/releases/download/1.0.0/%E5%AE%89%E8%A3%85%E4%BA%91%E5%B4%BDbot.bat)
+
+<details>
+  <summary>如果不想使用bat一键下载可点击此处手动下载</summary>
+
+2.1. 在cmd依次输入以下内容并回车 
 
 ```
 git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git ./Yunzai/Miao-Yunzai/
@@ -420,6 +434,7 @@ git clone --depth 1 -b redis https://gitee.com/SHIKEAIXYY/Trss-ComWeChat-Yunzai.
 ```
 git clone --depth 1 https://gitee.com/touchscale/Qsign.git ./Qsign
 ```
+</details>
 
 3. 下载node.js
 
