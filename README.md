@@ -309,7 +309,7 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 
 ### ①下载java 
 
-1.[点击此处下载17.42的jdk](https://cloud.tianyi.one/d/%E9%98%BF%E9%87%8C%E4%BA%91%E7%9B%98/yunzai/zulu17.42.19-ca-jdk17.0.7-win_x64.msi)
+1.[点击此处下载jdk](https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jdk/x64/windows/OpenJDK17U-jdk_x64_windows_hotspot_17.0.9_9.msi)
 
 2.安装完成后打开cmd运行`java`查看是否有输出
 
@@ -376,34 +376,109 @@ go-cqhttp
 
 使用[云崽](https://gitee.com/Le-niao/Yunzai-Bot)的[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq使用icqq连接bot
 
-安装云崽....（先自己看喵崽教程，后续再更新）
+## 安装云崽
 
-https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git
+### 安装前置
 
+1. 请安装Git
 
-1. 请安装[云崽的ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)连接本地ws地址（端口默认为8080）并保持云崽的运行
+[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.43.0-rc0.windows.1/Git-2.43.0-rc0-64-bit.exe)
 
-打开[云崽](https://gitee.com/Le-niao/Yunzai-Bot)根目录
+2. 在cmd依次输入以下内容并回车
+
 ```
-cd Yunzai-Bot 
+git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git ./Yunzai/Miao-Yunzai/
 ```
-下载[ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)
+```
+cd Yunzai/Miao-Yunzai
+```
+```
+git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
+```
+```
+npm --registry=https://registry.npmmirror.com install pnpm -g
+```
+```
+//可选
+pnpm config set registry https://registry.npmmirror.com
+```
+```
+pnpm install -P
+```
 ```
 git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
 ```
-安装依赖
 ```
 pnpm install --filter=ws-plugin
 ```
+```
+cd ..
+```
+```
+git clone --depth 1 -b redis https://gitee.com/SHIKEAIXYY/Trss-ComWeChat-Yunzai.git ./redis
+```
+```
+git clone --depth 1 https://gitee.com/touchscale/Qsign.git ./Qsign
+```
 
-2. 重新启动`云崽`机器人
+3. 下载node.js
 
-3. 连接本地bot(给云崽机器人发送)
+[点击此处下载node.js](https://npmmirror.com/mirrors/node/v18.18.0/node-v18.18.0-x64.msi)
+
+4. 下载jdk
+
+[点击此处下载jdk](https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jdk/x64/windows/OpenJDK17U-jdk_x64_windows_hotspot_17.0.9_9.msi)
+
+#### 说明
+
+1. 安装完的`云崽`和`数据库`在你cmd运行的`Yunzai`的文件夹中
+
+2. `redis`为数据库
+
+3. `Miao-Yunzai`为机器人本体
+
+4. `Qsign`为签名api
+
+### 启动云崽
+
+1. 请打开`Yunzai`文件夹
+
+2. 运行`redis`数据库（运行`redis/双击我启动redis.bat`即可）
+
+3. 运行`Qsign`（运行`Qsign/一键startAPI.bat`即可）默认是80的签名，端口为801，秘钥为114514
+
+4. 启动机器人并配置
+
+在`Miao-Yunzai`目录下cmd输入`node app`即可
+
+#### 机器人配置
+
+1. 请输入机器人QQ号(建议用小号)：`这里输入机器人的QQ号即可`
+
+2. 请输入登录密码(为空则扫码登录)：`这里输入机器人的QQ密码即可`
+
+3. 请选择登录端口：`这里请通过方向键选择aPad！！！`
+
+4. 请输入主人QQ号：`这里输入用来管理机器人的QQ号即可`
+
+5. 请输入签名API地址（可留空）：`这里输入下方内容即可`
+
+```
+http://127.0.0.1:801/sign?key=114514
+```
+<br>
+    <img src="图片/机器人配置.png" width="50%">
+
+5. 触发滑动验证，需要获取ticket通过验证，请选择获取方式:`这里选择 0.自动获取ticket 进行扫码即可`
+
+6. 查看云崽bot是否正常运行，如运行成功请关掉云崽重新输入`node app`并回车启动机器人
+
+7. 连接本地bot(给云崽机器人QQ发送)
 
 ```
 #ws添加连接zhenxun_bot,ws://127.0.0.1:8080/onebot/v11/ws/,1,5,0
 ``` 
-4. 发送`#ws查看连接`来查看是否连接成功
+8. 发送`#ws查看连接`来查看是否连接成功
 
 出现以下内容，则代表连接成功
 ```
@@ -419,9 +494,7 @@ pnpm install --filter=ws-plugin
 
 关机/页面关上了该怎么重新启动真寻？
 
-1.双击打开go-cqhttp.bat
-
-2.打开真寻根目录cmd运行
+1. 打开真寻根目录cmd运行
 
 ```
 poetry shell
@@ -434,7 +507,7 @@ python bot.py
 - python bot.py 这个是用python来运行bot.py这个文件
 
 # 七 真寻插件下载
-
+ 
 [插件安装问题](https://github.com/zhenxun-org/nonebot_plugins_zhenxun_bot/issues/27)
 
 [真寻索引库](https://github.com/zhenxun-org/nonebot_plugins_zhenxun_bot)
