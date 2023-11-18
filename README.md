@@ -447,7 +447,7 @@ git clone --depth 1 https://gitee.com/touchscale/Qsign.git ./Qsign
 
 #### 说明
 
-1. 安装完的`云崽`和`数据库`在你cmd运行的`Yunzai`的文件夹中
+1. 安装完的`云崽`和`数据库`在你bat运行的同级目录`Yunzai`的文件夹中
 
 2. `redis`为数据库
 
