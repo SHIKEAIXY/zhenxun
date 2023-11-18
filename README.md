@@ -328,6 +328,8 @@ pnpm install --filter=ws-plugin
 
 ---
 
+<details>
+  <summary>已不建议使用gocq，因为大概率登不上，推荐使用云崽icqq进行连接</summary>
 
 ## ①下载go-cqhttp 
 
@@ -409,6 +411,9 @@ go-cqhttp
 1.签名的80协议比较稳定，一般不需要进行更换
 
 2.如果实在想换且不会可以提iss询问，没什么用的教程就不写了（其实是不知道怎么表达）
+
+
+</details>
 
 # 六 重新启动真寻
 
