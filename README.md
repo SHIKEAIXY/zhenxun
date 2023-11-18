@@ -314,7 +314,7 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 <br>
     <img src="图片/账号.png" width="70%">
 
-# 五 部署签名api
+# 部署签名api
 
 ### ①下载java 
 
@@ -506,7 +506,7 @@ http://127.0.0.1:801/sign?key=114514
 
 ---
 
-# 六 重新启动真寻
+# 五 重新启动真寻
 
 关机/页面关上了该怎么重新启动真寻？
 
@@ -522,7 +522,7 @@ python bot.py
 - poetry shell 这个是进入虚拟环境
 - python bot.py 这个是用python来运行bot.py这个文件
 
-# 七 真寻插件下载
+# 六 真寻插件下载
  
 [插件安装问题](https://github.com/zhenxun-org/nonebot_plugins_zhenxun_bot/issues/27)
 
