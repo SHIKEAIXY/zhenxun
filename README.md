@@ -373,8 +373,6 @@ go-cqhttp
 </details>
 
 使用[云崽](https://gitee.com/Le-niao/Yunzai-Bot)的[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq使用icqq连接bot
-<details>
-  <summary>点击此处查看云崽连接教程</summary>
 
 1. 请安装[云崽的ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)连接本地ws地址（端口默认为8080）并保持云崽的运行
 
