@@ -285,7 +285,7 @@ python bot.py
 # 四 使用icqq连接zhenxun_bot
 
 <details>
-  <summary>已不建议使用gocq，因为大概率登不上，推荐使用云崽icqq进行连接</summary>
+  <summary>已不建议使用gocq，因为大概率登不上，作者也停止维护了，推荐使用云崽icqq进行连接</summary>
 
 ## ①下载go-cqhttp 
 
@@ -372,7 +372,14 @@ go-cqhttp
 
 </details>
 
+---
+
 使用[云崽](https://gitee.com/Le-niao/Yunzai-Bot)的[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq使用icqq连接bot
+
+安装云崽....（先自己看喵崽教程，后续再更新）
+
+https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git
+
 
 1. 请安装[云崽的ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)连接本地ws地址（端口默认为8080）并保持云崽的运行
 
