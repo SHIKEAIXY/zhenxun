@@ -282,51 +282,7 @@ python bot.py
 
 6.打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
 
-# 四 安装 go-cqhttp 
-
-### 前言：
-
-如果你是[云崽](https://gitee.com/Le-niao/Yunzai-Bot)用户则可以使用[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq连接bot（gocq目前已寄，可能无法使用gocq登录）
-<details>
-  <summary>点击此处查看云崽连接教程</summary>
-
-1. 请安装[云崽的ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)连接本地ws地址（端口默认为8080）并保持云崽的运行
-
-打开[云崽](https://gitee.com/Le-niao/Yunzai-Bot)根目录
-```
-cd Yunzai-Bot 
-```
-下载[ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)
-```
-git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
-```
-安装依赖
-```
-pnpm install --filter=ws-plugin
-```
-
-2. 重新启动`云崽`机器人
-
-3. 连接本地bot(给云崽机器人发送)
-
-```
-#ws添加连接zhenxun_bot,ws://127.0.0.1:8080/onebot/v11/ws/,1,5,0
-``` 
-4. 发送`#ws查看连接`来查看是否连接成功
-
-出现以下内容，则代表连接成功
-```
-连接名字: zhenxun_bot
-连接类型: 1
-当前状态: 已连接
-```
-### 注意不要关闭云崽和真寻本体
-
-</details>
-
-**如果你使用了ws插件连接，可忽略剩下的步骤，直接跳转到`七 真寻插件下载`即可** 
-
----
+# 四 使用icqq连接zhenxun_bot
 
 <details>
   <summary>已不建议使用gocq，因为大概率登不上，推荐使用云崽icqq进行连接</summary>
@@ -412,8 +368,47 @@ go-cqhttp
 
 2.如果实在想换且不会可以提iss询问，没什么用的教程就不写了（其实是不知道怎么表达）
 
+### 如果你使用了gocq还登录上去了那么就可以忽略云崽的方法
 
 </details>
+
+使用[云崽](https://gitee.com/Le-niao/Yunzai-Bot)的[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq使用icqq连接bot
+<details>
+  <summary>点击此处查看云崽连接教程</summary>
+
+1. 请安装[云崽的ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)连接本地ws地址（端口默认为8080）并保持云崽的运行
+
+打开[云崽](https://gitee.com/Le-niao/Yunzai-Bot)根目录
+```
+cd Yunzai-Bot 
+```
+下载[ws-plugin](https://gitee.com/xiaoye12123/ws-plugin)
+```
+git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
+```
+安装依赖
+```
+pnpm install --filter=ws-plugin
+```
+
+2. 重新启动`云崽`机器人
+
+3. 连接本地bot(给云崽机器人发送)
+
+```
+#ws添加连接zhenxun_bot,ws://127.0.0.1:8080/onebot/v11/ws/,1,5,0
+``` 
+4. 发送`#ws查看连接`来查看是否连接成功
+
+出现以下内容，则代表连接成功
+```
+连接名字: zhenxun_bot
+连接类型: 1
+当前状态: 已连接
+```
+### 注意不要关闭云崽和真寻本体
+
+---
 
 # 六 重新启动真寻
 
