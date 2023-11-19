@@ -393,7 +393,11 @@ go-cqhttp
 
 [点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.43.0-rc0.windows.1/Git-2.43.0-rc0-64-bit.exe)
 
-2. [点击此处下载bat安装文件](https://gitee.com/SHIKEAIXY/zhenxun/releases/download/1.0.0/%E5%AE%89%E8%A3%85%E4%BA%91%E5%B4%BDbot.bat)并运行
+2. 下载node.js
+
+[点击此处下载node.js](https://npmmirror.com/mirrors/node/v18.18.0/node-v18.18.0-x64.msi)
+
+3. [点击此处下载bat安装文件](https://gitee.com/SHIKEAIXY/zhenxun/releases/download/1.0.0/%E5%AE%89%E8%A3%85%E4%BA%91%E5%B4%BDbot.bat)并运行
 
 <details>
   <summary>如果不想使用bat一键下载可点击此处手动下载</summary>
@@ -436,10 +440,6 @@ git clone --depth 1 https://gitee.com/touchscale/Qsign.git ./Qsign
 ```
 </details>
 &nbsp;
-
-3. 下载node.js
-
-[点击此处下载node.js](https://npmmirror.com/mirrors/node/v18.18.0/node-v18.18.0-x64.msi)
 
 4. 下载jdk
 
