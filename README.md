@@ -383,7 +383,8 @@ go-cqhttp
 
 ---
 
-使用[云崽](https://gitee.com/Le-niao/Yunzai-Bot)的[ws插件](https://gitee.com/xiaoye12123/ws-plugin)跳过gocq使用icqq连接bot
+<details>
+  <summary>使用[云崽]的[ws插件]跳过gocq使用icqq连接bot</summary>
 
 ## 安装云崽
 
@@ -503,6 +504,18 @@ http://127.0.0.1:801/sign?key=114514
 当前状态: 已连接
 ```
 ### 注意不要关闭云崽和真寻本体
+
+</details>
+
+---
+
+<details>
+  <summary>使用NTQQ连接真寻</summary>
+&nbsp;
+
+&nbsp;nt的话自己找找有没有云崽的教程Yunzai-NTQQ-zhenxun
+
+</details>
 
 ---
 
