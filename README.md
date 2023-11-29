@@ -60,7 +60,7 @@
 # 正文啦！
 # 一 准备工作
 
-## 安装 版本大于3.8且小于3.11的python 和 poetry
+## 安装 版本大于3.8且小于3.11的python 与 poetry
 [![](https://img.shields.io/badge/python-v3.8+-DeepSkyBlue)](https://www.python.org)
 [![](https://img.shields.io/badge/poetry-brightgreen.svg)](https://python-poetry.org)
 [![](https://img.shields.io/badge/nonebot-2.0.0-yellow)](https://nb2.baka.icu)
@@ -286,7 +286,7 @@ python bot.py
 
 6.打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
 
-# 四 使用icqq连接zhenxun_bot
+# 四 连接zhenxun_bot
 
 <details>
   <summary>已不建议使用gocq，因为大概率登不上，作者也停止维护了，推荐使用云崽icqq进行连接</summary>
