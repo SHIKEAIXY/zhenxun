@@ -526,7 +526,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 2. 登录/注册企业qq开放平台：https://q.qq.com （怎么注册？自行解决）
 <br>
-    <img src="图片/机器人配置.png" width="50%">
+    <img src="图片/企业注册.png" width="50%">
 
 3. 登录企业qq开放平台账号并创建机器人
 <br>
