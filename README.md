@@ -499,7 +499,7 @@ http://127.0.0.1:801/sign?key=114514
 zhenxun_bot,1
 ``` 
 ```
-ws://127.0.0.1:8080/onebot/v11/ws/,1,5,0
+ws://127.0.0.1:8080/onebot/v11/ws/
 ``` 
 8. 发送`#ws查看连接`来查看是否连接成功
 
@@ -518,10 +518,13 @@ ws://127.0.0.1:8080/onebot/v11/ws/,1,5,0
 ---
 
 <details>
-  <summary>使用NTQQ连接真寻</summary>
+  <summary>使用Gensokyo(QQBot)连接真寻</summary>
 &nbsp;
+&nbsp;1.下载Gensokyo
 
-&nbsp;nt的话自己找找有没有云崽的教程Yunzai-NTQQ-zhenxun
+下载地址：https://gitee.com/sanaefox/Gensokyo/releases
+
+2. 我还不会自己研究去吧
 
 </details>
 
