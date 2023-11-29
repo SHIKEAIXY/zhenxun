@@ -520,11 +520,52 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 <details>
   <summary>使用Gensokyo(QQBot)连接真寻</summary>
 &nbsp;
-&nbsp;1.下载Gensokyo
+1. 下载Gensokyo (下哪个版本看你喽只要解压后用`gensokyo-windows-amd64.exe`就好)
 
 下载地址：https://gitee.com/sanaefox/Gensokyo/releases
 
-2. 我还不会自己研究去吧
+2. 登录/注册企业qq开放平台：https://q.qq.com （怎么注册？自行解决）
+<br>
+    <img src="图片/机器人配置.png" width="50%">
+
+3. 登录企业qq开放平台账号并创建机器人
+<br>
+    <img src="图片/创建机器人.png" width="50%">
+
+4. 填好信息后点击创建
+<br>
+    <img src="图片/创建机器人2.png" width="50%">
+
+
+5. 打开第一步中下载的`Gensokyo`解压后保留`gensokyo-windows-amd64.exe`即可，其他的就可以删掉了
+<br>
+    <img src="图片/运行Gensokyo.png" width="50%">
+
+6. 双击运行`gensokyo-windows-amd64.exe`后根据提示点击确定后运行`gensokyo.bat`生成配置文件即可
+
+7. 双击打开` config.yml`配合8进行填写配置即可
+<br>
+    <img src="图片/配置Gensokyo.png" width="50%">
+
+8. 点击刚刚创的机器人
+<br>
+    <img src="图片/配置Gensokyo2.png" width="50%">
+
+ 打开机器人后点击`开放设置`
+ <br>
+    <img src="图片/配置Gensokyo3.png" width="50%">
+ 
+  复制`ID 令牌 秘钥 `填写到7中的
+
+  配置ws地址到` config.yml`
+```
+ws://127.0.0.1:8080/onebot/v11/ws/
+``` 
+ 如图：
+  <br>
+    <img src="图片/配置Gensokyo4.png" width="50%">
+
+9. 剩下的自己琢磨我还不会氵（
 
 </details>
 
