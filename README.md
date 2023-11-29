@@ -543,7 +543,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 6. 双击运行`gensokyo-windows-amd64.exe`后根据提示点击确定后运行`gensokyo.bat`生成配置文件即可
 
-7. 双击打开` config.yml`配合8进行填写配置即可
+7. 双击打开`config.yml`配合8进行填写配置即可
 <br>
     <img src="图片/配置Gensokyo.png" width="50%">
 
@@ -551,13 +551,13 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 <br>
     <img src="图片/配置Gensokyo2.png" width="50%">
 
- 打开机器人后点击`开放设置`
+ 打开机器人后点击`开法设置`
  <br>
     <img src="图片/配置Gensokyo3.png" width="50%">
  
-  复制`ID 令牌 秘钥 `填写到7中的
+  复制`ID 令牌 秘钥 `填写到7中的`config.yml`
 
-  配置ws地址到` config.yml`
+  配置ws地址到`config.yml`
 ```
 ws://127.0.0.1:8080/onebot/v11/ws/
 ``` 
