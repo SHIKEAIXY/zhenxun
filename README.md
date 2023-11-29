@@ -544,6 +544,8 @@ python bot.py
 - python bot.py 这个是用python来运行bot.py这个文件
 
 # 六 真寻插件下载
+
+1. 方法一：手动拉取
  
 [插件安装问题](https://github.com/zhenxun-org/nonebot_plugins_zhenxun_bot/issues/27)
 
@@ -551,8 +553,7 @@ python bot.py
 
 [nb商店（不是全部都谦融）](https://nonebot.dev/store/plugins)
 
-## 插件的下载方法
-
+## 插件的下载方
 在zhenxun_bot/plugins中cmd运行
 
 简单说明：git clone为拉取，--depth 1为最近一次提交，使用该命令可加快下载速度
@@ -560,5 +561,16 @@ python bot.py
 git clone --depth 1 + 仓库地址
 ```
 
+---
+
+2. 方法二：指令下载
+
+请给你的真寻机器人发送`查看插件仓库`查看
+
+发送完成后可发送`安装插件+序号`如：安装插件2 进行下载即可
+
+如需卸载发送`卸载插件+序号`即可
+
+---
 
 下载时长会和你的网络与仓库大小有关系
