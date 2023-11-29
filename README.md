@@ -544,8 +544,6 @@ python bot.py
 - python bot.py 这个是用python来运行bot.py这个文件
 
 # 六 真寻插件下载
-
-1. 方法一：手动拉取
  
 [插件安装问题](https://github.com/zhenxun-org/nonebot_plugins_zhenxun_bot/issues/27)
 
@@ -553,7 +551,12 @@ python bot.py
 
 [nb商店（不是全部都谦融）](https://nonebot.dev/store/plugins)
 
-## 插件的下载方
+---
+
+## 插件的下载方法
+
+1. 方法一：手动拉取
+
 在zhenxun_bot/plugins中cmd运行
 
 简单说明：git clone为拉取，--depth 1为最近一次提交，使用该命令可加快下载速度
