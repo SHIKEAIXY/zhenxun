@@ -275,7 +275,7 @@ python bot.py
 # 四 连接zhenxun_bot
 
 <details>
-  <summary>已不建议使用gocq，因为大概率登不上，作者也停止维护了，推荐使用云崽icqq进行连接</summary>
+  <summary>gocq连接真寻bot（不建议）</summary>
 
 ## ①下载go-cqhttp 
 
@@ -370,7 +370,7 @@ go-cqhttp
 ---
 
 <details>
-  <summary>使用[云崽]的[ws插件]跳过gocq使用icqq连接bot</summary>
+  <summary>使用[云崽]的[ws插件]跳过gocq使用icqq连接真寻bot</summary>
 
 ## 安装云崽
 
@@ -504,8 +504,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 ---
 
 <details>
-  <summary>使用Gensokyo(QQBot)连接真寻</summary>
-&nbsp;
+  <summary>使用Gensokyo(QQBot)连接真寻bot</summary>
 
 ### 说明：
 
@@ -583,7 +582,13 @@ ws://127.0.0.1:8080/onebot/v11/ws/
     # - "ThreadEventHandler"                         # 发帖事件 (当前版本已禁用)
 ```
 
+9. 将自己服务器的公网ip填入`server_dir`并开放端口`15630`（不配置将无法发送图片）
+  <br>
+    <img src="图片/配置Gensokyo6.png" width="50%">
+
 10. 点击保存后双击运行`gensokyo.bat`不出意外就可以运行了
+
+11. `zhenxun_bot`与`Gensokyo`需全部运行，不可关闭
 
 </details>
 
