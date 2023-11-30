@@ -79,15 +79,7 @@
 
 ### ②安装poetry
 
-1. 最好挂个TZ
-
-[这里我推荐白鲸 点击此处下载](https://m.bj125.com/app/download?platform=3&channel=download_01&mid=false&ts=1697363612810&app=bj)
-
-打开随便填写一个邮箱注册即可
-
-下载后打开TZ 火速下一步
-
-2. 打开Powershell（需要管理员权限）运行
+1. 打开Powershell（需要管理员权限）运行
 
 不会打开？不要慌 点击此处 [如何在Windows 10/11中打开PowerShell](https://www.51cto.com/article/696873.html)
 
@@ -97,20 +89,19 @@
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
 ```
 
-2.1 如无法安装可使用pip安装前先升级pip（此步骤无需进行3的变量环节）
+1.1 使用pip安装（此步骤无需进行2的变量环节）
 ```
 python -m pip install -U pip
 ```
-
 ```
 pip install poetry
 ```
 
-3. 然后将`%APPDATA%\Python\Scripts`添加到PATH环境变量(位置在右键此电脑→属性→高级系统设置→环境变量)
+2. 然后将`%APPDATA%\Python\Scripts`添加到PATH环境变量(位置在右键此电脑→属性→高级系统设置→环境变量)
 <br>
     <img src="图片/变量.png" width="50%">
 
-4. 打开cmd发送poetry查看是否有版本输出
+3. 打开cmd发送poetry查看是否有版本输出
 
 如果没有请重启电脑 重新打开cmd输入 poetry
 
@@ -388,7 +379,7 @@ go-cqhttp
 
 ## 安装云崽
 
-### 安装前置
+### ①安装前置
 
 1. 请安装Git，已有可跳过
 
@@ -446,7 +437,7 @@ git clone --depth 1 https://gitee.com/touchscale/Qsign.git ./Qsign
 
 [点击此处下载jdk](https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jdk/x64/windows/OpenJDK17U-jdk_x64_windows_hotspot_17.0.9_9.msi)
 
-#### 说明
+#### ②说明
 
 1. 安装完的`云崽`和`数据库`在你bat运行的同级目录`Yunzai`的文件夹中
 
@@ -456,7 +447,7 @@ git clone --depth 1 https://gitee.com/touchscale/Qsign.git ./Qsign
 
 4. `Qsign`为签名api
 
-### 启动云崽
+### ③启动云崽
 
 1. 请打开`Yunzai`文件夹
 
@@ -468,7 +459,7 @@ git clone --depth 1 https://gitee.com/touchscale/Qsign.git ./Qsign
 
 在`Miao-Yunzai`目录下cmd输入`node app`即可
 
-#### 机器人配置
+#### ④机器人配置
 
 1. 请输入机器人QQ号(建议用小号)：`这里输入机器人的QQ号即可`
 
