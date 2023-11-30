@@ -506,7 +506,20 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 <details>
   <summary>使用Gensokyo(QQBot)连接真寻</summary>
 &nbsp;
-1. 下载Gensokyo (下哪个版本看你喽只要解压后用`gensokyo-windows-amd64.exe`就好)
+
+### 说明：
+
+1. 新框架`Gensokyo` 视频：https://www.bilibili.com/video/BV1Aw411K7Z5
+
+2. `Gensokyo`仓库：https://github.com/Hoshinonyaruko/Gensokyo
+
+3. `Gensokyo`gitee镜像：https://gitee.com/sanaefox/Gensokyo
+
+4. `Gensokyo`教程 https://www.bilibili.com/read/cv27523883
+
+### 正文：
+
+1. 下载Gensokyo
 
 下载地址：https://gitee.com/sanaefox/Gensokyo/releases
 
@@ -551,7 +564,26 @@ ws://127.0.0.1:8080/onebot/v11/ws/
   <br>
     <img src="图片/配置Gensokyo4.png" width="50%">
 
-9. 剩下的自己琢磨我还不会氵（
+9. 继续配置`config.yml`，复制下发内容替换`text_intent:`的全部内容
+  <br>
+    <img src="图片/配置Gensokyo5.png" width="50%">
+
+```
+    # - "ATMessageEventHandler"                      # 频道at信息
+    - "DirectMessageHandler"                         # 私域频道私信(dms)
+    # - "ReadyHandler"                               # 连接成功
+    # - "ErrorNotifyHandler"                         # 连接关闭
+    # - "GuildEventHandler"                          # 频道事件
+    # - "MemberEventHandler"                         # 频道成员新增
+    # - "ChannelEventHandler"                        # 频道事件
+    - "CreateMessageHandler"                         # 频道不at信息 私域机器人需要开启 公域机器人开启会连接失败
+    # - "InteractionHandler"                         # 添加频道互动回应
+    # - "GroupATMessageEventHandler"                 # 群at信息 仅频道机器人时候需要注释
+    # - "C2CMessageEventHandler"                     # 群私聊 仅频道机器人时候需要注释
+    # - "ThreadEventHandler"                         # 发帖事件 (当前版本已禁用)
+```
+
+10. 点击保存后双击运行`gensokyo.bat`不出意外就可以运行了
 
 </details>
 
@@ -569,7 +601,7 @@ poetry shell
 ```
 python bot.py
 ```
-#### 启动代码介绍
+#### 启动命令说明
 - poetry shell 这个是进入虚拟环境
 - python bot.py 这个是用python来运行bot.py这个文件
 
