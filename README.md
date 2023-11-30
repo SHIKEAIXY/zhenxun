@@ -13,9 +13,10 @@
 
 大家都知道一键脚本这个东西吧
 - 没错真寻也有
-- 虽然一键脚本离上一次更新才几个月而已
+- 虽然一键脚本离上一次更新也就短短的8个月而已（最后更新：2023.4.09）
 - 但是不建议使用一键脚本，很容易出问题，出了还不好修
 - 所以还是建议手动安装
+- 你要是非用一键脚本也拦不住你对吧 [传送门](https://github.com/zhenxun-org/zhenxun_bot-deploy)
 
 ### 来下载2000张真寻图片吧~
 
@@ -23,12 +24,11 @@
 
 [点击此处获取高达2000张的超级可爱的真寻表情包吧！！！](https://gitee.com/SHIKEAIXY/zhenxun-wallpaper-picture)
 
-你看我这么努力可以点点star吗 求求你了
-
+### 聊天群QQ：778502891
 
 ## 与真寻相关  
 
-1. 有什么问题可以提Issues
+1. 有什么问题可以在本库提Issues或者加上方聊群询问
 
 2. linux系统的教程网上一堆 我就不出了 可以参考别人的安装[点击查看linux安装教程](https://lonelyenderman.top/archives/781)
 
@@ -42,13 +42,11 @@
 
 1. 一个win系统的[zhenxun_bot](https://github.com/HibiKier/zhenxun_bot)安装教程
 
-2. 需要有一定的基础 如果没有一些基础的话可会困难重重哒 为了自己喜欢的真寻加油！
+2. 需要有一定的基础 如果没有一些基础的话可会困难重重哒 为了自己喜欢的真寻加油鸭！
 
 3. 真寻bot非常可爱 嗯 非常可爱！！！非常可爱！！！非常可爱！！！
 
 4. 真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [~~go-cqhttp~~](https://github.com/Mrs4s/go-cqhttp) 的开发，以 [postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
-
-<a href='https://gitee.com/SHIKEAIXY/zhenxun'><img src='https://gitee.com/SHIKEAIXY/zhenxun/widgets/widget_3.svg?color=1ec1c7' alt='Fork me on Gitee'></img></a>
 
 <a href='https://gitee.com/SHIKEAIXY/zhenxun/stargazers'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/star.svg?theme=dark' alt='star的人'></img></a>
 <a href='https://gitee.com/SHIKEAIXY/zhenxun/members'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/fork.svg?theme=dark' alt='fork的人'></img></a>
@@ -107,7 +105,6 @@ pip install poetry
 
 还不行？[点击此处解决](https://www.baidu.com)
 
-
 # 二 安装postgresql
 
 ## ①下载postgresql数据库
@@ -158,7 +155,6 @@ pip install poetry
 打开方法一： 在应用中搜索 pgAdmin 点击展开 找到下面图片显示的打开即可
 <br>
     <img src="图片/启动数据库.png" width="80%">
-
 
 方法二：找到你的 pgAdmin 安装位置 默认是下面的安装路径打开即可
 <br>
@@ -265,7 +261,6 @@ port: str = ""       //数据库端口
 database: str = ""   //数据库名称
 
 ```
-
 
 5.启动真寻，会在 configs 和 data/configs 目录下生成各种配置文件
 
