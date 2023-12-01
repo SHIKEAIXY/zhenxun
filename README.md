@@ -522,7 +522,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 下载地址：https://gitee.com/sanaefox/Gensokyo/releases
 
-2. 登录/注册企业qq开放平台：https://q.qq.com （怎么注册？自行解决）
+2. 随随便便注册一个企业qq开放平台账号：https://q.qq.com
 <br>
     <img src="图片/企业注册.png" width="50%">
 
