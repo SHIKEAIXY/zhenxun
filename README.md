@@ -275,7 +275,7 @@ python bot.py
 # 四 连接zhenxun_bot
 
 <details>
-  <summary>gocq连接真寻bot（不建议）</summary>
+  <summary>使用go-cqhttp连接真寻bot（不建议）</summary>
 
 ## ①下载go-cqhttp 
 
@@ -518,77 +518,59 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 ### 正文：
 
-1. 下载Gensokyo
-
-下载地址：https://gitee.com/sanaefox/Gensokyo/releases
-
-2. 随随便便注册一个企业qq开放平台账号：https://q.qq.com
+1. 随随便便注册一个企业qq开放平台账号：https://q.qq.com
 <br>
     <img src="图片/企业注册.png" width="50%">
 
-3. 登录企业qq开放平台账号并创建机器人
+2. 登录企业qq开放平台账号并创建机器人
 <br>
     <img src="图片/创建机器人.png" width="50%">
 
-4. 填好信息后点击创建
+3. 填好信息后点击下一步
+
+4. 打开后点击`基础信息-信息`
 <br>
-    <img src="图片/创建机器人2.png" width="50%">
+    <img src="图片/资质认证.png" width="50%">
 
-
-5. 打开第一步中下载的`Gensokyo`解压后保留`gensokyo-windows-amd64.exe`即可，其他的就可以删掉了
+5. 点击`详情`
 <br>
-    <img src="图片/运行Gensokyo.png" width="50%">
+    <img src="图片/资质认证2.png" width="50%">
 
-6. 双击运行`gensokyo-windows-amd64.exe`后根据提示点击确定后运行`gensokyo.bat`生成配置文件即可
+6. 点击`进入认证`后填写相关信息并点击提交审核进行认证（目前不认证无法上线机器人，可沙箱使用）
+<br>
+    <img src="图片/资质认证3.png" width="50%">
 
-7. 双击打开`config.yml`配合8进行填写配置即可
+7. 下载Gensokyo
+
+下载地址：https://shikeaixy.lanzouy.com/iTuFZ1hcmtbi
+
+8. 解压刚刚下载的`Gensokyo`后并双击打开`config.yml`
+
+9. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~9行
+<br>
+    <img src="图片/配置Gensokyo2.png" width="50%">
 <br>
     <img src="图片/配置Gensokyo.png" width="50%">
 
-8. 点击刚刚创的机器人
+10. 将自己服务器的公网ip填入`server_dir`并开放端口号`15630`（不配置将无法发送图片）
 <br>
-    <img src="图片/配置Gensokyo2.png" width="50%">
-
- 打开机器人后点击`开法设置`
- <br>
     <img src="图片/配置Gensokyo3.png" width="50%">
+
+14. 以上完成后双击运行`gensokyo.bat`不出意外就可以运行了
+
+15. 打开QQ点击创建聊群后并再次回到网站`q.qq.com`点击`开发-沙箱配置`后找到`在QQ群配置`将聊群修改为刚刚创建的聊群（如过失败请稍后再试）
+<br>
+    <img src="图片/机器人沙箱.png" width="50%">
+
+16. 接下来回到QQ打开刚刚创建的聊群，点击右上角的`三个横杠`，点击`管理群-群机器人`，找到你的机器人点击添加
+
+17. 接下来@机器人并发送帮助查看是否可以发图，如果不行自己查看上文中让填写的ip是否为公网ip并且开发了端口号，如都设置了还不行那就找作者去，我不到啊
+
+**注意！！！**
  
-  复制`ID 令牌 秘钥 `填写到7中的`config.yml`
+ `zhenxun_bot`与`Gensokyo`需全部运行，不可关闭
 
-  配置ws地址到`config.yml`
-```
-ws://127.0.0.1:8080/onebot/v11/ws/
-``` 
- 如图：
-  <br>
-    <img src="图片/配置Gensokyo4.png" width="50%">
-
-9. 继续配置`config.yml`，复制下发内容替换`text_intent:`的全部内容
-  <br>
-    <img src="图片/配置Gensokyo5.png" width="50%">
-
-```
-    # - "ATMessageEventHandler"                      # 频道at信息
-    - "DirectMessageHandler"                         # 私域频道私信(dms)
-    # - "ReadyHandler"                               # 连接成功
-    # - "ErrorNotifyHandler"                         # 连接关闭
-    # - "GuildEventHandler"                          # 频道事件
-    # - "MemberEventHandler"                         # 频道成员新增
-    # - "ChannelEventHandler"                        # 频道事件
-    - "CreateMessageHandler"                         # 频道不at信息 私域机器人需要开启 公域机器人开启会连接失败
-    # - "InteractionHandler"                         # 添加频道互动回应
-    # - "GroupATMessageEventHandler"                 # 群at信息 仅频道机器人时候需要注释
-    # - "C2CMessageEventHandler"                     # 群私聊 仅频道机器人时候需要注释
-    # - "ThreadEventHandler"                         # 发帖事件 (当前版本已禁用)
-```
-
-9. 将自己服务器的公网ip填入`server_dir`并开放端口`15630`（不配置将无法发送图片）
-  <br>
-    <img src="图片/配置Gensokyo6.png" width="50%">
-
-10. 点击保存后双击运行`gensokyo.bat`不出意外就可以运行了
-
-11. `zhenxun_bot`与`Gensokyo`需全部运行，不可关闭
+ 关于`Gensokyo`的`web端`用户名和密码已全部修改为`zhenxun`机器人沙箱.png
 
 </details>
 
