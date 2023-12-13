@@ -24,7 +24,7 @@
 
 [点击此处获取高达2000张的超级可爱的真寻表情包吧！！！](https://gitee.com/SHIKEAIXY/zhenxun-wallpaper-picture)
 
-### 聊天群QQ：778502891
+## 聊天群QQ：778502891
 
 ## 与真寻相关  
 
@@ -66,8 +66,8 @@
 
 ### ①安装python
 
-这里我推荐安装python3.10.8
-[点击下载py3.10.8](https://yshs.lanzouy.com/iFMpG0gdwt9a)
+这里我推荐安装python3.10
+[点击下载py3.10](https://yshs.lanzouy.com/iFMpG0gdwt9a)
 
 下面两个对钩点上 然后点击Install Now等待安装完成
 <br>
@@ -132,7 +132,7 @@ pip install poetry
 <br>
     <img src="图片/数据存储路径.png" width="50%">
 
-5.输入postgres用户的密码，例如：zhenxun（防止后期问题请安装本教程的密码输入 上下全部输入zhenxun）
+5.输入postgres用户的密码，例如：zhenxun（防止后期问题请按照本教程的密码输入 上下全部输入zhenxun）
 <br>
     <img src="图片/数据库密码.png" width="50%">
 
@@ -156,10 +156,6 @@ pip install poetry
 <br>
     <img src="图片/启动数据库.png" width="80%">
 
-方法二：找到你的 pgAdmin 安装位置 默认是下面的安装路径打开即可
-<br>
-    <img src="图片/启动数据库.png" width="80%">
-
 [是英文怎么办？点击此处解决](https://blog.csdn.net/weixin_46329056/article/details/125929563?ydreferer=aHR0cHM6Ly93d3cuYmFpZHUuY29tL2xpbms%2FdXJsPUwzNmhIRml6RjMwd2QzWnFEanFpY0NLYzFGbmlGUktRTXhCU21UTmFObjZNM0NxLUY5YzJzYV9IY2kzekV5bEVlTTctNzZnWjVmNC15aTI3ZjE3V3JJVDRnUzMtejdlTHp6aFJPY1Y2Tm9XJndkPSZlcWlkPTgyNjY3OTdjMDAwZTA0NGEwMDAwMDAwMjY0M2FiNDZj)
 
 2.新建连接
@@ -172,7 +168,7 @@ pip install poetry
 <br>
     <img src="图片/真寻名字.png" width="50%">
 
-填写配置 填写，如果是连接远程服务器的话对应的服务器IP，本地的话可以直接填写 就是安装时配置的端口，没有修改的话默认
+填写配置，如果是连接远程服务器的话对应的服务器IP，本地的话可以直接填写 就是安装时配置的端口，没有修改的话默认
 
 就是安装时配置
 的密码主机名称/地址127.0.0.1端口5432 密码就是你安装是输入的密码（本教程前面用的是zhenxun）
@@ -206,7 +202,7 @@ ok火速下一步
 
 [点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.43.0-rc0.windows.1/Git-2.43.0-rc0-64-bit.exe)
 
-1.github下载真寻本体(下载失败建议打开上文中提到的tz)
+1.github下载真寻本体
 
 ```
 git clone --depth 1 https://github.com/HibiKier/zhenxun_bot
@@ -290,7 +286,7 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 ```
 ### zip下载 (不建议!)
 
-[~~点击此处下载签名和go-cqhttp~~](https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
+[点击此处下载签名和go-cqhttp](https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
 
 下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`一会要用
 
@@ -316,7 +312,7 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 
 1.打开`1.1.9unidbg_and_gocq\unidbg-fetch-qsign-1.1.9`双击运行`一键启动.bat` (就[下载go-cqhttp](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/README.md#%E4%B8%8B%E8%BD%BDgo-cqhttp)下载的那个文件里面)
 
-没有闪退即可使用
+没有闪退即可使用（默认使用8.9.78版本）
 
 2.签名启动成功后再重新启动 go-cqhttp.bat 登录即可
 
@@ -328,7 +324,7 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 
 2.key默认为`1314`
 
-3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.71`则打开`8.9.71\config.json`进行修改即可
+3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.71`则打开`8.9.71\config.json`进行修改并修改gocq的配置文件
 <br>
     <img src="图片/签名配置端口key.png" width="50%">
 
@@ -347,7 +343,7 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 [ERROR]: Protocol -> parse incoming packet error: return code unsuccessful: -10005
 ```
 
-4.在gocq运行的页面中使用`ctrl+c`后输入下方内容回车启动即可
+4.在gocq运行的页面中使用`ctrl+c`后输入下方内容回车重新启动即可
 ```
 go-cqhttp
 ```
@@ -359,11 +355,11 @@ go-cqhttp
 
 ### ⑤关于其他签名协议登录
 
-1.签名的80协议比较稳定，一般不需要进行更换
+1.现在个个版本都不稳定，看你63版本到最新版本哪个能登了
 
-2.如果实在想换且不会可以提iss询问，没什么用的教程就不写了（其实是不知道怎么表达）
+2.换登录版本教程在`go-cqhttp_windows_amd64\data\versions\修改版本.md`中
 
-### 如果你使用了gocq还登录上去了那么就可以忽略云崽的方法
+### 如果你使用了gocq还登录上就别~~作~~让他好好run
 
 </details>
 
@@ -506,7 +502,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 <details>
   <summary>使用Gensokyo(QQBot)连接真寻bot</summary>
 
-### 说明：
+### ①说明：
 
 1. 新框架`Gensokyo` 视频：https://www.bilibili.com/video/BV1Aw411K7Z5
 
@@ -516,7 +512,11 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 4. `Gensokyo`教程 https://www.bilibili.com/read/cv27523883
 
-### 正文：
+5. `Gensokyo`的`web端`用户名和密码已全部修改为`zhenxun`
+
+6. `Gensokyo` QQ群：196173384
+
+### ②注册企业账号
 
 1. 随随便便注册一个企业qq开放平台账号：https://q.qq.com
 <br>
@@ -540,48 +540,54 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 <br>
     <img src="图片/资质认证3.png" width="50%">
 
-7. 下载Gensokyo
+### ④下载配置Gensokyo
 
 下载地址：https://shikeaixy.lanzouy.com/iJ0IM1hgihbg
 
-8. 解压刚刚下载的`Gensokyo`后并双击打开`config.yml`
+1. 解压刚刚下载的`Gensokyo`后并双击打开`config.yml`
 
-9. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~9行
+2. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~9行
 <br>
     <img src="图片/配置Gensokyo2.png" width="50%">
 <br>
     <img src="图片/配置Gensokyo.png" width="50%">
 
-10. 将自己服务器的公网ip填入`server_dir`并开放端口号`15630`（不配置将无法发送图片）
+3. 将自己服务器的公网ip填入`server_dir`并开放端口号`15630`（不配置将无法发送图片）
 <br>
     <img src="图片/配置Gensokyo3.png" width="50%">
 
-如果你没有公网ip可使用早苗的图床
+4. 如果你没有公网ip可使用早苗的图床
 
-10.1 将`lotus`的`false`设置为`true`
+将`lotus`的`false`设置为`true`
 
-10.2 将`server_dir`和`port`修改为下发内容后保存即可使用
+将`server_dir`和`port`修改为下发内容后保存即可使用
 
 ```
 server_dir: "sanae.online"
 port: "443" 
 ``` 
 
-11. 以上完成后双击运行`gensokyo.bat`不出意外就可以运行了
+5. 以上完成后双击运行`gensokyo.bat`不出意外就可以运行了
 
-12. 打开QQ点击创建聊群后并再次回到网站`q.qq.com`点击`开发-沙箱配置`后找到`在QQ群配置`将聊群修改为刚刚创建的聊群（如过失败请稍后再试）
+### ⑤配置沙箱使用机器人
+
+1. 打开QQ点击新创建聊群（不超过20人的群）
+
+2. 再次回到网站`q.qq.com`
+
+3. 点击`开发-沙箱配置`后找到`在QQ群配置`将聊群修改为刚刚创建的聊群（如果失败就几秒后再试试）
 <br>
     <img src="图片/机器人沙箱.png" width="50%">
 
-13. 接下来回到QQ打开刚刚创建的聊群，点击右上角的`三个横杠`，点击`管理群-群机器人`，找到你的机器人点击添加
+4. 接下来回到QQ打开刚刚创建的聊群，点击右上角的`三个横杠`，点击`管理群-群机器人`，找到你的机器人点击添加
 
-14. 接下来@机器人并发送帮助查看是否可以发图，如果不行自己查看上文中让填写的ip是否为公网ip并且开放了端口号，如都设置了还不行那就找作者去，我不到啊
+5. 接下来@机器人并发送帮助查看是否可以发图
+
+6. 如果不行自己查看上文中让填写的ip是否为公网ip并且开放了端口号，如都设置了还不行那就找作者去，我不到啊
 
 **注意！！！**
  
  `zhenxun_bot`与`Gensokyo`需全部运行，不可关闭
-
-  关于`Gensokyo`的`web端`用户名和密码已全部修改为`zhenxun`机器人沙箱.png
 
 </details>
 
