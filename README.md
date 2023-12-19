@@ -542,7 +542,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 ### ④下载配置Gensokyo
 
-下载地址：https://shikeaixy.lanzouy.com/iJ0IM1hgihbg
+下载地址：https://shikeaixy.lanzouy.com/iObOp1ig2opc（取用最新版本）
 
 1. 解压刚刚下载的`Gensokyo`后并双击打开`config.yml`
 
