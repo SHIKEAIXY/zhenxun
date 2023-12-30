@@ -13,10 +13,9 @@
 
 大家都知道一键脚本这个东西吧
 - 没错真寻也有
-- 虽然一键脚本离上一次更新也就短短的8个月而已（最后更新：2023.4.09）
-- 但是不建议使用一键脚本，很容易出问题，出了还不好修
+- 但是不建议使用脚本，很容易出问题，出了还不好修
 - 所以还是建议手动安装
-- 你要是非用一键脚本也拦不住你对吧 [传送门](https://github.com/zhenxun-org/zhenxun_bot-deploy)
+- 你要是非用脚本也拦不住你对吧 [官方传送门](https://github.com/zhenxun-org/zhenxun_bot-deploy) [TRSS脚本传送门](https://trss.me/Install/Windows.html)
 
 ### 来下载2000张真寻图片吧~
 
@@ -542,7 +541,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 ### ④下载配置Gensokyo
 
-下载地址：https://shikeaixy.lanzouy.com/iObOp1ig2opc（取用最新版本）
+下载地址：[https://shikeaixy.lanzouy.com/iObOp1ig2opc](http://shikeaixy.lanzouy.com/iObOp1ig2opc)（取用最新版本）
 
 1. 解压刚刚下载的`Gensokyo`后并双击打开`config.yml`
 
