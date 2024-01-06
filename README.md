@@ -501,6 +501,8 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 <details>
   <summary>使用Gensokyo(QQBot)连接真寻bot</summary>
 
+# 没必要评价第三方好还是官方好，各有各的好处和弊端，能接受就用，接受不了就别用，别一天天的骂来骂去
+
 ### ①说明：
 
 1. 新框架`Gensokyo` 视频：https://www.bilibili.com/video/BV1Aw411K7Z5
@@ -541,7 +543,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 ### ④下载配置Gensokyo
 
-下载地址：[https://shikeaixy.lanzouy.com/iWCmv1jl58je](https://shikeaixy.lanzouy.com/iWCmv1jl58je)（取用最新版本[v283](https://github.com/Hoshinonyaruko/Gensokyo/releases/tag/283%2Fmerge)）
+下载地址：[https://shikeaixy.lanzouy.com/igSSf1kaw88f](https://shikeaixy.lanzouy.com/igSSf1kaw88f)（取用最新版本[v288](https://github.com/Hoshinonyaruko/Gensokyo/releases/tag/288%2Fmerge)）
 
 1. 解压刚刚下载的`Gensokyo`后并双击打开`config.yml`
 
