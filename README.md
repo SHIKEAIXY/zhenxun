@@ -62,6 +62,8 @@
 [![](https://img.shields.io/badge/poetry-brightgreen.svg)](https://python-poetry.org)
 [![](https://img.shields.io/badge/nonebot-2.0.0-yellow)](https://nb2.baka.icu)
 [![](https://img.shields.io/badge/go--cqhttp-1.0.0-red)](https://docs.go-cqhttp.org/)
+[![](https://img.shields.io/badge/TRSS--Yunzai/Miao--Yunzai-ws--plugin-red)](https://gitee.com/xiaoye12123/ws-plugin)
+[![](https://img.shields.io/badge/Gensokyo-QQAPI-red)](https://github.com/Hoshinonyaruko/Gensokyo)
 
 ### ①安装python
 
@@ -642,4 +644,4 @@ git clone --depth 1 + 仓库地址
 
 ---
 
-下载时长会和你的网络与仓库大小有关系
+下载时长会和你的网络与仓库大小有关系 
