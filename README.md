@@ -49,6 +49,12 @@
 
 <a href='https://gitee.com/SHIKEAIXY/zhenxun/stargazers'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/star.svg?theme=dark' alt='star的人'></img></a>
 <a href='https://gitee.com/SHIKEAIXY/zhenxun/members'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/fork.svg?theme=dark' alt='fork的人'></img></a>
+[![](https://img.shields.io/badge/python-v3.8+-DeepSkyBlue)](https://www.python.org)
+[![](https://img.shields.io/badge/poetry-brightgreen.svg)](https://python-poetry.org)
+[![](https://img.shields.io/badge/nonebot-2.0.0-yellow)](https://nb2.baka.icu)
+[![](https://img.shields.io/badge/go--cqhttp-1.0.0-red)](https://docs.go-cqhttp.org/)
+[![](https://img.shields.io/badge/TRSS--Yunzai/Miao--Yunzai-ws--plugin-red)](https://gitee.com/xiaoye12123/ws-plugin)
+[![](https://img.shields.io/badge/Gensokyo-QQAPI-red)](https://github.com/Hoshinonyaruko/Gensokyo)
 
 本仓库访问量 统计时间4.16 （好可怜）
 
@@ -58,12 +64,6 @@
 # 一 准备工作
 
 ## 安装 版本大于3.8且小于3.11的python 与 poetry
-[![](https://img.shields.io/badge/python-v3.8+-DeepSkyBlue)](https://www.python.org)
-[![](https://img.shields.io/badge/poetry-brightgreen.svg)](https://python-poetry.org)
-[![](https://img.shields.io/badge/nonebot-2.0.0-yellow)](https://nb2.baka.icu)
-[![](https://img.shields.io/badge/go--cqhttp-1.0.0-red)](https://docs.go-cqhttp.org/)
-[![](https://img.shields.io/badge/TRSS--Yunzai/Miao--Yunzai-ws--plugin-red)](https://gitee.com/xiaoye12123/ws-plugin)
-[![](https://img.shields.io/badge/Gensokyo-QQAPI-red)](https://github.com/Hoshinonyaruko/Gensokyo)
 
 ### ①安装python
 
