@@ -545,21 +545,24 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 ### ④下载配置Gensokyo
 
-下载地址：[https://shikeaixy.lanzouy.com/igSSf1kaw88f](https://shikeaixy.lanzouy.com/igSSf1kaw88f)（取用最新版本[v288](https://github.com/Hoshinonyaruko/Gensokyo/releases/tag/288%2Fmerge)）
+1.下载gensokyo-windows-amd64（取用v298）
+```
+git clone --depth 1 -b gensokyo-windows-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
+```
 
-1. 解压刚刚下载的`Gensokyo`后并双击打开`config.yml`
+2. 打开下载的`Gensokyo`后并双击打开`config.yml`
 
-2. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~9行
+3. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~9行
 <br>
     <img src="图片/配置Gensokyo2.png" width="50%">
 <br>
     <img src="图片/配置Gensokyo.png" width="50%">
 
-3. 将自己服务器的公网ip填入`server_dir`并开放端口号`15630`（不配置将无法发送图片）
+4. 将自己服务器的公网ip填入`server_dir`并开放端口号`15630`（不配置将无法发送图片）
 <br>
     <img src="图片/配置Gensokyo3.png" width="50%">
 
-4. 如果你没有公网ip可使用早苗的图床
+5. 如果你没有公网ip可使用早苗的图床
 
 将`lotus`的`false`设置为`true`
 
@@ -570,7 +573,7 @@ server_dir: "sanae.online"
 port: "443" 
 ``` 
 
-5. 以上完成后双击运行`gensokyo.bat`不出意外就可以运行了
+6. 以上完成后双击运行`gensokyo.bat`不出意外就可以运行了
 
 ### ⑤配置沙箱使用机器人
 
