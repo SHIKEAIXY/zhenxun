@@ -29,7 +29,7 @@
 
 1. 有什么问题可以在本库提Issues或者加上方聊群询问
 
-2. linux系统的教程网上一堆 我就不出了 可以参考别人的安装[点击查看linux安装教程](https://lonelyenderman.top/archives/781)
+2. linux系统的教程网请查看[linux分支](https://gitee.com/SHIKEAIXY/zhenxun/tree/linux)
 
 3. [点击查看zhenxun_bot的介绍](https://github.com/HibiKier/zhenxun_bot/blob/main/README.md)
 
