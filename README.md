@@ -5,10 +5,6 @@
 
 </div>
 
-## [点击此处查看真寻bot安装时报错的解决问题](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/Installation%20issues.md)
-
-还未完善...
-
 # 前言
 
 大家都知道一键脚本这个东西吧
@@ -29,7 +25,7 @@
 
 1. 有什么问题可以在本库提Issues或者加上方聊群询问
 
-2. linux系统的教程网上一堆 我就不出了 可以参考别人的安装[点击查看linux安装教程](https://lonelyenderman.top/archives/781)
+2. win系统的教程请看[master主分支](https://gitee.com/SHIKEAIXY/zhenxun)
 
 3. [点击查看zhenxun_bot的介绍](https://github.com/HibiKier/zhenxun_bot/blob/main/README.md)
 
@@ -39,7 +35,7 @@
 
 ## 介绍
 
-1. 一个win系统的[zhenxun_bot](https://github.com/HibiKier/zhenxun_bot)安装教程
+1. 一个linux（Ubuntu）系统的[zhenxun_bot](https://github.com/HibiKier/zhenxun_bot)安装教程
 
 2. 需要有一定的基础 如果没有一些基础的话可会困难重重哒 为了自己喜欢的真寻加油鸭！
 
@@ -56,312 +52,135 @@
 [![](https://img.shields.io/badge/TRSS--Yunzai/Miao--Yunzai-ws--plugin-red)](https://gitee.com/xiaoye12123/ws-plugin)
 [![](https://img.shields.io/badge/Gensokyo-QQAPI-red)](https://github.com/Hoshinonyaruko/Gensokyo)
 
-本仓库访问量 统计时间4.16 （好可怜）
+本仓库访问量 统计时间2023.4.16 （好可怜）
 
 [![访问量](https://profile-counter.glitch.me/zhenxun/count.svg)](https://gitee.com/SHIKEAIXY/zhenxun.git)
 
 # 正文啦！
-# 一 准备工作
 
-## 安装 版本大于3.8且小于3.11的python 与 poetry
+# 一 安装宝塔面板
 
-### ①安装python
+### ①首先你因该准备一个Ubuntu22+并且是2H4G的服务器（自带ptyhon3.8）
 
-这里我推荐安装python3.10
-[点击下载py3.10](https://yshs.lanzouy.com/iFMpG0gdwt9a)
-
-下面两个对钩点上 然后点击Install Now等待安装完成
-<br>
-    <img src="图片/py安装.png" width="50%">
-
-安装完成打开cmd输入py 查看是否有py版本输出
-
-### ②安装poetry
-
-1. 打开Powershell（需要管理员权限）运行
-
-不会打开？不要慌 点击此处 [如何在Windows 10/11中打开PowerShell](https://www.51cto.com/article/696873.html)
-
-打开后输入下面内容并回车（安装时间较长）
+### ②打开服务器控制台找到SSH连接工具输入下方内容回车即可（各大服务商都不一样，我就不举例了）
 
 ```
-(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh ed8484bec
 ```
 
-1.1 使用pip安装（此步骤无需进行2的变量环节）
+### ③等待安装完成后打开面板（密码请牢记，如无法打开请开放端口）
+
+
+# 二 前置准备
+
+### ①安装poetry以及ffmpeg
+
+1. 打开宝塔依次终端输入下方内容
+
 ```
-python -m pip install -U pip
+sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+sudo apt update && sudo apt install -y wget git screen ffmpeg
+sudo apt install -y python3-pip
+sudo pip install poetry
 ```
-```
-pip install poetry
-```
 
-2. 然后将`%APPDATA%\Python\Scripts`添加到PATH环境变量(位置在右键此电脑→属性→高级系统设置→环境变量)
+# 三 安装PostgreSQL数据库
+
+1. 打开软件商店搜索PostgreSQL管理器并安装（默认安装即可）
 <br>
-    <img src="图片/变量.png" width="50%">
+    <img src="图片/安装PostgreSQL管理器.png" width="70%">
 
-3. 打开cmd发送poetry查看是否有版本输出
-
-如果没有请重启电脑 重新打开cmd输入 poetry
-
-还不行？[点击此处解决](https://www.baidu.com)
-
-# 二 安装postgresql
-
-## ①下载postgresql数据库
-[点击此处将下载Postgresql-15.1-1版本安装包](https://get.enterprisedb.com/postgresql/postgresql-15.1-1-windows-x64.exe)
-
-不想要15.1版本的可以自行下载别的版本（目前只要是9.0以上的版本都可以）
-
-## ②安装postgresql数据库
-
-1.双击安装程序，点击Next（打不开报错？不要找我 我也不会）
+2. 安装完成后点击`设置`
 <br>
-    <img src="图片/安装数据库.png" width="50%">
+    <img src="图片/安装PostgreSQL.png" width="70%">
 
-2.选择安装路径（对路径没有要求不用改 默认c盘），继续Next
-
-安装路径中不要出现中文！（防止报错）
+3. 然后点击`版本管理`，安装12.10版本（时间较长）
 <br>
-    <img src="图片/数据库安装路径.png" width="50%">
+    <img src="图片/安装PostgreSQL2.png" width="70%">
 
-3.去掉即可，不影响使用，Stack BuilderNext
+4. 安装完成后点击`数据库列表`创建/添加数据库
 <br>
-    <img src="图片/取消Stack Builder安装.png" width="50%">
+    <img src="图片/创建PostgreSQL.png" width="70%">
 
-4.数据存储路径（对路径没有要求不用改 默认c盘），Next
+5. `数据库名/用户名/密码`全部填写`zhenxun`后点击`确定`
 <br>
-    <img src="图片/数据存储路径.png" width="50%">
-
-5.输入postgres用户的密码，例如：zhenxun（防止后期问题请按照本教程的密码输入 上下全部输入zhenxun）
-<br>
-    <img src="图片/数据库密码.png" width="50%">
-
-6.默认端口，Next
-<br>
-    <img src="图片/数据库端口.png" width="50%">
-
-7.接下来一路点Next直到进入安装
-<br>
-    <img src="图片/一路下一步.png" width="50%">
-
-8.显示下面的图 代表你安装完成
-<br>
-    <img src="图片/数据库安装完成.png" width="50%">
-
-## ③配置连接
-
-1.找到安装的pgAdmin启动数据库 并启动
-
-打开方法一： 在应用中搜索 pgAdmin 点击展开 找到下面图片显示的打开即可
-<br>
-    <img src="图片/启动数据库.png" width="80%">
-
-[是英文怎么办？点击此处解决](https://blog.csdn.net/weixin_46329056/article/details/125929563?ydreferer=aHR0cHM6Ly93d3cuYmFpZHUuY29tL2xpbms%2FdXJsPUwzNmhIRml6RjMwd2QzWnFEanFpY0NLYzFGbmlGUktRTXhCU21UTmFObjZNM0NxLUY5YzJzYV9IY2kzekV5bEVlTTctNzZnWjVmNC15aTI3ZjE3V3JJVDRnUzMtejdlTHp6aFJPY1Y2Tm9XJndkPSZlcWlkPTgyNjY3OTdjMDAwZTA0NGEwMDAwMDAwMjY0M2FiNDZj)
-
-2.新建连接
-
-左侧栏右键点击后选择，在点击ServersRegister服务器
-<br>
-    <img src="图片/添加数据库.png" width="50%">
-
-随便给它起一个响亮的名字（
-<br>
-    <img src="图片/真寻名字.png" width="50%">
-
-填写配置，如果是连接远程服务器的话对应的服务器IP，本地的话可以直接填写 就是安装时配置的端口，没有修改的话默认
-
-就是安装时配置
-的密码主机名称/地址127.0.0.1端口5432 密码就是你安装是输入的密码（本教程前面用的是zhenxun）
-<br>
-    <img src="图片/编辑数据库1.png" width="50%">
-
- 3.点击保存
-左侧栏会出现一个可爱真寻
-<br>
-    <img src="图片/编辑数据库2.png" width="50%">
-
-## ④新建数据库
-
-1.点击展开
-
-2.右击，选择后点击数据库创建数据库
-<br>
-    <img src="图片/新建数据库.png" width="50%">
-
-3.直接创建
-
-设置数据库名称后点击保存 
-<br>
-    <img src="图片/保存数据库.png" width="50%">
+    <img src="图片/创建PostgreSQL2.png" width="70%">
 
 ok火速下一步
 
 # 三 开始安装真寻本体
 
-请安装Git，已有可跳过
-
-[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.43.0-rc0.windows.1/Git-2.43.0-rc0-64-bit.exe)
-
-1.github下载真寻本体
+1. 通过github下载真寻本体
 
 ```
-git clone --depth 1 https://github.com/HibiKier/zhenxun_bot
+git clone --depth 1 https://github.com/HibiKier/zhenxun_bot ./Bot/zhenxun/zhenxun_bot/
 ```
 
-2.执行下面内容
+2. 执行下面内容
 
-```
+``` 
+cd zhenxun/zhenxun_bot
+sed -i 's|bind.*|bind: str = "postgres://zhenxun:zhenxun@localhost:5432/zhenxun"|g' configs/config.py
 poetry install
 poetry shell
 playwright install chromium
 ```
 
-3.设置超级用户，打开 .env.dev 文件（在真寻根目录），在中添加自己大号（主人）的QQ号，123456789为QQ号
-
-    SUPERUSERS=["123456789"]
-
-4.打开 configs/config.py 填写数据库数据
+3. 在SUPERUSERS中添加自己大号（主人）的QQ号，123456789为QQ号，修改后执行即可
 
 ```
------------------------------------------------------------
------------------------------------------------------------
- 如果你听我的话了 密码和名字与我填的一样 且数据库也在该服务器上 
- 可以直接复制以下配置 替换掉 configs/config.py 中的数据库数据
------------------------------------------------------------
------------------------------------------------------------
-
-bind: str = ""  # 数据库连接链接
-sql_name: str = "postgres"
-user: str = "postgres"
-password: str = "zhenxun"
-address: str = "127.0.0.1"
-port: str = "5432"
-database: str = "zhenxun"
-
----------------------------------------------------------------
----------------------------------------------------------------
-  -------------------如果没有听我的怎么办呢--------------------
-  -----------------按照下面的格式进行修改即可------------------
----------------------------------------------------------------
----------------------------------------------------------------
-
-# 数据库（必要）
-# 如果填写了bind就不需要再填写后面的字段了
-# 示例："bind": "postgres://user:password@127.0.0.1:5432/database"
-bind: str = ""       #数据库连接链接
-sql_name: str = "postgres"
-user: str = ""       #数据用户名
-password: str = ""   #数据库密码
-address: str = ""    #数据库地址
-port: str = ""       #数据库端口
-database: str = ""   #数据库名称
-
+sed -i 's/SUPERUSERS.*/SUPERUSERS=["123456789"]/g' .env.dev
 ```
 
-5.启动真寻，会在 configs 和 data/configs 目录下生成各种配置文件
+4. 启动真寻，会在 configs 和 data/configs 目录下生成各种配置文件
 
 ```
-python bot.py
+sudo apt install -y screen
+screen -S zhenxun
+poetry shell
+python3 bot.py
 ```
 
-（如果你没有这些需求可以忽略这步，毕竟默认配置了）
-
-6.打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
+5. 打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot（如果你没有这些需求可以忽略这步，毕竟默认配置了）
 
 # 四 连接zhenxun_bot
 
 <details>
   <summary>使用go-cqhttp连接真寻bot（不建议）</summary>
 
-## ①下载go-cqhttp 
+## ①安装go-cqhttp
 
-### gitee下载
-
-请安装Git，已有可跳过
-
-[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.43.0-rc0.windows.1/Git-2.43.0-rc0-64-bit.exe)
-
+1. 先下载wget 
 ```
-git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
+sudo apt install -y wget
 ```
-### zip下载 (不建议!)
 
-[点击此处下载签名和go-cqhttp](https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
-
-下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`一会要用
-
+2. 下载go-cqhttp（全部复制进去）
+```
+cd Bot/zhenxun
+mkdir ~/go-cqhttp && \
+    cd ~/go-cqhttp && \
+    wget https://github.com/Mrs4s/go-cqhttp/releases/download/v1.2.0/go-cqhttp_darwin_amd64.tar.gz -O go-cqhttp_linux_amd64.tar.gz && \
+    tar -zxvf go-cqhttp_linux_amd64.tar.gz
+```
 ## ②配置go-cqhttp
 
-1.打开config.yml文件，修改`QQ账号和密码`保存即可（先不要重新启动！！！）
+1. 复制执行（会终止，这个正常）
+```
+cd ~/go-cqhttp && echo -e "3\n" | ./go-cqhttp
+```
+2. 之后修改/root/Bot/go-cqhttp/config.yml，将universal参数改成ws://127.0.0.1:8080/onebot/v11/ws/并保存
 <br>
-    <img src="图片/账号.png" width="70%">
+    <img src="图片/配置gocq.png" width="70%">
 
-# 部署签名api
+3. 签名问题，请自行查看该教程：https://gitee.com/touchscale/Qsign
 
-### ①下载java 
-
-1.[点击此处下载jdk](https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jdk/x64/windows/OpenJDK17U-jdk_x64_windows_hotspot_17.0.9_9.msi)
-
-2.安装完成后打开cmd运行`java`查看是否有输出
-
-[如果没有输出点击此处查看如何配置变量，如果你看不懂那就没办法了](https://blog.csdn.net/qq_41436122/article/details/82620080)
-
-配置完成后重新启动服务器后再打开cmd运行`java`查看是否有输出
-
-### ②使用
-
-1.打开`1.1.9unidbg_and_gocq\unidbg-fetch-qsign-1.1.9`双击运行`一键启动.bat` (就[下载go-cqhttp](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/README.md#%E4%B8%8B%E8%BD%BDgo-cqhttp)下载的那个文件里面)
-
-没有闪退即可使用（默认使用8.9.78版本）
-
-2.签名启动成功后再重新启动 go-cqhttp.bat 登录即可
-
-3.切记api不要关闭！！！
-
-### ③配置
-
-1.端口默认是`520`
-
-2.key默认为`1314`
-
-3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.71`则打开`8.9.71\config.json`进行修改并修改gocq的配置文件
-<br>
-    <img src="图片/签名配置端口key.png" width="50%">
-
-### ④启动 go-cqhttp
-
-1.返回上一目录打开`windows_amd64`文件
-
-2.双击 `go-cqhttp.bat` 进行验证即可
-<br>
-    <img src="图片/gocq_bat.png" width="50%">
-
-3.如果出现以下内容则不用管它，不影响登录和使用 **（如果你看着变扭请看下一条）** 
-
+### ③重新启动go-cqhttp
 ```
-[WARNING]: Callback error: Packet timed out, Or response data is empty
-[ERROR]: Protocol -> parse incoming packet error: return code unsuccessful: -10005
+cd Bot/zhenxun
+screen -S gocq
+cd ~/go-cqhttp && echo -e "3\n" | ./go-cqhttp -faststart
 ```
-
-4.在gocq运行的页面中使用`ctrl+c`后输入下方内容回车重新启动即可
-```
-go-cqhttp
-```
-
-5.自动提交滑块ticket无反应
-- 这个不知道有没有解决办法
-- 如果没反应请使用`2. 手动抓取提交`
-- [使用安卓手机点击此处下载](https://maupdate.rainchan.win/txcaptcha.apk)
-
-### ⑤关于其他签名协议登录
-
-1.现在个个版本都不稳定，看你63版本到最新版本哪个能登了
-
-2.换登录版本教程在`go-cqhttp_windows_amd64\data\versions\修改版本.md`中
-
-### 如果你使用了gocq还登录上就别~~作~~让他好好run
-
 </details>
 
 ---
@@ -373,26 +192,19 @@ go-cqhttp
 
 ### ①安装前置
 
-1. 请安装Git，已有可跳过
+1. 下载node.js
 
-[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.43.0-rc0.windows.1/Git-2.43.0-rc0-64-bit.exe)
+打开宝塔的软件商店搜索`Node.js版本管理器`并下载20.9.0的版本（也可以下载16/18的版本）
+<br>
+    <img src="图片/下载node管理器.png" width="70%">
 
-2. 下载node.js
-
-[点击此处下载node.js](https://npmmirror.com/mirrors/node/v18.18.0/node-v18.18.0-x64.msi)
-
-3. [点击此处下载bat安装文件](https://gitee.com/SHIKEAIXY/zhenxun/releases/download/1.0.0/%E5%AE%89%E8%A3%85%E4%BA%91%E5%B4%BDbot.bat)并运行
-
-<details>
-  <summary>如果不想使用bat一键下载可点击此处手动下载</summary>
-
-&nbsp;2.1. 在cmd依次输入以下内容并回车 
+2.安装云崽在终端依次输入以下内容并回车 
 
 ```
-git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git ./Yunzai/Miao-Yunzai/
+git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git ./Bot/Yunzai/Miao-Yunzai/
 ```
 ```
-cd Yunzai/Miao-Yunzai
+cd Bot/Yunzai/Miao-Yunzai
 ```
 ```
 git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
@@ -408,48 +220,18 @@ pnpm config set registry https://registry.npmmirror.com
 pnpm install -P
 ```
 ```
+pnpm add puppeteer@19.7.3 -w
+```
+```
 git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
 ```
 ```
 pnpm install --filter=ws-plugin
 ```
-```
-cd ..
-```
-```
-git clone --depth 1 -b redis https://gitee.com/SHIKEAIXYY/Trss-ComWeChat-Yunzai.git ./redis
-```
-```
-git clone --depth 1 https://gitee.com/touchscale/Qsign.git ./Qsign
-```
-</details>
-&nbsp;
 
-4. 下载jdk
+3. 安装redis数据库
 
-[点击此处下载jdk](https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jdk/x64/windows/OpenJDK17U-jdk_x64_windows_hotspot_17.0.9_9.msi)
-
-#### ②说明
-
-1. 安装完的`云崽`和`数据库`在你bat运行的同级目录`Yunzai`的文件夹中
-
-2. `redis`为数据库
-
-3. `Miao-Yunzai`为机器人本体
-
-4. `Qsign`为签名api
-
-### ③启动云崽
-
-1. 请打开`Yunzai`文件夹
-
-2. 运行`redis`数据库（运行`redis/双击我启动redis.bat`即可）
-
-3. 运行`Qsign`（运行`Qsign/一键startAPI.bat`即可）默认是80的签名，端口为801，秘钥为114514
-
-4. 启动机器人并配置
-
-在`Miao-Yunzai`目录下cmd输入`node app`即可
+还是打开软件商店搜索`redis`（剩下的你自己搞吧，累了）
 
 #### ④机器人配置
 
@@ -461,10 +243,10 @@ git clone --depth 1 https://gitee.com/touchscale/Qsign.git ./Qsign
 
 4. 请输入主人QQ号：`这里输入用来管理机器人的QQ号即可`
 
-5. 请输入签名API地址（可留空）：`这里输入下方内容即可`
+5. 请输入签名API地址（可留空）：`这里输入下方内容即可`（来自饼干的签名）如果需要自行部署，请查看该教程：https://gitee.com/touchscale/Qsign
 
 ```
-http://127.0.0.1:801/sign?key=114514
+http://v407.qingvps.cn:10066/sign?key=114514
 ```
 <br>
     <img src="图片/机器人配置.png" width="50%">
