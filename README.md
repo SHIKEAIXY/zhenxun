@@ -150,6 +150,8 @@ python3 bot.py
 
 ## ①安装go-cqhttp
 
+# 再提醒你一句，gocq作者已经不再更新，签名服务以无法解决gocq45问题
+
 1. 先下载wget 
 ```
 sudo apt install -y wget
@@ -198,7 +200,7 @@ cd ~/go-cqhttp && echo -e "3\n" | ./go-cqhttp -faststart
 <br>
     <img src="图片/下载node管理器.png" width="70%">
 
-2.安装云崽在终端依次输入以下内容并回车 
+2.安装云崽机器人（终端依次输入）
 
 ```
 git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git ./Bot/Yunzai/Miao-Yunzai/
@@ -233,6 +235,27 @@ pnpm install --filter=ws-plugin
 
 还是打开软件商店搜索`redis`（剩下的你自己搞吧，累了）
 
+4. 安装unidbg-fetch-qsign（终端输入）
+```
+bash <(curl -L https://sourl.cn/UT4an4)
+```
+当出现：请选择使用 systemd 或 Docker 进行管理
+
+请选择：1. systemd管理（官方推荐）
+
+当出现：请输入数字选项: 
+
+请选择：0
+
+当出现：输入执行版本(比如 8.9.76) :
+
+请输入8.9.73
+
+完成后可在终端输入下发内容查看签名是否运行成功
+```
+curl http://127.0.0.1:8080
+```
+
 #### ④机器人配置
 
 1. 请输入机器人QQ号(建议用小号)：`这里输入机器人的QQ号即可`
@@ -243,10 +266,10 @@ pnpm install --filter=ws-plugin
 
 4. 请输入主人QQ号：`这里输入用来管理机器人的QQ号即可`
 
-5. 请输入签名API地址（可留空）：`这里输入下方内容即可`（来自饼干的签名）如果需要自行部署，请查看该教程：https://gitee.com/touchscale/Qsign
+5. 请输入签名API地址（可留空）：`这里输入下方内容即可`
 
 ```
-http://v407.qingvps.cn:10066/sign?key=114514
+http://http://127.0.0.1:8080/sign?key=114514
 ```
 <br>
     <img src="图片/机器人配置.png" width="50%">
@@ -286,6 +309,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
   <summary>使用Gensokyo(QQBot)连接真寻bot</summary>
 
 # 没必要评价第三方好还是官方好，各有各的好处和弊端，能接受就用，接受不了就别用，别一天天的骂来骂去，~~你就算骂也别骂到人家开发者上去，咱能不能有点良心？~~
+# 别拿着建议的理由去骂开发者，人家更不更新跟你什么关系，没强迫你更新吧？你要是认为Gensokyo更新太快就别用，把开发者气跑了你就开心高兴了？
 
 ### ①说明：
 
@@ -327,21 +351,24 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 ### ④下载配置Gensokyo
 
-下载地址：[https://shikeaixy.lanzouy.com/igSSf1kaw88f](https://shikeaixy.lanzouy.com/igSSf1kaw88f)（取用最新版本[v288](https://github.com/Hoshinonyaruko/Gensokyo/releases/tag/288%2Fmerge)）
+1. 下载gensokyo-linux-amd64（取用v298）
+```
+git clone --depth 1 -b gensokyo-linux-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
+```
 
-1. 解压刚刚下载的`Gensokyo`后并双击打开`config.yml`
+2. 打开下载的`Gensokyo`后并双击打开`config.yml`
 
-2. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~9行
+3. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~9行
 <br>
     <img src="图片/配置Gensokyo2.png" width="50%">
 <br>
     <img src="图片/配置Gensokyo.png" width="50%">
 
-3. 将自己服务器的公网ip填入`server_dir`并开放端口号`15630`（不配置将无法发送图片）
+4. 将自己服务器的公网ip填入`server_dir`并开放端口号`15630`（不配置将无法发送图片）
 <br>
     <img src="图片/配置Gensokyo3.png" width="50%">
 
-4. 如果你没有公网ip可使用早苗的图床
+5. 如果你没有公网ip可使用早苗的图床
 
 将`lotus`的`false`设置为`true`
 
@@ -352,7 +379,7 @@ server_dir: "sanae.online"
 port: "443" 
 ``` 
 
-5. 以上完成后双击运行`gensokyo.bat`不出意外就可以运行了
+6. 以上完成后双击运行`gensokyo.bat`不出意外就可以运行了
 
 ### ⑤配置沙箱使用机器人
 
@@ -367,7 +394,8 @@ port: "443"
 4. 接下来回到QQ打开刚刚创建的聊群，点击右上角的`三个横杠`，点击`管理群-群机器人`，找到你的机器人点击添加
 
 5. 接下来@机器人并发送真寻帮助查看是否可以发图  如：@冰祈 真寻帮助
-6. 如果不行自己查看上文中让填写的ip是否为公网ip并且开放了端口号，如都设置了还不行那就找作者去，我不到啊
+
+6. 如果不行自己查看上文中让填写的ip是否为公网ip并且开放了端口号，如都设置了还不行那就去Gensokyo群问，我不到啊
 
 **注意！！！**
  
@@ -387,11 +415,11 @@ port: "443"
 poetry shell
 ```
 ```
-python bot.py
+python3 bot.py
 ```
 #### 启动命令说明
 - poetry shell 这个是进入虚拟环境
-- python bot.py 这个是用python来运行bot.py这个文件
+- python3 bot.py 这个是用python3来运行bot.py这个文件
 
 # 六 真寻插件下载
  
