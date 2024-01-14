@@ -381,10 +381,21 @@ go-cqhttp
 
 [点击此处下载node.js](https://npmmirror.com/mirrors/node/v18.18.0/node-v18.18.0-x64.msi)
 
-3. [点击此处下载bat安装文件](https://gitee.com/SHIKEAIXY/zhenxun/releases/download/1.0.0/%E5%AE%89%E8%A3%85%E4%BA%91%E5%B4%BDbot.bat)并运行
+3. 右键鼠标打开`Open Git Bash here`
+
+win11需先点击显示更多选项后才显示`Open Git Bash here`
+<br>
+    <img src="图片/win11打开git.png" width="40%">
+<br>
+    <img src="图片/win打开git2.png" width="40%">
+ 
+然后运行下方命令
+```
+bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/master/Yunzai.sh)
+```
 
 <details>
-  <summary>如果不想使用bat一键下载可点击此处手动下载</summary>
+  <summary>如果不想使用sh一键下载可点击此处手动下载</summary>
 
 &nbsp;2.1. 在cmd依次输入以下内容并回车 
 
