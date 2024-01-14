@@ -78,6 +78,7 @@ wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo 
 1. 打开宝塔依次终端输入下方内容
 
 ```
+sudo pip install --upgrade pip
 sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 sudo apt update && sudo apt install -y wget git screen ffmpeg
 sudo apt install -y python3-pip
@@ -113,16 +114,16 @@ ok火速下一步
 1. 通过github下载真寻本体
 
 ```
-git clone --depth 1 https://github.com/HibiKier/zhenxun_bot ./Bot/zhenxun/zhenxun_bot/
+git clone --depth 1 https://github.com/HibiKier/zhenxun_bot ./Bot/zhenxun_bot
 ```
 
 2. 执行下面内容
 
 ``` 
-cd zhenxun/zhenxun_bot
+cd Bot/zhenxun_bot
 sed -i 's|bind.*|bind: str = "postgres://zhenxun:zhenxun@localhost:5432/zhenxun"|g' configs/config.py
 poetry install
-poetry shell
+sudo pip install playwright
 playwright install chromium
 ```
 
@@ -143,6 +144,14 @@ python3 bot.py
 
 5. 打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot（如果你没有这些需求可以忽略这步，毕竟默认配置了）
 
+6. 重新运行真寻机器人（接下来会下载一些资源，下载失败的也不用管）
+
+```
+screen -r zhenxun
+poetry shell
+python3 bot.py
+```
+
 # 四 连接zhenxun_bot
 
 <details>
@@ -152,37 +161,48 @@ python3 bot.py
 
 # 再提醒你一句，gocq作者已经不再更新，签名服务以无法解决gocq45问题
 
-1. 先下载wget 
+1. 下载go-cqhttp
+
 ```
-sudo apt install -y wget
+cd Bot
+    git clone --depth 1 -b go-cqhttp_1.2.0_linux_arm64.deb https://gitee.com/SHIKEAIXY/zhenxun.git ./go-cqhttp
 ```
 
-2. 下载go-cqhttp（全部复制进去）
-```
-cd Bot/zhenxun
-mkdir ~/go-cqhttp && \
-    cd ~/go-cqhttp && \
-    wget https://github.com/Mrs4s/go-cqhttp/releases/download/v1.2.0/go-cqhttp_darwin_amd64.tar.gz -O go-cqhttp_linux_amd64.tar.gz && \
-    tar -zxvf go-cqhttp_linux_amd64.tar.gz
-```
-## ②配置go-cqhttp
-
-1. 复制执行（会终止，这个正常）
-```
-cd ~/go-cqhttp && echo -e "3\n" | ./go-cqhttp
-```
-2. 之后修改/root/Bot/go-cqhttp/config.yml，将universal参数改成ws://127.0.0.1:8080/onebot/v11/ws/并保存
+2. 打开root/Bot/go-cqhttp/config.yml，修改qq账号和密码，后保存
 <br>
     <img src="图片/配置gocq.png" width="70%">
 
-3. 签名问题，请自行查看该教程：https://gitee.com/touchscale/Qsign
+3. 安装unidbg-fetch-qsign（返回root/Bot目录终端输入）
 
-### ③重新启动go-cqhttp
 ```
-cd Bot/zhenxun
-screen -S gocq
-cd ~/go-cqhttp && echo -e "3\n" | ./go-cqhttp -faststart
+bash <(curl -L https://sourl.cn/UT4an4)
 ```
+当出现：请选择使用 systemd 或 Docker 进行管理
+
+请选择：1. systemd管理（官方推荐）
+
+当出现：请输入数字选项: 
+
+请选择：0
+
+当出现：输入执行版本(比如 8.9.76) :
+
+请输入8.9.73
+
+完成后可在终端输入下发内容查看签名是否运行成功
+```
+curl http://127.0.0.1:8080
+```
+
+4. 启动go-cqhttp
+
+输入以下内容回车即可
+```
+go-cqhttp
+```
+
+5. 我说过gocq寄了，无法登录就更换签名版本（唯一的办法，不一定能行）
+
 </details>
 
 ---
@@ -260,7 +280,7 @@ bash <(curl -L https://sourl.cn/UT4an4)
 
 当出现：输入执行版本(比如 8.9.76) :
 
-请输入8.9.73
+请输入8.9.78
 
 完成后可在终端输入下发内容查看签名是否运行成功
 ```
