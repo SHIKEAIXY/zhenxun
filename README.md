@@ -200,7 +200,16 @@ cd ~/go-cqhttp && echo -e "3\n" | ./go-cqhttp -faststart
 <br>
     <img src="图片/下载node管理器.png" width="70%">
 
-2.安装云崽机器人（终端依次输入）
+2.安装云崽机器人（终端root目录运行）
+
+```
+bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/master/Yunzai.sh)
+```
+
+<details>
+  <summary>如果不想使用sh一键下载可点击此处手动下载</summary>
+
+&nbsp;2.1. 在终端root目录依次输入以下内容并回车 
 
 ```
 git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git ./Bot/Yunzai/Miao-Yunzai/
@@ -230,6 +239,8 @@ git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plu
 ```
 pnpm install --filter=ws-plugin
 ```
+</details>
+&nbsp;
 
 3. 安装redis数据库
 
