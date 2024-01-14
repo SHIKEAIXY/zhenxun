@@ -157,20 +157,18 @@ python3 bot.py
 <details>
   <summary>使用go-cqhttp连接真寻bot（不建议）</summary>
 
-## ①安装go-cqhttp
-
 # 再提醒你一句，gocq作者已经不再更新，签名服务以无法解决gocq45问题
+
+## ①安装go-cqhttp
 
 1. 下载go-cqhttp
 
 ```
 cd Bot
-    git clone --depth 1 -b go-cqhttp_1.2.0_linux_arm64.deb https://gitee.com/SHIKEAIXY/zhenxun.git ./go-cqhttp
+git clone --depth 1 -b go-cqhttp_1.2.0_linux_arm64.deb https://gitee.com/SHIKEAIXY/zhenxun.git ./go-cqhttp
 ```
 
 2. 打开root/Bot/go-cqhttp/config.yml，修改qq账号和密码，后保存
-<br>
-    <img src="图片/配置gocq.png" width="70%">
 
 3. 安装unidbg-fetch-qsign（返回root/Bot目录终端输入）
 
