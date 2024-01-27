@@ -111,13 +111,13 @@ ok火速下一步
 
 # 三 开始安装真寻本体
 
-1. 通过github下载真寻本体
+1. 通过github下载真寻本体（在root执行）
 
 ```
 git clone --depth 1 https://github.com/HibiKier/zhenxun_bot ./Bot/zhenxun_bot
 ```
 
-2. 执行下面内容
+2. 执行下面内容（在root执行）
 
 ``` 
 cd Bot/zhenxun_bot
@@ -161,10 +161,9 @@ python3 bot.py
 
 ## ①安装go-cqhttp
 
-1. 下载go-cqhttp
+1. 下载go-cqhttp（此时我们的目录在root/Bot）
 
 ```
-cd Bot
 git clone --depth 1 -b go-cqhttp_1.2.0_linux_arm64.deb https://gitee.com/SHIKEAIXY/zhenxun.git ./go-cqhttp
 ```
 
@@ -218,7 +217,7 @@ go-cqhttp
 <br>
     <img src="图片/下载node管理器.png" width="70%">
 
-2.安装云崽机器人（终端root目录运行）
+2.安装云崽机器人（此时因该在root/Bot目录）
 
 ```
 bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/master/Yunzai.sh)
@@ -227,13 +226,13 @@ bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/master/Yunzai.sh)
 <details>
   <summary>如果不想使用sh一键下载可点击此处手动下载</summary>
 
-&nbsp;2.1. 在终端root目录依次输入以下内容并回车 
+&nbsp;2.1. 在终端root/Bot目录依次输入以下内容并回车 
 
 ```
-git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git ./Bot/Yunzai/Miao-Yunzai/
+git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git ./Miao-Yunzai/
 ```
 ```
-cd Bot/Yunzai/Miao-Yunzai
+cd Miao-Yunzai
 ```
 ```
 git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
@@ -264,8 +263,9 @@ pnpm install --filter=ws-plugin
 
 还是打开软件商店搜索`redis`（剩下的你自己搞吧，累了）
 
-4. 安装unidbg-fetch-qsign（终端输入）
+4. 安装unidbg-fetch-qsign（此时因该在root/Bot目录）
 ```
+cd ..
 bash <(curl -L https://sourl.cn/UT4an4)
 ```
 当出现：请选择使用 systemd 或 Docker 进行管理
@@ -380,7 +380,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 ### ④下载配置Gensokyo
 
-1. 下载gensokyo-linux-amd64（取用v298）
+1. 下载gensokyo-linux-amd64（取用v298，且此时因该在root/Bot目录）后续发现教程更新Gensokyo版本可不更新
 ```
 git clone --depth 1 -b gensokyo-linux-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
 ```
@@ -438,7 +438,7 @@ port: "443"
 
 关机/页面关上了该怎么重新启动真寻？
 
-1. 打开真寻根目录cmd运行
+1. 打开真寻根目录cmd运行（root/Bot/zhenxun_bot）
 
 ```
 poetry shell
