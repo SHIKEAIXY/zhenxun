@@ -243,7 +243,7 @@ screen -S name -X quit  //删除这个screen窗口
 2.安装云崽机器人（此时因该在root/Bot目录）
 
 ```
-bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/master/Yunzai.sh)
+bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/linux/Yunzai.sh)
 ```
 
 <details>
