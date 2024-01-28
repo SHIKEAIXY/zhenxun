@@ -152,6 +152,17 @@ poetry shell
 python3 bot.py
 ```
 
+7. 关于screen命令说明：
+
+* screen命令一般用于Linux的持久化运行
+* 其中下方命令当中的name为创建screen窗口的名称
+```
+screen -S name //创建一个screen窗口
+screen -r name //打开这个screen窗口
+screen -ls     //查看全部screen窗口
+screen -S name -X quit  //删除这个screen窗口
+```
+
 # 四 连接zhenxun_bot
 
 <details>
@@ -184,21 +195,33 @@ bash <(curl -L https://sourl.cn/UT4an4)
 
 当出现：输入执行版本(比如 8.9.76) :
 
-请输入8.9.73
+请输入8.9.78
 
 完成后可在终端输入下发内容查看签名是否运行成功
 ```
 curl http://127.0.0.1:8080
 ```
 
-4. 启动go-cqhttp
+4. 启动go-cqhttp（此时因该在root/Bot/go-cqhttp目录终端输入）
 
 输入以下内容回车即可
 ```
+screen -S gocq
 go-cqhttp
 ```
 
 5. 我说过gocq寄了，无法登录就更换签名版本（唯一的办法，不一定能行）
+
+6. 关于screen命令说明：
+
+* screen命令一般用于Linux的持久化运行
+* 其中下方命令当中的name为创建screen窗口的名称
+```
+screen -S name //创建一个screen窗口
+screen -r name //打开这个screen窗口
+screen -ls     //查看全部screen窗口
+screen -S name -X quit  //删除这个screen窗口
+```
 
 </details>
 
@@ -380,12 +403,12 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 ### ④下载配置Gensokyo
 
-1. 下载gensokyo-linux-amd64（取用v298，且此时因该在root/Bot目录）后续发现教程更新Gensokyo版本可不更新
+1. 下载gensokyo-linux-amd64（取用v314，且此时因该在root/Bot目录）后续发现教程更新Gensokyo版本可不更新
 ```
 git clone --depth 1 -b gensokyo-linux-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
 ```
 
-2. 打开下载的`Gensokyo`后并双击打开`config.yml`
+2. 打开下载的`Gensokyo`后并双击打开`config.yml`（此时因该在root/Bot/Gensokyo路径中）
 
 3. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~9行
 <br>
@@ -408,7 +431,23 @@ server_dir: "sanae.online"
 port: "443" 
 ``` 
 
-6. 以上完成后双击运行`gensokyo.bat`不出意外就可以运行了
+6. 以上完成后，输入下方内容命令（此时因该在root/Bot/Gensokyo路径中）
+
+```
+screen -S gsk
+./gensokyo-linux-amd64
+```
+
+7. 关于screen命令说明：
+
+* screen命令一般用于Linux的持久化运行
+* 其中下方命令当中的name为创建screen窗口的名称
+```
+screen -S name //创建一个screen窗口
+screen -r name //打开这个screen窗口
+screen -ls     //查看全部screen窗口
+screen -S name -X quit  //删除这个screen窗口
+```
 
 ### ⑤配置沙箱使用机器人
 
@@ -441,14 +480,25 @@ port: "443"
 1. 打开真寻根目录cmd运行（root/Bot/zhenxun_bot）
 
 ```
+screen -r zhenxun
+```
+```
 poetry shell
 ```
 ```
 python3 bot.py
 ```
-#### 启动命令说明
-- poetry shell 这个是进入虚拟环境
-- python3 bot.py 这个是用python3来运行bot.py这个文件
+
+2. 关于screen命令说明：
+
+* screen命令一般用于Linux的持久化运行
+* 其中下方命令当中的name为创建screen窗口的名称
+```
+screen -S name //创建一个screen窗口
+screen -r name //打开这个screen窗口
+screen -ls     //查看全部screen窗口
+screen -S name -X quit  //删除这个screen窗口
+```
 
 # 六 真寻插件下载
  
