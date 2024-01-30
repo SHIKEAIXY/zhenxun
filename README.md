@@ -60,7 +60,7 @@
 
 # 一 安装宝塔面板
 
-### ①首先你因该准备一个Ubuntu22+并且是2H4G的服务器（自带ptyhon3.8）
+### ①首先你应该准备一个Ubuntu22+并且是2H4G的服务器（自带ptyhon3.8）
 
 ### ②打开服务器控制台找到SSH连接工具输入下方内容回车即可（各大服务商都不一样，我就不举例了）
 
@@ -202,7 +202,7 @@ bash <(curl -L https://sourl.cn/UT4an4)
 curl http://127.0.0.1:8080
 ```
 
-4. 启动go-cqhttp（此时因该在root/Bot/go-cqhttp目录终端输入）
+4. 启动go-cqhttp（此时应该在root/Bot/go-cqhttp目录终端输入）
 
 输入以下内容回车即可
 ```
@@ -240,7 +240,7 @@ screen -S name -X quit  //删除这个screen窗口
 <br>
     <img src="图片/下载node管理器.png" width="70%">
 
-2.安装云崽机器人（此时因该在root/Bot目录）
+2.安装云崽机器人（此时应该在root/Bot目录）
 
 ```
 bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/linux/Yunzai.sh)
@@ -286,7 +286,7 @@ pnpm install --filter=ws-plugin
 
 还是打开软件商店搜索`redis`（剩下的你自己搞吧，累了）
 
-4. 安装unidbg-fetch-qsign（此时因该在root/Bot目录）
+4. 安装unidbg-fetch-qsign（此时应该在root/Bot目录）
 ```
 cd ..
 bash <(curl -L https://sourl.cn/UT4an4)
@@ -308,7 +308,13 @@ bash <(curl -L https://sourl.cn/UT4an4)
 curl http://127.0.0.1:8080
 ```
 
-#### ④机器人配置
+#### ④机器人/配置（此时应该在root/Bot目录执行）
+
+```
+cd Miao-Yunzai
+screen -r yunzai
+node app
+```
 
 1. 请输入机器人QQ号(建议用小号)：`这里输入机器人的QQ号即可`
 
@@ -403,12 +409,12 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 ### ④下载配置Gensokyo
 
-1. 下载gensokyo-linux-amd64（取用v314，且此时因该在root/Bot目录）后续发现教程更新Gensokyo版本可不更新
+1. 下载gensokyo-linux-amd64（取用v314，且此时应该在root/Bot目录）后续发现教程更新Gensokyo版本可不更新
 ```
 git clone --depth 1 -b gensokyo-linux-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
 ```
 
-2. 打开下载的`Gensokyo`后并双击打开`config.yml`（此时因该在root/Bot/Gensokyo路径中）
+2. 打开下载的`Gensokyo`后并双击打开`config.yml`（此时应该在root/Bot/Gensokyo路径中）
 
 3. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~9行
 <br>
@@ -431,7 +437,7 @@ server_dir: "sanae.online"
 port: "443" 
 ``` 
 
-6. 以上完成后，输入下方内容命令（此时因该在root/Bot/Gensokyo路径中）
+6. 以上完成后，输入下方内容命令（此时应该在root/Bot/Gensokyo路径中）
 
 ```
 screen -S gsk
