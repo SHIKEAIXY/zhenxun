@@ -20,14 +20,15 @@ settings:
     # - "InteractionHandler"                         # 添加频道互动回应
     - "GroupATMessageEventHandler"                   # 群at信息 仅频道机器人时候需要注释
     - "C2CMessageEventHandler"                       # 群私聊 仅频道机器人时候需要注释
-    # - "ThreadEventHandler"  
+    # - "ThreadEventHandler"                         # 发帖事件 (当前版本已禁用)
+
 
   global_channel_to_group: true                      # 是否将频道转换成群 默认true
   global_private_to_channel: false                   # 是否将私聊转换成频道 如果是群场景 会将私聊转为群(方便提审\测试)
   array: false                                       # 连接trss云崽请开启array
   hash_id : false                                    # 使用hash来进行idmaps转换,可以让user_id不是123开始的递增值
 
-  server_dir: "192.168.137.1"                        # 提供图片上传服务的服务器(图床)需要带端口号. 如果需要发base64图,需为公网ip,且开放对应端口
+  server_dir: "192.168.137.1"                    # 提供图片上传服务的服务器(图床)需要带端口号. 如果需要发base64图,需为公网ip,且开放对应端口
   port: "15630"                                      # idmaps和图床对外开放的端口号
   backup_port : "5200"                               # 当totus为ture时,port值不再是本地webui的端口,使用lotus_Port来访问webui
 
@@ -124,7 +125,7 @@ settings:
   send_delay : 300                  #单位 毫秒 默认300ms 可以视情况减少到100或者50
 
   title : "Gensokyo © 2023 - Hoshinonyaruko"              #程序的标题 如果多个机器人 可根据标题区分
-  custom_bot_name : "Gensokyo真寻机器人"                   #自定义机器人名字,会在api调用中返回,默认Gensokyo全域机器人
+  custom_bot_name : "Gensokyo全域机器人"                   #自定义机器人名字,会在api调用中返回,默认Gensokyo全域机器人
  
   twoway_echo : false               #是否采用双向echo,根据机器人选择,獭獭\早苗 true 红色问答\椛椛 或者其他 请使用 false
   custom_template_id : ""           #自动转换图文信息到md所需要的id *需要应用端支持双方向echo
