@@ -228,7 +228,7 @@ screen -S name -X quit  //删除这个screen窗口
 ---
 
 <details>
-  <summary>使用[云崽]的[ws插件]跳过gocq使用icqq连接真寻bot</summary>
+  <summary>使用[云崽]的[ws插件]跳过gocq使用icqq连接真寻bot（在2024年2月5号的晚上7点ICQQ删库...建议各位早日使用Gensokyo）</summary>
 
 ## 安装云崽
 
