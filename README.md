@@ -52,10 +52,6 @@
 [![](https://img.shields.io/badge/TRSS--Yunzai/Miao--Yunzai-ws--plugin-red)](https://gitee.com/xiaoye12123/ws-plugin)
 [![](https://img.shields.io/badge/Gensokyo-QQAPI-red)](https://github.com/Hoshinonyaruko/Gensokyo)
 
-本仓库访问量 统计时间2023.4.16 （好可怜）
-
-[![访问量](https://profile-counter.glitch.me/zhenxun/count.svg)](https://gitee.com/SHIKEAIXY/zhenxun.git)
-
 # 正文啦！
 
 # 一 首先你应该准备一个Ubuntu20+并且是2H4G+的服务器
@@ -65,20 +61,20 @@
 <details>
   <summary>安装宝塔面板（无电脑则安装宝塔，如果有建议使用XTerminal）</summary>
 
-### ②打开服务器控制台找到SSH连接工具输入下方内容回车即可
+### 打开服务器控制台找到SSH连接工具输入下方内容回车即可
 
 ```
 wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh ed8484bec
 ```
 
-### ③等待安装完成后打开面板（密码请牢记，如无法打开请开放端口）
+### 等待安装完成后打开面板（密码请牢记，如无法打开请开放端口）
 
 </details>
 
 <details>
   <summary>安装XTerminal（无安卓和苹果端）</summary>
 
-1. (点击此处下载XTerminal)[https://www.xterminal.cn/]
+1. [点击此处下载XTerminal](https://www.xterminal.cn)
 
 2. 下载完成后打开点击新建服务器（+号）
 <br>
