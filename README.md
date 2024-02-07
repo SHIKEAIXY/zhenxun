@@ -31,7 +31,7 @@
 
 1. 有什么问题可以在本库提Issues或者加上方聊群询问
 
-2. linux系统的教程网请查看[linux分支](https://gitee.com/SHIKEAIXY/zhenxun/tree/linux)
+2. linux系统的教程请查看[linux分支](https://gitee.com/SHIKEAIXY/zhenxun/tree/linux)
 
 3. [点击查看zhenxun_bot的介绍](https://github.com/HibiKier/zhenxun_bot/blob/main/README.md)
 
@@ -58,10 +58,6 @@
 [![](https://img.shields.io/badge/TRSS--Yunzai/Miao--Yunzai-ws--plugin-red)](https://gitee.com/xiaoye12123/ws-plugin)
 [![](https://img.shields.io/badge/Gensokyo-QQAPI-red)](https://github.com/Hoshinonyaruko/Gensokyo)
 
-本仓库访问量 统计时间4.16 （好可怜）
-
-[![访问量](https://profile-counter.glitch.me/zhenxun/count.svg)](https://gitee.com/SHIKEAIXY/zhenxun.git)
-
 # 正文啦！
 # 一 准备工作
 
@@ -70,6 +66,7 @@
 ### ①安装python
 
 这里我推荐安装python3.10
+
 [点击下载py3.10](https://yshs.lanzouy.com/iFMpG0gdwt9a)
 
 下面两个对钩点上 然后点击Install Now等待安装完成
