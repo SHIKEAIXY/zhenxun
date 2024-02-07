@@ -58,11 +58,14 @@
 
 # 正文啦！
 
-# 一 安装宝塔面板
+# 一 首先你应该准备一个Ubuntu20+并且是2H4G+的服务器
 
-### ①首先你应该准备一个Ubuntu22+并且是2H4G的服务器（自带ptyhon3.8）
+# 二 安装宝塔面板或者XTerminal(懒可使用宝塔面板否则不推荐)
 
-### ②打开服务器控制台找到SSH连接工具输入下方内容回车即可（各大服务商都不一样，我就不举例了）
+<details>
+  <summary>安装宝塔面板（无电脑则安装宝塔，如果有建议使用XTerminal）</summary>
+
+### ②打开服务器控制台找到SSH连接工具输入下方内容回车即可
 
 ```
 wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh ed8484bec
@@ -70,22 +73,51 @@ wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo 
 
 ### ③等待安装完成后打开面板（密码请牢记，如无法打开请开放端口）
 
+</details>
+
+<details>
+  <summary>安装XTerminal（无安卓和苹果端）</summary>
+
+1. (点击此处下载XTerminal)[https://www.xterminal.cn/]
+
+2. 下载完成后打开点击新建服务器（+号）
+<br>
+    <img src="图片/XTerminal新建ssh.png" width="70%">
+
+3. 写上一个名字/ip地址/登录密码后创建即可
+<br>
+    <img src="图片/XTerminal绑定ssh.png" width="70%">
+
+3.1 你的登录密码会在你的服务商控制台显示（不知道在哪里就去百度搜，太多了我没办法去列举每个服务商不一样）
+
+4. 创建完成点击连接
+<br>
+    <img src="图片/XTerminal连接ssh.png" width="70%">
+
+</details>
 
 # 二 前置准备
 
-### ①安装poetry以及ffmpeg
+### ①安装poetry与ffmpeg和中文字体
 
-1. 打开宝塔依次终端输入下方内容
+1. 打开终端依次输入下方内容
 
 ```
+sudo apt update
+sudo apt upgrade
 sudo pip install --upgrade pip
 sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 sudo apt update && sudo apt install -y wget git screen ffmpeg
 sudo apt install -y python3-pip
 sudo pip install poetry
+sudo apt-get install -y ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-ukai fonts-arphic-uming
+sudo fc-cache -f -v
 ```
 
 # 三 安装PostgreSQL数据库
+
+<details>
+  <summary>使用宝塔面板安装PostgreSQL数据库</summary>
 
 1. 打开软件商店搜索PostgreSQL管理器并安装（默认安装即可）
 <br>
@@ -106,6 +138,31 @@ sudo pip install poetry
 5. `数据库名/用户名/密码`全部填写`zhenxun`后点击`确定`
 <br>
     <img src="图片/创建PostgreSQL2.png" width="70%">
+
+</details>
+
+<details>
+  <summary>使用XTerminal安装PostgreSQL数据库</summary>
+
+1. 安装PostgreSQL数据库
+
+```
+sudo apt install -y postgresql postgresql-contrib
+
+```
+
+2. 创建数据库（终端依次输入）
+
+```
+sudo su - postgres
+psql
+CREATE USER zhenxun WITH PASSWORD 'zhenxun';
+CREATE DATABASE zhenxun OWNER zhenxun;
+exit
+exit
+```
+
+</details>
 
 ok火速下一步
 
@@ -236,9 +293,26 @@ screen -S name -X quit  //删除这个screen窗口
 
 1. 下载node.js
 
+<details>
+  <summary>使用宝塔面板安装node.js</summary>
+
 打开宝塔的软件商店搜索`Node.js版本管理器`并下载20.9.0的版本（也可以下载16/18的版本）
 <br>
     <img src="图片/下载node管理器.png" width="70%">
+
+</details>
+
+<details>
+  <summary>使用XTerminal安装node.js</summary>
+
+终端依次输入下方内容
+
+```
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt install -y nodejs
+```
+
+</details>
 
 2.安装云崽机器人（此时应该在root/Bot目录）
 
@@ -284,7 +358,37 @@ pnpm install --filter=ws-plugin
 
 3. 安装redis数据库
 
-还是打开软件商店搜索`redis`（剩下的你自己搞吧，累了）
+<details>
+  <summary>使用宝塔面板安装redis数据库</summary>
+
+还是打开软件商店搜索`redis`（剩下的你自己搞吧，这么简单你不会还不会吧？）
+
+</details>
+
+<details>
+  <summary>使用XTerminal安装redis数据库</summary>
+
+终端输入下方内容
+
+```
+sudo apt install redis-server
+```
+
+安装完成后 Redis 服务会自动启动
+
+可以使用以下命令来检查 Redis 服务的运行状态（如果 Redis 服务正在运行，你将看到类似于 "active (running)" 的输出）
+
+```
+sudo systemctl status redis-server
+```
+
+Redis 在系统启动时自动启动可以使用下方命令
+
+```
+sudo systemctl enable redis-server
+```
+
+</details>
 
 4. 安装unidbg-fetch-qsign（此时应该在root/Bot目录）
 ```
