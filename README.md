@@ -162,7 +162,47 @@ exit
 
 ok火速下一步
 
-# 三 开始安装真寻本体
+# 四 安装python3.10
+
+这里可以选择不安装（Ubuntu 20+系统自带python3.8，但是为了减少后续问题建议安装）
+
+<details>
+  <summary>使用宝塔安装python</summary>
+
+不会宝塔的，但也可以用宝塔的终端这样安装
+
+```
+sudo apt update
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz
+tar -xf Python-3.10.0.tgz
+cd Python-3.10.0
+./configure --enable-optimizations
+make -j $(nproc)
+sudo make altinstall
+```
+
+</details>
+
+<details>
+  <summary>使用XTerminal安装python</summary>
+
+终端依次输入下方内容
+
+```
+sudo apt update
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz
+tar -xf Python-3.10.0.tgz
+cd Python-3.10.0
+./configure --enable-optimizations
+make -j $(nproc)
+sudo make altinstall
+```
+
+</details>
+
+# 五 开始安装真寻本体
 
 1. 通过github下载真寻本体（在root执行）
 
@@ -193,6 +233,8 @@ sudo apt install -y screen
 screen -S zhenxun
 poetry shell
 python3 bot.py
+如果你安装了python3.10请使用下方的
+python3.10 bot.py
 ```
 
 5. 打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot（如果你没有这些需求可以忽略这步，毕竟默认配置了）
@@ -216,7 +258,7 @@ screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
 ```
 
-# 四 连接zhenxun_bot
+# 六 连接zhenxun_bot
 
 <details>
   <summary>使用go-cqhttp连接真寻bot（不建议）</summary>
@@ -629,7 +671,7 @@ screen -S name -X quit  //删除这个screen窗口
 
 ---
 
-# 五 重新启动真寻
+# 七 重新启动真寻
 
 关机/页面关上了该怎么重新启动真寻？
 
@@ -643,6 +685,8 @@ poetry shell
 ```
 ```
 python3 bot.py
+如果你安装了python3.10请使用下方的
+python3.10 bot.py
 ```
 
 2. 关于screen命令说明：
@@ -656,7 +700,7 @@ screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
 ```
 
-# 六 真寻插件下载
+# 八 真寻插件下载
  
 [插件安装问题](https://github.com/zhenxun-org/nonebot_plugins_zhenxun_bot/issues/27)
 
