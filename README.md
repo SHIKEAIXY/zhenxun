@@ -304,9 +304,31 @@ screen -S name -X quit  //删除这个screen窗口
 终端依次输入下方内容
 
 ```
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-sudo apt install -y nodejs
+sudo apt install apt-transport-https curl ca-certificates software-properties-common
+curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
+
+如果第一步出现dpkg被中断的问题可以尝试以下放法后在继续使用剩余安装命令
+
+1.1 清理APT缓存
+
+```
+sudo apt clean
+```
+1.2 杀死占用锁定文件的进程
+
+```
+sudo fuser -vki /var/lib/dpkg/lock
+```
+
+1.3 重新打开终端输入
+
+```
+sudo dpkg --configure -a
+```
+
+1.4 如还是被中断就用重启大法！  
 
 </details>
 
@@ -386,7 +408,7 @@ sudo systemctl enable redis-server
 
 </details>
 
-4. 安装unidbg-fetch-qsign（此时应该在root/Bot目录）
+4. 安装unidbg-fetch-qsign（此时应该在root/Bot目录，另外如果你的服务器是2H4G建议使用下方教程中提供的签名，防止cpu直接干满）
 ```
 cd ..
 bash <(curl -L https://sourl.cn/UT4an4)
@@ -420,7 +442,7 @@ node app
 
 2. 请输入登录密码(为空则扫码登录)：`这里输入机器人的QQ密码即可`
 
-3. 请选择登录端口：`这里请通过方向键选择aPad！！！`
+3. 请选择登录端口：`这里请通过方向键选择aPad！！！`（图片选错了，别跟着图片走！！！）
 
 4. 请输入主人QQ号：`这里输入用来管理机器人的QQ号即可`
 
@@ -428,6 +450,34 @@ node app
 
 ```
 http://http://127.0.0.1:8080/sign?key=114514
+```
+
+5.1 这里的签名可以使用饼干提供的签名,饼干群：777202389（推荐使用78或85）如果签名已寄那就自己部署吧
+
+```
+『签名状态』：
+「https://panel.biscute.top/service」
+『调用次数』：
+「https://biscute.top/index.php/archives/1/」
+
+======「8.9.78」======
+http://8.9.78.biscuilt.top/sign?key=biscuit
+======「8.9.85」======
+http://8.9.85.biscuilt.top/sign?key=biscuit
+======「8.9.88」======
+http://8.9.88.biscuilt.top/sign?key=biscuit
+======「8.9.90」======
+http://8.9.90.biscuilt.top/sign?key=biscuit
+======「8.9.93」======
+http://8.9.93.biscuilt.top/sign?key=biscuit
+======「9.0.0」======
+http://9.0.0.biscuilt.top/sign?key=biscuit
+======「9.0.8」======
+http://9.0.8.biscuilt.top/sign?key=biscuit
+======「9.0.15」======
+http://9.0.15.biscuilt.top/sign?key=biscuit
+======「9.0.17」======
+http://9.0.17.biscuilt.top/sign?key=biscuit
 ```
 <br>
     <img src="图片/机器人配置.png" width="50%">
