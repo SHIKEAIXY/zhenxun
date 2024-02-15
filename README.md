@@ -277,24 +277,21 @@ git clone --depth 1 -b go-cqhttp_1.2.0_linux_arm64.deb https://gitee.com/SHIKEAI
 
 3. 安装unidbg-fetch-qsign（返回root/Bot目录终端输入）
 
+先安装一下jdk
 ```
-bash <(curl -L https://sourl.cn/UT4an4)
+sudo apt update&&sudo apt install openjdk-8-jdk
 ```
-当出现：请选择使用 systemd 或 Docker 进行管理
 
-请选择：1. systemd管理（官方推荐）
-
-当出现：请输入数字选项: 
-
-请选择：0
-
-当出现：输入执行版本(比如 8.9.76) :
-
-请输入8.9.78
-
-完成后可在终端输入下发内容查看签名是否运行成功
+然后下载unidbg-fetch-qsign
 ```
-curl http://127.0.0.1:8080
+git clone --depth 1 https://gitee.com/touchscale/Qsign
+```
+
+然后启动unidbg-fetch-qsign（此处的8.9.78可修改）
+```
+cd Qsign
+screen -S api
+cd unidbg-fetch-qsign&&bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.78
 ```
 
 4. 启动go-cqhttp（此时应该在root/Bot/go-cqhttp目录终端输入）
@@ -351,27 +348,6 @@ curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
-如果第一步出现dpkg被中断的问题可以尝试以下放法后在继续使用剩余安装命令
-
-1.1 清理APT缓存
-
-```
-sudo apt clean
-```
-1.2 杀死占用锁定文件的进程
-
-```
-sudo fuser -vki /var/lib/dpkg/lock
-```
-
-1.3 重新打开终端输入
-
-```
-sudo dpkg --configure -a
-```
-
-1.4 如还是被中断就用重启大法！  
-
 </details>
 
 2.安装云崽机器人（此时应该在root/Bot目录）
@@ -395,6 +371,9 @@ cd Miao-Yunzai
 git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
 ```
 ```
+git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
+```
+```
 npm --registry=https://registry.npmmirror.com install pnpm -g
 ```
 ```
@@ -402,16 +381,10 @@ npm --registry=https://registry.npmmirror.com install pnpm -g
 pnpm config set registry https://registry.npmmirror.com
 ```
 ```
-pnpm install -P
+pnpm i
 ```
 ```
 pnpm add puppeteer@19.7.3 -w
-```
-```
-git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
-```
-```
-pnpm install --filter=ws-plugin
 ```
 </details>
 &nbsp;
@@ -450,26 +423,23 @@ sudo systemctl enable redis-server
 
 </details>
 
-4. 安装unidbg-fetch-qsign（此时应该在root/Bot目录，另外如果你的服务器是2H4G建议使用下方教程中提供的签名，防止cpu直接干满）
+4. 安装unidbg-fetch-qsign（此时应该在root/Bot目录）
+
+先安装一下jdk
 ```
-cd ..
-bash <(curl -L https://sourl.cn/UT4an4)
+sudo apt update&&sudo apt install openjdk-8-jdk
 ```
-当出现：请选择使用 systemd 或 Docker 进行管理
 
-请选择：1. systemd管理（官方推荐）
-
-当出现：请输入数字选项: 
-
-请选择：0
-
-当出现：输入执行版本(比如 8.9.76) :
-
-请输入8.9.78
-
-完成后可在终端输入下发内容查看签名是否运行成功
+然后下载unidbg-fetch-qsign
 ```
-curl http://127.0.0.1:8080
+git clone --depth 1 https://gitee.com/touchscale/Qsign
+```
+
+然后启动unidbg-fetch-qsign（此处的8.9.78可修改）
+```
+cd Qsign
+screen -S api
+cd unidbg-fetch-qsign&&bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.78
 ```
 
 #### ④机器人/配置（此时应该在root/Bot目录执行）
@@ -491,17 +461,82 @@ node app
 5. 请输入签名API地址（可留空）：`这里输入下方内容即可`
 
 ```
-http://http://127.0.0.1:8080/sign?key=114514
+http://http://127.0.0.1:801/sign?key=114514
 ```
 
-5.1 这里的签名可以使用饼干提供的签名,饼干群：777202389（推荐使用78或85）如果签名已寄那就自己部署吧
+<details>
+  <summary>使用他人提供的签名API</summary>
+
+1. 签名API推荐使用78或85.
+2. 由于签名API来自他人部署可能不稳定谨慎使用
+3. API收集来自煌,聊群：695596638
+
+<details>
+  <summary>煌提供的签名API</summary>
+
+1. 煌群：695596638
 
 ```
-『签名状态』：
-「https://panel.biscute.top/service」
-『调用次数』：
-「https://biscute.top/index.php/archives/1/」
+======「8.9.78」======
+https://huai-huai-8-9-78.hf.space/sign?key=ngm
+```
+</details>
 
+<details>
+  <summary>庆提供的签名API</summary>
+
+1. 庆群：未知
+
+```
+======「8.9.78」======
+http://8.140.254.159:10001/sign?key=114514
+======「8.9.85」======
+http://8.140.254.159:10045/sign?key=114514
+======「8.9.88」======
+http://8.140.254.159:10049/sign?key=114514
+```
+</details>
+
+<details>
+  <summary>小运提供的签名API</summary>
+
+1. 小运群：未知
+
+```
+======「8.9.78」======
+ttp://salipet.com:1535/sign?key=2394
+======「8.9.83」======
+http://salipet.com:1692/sign?key=2394
+```
+</details>
+
+<details>
+  <summary>咕咕咕提供的签名API</summary>
+
+1. 咕咕咕群：235589956或339695166
+2. 签名状态：http://47.108.180.154:3001/status/qsign
+```
+======「8.9.78」======
+http://47.108.180.154:8978/sign?key=114514  
+======「8.9.85」======
+http://47.108.180.154:8985/sign?key=114514
+======「8.9.88」======
+http://47.108.180.154:8988/sign?key=114514
+======「8.9.90」======
+http://47.108.180.154:8990/sign?key=114514
+======「8.9.93」======
+http://47.108.180.154:8993/sign?key=114514
+```
+</details>
+
+<details>
+  <summary>饼干提供的签名API</summary>
+
+1. 饼干群：580716131
+2. 签名状态：https://panel.biscute.top/service
+3. 调用次数』：https://biscute.top/index.php/archives/1
+
+```
 ======「8.9.78」======
 http://8.9.78.biscuilt.top/sign?key=biscuit
 ======「8.9.85」======
@@ -521,6 +556,11 @@ http://9.0.15.biscuilt.top/sign?key=biscuit
 ======「9.0.17」======
 http://9.0.17.biscuilt.top/sign?key=biscuit
 ```
+
+</details>
+
+</details>
+
 <br>
     <img src="图片/机器人配置.png" width="50%">
 
@@ -601,42 +641,45 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 ### ④下载配置Gensokyo
 
-1. 下载gensokyo-linux-amd64（取用v316，且此时应该在root/Bot目录）若发现教程的Gensokyo版本更新，可以选择无视更新
+1. 下载gensokyo-linux-amd64（取用v325，更新时间2024.2.14，且此时应该在root/Bot目录）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
 git clone --depth 1 -b gensokyo-linux-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
 ```
 
 2. 打开下载的`Gensokyo`后并双击打开`config.yml`（此时应该在root/Bot/Gensokyo路径中）
 
-3. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~9行
+3. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~10行
 <br>
     <img src="图片/配置Gensokyo2.png" width="50%">
 <br>
     <img src="图片/配置Gensokyo.png" width="50%">
 
-4. 将自己服务器的公网ip填入`server_dir`并开放端口号`15630`（不配置将无法发送图片）
+4. 将自己服务器的公网ip填入`server_dir`
 <br>
     <img src="图片/配置Gensokyo3.png" width="50%">
 
-5. 如果你没有公网ip可使用早苗的图床
+5. 并开放端口号`15630`（不配置将无法发送图片，不会就百度搜下吧）
 
-将`lotus`的`false`设置为`true`
+6. 如果你没有公网ip可使用早苗的图床
 
-将`server_dir`和`port`修改为下方内容后保存即可使用
+将`server_dir`和`port`修改为下方内容
 
 ```
 server_dir: "sanae.online"
 port: "443" 
 ``` 
+然后将`lotus`的`false`设置为`true`后保存即可使用
+<br>
+    <img src="图片/gsk图床.png" width="50%">
 
-6. 以上完成后，输入下方内容命令（此时应该在root/Bot/Gensokyo路径中）
+7. 以上完成后，输入下方内容命令（此时应该在root/Bot/Gensokyo路径中）
 
 ```
 screen -S gsk
 ./gensokyo-linux-amd64
 ```
 
-7. 关于screen命令说明：
+9. 关于screen命令说明：
 
 * screen命令一般用于Linux的持久化运行
 * 其中下方命令当中的name为创建screen窗口的名称
