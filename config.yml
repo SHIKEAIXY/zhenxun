@@ -5,7 +5,7 @@ settings:
   ws_address: ["ws://127.0.0.1:8080/onebot/v11/ws/"] # WebSocket服务的地址 支持多个["","",""]
   ws_token: []                                       #连接wss地址时服务器所需的token,按顺序一一对应,如果是ws地址,没有密钥,请留空.
   app_id: 123456                                     # 你的应用ID
-  uin : 123456                                            # 你的机器人QQ号,点击机器人资料卡查看  
+  uin : 123456                                       # 你的机器人QQ号,点击机器人资料卡查看或QQ开发平台查看
   token: "abcdef"                                    # 你的应用令牌
   client_secret: "abcdef"                            # 你的客户端密钥
 
