@@ -678,8 +678,12 @@ port: "443"
 screen -S gsk
 ./gensokyo-linux-amd64
 ```
+如果执行上方命令后出现出现`Permission denied`可使用下方命令赋予权限后再试
+```
+ls -l gensokyo-linux-amd64 
+```
 
-9. 关于screen命令说明：
+8. 关于screen命令说明：
 
 * screen命令一般用于Linux的持久化运行
 * 其中下方命令当中的name为创建screen窗口的名称
