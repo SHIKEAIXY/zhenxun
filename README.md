@@ -563,28 +563,53 @@ git clone --depth 1 -b gensokyo-windows-amd64 https://gitee.com/SHIKEAIXY/zhenxu
 
 2. 打开下载的`Gensokyo`后并双击打开`config.yml`
 
-3. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~9行
+3. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`QQ号 ID 令牌 秘钥`填写到`config.yml配置文件`的7~9行
 <br>
     <img src="图片/配置Gensokyo2.png" width="50%">
 <br>
     <img src="图片/配置Gensokyo.png" width="50%">
 
-4. 将自己服务器的公网ip填入`server_dir`并开放端口号`15630`（不配置将无法发送图片）
+4. 将自己服务器的公网ip填入`server_dir`
 <br>
     <img src="图片/配置Gensokyo3.png" width="50%">
 
-5. 如果你没有公网ip可使用早苗的图床
+5. 并开放端口号`15630`（不配置将无法发送图片）
 
-将`lotus`的`false`设置为`true`
+打开防火墙(不会可以`按住win键+R键`输入`Firewall.cpl`并点击确定)
+<br>
+    <img src="图片/防火墙.png" width="50%">
 
-将`server_dir`和`port`修改为下方内容后保存即可使用
+打开防火墙后点击`高级设置`
+<br>
+    <img src="图片/防火墙2.png" width="50%">
+
+然后点击`入站规则`并`新建规则`
+<br>
+    <img src="图片/防火墙3.png" width="50%">
+
+选择端口后下一页
+<br>
+    <img src="图片/防火墙4.png" width="50%">
+
+然后填写端口`15630`并下一页
+<br>
+    <img src="图片/防火墙5.png" width="50%">
+
+然后一直下一页即可，名字随便起
+
+6. 如果你没有公网ip可使用早苗的图床
+
+将`server_dir`和`port`修改为下方内容
 
 ```
 server_dir: "sanae.online"
 port: "443" 
 ``` 
+然后将`lotus`的`false`设置为`true`后保存即可使用
+<br>
+    <img src="图片/gsk图床.png" width="50%">
 
-6. 以上完成后双击运行`gensokyo.bat`不出意外就可以运行了
+7. 以上完成后双击运行`gensokyo.bat`不出意外就可以运行了
 
 ### ⑤配置沙箱使用机器人
 

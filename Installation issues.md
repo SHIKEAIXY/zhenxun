@@ -1,6 +1,7 @@
 # 真寻安装遇见的报错/问题总结来源issues
 
 问题还不全 等待更新
+
 ## 1.使用poetry install命令时报错 
 
 #### 报错图：
@@ -35,11 +36,13 @@ poetry init
 
 #### 原因：
 
-你不按照本教程安装来导致的
+tx的打压，gocq无力继续维护，寄
 
 #### 解决办法
-1.下载1.1.9签名和支持的gocq
-[点击此处查看教程](https://gitee.com/SHIKEAIXY/zhenxun#%E5%9B%9B-%E5%AE%89%E8%A3%85-go-cqhttp)
+
+1. 重新按照本教程安装签名服务再试
+
+2. 使用本教程的云崽icqq连接或者使用Gensokyo进行连接
 
 ## 3.首次启动bot报错
 
@@ -48,7 +51,7 @@ ImportError: cannot import name 'connections' from 'tortoise'
 
 #### 原因：
 
-tortoise-orm源码一看找不到Tortoise索引
+无法导入connections
 
 #### 解决办法
 
