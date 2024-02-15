@@ -476,6 +476,104 @@ git clone --depth 1 https://gitee.com/touchscale/Qsign.git ./Qsign
 ```
 http://127.0.0.1:801/sign?key=114514
 ```
+
+<details>
+  <summary>使用他人提供的签名API</summary>
+
+1. 签名API推荐使用78或85.
+2. 由于签名API来自他人部署可能不稳定谨慎使用
+3. API收集来自煌,聊群：695596638
+
+<details>
+  <summary>煌提供的签名API</summary>
+
+1. 煌群：695596638
+
+```
+======「8.9.78」======
+https://huai-huai-8-9-78.hf.space/sign?key=ngm
+```
+</details>
+
+<details>
+  <summary>庆提供的签名API</summary>
+
+1. 庆群：未知
+
+```
+======「8.9.78」======
+http://8.140.254.159:10001/sign?key=114514
+======「8.9.85」======
+http://8.140.254.159:10045/sign?key=114514
+======「8.9.88」======
+http://8.140.254.159:10049/sign?key=114514
+```
+</details>
+
+<details>
+  <summary>小运提供的签名API</summary>
+
+1. 小运群：未知
+
+```
+======「8.9.78」======
+ttp://salipet.com:1535/sign?key=2394
+======「8.9.83」======
+http://salipet.com:1692/sign?key=2394
+```
+</details>
+
+<details>
+  <summary>咕咕咕提供的签名API</summary>
+
+1. 咕咕咕群：未知
+2. 签名状态：http://47.108.180.154:3001/status/qsign
+```
+======「8.9.78」======
+http://47.108.180.154:8978/sign?key=114514  
+======「8.9.85」======
+http://47.108.180.154:8985/sign?key=114514
+======「8.9.88」======
+http://47.108.180.154:8988/sign?key=114514
+======「8.9.90」======
+http://47.108.180.154:8990/sign?key=114514
+======「8.9.93」======
+http://47.108.180.154:8993/sign?key=114514
+```
+</details>
+
+<details>
+  <summary>饼干提供的签名API</summary>
+
+1. 饼干群：580716131
+2. 签名状态：https://panel.biscute.top/service
+3. 调用次数』：https://biscute.top/index.php/archives/1
+
+```
+======「8.9.78」======
+http://8.9.78.biscuilt.top/sign?key=biscuit
+======「8.9.85」======
+http://8.9.85.biscuilt.top/sign?key=biscuit
+======「8.9.88」======
+http://8.9.88.biscuilt.top/sign?key=biscuit
+======「8.9.90」======
+http://8.9.90.biscuilt.top/sign?key=biscuit
+======「8.9.93」======
+http://8.9.93.biscuilt.top/sign?key=biscuit
+======「9.0.0」======
+http://9.0.0.biscuilt.top/sign?key=biscuit
+======「9.0.8」======
+http://9.0.8.biscuilt.top/sign?key=biscuit
+======「9.0.15」======
+http://9.0.15.biscuilt.top/sign?key=biscuit
+======「9.0.17」======
+http://9.0.17.biscuilt.top/sign?key=biscuit
+```
+
+</details>
+
+</details>
+
 <br>
     <img src="图片/机器人配置.png" width="50%">
 
