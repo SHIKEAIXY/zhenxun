@@ -5,8 +5,9 @@ settings:
   ws_address: ["ws://127.0.0.1:8080/onebot/v11/ws/"] # WebSocket服务的地址 支持多个["","",""]
   ws_token: []                                       #连接wss地址时服务器所需的token,按顺序一一对应,如果是ws地址,没有密钥,请留空.
   app_id: 123456                                     # 你的应用ID
+  uin : 123456                                       # 你的机器人QQ号,点击机器人资料卡查看  
   token: "abcdef"                                    # 你的应用令牌
-  client_secret: "abcdef"                            # 你的客户端密钥   
+  client_secret: "abcdef"                            # 你的客户端密钥
 
   text_intent:                                       # 请根据公域 私域来选择intent,错误的intent将连接失败
     # - "ATMessageEventHandler"                      # 频道at信息
@@ -87,7 +88,7 @@ settings:
   remove_prefix : false             #是否忽略公域机器人指令前第一个/
   remove_at : false                 #是否忽略公域机器人指令前第一个[CQ:aq,qq=机器人] 场景(公域机器人,但插件未适配at开头)
   remove_bot_at_group : true        #因为群聊机器人不支持发at,开启本开关会自动隐藏群机器人发出的at(不影响频道场景)
-  add_at_group : true              #自动在群聊指令前加上at,某些机器人写法特别,必须有at才反应时,请打开,默认请关闭(如果需要at,不需要at指令混杂,请优化代码适配群场景,群场景目前没有at概念)
+  add_at_group : true               #自动在群聊指令前加上at,某些机器人写法特别,必须有at才反应时,请打开,默认请关闭(如果需要at,不需要at指令混杂,请优化代码适配群场景,群场景目前没有at概念)
 
   white_prefix_mode : false         #公域 过审用 指令白名单模式开关 如果审核严格 请开启并设置白名单指令 以白名单开头的指令会被通过,反之被拦截
   v_white_prefix_mode : true        #虚拟二级指令(虚拟前缀)的白名单,默认开启,有二级指令帮助的效果
@@ -123,9 +124,10 @@ settings:
   url_pic_transfer : false          #把图片url(任意来源图链)变成你备案的白名单url 需要较高上下行+ssl+自备案域名+设置白名单域名(暂时不需要)
   idmap_pro : false                 #需开启hash_id配合,高级id转换增强,可以多个真实值bind到同一个虚拟值,对于每个用户,每个群\私聊\判断私聊\频道,都会产生新的虚拟值,但可以多次bind,bind到同一个数字.数据库负担会变大.
   send_delay : 300                  #单位 毫秒 默认300ms 可以视情况减少到100或者50
+  disable_webui: false              #禁用webui
 
   title : "Gensokyo © 2023 - Hoshinonyaruko"              #程序的标题 如果多个机器人 可根据标题区分
-  custom_bot_name : "Gensokyo真寻机器人"                  #自定义机器人名字,会在api调用中返回,默认Gensokyo全域机器人
+  custom_bot_name : "Gensokyo真寻机器人"                   #自定义机器人名字,会在api调用中返回,默认Gensokyo全域机器人
  
   twoway_echo : false               #是否采用双向echo,根据机器人选择,獭獭\早苗 true 红色问答\椛椛 或者其他 请使用 false
   custom_template_id : ""           #自动转换图文信息到md所需要的id *需要应用端支持双方向echo
@@ -142,6 +144,7 @@ settings:
   me_prefix : "/me"                 #需设置   #增强配置项  master_id 可触发
   unlock_prefix : "/unlock"         #频道私信卡住了? gsk可以帮到你 在任意子频道发送unlock 你会收到来自机器人的频道私信
   link_prefix : "/link"             #友情链接配置 配置custom_template_id后可用(https://www.yuque.com/km57bt/hlhnxg/tzbr84y59dbz6pib)
+  music_prefix : "点歌"             #[CQ:music,type=qq,id=123] 在消息文本组合qq音乐歌曲id,可以发送点歌,这是歌曲按钮第二个按钮的填充内容,应为你的机器人点歌插件的指令.
   link_bots : ["",""]               #发送友情链接时 下方按钮携带的机器人 格式 "appid-qq-name","appid-qq-name"
   link_text : ""                    #友情链接文本 不可为空!
   link_pic : ""                     #友情链接图片 可为空 需url图片 可带端口 不填可能会有显示错误

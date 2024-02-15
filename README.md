@@ -1,6 +1,6 @@
 ## 关于本库
 
-1. 本库取自[Gensokyo](https://github.com/Hoshinonyaruko/Gensokyo/releases/tag/316%2Fmerge)316版本的linux-amd64
+1. 本库取自[Gensokyo](https://github.com/Hoshinonyaruko/Gensokyo/releases/tag/325%2Fmerge)325版本的linux-amd64
 2. 本库修改了 ws_address 为 zhenxun_bot的8080
 * ws://127.0.0.1:8080/onebot/v11/ws/
 3. 本库修改了 text_intent 为群
@@ -14,7 +14,7 @@
 1. 下载screen
 ```
 sudo apt install -y screen
-screen -S zhenxun
+screen -S gsk
 ```
 2. 创建screen（在下载的Gensokyo中）
 ```
@@ -24,7 +24,10 @@ screen -S Gensokyo
 ```
 ./gensokyo-linux-amd64
 ```
-
+如果执行上方命令后出现出现`Permission denied`可使用下方命令赋予权限后再试
+```
+ls -l gensokyo-linux-amd64 
+```
 ## 关于screen
 
 1. 如果你不知道screen是什么请看这篇文章：[screen命令详解](https://zhuanlan.zhihu.com/p/405968623)
