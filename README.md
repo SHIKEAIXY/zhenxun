@@ -496,17 +496,15 @@ https://huai-huai-8-9-78.hf.space/sign?key=ngm
 </details>
 
 <details>
-  <summary>庆提供的签名API</summary>
+  <summary>叽叽叽提供的签名API</summary>
 
-1. 庆群：未知
+1. 叽叽叽群：未知
 
 ```
-======「8.9.78」======
-http://8.140.254.159:10001/sign?key=114514
-======「8.9.85」======
-http://8.140.254.159:10045/sign?key=114514
-======「8.9.88」======
-http://8.140.254.159:10049/sign?key=114514
+======「8.9.78/83/90/93」======
+http://114.132.243.116:10078/sign?key=114514
+======「在config/bot.yaml里添加：（XXX为版本如ver: 83）」======
+======「ver: XXX」======
 ```
 </details>
 
@@ -526,7 +524,7 @@ http://salipet.com:1692/sign?key=2394
 <details>
   <summary>咕咕咕提供的签名API</summary>
 
-1. 咕咕咕群：未知
+1. 咕咕咕群：235589956或339695166
 2. 签名状态：http://47.108.180.154:3001/status/qsign
 ```
 ======「8.9.78」======
@@ -540,36 +538,6 @@ http://47.108.180.154:8990/sign?key=114514
 ======「8.9.93」======
 http://47.108.180.154:8993/sign?key=114514
 ```
-</details>
-
-<details>
-  <summary>饼干提供的签名API</summary>
-
-1. 饼干群：580716131
-2. 签名状态：https://panel.biscute.top/service
-3. 调用次数』：https://biscute.top/index.php/archives/1
-
-```
-======「8.9.78」======
-http://8.9.78.biscuilt.top/sign?key=biscuit
-======「8.9.85」======
-http://8.9.85.biscuilt.top/sign?key=biscuit
-======「8.9.88」======
-http://8.9.88.biscuilt.top/sign?key=biscuit
-======「8.9.90」======
-http://8.9.90.biscuilt.top/sign?key=biscuit
-======「8.9.93」======
-http://8.9.93.biscuilt.top/sign?key=biscuit
-======「9.0.0」======
-http://9.0.0.biscuilt.top/sign?key=biscuit
-======「9.0.8」======
-http://9.0.8.biscuilt.top/sign?key=biscuit
-======「9.0.15」======
-http://9.0.15.biscuilt.top/sign?key=biscuit
-======「9.0.17」======
-http://9.0.17.biscuilt.top/sign?key=biscuit
-```
-
 </details>
 
 </details>
