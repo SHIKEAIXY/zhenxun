@@ -483,17 +483,15 @@ https://huai-huai-8-9-78.hf.space/sign?key=ngm
 </details>
 
 <details>
-  <summary>庆提供的签名API</summary>
+  <summary>叽叽叽提供的签名API</summary>
 
-1. 庆群：未知
+1. 叽叽叽群：未知
 
 ```
-======「8.9.78」======
-http://8.140.254.159:10001/sign?key=114514
-======「8.9.85」======
-http://8.140.254.159:10045/sign?key=114514
-======「8.9.88」======
-http://8.140.254.159:10049/sign?key=114514
+======「8.9.78/83/90/93」======
+http://114.132.243.116:10078/sign?key=114514
+======「在config/bot.yaml里添加：（XXX为版本如ver: 83）」======
+======「ver: XXX」======
 ```
 </details>
 
@@ -527,36 +525,6 @@ http://47.108.180.154:8990/sign?key=114514
 ======「8.9.93」======
 http://47.108.180.154:8993/sign?key=114514
 ```
-</details>
-
-<details>
-  <summary>饼干提供的签名API</summary>
-
-1. 饼干群：580716131
-2. 签名状态：https://panel.biscute.top/service
-3. 调用次数』：https://biscute.top/index.php/archives/1
-
-```
-======「8.9.78」======
-http://8.9.78.biscuilt.top/sign?key=biscuit
-======「8.9.85」======
-http://8.9.85.biscuilt.top/sign?key=biscuit
-======「8.9.88」======
-http://8.9.88.biscuilt.top/sign?key=biscuit
-======「8.9.90」======
-http://8.9.90.biscuilt.top/sign?key=biscuit
-======「8.9.93」======
-http://8.9.93.biscuilt.top/sign?key=biscuit
-======「9.0.0」======
-http://9.0.0.biscuilt.top/sign?key=biscuit
-======「9.0.8」======
-http://9.0.8.biscuilt.top/sign?key=biscuit
-======「9.0.15」======
-http://9.0.15.biscuilt.top/sign?key=biscuit
-======「9.0.17」======
-http://9.0.17.biscuilt.top/sign?key=biscuit
-```
-
 </details>
 
 </details>
@@ -641,7 +609,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 ### ④下载配置Gensokyo
 
-1. 下载gensokyo-linux-amd64（取用v325，更新时间2024.2.14，且此时应该在root/Bot目录）若发现教程的Gensokyo版本更新，可以选择无视更新
+1. 下载gensokyo-linux-amd64（取用v336，更新时间2024.2.24，且此时应该在root/Bot目录）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
 git clone --depth 1 -b gensokyo-linux-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
 ```
@@ -670,7 +638,7 @@ port: "443"
 ``` 
 然后将`lotus`的`false`设置为`true`后保存即可使用
 <br>
-    <img src="图片/gsk图床.png" width="50%">
+    <img src="图片/Gensokyo图床.png" width="50%">
 
 7. 以上完成后，输入下方内容命令（此时应该在root/Bot/Gensokyo路径中）
 
@@ -678,9 +646,10 @@ port: "443"
 screen -S gsk
 ./gensokyo-linux-amd64
 ```
-如果执行上方命令后出现出现`Permission denied`可使用下方命令赋予权限后再试
+如果执行上方命令后出现出现`-bash: ./gensokyo-linux-amd64: Permission denied`可使用下方命令赋予权限并使用sudo执行
 ```
-ls -l gensokyo-linux-amd64 
+chmod +x gensokyo-linux-amd64
+sudo ./gensokyo-linux-amd64
 ```
 
 8. 关于screen命令说明：
