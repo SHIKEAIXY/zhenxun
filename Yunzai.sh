@@ -28,7 +28,7 @@ echo '正在下载喵喵插件'
 git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
 echo '正在下载ws插件'
 git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
-if ! type node >/dev/null 2>&1; then
+if ! type pnpm >/dev/null 2>&1; then
 echo 'pnpm未安装'
 echo '正在安装pnpm中'
 npm --registry=https://registry.npmmirror.com install pnpm -g
