@@ -700,6 +700,44 @@ port: "443"
 
 ---
 
+<details>
+  <summary>使用ComWeChat(微信hook)连接真寻bot（更不建议）</summary>
+
+## ①下载WeChat微信
+
+版本有限制，请务必重新安装微信！！！
+
+[点击我进行下载WeChat](https://musetransfer.com/s/edx8lnrvo)
+
+## ②登录微信（微信账号需要实名）
+
+登录后，可选安装禁用更新补丁防止自动更新，[点击此处下载禁用微信更新](https://gitee.com/SHIKEAIXYY/Trss-ComWeChat-Yunzai/releases/download/1.1/禁用pc微信自动升级补丁.exe)
+
+
+## ③下载ComWeChat
+
+```
+git clone --depth 1 -b ComChat https://gitee.com/SHIKEAIXY/zhenxun.git ./ComWeChat
+```
+
+## ④运行ComWeChat
+
+1. 请先下载vc库，请正确下载电脑适用的版本，安装完成未生效请重启电脑
+
+2. [点击此处下载vc库](https://learn.microsoft.com/zh-cn/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+
+3. 打开 ComWeChat 文件夹
+
+4. 双击运行`install.bat`(报错就是vc库没安装)
+
+6. 双击运行`ComWeChat-Client-v0.0.8.exe`后等待连接
+
+# 请保持真寻Bot，ComWeChat，微信的运行，不要关闭
+
+</details>
+
+---
+
 # 五 重新启动真寻
 
 关机/页面关上了该怎么重新启动真寻？
