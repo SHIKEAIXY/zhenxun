@@ -208,6 +208,19 @@ ok火速下一步
 git clone --depth 1 https://github.com/HibiKier/zhenxun_bot
 ```
 
+<details>
+  <summary>安装dev重构...真寻bot(未完善)</summary>
+
+```
+git clone --depth 1 -b dev https://github.com/HibiKier/zhenxun_bot
+```
+
+<br>
+    <img src="图片/dev真寻.png" width="50%">
+    
+</details>
+
+
 2.执行下面内容
 
 ```
@@ -748,6 +761,52 @@ https://llonebot.github.io/zh-CN/guide/getting-started
 ## 连接真寻
 
 #### 安装完成需开起反向连接并填入真寻ws地址
+
+```
+ws://127.0.0.1:8080/onebot/v11/ws/
+```
+
+</details>
+
+---
+
+<details>
+  <summary>使用Lagrange.OneBot连接真寻bot</summary>
+
+## 由于项目特殊性暂不提供具体教程请前往官方文档自行查看安装教程
+
+https://lagrangedev.github.io/Lagrange.Doc/Lagrange.OneBot/Config
+
+## 连接真寻
+
+#### 安装完成需修改配置文件连接部分
+
+```
+{
+  "Type": "ReverseWebSocket",
+  "Host": "127.0.0.1",
+  "Port": 8080,
+  "Suffix": "/onebot/v11/ws/",
+  "ReconnectInterval": 5000,
+  "HeartBeatInterval": 5000,
+  "AccessToken": ""
+}
+```
+
+</details>
+
+---
+
+<details>
+  <summary>使用Shamrock连接真寻bot</summary>
+
+## 由于项目特殊性暂不提供具体教程请前往官方文档自行查看安装教程
+
+https://whitechi73.github.io/OpenShamrock/guide/getting-started.html
+
+## 连接真寻
+
+#### 安装完成需修改配置文件ws地址
 
 ```
 ws://127.0.0.1:8080/onebot/v11/ws/
