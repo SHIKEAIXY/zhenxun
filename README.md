@@ -204,10 +204,6 @@ ok火速下一步
 
 1.github下载真寻本体
 
-```
-git clone --depth 1 https://github.com/HibiKier/zhenxun_bot
-```
-
 <details>
   <summary>安装dev重构...真寻bot(未完善)</summary>
 
@@ -219,6 +215,11 @@ git clone --depth 1 -b dev https://github.com/HibiKier/zhenxun_bot
     <img src="图片/dev真寻.png" width="50%">
     
 </details>
+
+
+```
+git clone --depth 1 https://github.com/HibiKier/zhenxun_bot
+```
 
 
 2.执行下面内容
