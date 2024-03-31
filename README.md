@@ -738,6 +738,25 @@ git clone --depth 1 -b ComChat https://gitee.com/SHIKEAIXY/zhenxun.git ./ComWeCh
 
 ---
 
+<details>
+  <summary>使用LLOneBot连接真寻bot</summary>
+
+## 由于项目特殊性暂不提供具体教程请前往官方文档自行查看安装教程
+
+LLOneBot
+
+## 连接真寻
+
+#### 安装完成需开起反向连接并填入真寻ws地址
+
+```
+ws://127.0.0.1:8080/onebot/v11/ws/
+```
+
+</details>
+
+---
+
 # 五 重新启动真寻
 
 关机/页面关上了该怎么重新启动真寻？
