@@ -743,7 +743,7 @@ git clone --depth 1 -b ComChat https://gitee.com/SHIKEAIXY/zhenxun.git ./ComWeCh
 
 ## 由于项目特殊性暂不提供具体教程请前往官方文档自行查看安装教程
 
-LLOneBot
+https://llonebot.github.io/zh-CN/guide/getting-started
 
 ## 连接真寻
 
