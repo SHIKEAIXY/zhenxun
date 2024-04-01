@@ -323,6 +323,7 @@ playwright install chromium
 -----------------------------------------------------------
 
 ```
+```
 
 bind: str = ""  # 数据库连接链接
 sql_name: str = "postgres"
