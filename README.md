@@ -54,12 +54,12 @@
 
 # 正文啦！
 
-# 一 首先你应该准备一个Ubuntu20+并且是2H4G+的服务器
+# 一 首先你应该准备一个Ubuntu 22并且是2H4G+的服务器
 
-# 二 安装宝塔面板或者XTerminal(懒可使用宝塔面板否则不推荐)
+# 二 安装宝塔面板或者XTerminal
 
 <details>
-  <summary>安装宝塔面板（无电脑则安装宝塔，如果有建议使用XTerminal）</summary>
+  <summary>安装宝塔面板（不建议）</summary>
 
 ### 打开服务器控制台找到SSH连接工具输入下方内容回车即可
 
@@ -96,17 +96,20 @@ wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo 
 
 ### ①安装poetry与ffmpeg和中文字体
 
-1. 打开终端依次输入下方内容
+##### 由于Ubuntu 22系统自带python3.10，这里无需再次安装
+
+1. 打开终端依次输入下方内容进行安装
 
 ```
 sudo apt update
 sudo apt upgrade
+sudo apt install -y screen
 sudo pip install --upgrade pip
 sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 sudo apt update && sudo apt install -y wget git screen ffmpeg
 sudo apt install -y python3-pip
 sudo pip install poetry
-sudo apt-get install -y ttf-wqy-zenhei ttf-wqy-microhei fonts-arphic-ukai fonts-arphic-uming
+sudo apt install fonts-wqy-microhei
 sudo fc-cache -f -v
 ```
 
@@ -138,7 +141,7 @@ sudo fc-cache -f -v
 </details>
 
 <details>
-  <summary>使用XTerminal安装PostgreSQL数据库</summary>
+  <summary>使用XTerminal(终端)安装PostgreSQL数据库</summary>
 
 1. 安装PostgreSQL数据库
 
@@ -147,99 +150,127 @@ sudo apt install -y postgresql postgresql-contrib
 
 ```
 
-2. 创建数据库（终端依次输入）
+2. 创建数据库(依次输入)
 
 ```
 sudo su - postgres
 psql
-CREATE USER zhenxun WITH PASSWORD 'zhenxun';
-CREATE DATABASE zhenxun OWNER zhenxun;
-exit
-exit
+CREATE USER zhenxun WITH PASSWORD 'zhenxun'
+CREATE DATABASE zhenxun OWNER zhenxun
 ```
 
 </details>
 
 ok火速下一步
 
-# 四 安装python3.10
+# 四 开始安装真寻本体
 
-这里可以选择不安装（Ubuntu 20+系统自带python3.8，但是为了减少后续问题建议安装）
+首先安装Git，以有可跳过
+
+```
+sudo apt install git
+```
+
+---
 
 <details>
-  <summary>使用宝塔安装python</summary>
+  <summary>安装dev分支重构真寻bot(逐渐完善中...但不推荐安装)</summary>
 
-不会宝塔的，但也可以用宝塔的终端这样安装
-
-```
-sudo apt update
-sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
-wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz
-tar -xf Python-3.10.0.tgz
-cd Python-3.10.0
-./configure --enable-optimizations
-make -j $(nproc)
-sudo make altinstall
-```
-
-</details>
-
-<details>
-  <summary>使用XTerminal安装python</summary>
-
-终端依次输入下方内容
+<br>
+    <img src="图片/dev真寻.png" width="50%">
+    
+1.github下载真寻本体
 
 ```
-sudo apt update
-sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
-wget https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz
-tar -xf Python-3.10.0.tgz
-cd Python-3.10.0
-./configure --enable-optimizations
-make -j $(nproc)
-sudo make altinstall
+git clone --depth 1 -b dev https://github.com/HibiKier/zhenxun_bot ./Bot/zhenxun_bot
 ```
 
-</details>
-
-# 五 开始安装真寻本体
-
-1. 通过github下载真寻本体（在root执行）
+2.依次执行下面内容安装依赖以及连接数据库
 
 ```
-git clone --depth 1 https://github.com/HibiKier/zhenxun_bot ./Bot/zhenxun_bot
-```
-
-2. 执行下面内容（在root执行）
-
-``` 
 cd Bot/zhenxun_bot
-sed -i 's|bind.*|bind: str = "postgres://zhenxun:zhenxun@localhost:5432/zhenxun"|g' configs/config.py
+
+sed -i 's|bind.*|bind: str = "postgres://zhenxun:zhenxun@127.0.0.1:5432/zhenxun"|g' zhenxun/configs/config.py
+poetry shell
+poetry add pyyaml@latest
+poetry lock --no-update
 poetry install
 sudo pip install playwright
 playwright install chromium
 ```
 
-3. 在SUPERUSERS中添加自己大号（主人）的QQ号，123456789为QQ号，修改后执行即可
+3.设置超级用户，复制命令后将123456789修改完自己大号的QQ号
 
 ```
 sed -i 's/SUPERUSERS.*/SUPERUSERS=["123456789"]/g' .env.dev
 ```
 
-4. 启动真寻，会在 configs 和 data/configs 目录下生成各种配置文件
+4.启动真寻(虚拟环境内)，会在 zhenxun/configs 和 data/configs 目录下生成各种配置文件
 
 ```
-sudo apt install -y screen
+screen -S zhenxundev
+poetry shell
+python3 bot.py
+```
+
+（如果你没有这些需求可以忽略这步，毕竟默认配置了）
+
+5.由于dev默认开启kaihiela(kook)，不连接将会无法启动，如使用Websocket反向连接需手动把env.dev里的kaiheila_bots注释掉
+
+6.打开 zhenxun/configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
+
+```
+screen -r zhenxundev
+poetry shell
+python3 bot.py
+```
+
+</details>
+
+dev分支支持更多协议端，如DODO,Kook等，但还在完善，仅部署QQ真寻暂不建议使用
+
+---
+
+<details>
+  <summary>main主分支真寻bot(推荐)</summary>
+
+1.github下载真寻本体
+
+```
+git clone --depth 1 -b https://github.com/HibiKier/zhenxun_bot ./Bot/zhenxun_bot
+```
+
+2.依次执行下面内容安装依赖以及连接数据库
+
+```
+cd Bot/zhenxun_bot
+
+sed -i 's|bind.*|bind: str = "postgres://zhenxun:zhenxun@127.0.0.1:5432/zhenxun"|g' configs/config.py
+poetry shell
+poetry add pyyaml@latest
+poetry lock --no-update
+poetry install
+sudo pip install playwright
+playwright install chromium
+```
+
+3.设置超级用户，复制命令后将123456789修改完自己大号的QQ号
+
+```
+sed -i 's/SUPERUSERS.*/SUPERUSERS=["123456789"]/g' .env.dev
+```
+
+4.启动真寻(虚拟环境内)，会在 configs 和 data/configs 目录下生成各种配置文件
+
+```
 screen -S zhenxun
 poetry shell
 python3 bot.py
-如果你安装了python3.10请使用下方的
-python3.10 bot.py
 ```
 
-5. 打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot（如果你没有这些需求可以忽略这步，毕竟默认配置了）
+（如果你没有这些需求可以忽略这步，毕竟默认配置了）
 
-6. 重新运行真寻机器人（接下来会下载一些资源，下载失败的也不用管）
+5.打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
 
 ```
 screen -r zhenxun
@@ -247,7 +278,13 @@ poetry shell
 python3 bot.py
 ```
 
-7. 关于screen命令说明：
+</details>
+
+主分支相对稳定，部署QQ机器人，强烈推荐使用！
+
+---
+
+6. 关于screen命令说明：
 
 * screen命令一般用于Linux的持久化运行
 * 其中下方命令当中的name为创建screen窗口的名称
@@ -258,7 +295,7 @@ screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
 ```
 
-# 六 连接zhenxun_bot
+# 五 连接zhenxun_bot
 
 <details>
   <summary>使用go-cqhttp连接真寻bot（不建议）</summary>
@@ -687,7 +724,72 @@ screen -S name -X quit  //删除这个screen窗口
 
 ---
 
-# 七 重新启动真寻
+<details>
+  <summary>使用LLOneBot连接真寻bot</summary>
+
+## 由于项目特殊性暂不提供具体教程请前往官方文档自行查看安装教程
+
+https://llonebot.github.io/zh-CN/guide/getting-started
+
+## 连接真寻
+
+#### 安装完成需开起反向连接并填入真寻ws地址
+
+```
+ws://127.0.0.1:8080/onebot/v11/ws/
+```
+
+</details>
+
+---
+
+<details>
+  <summary>使用Lagrange.OneBot连接真寻bot</summary>
+
+## 由于项目特殊性暂不提供具体教程请前往官方文档自行查看安装教程
+
+https://lagrangedev.github.io/Lagrange.Doc/Lagrange.OneBot/Config
+
+## 连接真寻
+
+#### 安装完成需修改配置文件连接部分
+
+```
+{
+  "Type": "ReverseWebSocket",
+  "Host": "127.0.0.1",
+  "Port": 8080,
+  "Suffix": "/onebot/v11/ws/",
+  "ReconnectInterval": 5000,
+  "HeartBeatInterval": 5000,
+  "AccessToken": ""
+}
+```
+
+</details>
+
+---
+
+<details>
+  <summary>使用Shamrock连接真寻bot</summary>
+
+## 由于项目特殊性暂不提供具体教程请前往官方文档自行查看安装教程
+
+https://whitechi73.github.io/OpenShamrock/guide/getting-started.html
+
+## 连接真寻
+
+#### 安装完成需修改配置文件ws地址
+
+```
+ws://127.0.0.1:8080/onebot/v11/ws/
+```
+
+</details>
+
+---
+
+# 六 重新启动真寻
 
 关机/页面关上了该怎么重新启动真寻？
 
@@ -695,14 +797,14 @@ screen -S name -X quit  //删除这个screen窗口
 
 ```
 screen -r zhenxun
+如果你使用的是dev版真寻应使用
+screen -r zhenxundev
 ```
 ```
 poetry shell
 ```
 ```
 python3 bot.py
-如果你安装了python3.10请使用下方的
-python3.10 bot.py
 ```
 
 2. 关于screen命令说明：
@@ -716,7 +818,7 @@ screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
 ```
 
-# 八 真寻插件下载
+# 七 真寻插件下载
  
 [插件安装问题](https://github.com/zhenxun-org/nonebot_plugins_zhenxun_bot/issues/27)
 
