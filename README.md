@@ -296,7 +296,7 @@ python3 bot.py
 * 其中下方命令当中的name为创建screen窗口的名称
 ```
 screen -S name //创建一个screen窗口
-screen -r name //打开这个screen窗口
+screen -r -d name //强制打开这个screen窗口
 screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
 ```
@@ -322,7 +322,7 @@ git clone --depth 1 -b go-cqhttp_1.2.0_linux_arm64.deb https://gitee.com/SHIKEAI
 
 先安装一下jdk
 ```
-sudo apt update&&sudo apt install openjdk-8-jdk
+sudo apt install openjdk-17-jdk
 ```
 
 然后下载unidbg-fetch-qsign
@@ -353,7 +353,7 @@ go-cqhttp
 * 其中下方命令当中的name为创建screen窗口的名称
 ```
 screen -S name //创建一个screen窗口
-screen -r name //打开这个screen窗口
+screen -r -d name //强制打开这个screen窗口
 screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
 ```
@@ -470,7 +470,8 @@ sudo systemctl enable redis-server
 
 先安装一下jdk
 ```
-sudo apt update&&sudo apt install openjdk-8-jdk
+
+sudo apt install openjdk-17-jdk
 ```
 
 然后下载unidbg-fetch-qsign
@@ -598,6 +599,19 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 连接类型: 1
 当前状态: 已连接
 ```
+
+
+8. 关于screen命令说明：
+
+* screen命令一般用于Linux的持久化运行
+* 其中下方命令当中的name为创建screen窗口的名称
+```
+screen -S name //创建一个screen窗口
+screen -r -d name //强制打开这个screen窗口
+screen -ls     //查看全部screen窗口
+screen -S name -X quit  //删除这个screen窗口
+```
+
 ### 注意不要关闭云崽和真寻本体
 
 如果连接失败大概率就是你关了真寻或者真寻启动失败了
@@ -701,7 +715,7 @@ sudo ./gensokyo-linux-amd64
 * 其中下方命令当中的name为创建screen窗口的名称
 ```
 screen -S name //创建一个screen窗口
-screen -r name //打开这个screen窗口
+screen -r -d name //强制打开这个screen窗口
 screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
 ```
