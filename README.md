@@ -59,7 +59,10 @@
 [![](https://img.shields.io/badge/Gensokyo-QQAPI-red)](https://github.com/Hoshinonyaruko/Gensokyo)
 
 # 正文啦！
+
 # 一 准备工作
+
+## 首先你应该准备一个2核4G+并且是win10+(2016+推荐最新)的服务器
 
 ## 安装 版本大于3.8且小于3.11的python 与 poetry
 
