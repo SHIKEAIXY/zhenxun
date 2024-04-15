@@ -15,7 +15,7 @@
 - 没错真寻也有
 - 但是不建议使用脚本，很容易出问题，出了还不好修
 - 所以还是建议手动安装
-- 你要是非用脚本也拦不住你对吧 [官方传送门](https://github.com/zhenxun-org/zhenxun_bot-deploy) [TRSS脚本传送门](https://trss.me/Install/Windows.html)
+- 你要是非用脚本也拦不住你对吧 [官方传送门](https://github.com/zhenxun-org/zhenxun_bot-deploy)
 
 ### 来下载2000张真寻图片吧~
 
@@ -35,7 +35,7 @@
 
 3. [点击查看zhenxun_bot的介绍](https://github.com/HibiKier/zhenxun_bot/blob/main/README.md)
 
-4. [点击查看zhenxun_bot的更新内容](https://github.com/HibiKier/zhenxun_bot/releases)
+4. [点击查看zhenxun_bot的版本号](https://github.com/HibiKier/zhenxun_bot/releases)
 
 5. [点击查看zhenxun_bot使用说明](https://hibikier.github.io/zhenxun_bot/ )
 
@@ -853,9 +853,7 @@ git clone --depth 1 -b ComChat https://gitee.com/SHIKEAIXY/zhenxun.git ./ComWeCh
 ---
 
 <details>
-  <summary>使用LLOneBot连接真寻bot</summary>
-
-## 由于项目特殊性暂不提供具体教程请前往官方文档自行查看安装教程
+  <summary>LLOneBot</summary>
 
 https://llonebot.github.io/zh-CN/guide/getting-started
 
@@ -872,9 +870,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 ---
 
 <details>
-  <summary>使用Lagrange.OneBot连接真寻bot</summary>
-
-## 由于项目特殊性暂不提供具体教程请前往官方文档自行查看安装教程
+  <summary>Lagrange.OneBot</summary>
 
 https://lagrangedev.github.io/Lagrange.Doc/Lagrange.OneBot/Config
 
@@ -899,9 +895,7 @@ https://lagrangedev.github.io/Lagrange.Doc/Lagrange.OneBot/Config
 ---
 
 <details>
-  <summary>使用Shamrock连接真寻bot</summary>
-
-## 由于项目特殊性暂不提供具体教程请前往官方文档自行查看安装教程
+  <summary>Shamrock</summary>
 
 https://whitechi73.github.io/OpenShamrock/guide/getting-started.html
 

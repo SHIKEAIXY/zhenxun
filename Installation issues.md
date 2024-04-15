@@ -36,13 +36,11 @@ poetry init
 
 #### 原因：
 
-tx的打压，gocq无力继续维护，寄
+tx的打压，Gocq无力继续维护，寄
 
 #### 解决办法
 
-1. 重新按照本教程安装签名服务再试
-
-2. 使用本教程的云崽icqq连接或者使用Gensokyo进行连接
+1. 使用其他协议端再试
 
 ## 3.首次启动bot报错
 
@@ -58,41 +56,6 @@ ImportError: cannot import name 'connections' from 'tortoise'
 进入真寻根目录，运行
 ```
 pip install tortoise-orm -U
-
-```
-
-## 4.使用poetry install报错 
-
-报错图：
-<br>
-    <img src="图片/poetry install.png" width="70%">
-
-#### 解决办法
-
-根目录运行，可以看到所有需要安装的依赖 手动安装即可
-```
-poetry show
-
-```
-
-## 5.使用poetry install报错 
-
-报错图：
-<br>
-    <img src="图片/poetry install版本安装.png" width="50%">
-
-### 原因：依赖文件写死了5.4.1但是这个版本已弃用导致安装不上
-
-#### 解决办法
-
-1.下载pyproject:toml此文件，链接：[https://share.weiyun.com/3lEAAKpr ](https://share.weiyun.com/3lEAAKpr )
-
-2.覆盖原真寻的文件(防止你这个笨蛋改错了~)
-
-3.根目录cmd运行
-```
-poetry lock
-poetry install
 
 ```
 

@@ -26,13 +26,13 @@ echo 'npm 已安装'
 fi
 if ! type pnpm >/dev/null 2>&1; then
 echo '##############################'
-echo 'pnpm未安装！'
+echo 'pnpm未安装！请跟随教程手动安装再试'
 echo '##############################'
 echo '正在安装pnpm'
 npm --registry=https://registry.npmmirror.com install pnpm -g
 if ! type pnpm >/dev/null 2>&1; then
 echo '##############################'
-echo 'pnpm安装失败'
+echo 'pnpm安装失败，请跟随教程手动安装再试'
 echo '##############################'
 exit
 else
@@ -51,8 +51,6 @@ echo '正在下载ws插件'
 git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
 echo '正在安装依赖'
 pnpm i
-echo '正在降级puppeteer'
-pnpm add puppeteer@19.7.3 -w
 cd ..
 echo '正在下载redis数据库'
 git clone --depth 1 -b redis https://gitee.com/SHIKEAIXYY/Trss-ComWeChat-Yunzai.git ./redis
