@@ -11,8 +11,7 @@
 - 没错真寻也有
 - 但是不建议使用脚本，很容易出问题，出了还不好修
 - 所以还是建议手动安装
-- 你要是非用脚本也拦不住你对吧 [官方传送门](https://github.com/zhenxun-org/zhenxun_bot-deploy) [TRSS脚本传送门](https://trss.me/Install/Windows.html)
-
+- 你要是非用脚本也拦不住你对吧 [官方传送门](https://github.com/zhenxun-org/zhenxun_bot-deploy)
 ### 来下载2000张真寻图片吧~
 
 既然是喜欢真寻的肯定也喜欢真寻的表情包/头像/壁纸吧
@@ -29,7 +28,7 @@
 
 3. [点击查看zhenxun_bot的介绍](https://github.com/HibiKier/zhenxun_bot/blob/main/README.md)
 
-4. [点击查看zhenxun_bot的更新内容](https://github.com/HibiKier/zhenxun_bot/releases)
+4. [点击查看zhenxun_bot的版本号](https://github.com/HibiKier/zhenxun_bot/releases)
 
 5. [点击查看zhenxun_bot使用说明](https://hibikier.github.io/zhenxun_bot/ )
 
@@ -426,9 +425,6 @@ pnpm config set registry https://registry.npmmirror.com
 ```
 pnpm i
 ```
-```
-pnpm add puppeteer@19.7.3 -w
-```
 </details>
 &nbsp;
 
@@ -745,9 +741,7 @@ screen -S name -X quit  //删除这个screen窗口
 ---
 
 <details>
-  <summary>使用LLOneBot连接真寻bot</summary>
-
-## 由于项目特殊性暂不提供具体教程请前往官方文档自行查看安装教程
+  <summary>LLOneBot</summary>
 
 https://llonebot.github.io/zh-CN/guide/getting-started
 
@@ -764,9 +758,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 ---
 
 <details>
-  <summary>使用Lagrange.OneBot连接真寻bot</summary>
-
-## 由于项目特殊性暂不提供具体教程请前往官方文档自行查看安装教程
+  <summary>Lagrange.OneBot</summary>
 
 https://lagrangedev.github.io/Lagrange.Doc/Lagrange.OneBot/Config
 
@@ -791,9 +783,7 @@ https://lagrangedev.github.io/Lagrange.Doc/Lagrange.OneBot/Config
 ---
 
 <details>
-  <summary>使用Shamrock连接真寻bot</summary>
-
-## 由于项目特殊性暂不提供具体教程请前往官方文档自行查看安装教程
+  <summary>Shamrock</summary>
 
 https://whitechi73.github.io/OpenShamrock/guide/getting-started.html
 
@@ -816,9 +806,9 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 1. 打开真寻根目录cmd运行（root/Bot/zhenxun_bot）
 
 ```
-screen -r zhenxun
+screen -r -d zhenxun
 如果你使用的是dev版真寻应使用
-screen -r zhenxundev
+screen -r -d zhenxundev
 ```
 ```
 poetry shell
@@ -833,7 +823,7 @@ python3 bot.py
 * 其中下方命令当中的name为创建screen窗口的名称
 ```
 screen -S name //创建一个screen窗口
-screen -r name //打开这个screen窗口
+screen -r -d name //强制打开这个screen窗口
 screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
 ```
