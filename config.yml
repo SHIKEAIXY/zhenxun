@@ -11,7 +11,7 @@ settings:
   #基础设置
   app_id: 123456                                     # 你的应用ID
   uin : 123456                                       # 你的机器人QQ号,点击机器人资料卡查看或QQ开发平台查看
-  use_uin : false                                    # false=使用appid作为机器人id,true=使用机器人QQ号,需设置正确的uin
+  use_uin : true                                     # false=使用appid作为机器人id,true=使用机器人QQ号,需设置正确的uin
   token: "abcdef"                                    # 你的应用令牌
   client_secret: "abcdef"                            # 你的客户端密钥
   shard_count: 1                    #分片数量 默认1

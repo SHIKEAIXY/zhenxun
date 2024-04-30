@@ -9,6 +9,9 @@
 5. 本库修改了 add_at_group 为true
 * 自动在命令前加上at，防止无法正常使用zhenxun_bot
 6. 添加订阅 self_introduce 并默认注释
+* 是否入群推销指定消息
+7. 开启 use_uin 
+* 开启使用机器人QQ号作为id
 
 ## 运行Gensokyo
 
