@@ -736,7 +736,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 ### ④下载配置Gensokyo
 
-1.下载gensokyo-windows-amd64（取用v355，更新时间2024.3.23）若发现教程的Gensokyo版本更新，可以选择无视更新
+1.下载gensokyo-windows-amd64（取用v387，更新时间2024.4.27）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
 git clone --depth 1 -b gensokyo-windows-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
 ```
@@ -847,6 +847,76 @@ git clone --depth 1 -b ComChat https://gitee.com/SHIKEAIXY/zhenxun.git ./ComWeCh
 6. 双击运行`ComWeChat-Client-v0.0.8.exe`后等待连接
 
 # 请保持真寻Bot，ComWeChat，微信的运行，不要关闭
+
+# 关于低版本微信无法登录问题
+
+这个问题原因是
+ - tx会联网检测版本号
+ - 当小于一定的值时就会去禁止我们登录
+   - 假设这个值为5，当大于5时跳过，当小于5时就会禁止我们登录
+ - 由此可知，为了防止无法登录我们有必要将版本号修改为大于tx的设定的值
+   - 由于我们不知道这个值是多少，所以修改时可以修改为当前最新版微信版本号
+   
+## 解决办法
+
+# [点击查看视频教程](https://www.bilibili.com/video/)
+
+由上文可知原理，所以我们可以用`Cheat Engine`去进行修改
+
+[点我下载Cheat Engine](https://www.cheatengine.org/downloads.php)
+
+1. 下载完成后`点击`
+<br>
+    <img src="仓库图片/Cheat1.png" width="35%">
+
+2. 打开`微信`（待扫码状态）
+
+3. 选择`Processes`
+<br>
+    <img src="仓库图片/Cheat2.png" width="35%">
+
+4. 找到`数字/字母-Wechat.exe`后点击
+<br>
+    <img src="仓库图片/Cheat3.png" width="35%">
+
+5. 再点击`Open`
+<br>
+    <img src="仓库图片/Cheat4.png" width="35%">
+
+6. `勾选Hex`后`替换000000`为`下方内容`即可
+
+```
+6307001E
+```
+<br>
+    <img src="仓库图片/Cheat5.png" width="35%">
+
+7. 然后点击`FIrst Scan`
+<br>
+    <img src="仓库图片/Cheat6.png" width="35%">
+
+8. 然后`ctrl+A全选`后`点击箭头`
+<br>
+    <img src="仓库图片/Cheat7.png" width="35%">
+
+9. 然后继续`ctrl+A全选`下面的内容
+<br>
+    <img src="仓库图片/Cheat8.png" width="35%"> 
+
+10. 然后`左键点击参数`修改为`下方内容`（使用最新3.9.10.19）
+
+```
+63090A19
+```
+<br>
+    <img src="仓库图片/Cheat9.png" width="35%"> 
+
+11. 然后点击`OK`
+
+12. 保存修改数据（并非永久生效，重新登录需再次修改，本步骤是保存CT文件，方便下次进行修改）
+
+<br>
+    <img src="仓库图片/Cheat10.png" width="35%"> 
 
 </details>
 
