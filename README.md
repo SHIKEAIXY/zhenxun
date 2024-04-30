@@ -596,8 +596,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 当前状态: 已连接
 ```
 
-
-8. 关于screen命令说明：
+9. 关于screen命令说明：
 
 * screen命令一般用于Linux的持久化运行
 * 其中下方命令当中的name为创建screen窗口的名称
@@ -611,6 +610,15 @@ screen -S name -X quit  //删除这个screen窗口
 ### 注意不要关闭云崽和真寻本体
 
 如果连接失败大概率就是你关了真寻或者真寻启动失败了
+
+### 更新ICQQ
+
+私库ICQQ，需你的 GitHub 账号（且在库内）
+
+```
+pnpm login --scope=@icqqjs --auth-type=legacy --registry=https://npm.pkg.github.com
+pnpm add icqq@npm:@icqqjs/icqq
+```
 
 </details>
 
@@ -697,10 +705,6 @@ port: "443"
 
 ```
 screen -S gsk
-./gensokyo-linux-amd64
-```
-如果执行上方命令后出现出现`-bash: ./gensokyo-linux-amd64: Permission denied`可使用下方命令赋予权限并使用sudo执行
-```
 chmod +x gensokyo-linux-amd64
 sudo ./gensokyo-linux-amd64
 ```
