@@ -796,7 +796,7 @@ port: "443"
 ``` 
 然后将`lotus`的`false`设置为`true`后保存即可使用
 <br>
-    <img src="图片/gsk图床.png" width="50%">
+    <img src="图片/Gensokyo图床.png" width="50%">
 
 7. 以上完成后双击运行`gensokyo.bat`不出意外就可以运行了
 
