@@ -1,6 +1,6 @@
     ## 关于本库
 
-1. 本库取自[Gensokyo](https://github.com/Hoshinonyaruko/Gensokyo/releases/tag/355%2Fmerge)355版本的linux-amd64
+1. 本库取自[Gensokyo](https://github.com/Hoshinonyaruko/Gensokyo/releases/tag/387%2Fmerge)387版本的linux-amd64
 2. 本库修改了 ws_address 为 zhenxun_bot的8080端口
 * ws://127.0.0.1:8080/onebot/v11/ws/
 3. 本库修改了 text_intent 为群
@@ -8,6 +8,7 @@
 * 网页web账密
 5. 本库修改了 add_at_group 为true
 * 自动在命令前加上at，防止无法正常使用zhenxun_bot
+6. 添加订阅 self_introduce 并默认注释
 
 ## 运行Gensokyo
 
@@ -21,10 +22,6 @@ screen -S gsk
 screen -S Gensokyo
 ```
 3. 运行Gensokyo
-```
-./gensokyo-linux-amd64
-```
-如果执行上方命令后出现出现`-bash: ./gensokyo-linux-amd64: Permission denied`可使用下方命令赋予权限并使用sudo执行
 ```
 chmod +x gensokyo-linux-amd64
 sudo ./gensokyo-linux-amd64
