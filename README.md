@@ -480,7 +480,7 @@ go-cqhttp
 ---
 
 <details>
-  <summary>使用[云崽]的[ws插件]跳过gocq使用icqq连接真寻bot（在2024年2月5号的晚上7点ICQQ删库...建议各位早日使用Gensokyo）</summary>
+  <summary>使用[云崽]的[ws插件]跳过gocq使用icqq连接真寻bot</summary>
 
 ## 安装云崽
 
@@ -685,6 +685,15 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 ### 注意不要关闭云崽和真寻本体
 
 如果连接失败大概率就是你关了真寻或者真寻启动失败了
+
+### 更新ICQQ
+
+私库ICQQ，需你的 GitHub 账号（且在库内）
+
+```
+pnpm login --scope=@icqqjs --auth-type=legacy --registry=https://npm.pkg.github.com
+pnpm add icqq@npm:@icqqjs/icqq
+```
 
 </details>
 
