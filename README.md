@@ -867,21 +867,21 @@ git clone --depth 1 -b ComChat https://gitee.com/SHIKEAIXY/zhenxun.git ./ComWeCh
 
 1. 下载完成后`点击`
 <br>
-    <img src="仓库图片/Cheat1.png" width="35%">
+    <img src="图片/Cheat1.png" width="35%">
 
 2. 打开`微信`（待扫码状态）
 
 3. 选择`Processes`
 <br>
-    <img src="仓库图片/Cheat2.png" width="35%">
+    <img src="图片/Cheat2.png" width="35%">
 
 4. 找到`数字/字母-Wechat.exe`后点击
 <br>
-    <img src="仓库图片/Cheat3.png" width="35%">
+    <img src="图片/Cheat3.png" width="35%">
 
 5. 再点击`Open`
 <br>
-    <img src="仓库图片/Cheat4.png" width="35%">
+    <img src="图片/Cheat4.png" width="35%">
 
 6. `勾选Hex`后`替换000000`为`下方内容`即可
 
@@ -889,19 +889,19 @@ git clone --depth 1 -b ComChat https://gitee.com/SHIKEAIXY/zhenxun.git ./ComWeCh
 6307001E
 ```
 <br>
-    <img src="仓库图片/Cheat5.png" width="35%">
+    <img src="图片/Cheat5.png" width="35%">
 
 7. 然后点击`FIrst Scan`
 <br>
-    <img src="仓库图片/Cheat6.png" width="35%">
+    <img src="图片/Cheat6.png" width="35%">
 
 8. 然后`ctrl+A全选`后`点击箭头`
 <br>
-    <img src="仓库图片/Cheat7.png" width="35%">
+    <img src="图片/Cheat7.png" width="35%">
 
 9. 然后继续`ctrl+A全选`下面的内容
 <br>
-    <img src="仓库图片/Cheat8.png" width="35%"> 
+    <img src="图片/Cheat8.png" width="35%"> 
 
 10. 然后`左键点击参数`修改为`下方内容`（使用最新3.9.10.19）
 
@@ -909,14 +909,14 @@ git clone --depth 1 -b ComChat https://gitee.com/SHIKEAIXY/zhenxun.git ./ComWeCh
 63090A19
 ```
 <br>
-    <img src="仓库图片/Cheat9.png" width="35%"> 
+    <img src="图片/Cheat9.png" width="35%"> 
 
 11. 然后点击`OK`
 
 12. 保存修改数据（并非永久生效，重新登录需再次修改，本步骤是保存CT文件，方便下次进行修改）
 
 <br>
-    <img src="仓库图片/Cheat10.png" width="35%"> 
+    <img src="图片/Cheat10.png" width="35%"> 
 
 </details>
 
