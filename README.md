@@ -6,8 +6,8 @@
 
 3. 双击运行`install.bat`（如果报错则安装[vc库](https://learn.microsoft.com/zh-cn/cpp/windows/latest-supported-vc-redist?view=msvc-170)）
 
-4. 双击`ComWeChat-Client-v0.1.0.exe`登录即可
+4. 双击`ComWeChat-Client-v0.0.8.exe`登录即可
 
 # 说明
 
-1. 本库取用https://github.com/JustUndertaker/ComWeChatBotClient/releases/tag/v0.0.8
+1. 本库取用https://github.com/JustUndertaker/ComWeChatBotClient/releases/tag/v0.0.8 并修改ws地址以及websocekt_type为反向
