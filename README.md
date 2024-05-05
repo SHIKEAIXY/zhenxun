@@ -242,7 +242,7 @@ dev分支支持更多协议端，如DODO,Kook等，但还在完善，仅部署QQ
 1.github下载真寻本体
 
 ```
-git clone --depth 1 -b https://github.com/HibiKier/zhenxun_bot ./Bot/zhenxun_bot
+git clone --depth 1 https://github.com/HibiKier/zhenxun_bot ./Bot/zhenxun_bot
 ```
 
 2.依次执行下面内容安装依赖以及连接数据库
