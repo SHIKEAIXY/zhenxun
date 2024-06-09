@@ -323,7 +323,8 @@ screen -S name -X quit  //删除这个screen窗口
 
 ```
 cd /root/Bot
-git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git ./Gocq&Qsugn
+git clone --depth 1 https://gitee.com/SHIKEAIXYY/Qsign.git ./Gocq&Qsugn/unidbg-fetch-qsign-1.1.9
+git clone -b go-cqhttp_1.2.0_linux_arm64.deb --depth 1 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gocq&Qsugn/go-cqhttp_linux_amd64
 ```
 
 下载后请配置`linux_amd64`而`unidbg-fetch-qsign-1.1.9`一会要用
@@ -353,15 +354,13 @@ cd /root/Gocq&Qsugn/unidbg-fetch-qsign-1.1.9/unidbg-fetch-qsign&&bash bin/unidbg
 
 没有闪退即可使用（默认使用8.9.78版本）
 
-2.签名启动成功后再重新启动 go-cqhttp.bat 登录即可
-
-3.切记api不要关闭！！！
+2.切记api不要关闭！！！
 
 ### ③配置
 
-1.端口默认是`520`
+1.端口默认是`801`
 
-2.key默认为`1314`
+2.key默认为`114514`
 
 3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.71`则打开`8.9.71\config.json`进行修改并修改gocq的配置文件
 <br>
