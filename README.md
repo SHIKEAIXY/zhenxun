@@ -12,6 +12,7 @@
 - 但是不建议使用脚本，很容易出问题，出了还不好修
 - 所以还是建议手动安装
 - 你要是非用脚本也拦不住你对吧 [官方传送门](https://github.com/zhenxun-org/zhenxun_bot-deploy)
+
 ### 来下载2000张真寻图片吧~
 
 既然是喜欢真寻的肯定也喜欢真寻的表情包/头像/壁纸吧
@@ -20,17 +21,19 @@
 
 ## 聊天群QQ：778502891
 
+## 部署问题找我（可能没时间看，但一定会回）QQ：536606294
+
 ## 与真寻相关  
 
 1. 有什么问题可以在本库提Issues或者加上方聊群询问
 
-2. win系统的教程请看[master主分支](https://gitee.com/SHIKEAIXY/zhenxun)
+2. Windows系统的教程请查看[master分支](https://gitee.com/SHIKEAIXY/zhenxun) | 或查看[Web教程](https://docs.qsyhh.icu/docs/windows)
 
 3. [点击查看zhenxun_bot的介绍](https://github.com/HibiKier/zhenxun_bot/blob/main/README.md)
 
 4. [点击查看zhenxun_bot的版本号](https://github.com/HibiKier/zhenxun_bot/releases)
 
-5. [点击查看zhenxun_bot使用说明](https://hibikier.github.io/zhenxun_bot/ )
+5. [点击查看zhenxun_bot使用说明](https://hibikier.github.io/zhenxun_bot)
 
 ## 介绍
 
@@ -40,20 +43,20 @@
 
 3. 真寻bot非常可爱 嗯 非常可爱！！！非常可爱！！！非常可爱！！！
 
-4. 真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [~~go-cqhttp~~](https://github.com/Mrs4s/go-cqhttp) 的开发，以 [postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
+4. 真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [~~Go-cqhttp~~](https://github.com/Mrs4s/go-cqhttp) 的开发，以 [Postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
 
 <a href='https://gitee.com/SHIKEAIXY/zhenxun/stargazers'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/star.svg?theme=dark' alt='star的人'></img></a>
 <a href='https://gitee.com/SHIKEAIXY/zhenxun/members'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/fork.svg?theme=dark' alt='fork的人'></img></a>
-[![](https://img.shields.io/badge/python-v3.8+-DeepSkyBlue)](https://www.python.org)
-[![](https://img.shields.io/badge/poetry-brightgreen.svg)](https://python-poetry.org)
-[![](https://img.shields.io/badge/nonebot-2.0.0-yellow)](https://nb2.baka.icu)
-[![](https://img.shields.io/badge/go--cqhttp-1.0.0-red)](https://docs.go-cqhttp.org/)
+[![](https://img.shields.io/badge/Python-v3.9+-DeepSkyBlue)](https://www.python.org)
+[![](https://img.shields.io/badge/Poetry-brightgreen.svg)](https://python-poetry.org)
+[![](https://img.shields.io/badge/Nonebot-2.0.0-yellow)](https://nb2.baka.icu)
+[![](https://img.shields.io/badge/Ggo--cqhttp-1.0.0-red)](https://docs.go-cqhttp.org/)
 [![](https://img.shields.io/badge/TRSS--Yunzai/Miao--Yunzai-ws--plugin-red)](https://gitee.com/xiaoye12123/ws-plugin)
 [![](https://img.shields.io/badge/Gensokyo-QQAPI-red)](https://github.com/Hoshinonyaruko/Gensokyo)
 
 # 正文啦！
 
-# 一 首先你应该准备一个Ubuntu 22并且是2H4G+的服务器
+# 一 首先你应该准备一个Ubuntu 22并且是2H2G+的服务器
 
 # 二 安装宝塔面板或者XTerminal
 
@@ -156,6 +159,8 @@ sudo su - postgres
 psql
 CREATE USER zhenxun WITH PASSWORD 'zhenxun'
 CREATE DATABASE zhenxun OWNER zhenxun
+exit
+exit
 ```
 
 </details>
@@ -181,6 +186,7 @@ sudo apt install git
 1.github下载真寻本体
 
 ```
+cd /root/
 git clone --depth 1 -b dev https://github.com/HibiKier/zhenxun_bot ./Bot/zhenxun_bot
 ```
 
@@ -196,6 +202,7 @@ poetry lock --no-update
 poetry install
 sudo pip install playwright
 playwright install chromium
+exit
 ```
 
 3.设置超级用户，复制命令后将123456789修改完自己大号的QQ号
@@ -217,7 +224,7 @@ sed -i 's/SUPERUSERS.*/SUPERUSERS=["123456789"]/g' .env.dev
 ```
 screen -S zhenxundev
 poetry shell
-python3 bot.py
+python bot.py
 ```
 
 （如果你没有这些需求可以忽略这步，毕竟默认配置了）
@@ -227,7 +234,7 @@ python3 bot.py
 ```
 screen -r zhenxundev
 poetry shell
-python3 bot.py
+python bot.py
 ```
 
 </details>
@@ -242,6 +249,7 @@ dev分支支持更多协议端，如DODO,Kook等，但还在完善，仅部署QQ
 1.github下载真寻本体
 
 ```
+cd /root/
 git clone --depth 1 https://github.com/HibiKier/zhenxun_bot ./Bot/zhenxun_bot
 ```
 
@@ -270,7 +278,7 @@ sed -i 's/SUPERUSERS.*/SUPERUSERS=["123456789"]/g' .env.dev
 ```
 screen -S zhenxun
 poetry shell
-python3 bot.py
+python bot.py
 ```
 
 （如果你没有这些需求可以忽略这步，毕竟默认配置了）
@@ -309,42 +317,87 @@ screen -S name -X quit  //删除这个screen窗口
 
 ## ①安装go-cqhttp
 
-1. 下载go-cqhttp（此时我们的目录在root/Bot）
+1. 下载go-cqhttp
+
+### gitee下载
 
 ```
-git clone --depth 1 -b go-cqhttp_1.2.0_linux_arm64.deb https://gitee.com/SHIKEAIXY/zhenxun.git ./go-cqhttp
+cd /root/Bot
+git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git ./Gocq&Qsugn
 ```
 
-2. 打开root/Bot/go-cqhttp/config.yml，修改qq账号和密码，后保存
+下载后请配置`linux_amd64`而`unidbg-fetch-qsign-1.1.9`一会要用
 
-3. 安装unidbg-fetch-qsign（返回root/Bot目录终端输入）
+## ②配置Go-cqhttp
 
-先安装一下jdk
+1.打开config.yml文件，修改`QQ账号和密码`保存即可（先不要重新启动！！！）
+<br>
+    <img src="图片/账号.png" width="70%">
+
+# 部署签名api（可选后面使用他人签名）
+
+### ①下载java 
+
+1.下载Jdk
 ```
-sudo apt install openjdk-17-jdk
+sudo apt install openjdk-18-jdk
 ```
 
-然后下载unidbg-fetch-qsign
-```
-git clone --depth 1 https://gitee.com/touchscale/Qsign
-```
+### ②使用
 
-然后启动unidbg-fetch-qsign（此处的8.9.78可修改）
+1.输入
 ```
-cd Qsign
 screen -S api
-cd unidbg-fetch-qsign&&bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.78
+cd /root/Gocq&Qsugn/unidbg-fetch-qsign-1.1.9/unidbg-fetch-qsign&&bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.78
 ```
 
-4. 启动go-cqhttp（此时应该在root/Bot/go-cqhttp目录终端输入）
+没有闪退即可使用（默认使用8.9.78版本）
+
+2.签名启动成功后再重新启动 go-cqhttp.bat 登录即可
+
+3.切记api不要关闭！！！
+
+### ③配置
+
+1.端口默认是`520`
+
+2.key默认为`1314`
+
+3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.71`则打开`8.9.71\config.json`进行修改并修改gocq的配置文件
+<br>
+    <img src="图片/签名配置端口key.png" width="50%">
+
+### ④启动 Go-cqhttp
+
+1.如果你打算使用他人签名请修改`go-cqhttp_linux_amd64/config.yml`中`35-36行内容`（注意缩进）后保存修改即可
+```
+url: 'https://huai-huai-8-9-78.hf.space'
+key: 'ngm'
+```
+
+2. 启动go-cqhttp
 
 输入以下内容回车即可
 ```
 screen -S gocq
+cd /root/Bot/Gocq&Qsugn/go-cqhttp_linux_amd64
 go-cqhttp
 ```
 
-5. 我说过gocq寄了，无法登录就更换签名版本（唯一的办法，不一定能行）
+3. 我说过Gocq寄了，无法登录就更换签名版本（唯一的办法，不一定能行）
+
+4. 如果出现以下内容则不用管它，不影响登录和使用
+
+```
+[WARNING]: Callback error: Packet timed out, Or response data is empty
+[ERROR]: Protocol -> parse incoming packet error: return code unsuccessful: -10005
+```
+
+5. 自动提交滑块ticket无反应
+- 这个不知道有没有解决办法
+- 如果没反应请使用`2. 手动抓取提交`
+- [使用安卓手机点击此处下载](https://maupdate.rainchan.win/txcaptcha.apk)
+
 
 6. 关于screen命令说明：
 
@@ -356,6 +409,12 @@ screen -r -d name //强制打开这个screen窗口
 screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
 ```
+
+### ⑤关于其他签名协议登录
+
+1.现在个个版本都不稳定，看你73版本到最新版本哪个能登了
+
+2.换登录版本教程在`go-cqhttp_linux_amd64\data\versions\修改版本.md`中
 
 </details>
 
@@ -392,28 +451,25 @@ sudo apt-get install -y nodejs
 
 </details>
 
-2.安装云崽机器人（此时应该在root/Bot目录）
+2.安装云崽机器人
 
-```
+``` 
 bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/linux/Yunzai.sh)
 ```
 
 <details>
   <summary>如果不想使用sh一键下载可点击此处手动下载</summary>
 
-&nbsp;2.1. 在终端root/Bot目录依次输入以下内容并回车 
+&nbsp;2.1. 输入以下内容并回车 
 
 ```
-git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git ./Miao-Yunzai/
+cd /root/Bot/
 ```
 ```
-cd Miao-Yunzai
+git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai ./Yunzai/TRSS-Yunzai
 ```
 ```
-git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
-```
-```
-git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
+cd Yunzai/TRSS-Yunzai
 ```
 ```
 npm --registry=https://registry.npmmirror.com install pnpm -g
@@ -423,8 +479,12 @@ npm --registry=https://registry.npmmirror.com install pnpm -g
 pnpm config set registry https://registry.npmmirror.com
 ```
 ```
+git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
+```
+```
 pnpm i
 ```
+
 </details>
 &nbsp;
 
@@ -462,121 +522,56 @@ sudo systemctl enable redis-server
 
 </details>
 
-4. 安装unidbg-fetch-qsign（此时应该在root/Bot目录）
+4. 自建签名（如使用他人api可跳过）
 
-先安装一下jdk
+先安装一下Jdk
 ```
-
-sudo apt install openjdk-17-jdk
+sudo apt install openjdk-18-jdk
 ```
 
 然后下载unidbg-fetch-qsign
 ```
+cd /root/Bot/
 git clone --depth 1 https://gitee.com/touchscale/Qsign
 ```
 
 然后启动unidbg-fetch-qsign（此处的8.9.78可修改）
 ```
-cd Qsign
 screen -S api
-cd unidbg-fetch-qsign&&bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.78
+cd Qsign/unidbg-fetch-qsign&&bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.78
 ```
 
 #### ④机器人/配置（此时应该在root/Bot目录执行）
 
 ```
-cd Miao-Yunzai
+cd TRSS-Yunzai
 screen -r yunzai
 node app
 ```
 
-1. 请输入机器人QQ号(建议用小号)：`这里输入机器人的QQ号即可`
+1. 等待Bot的启动完成
 
-2. 请输入登录密码(为空则扫码登录)：`这里输入机器人的QQ密码即可`
-
-3. 请选择登录端口：`这里请通过方向键选择aPad！！！`（图片选错了，别跟着图片走！！！）
-
-4. 请输入主人QQ号：`这里输入用来管理机器人的QQ号即可`
-
-5. 请输入签名API地址（可留空）：`这里输入下方内容即可`
-
+2. 对`该窗口(运行Yunzai的Cmd)`输入`以下内容并回车`
+ - 上方自建签名
 ```
-http://http://127.0.0.1:801/sign?key=114514
+#QQ签名http://127.0.0.1:801/sign?key=114514
+```
+ - 使用他人签名
+```
+#QQ签名https://huai-huai-8-9-78.hf.space/sign?key=ngm
 ```
 
-<details>
-  <summary>使用他人提供的签名API</summary>
-
-1. 签名API推荐使用78或85.
-2. 由于签名API来自他人部署可能不稳定谨慎使用
-3. API收集来自煌,聊群：695596638
-
-<details>
-  <summary>煌提供的签名API</summary>
-
-1. 煌群：695596638
-
+3. 对`该窗口(运行Yunzai的Cmd)`输入`以下内容并回车`
+ - 密码登录：QQ号 114514 密码 1919810 登录设备 安卓手机(1)/平板(2)
 ```
-======「8.9.78」======
-https://huai-huai-8-9-78.hf.space/sign?key=ngm
+#QQ设置114514:1919810:2
 ```
-</details>
 
-<details>
-  <summary>叽叽叽提供的签名API</summary>
-
-1. 叽叽叽群：未知
-
-```
-======「8.9.78/83/90/93」======
-http://114.132.243.116:10078/sign?key=114514
-======「在config/bot.yaml里添加：（XXX为版本如ver: 83）」======
-======「ver: XXX」======
-```
-</details>
-
-<details>
-  <summary>小运提供的签名API</summary>
-
-1. 小运群：未知
-
-```
-======「8.9.78」======
-ttp://salipet.com:1535/sign?key=2394
-======「8.9.83」======
-http://salipet.com:1692/sign?key=2394
-```
-</details>
-
-<details>
-  <summary>咕咕咕提供的签名API</summary>
-
-1. 咕咕咕群：235589956或339695166
-2. 签名状态：http://47.108.180.154:3001/status/qsign
-```
-======「8.9.78」======
-http://47.108.180.154:8978/sign?key=114514  
-======「8.9.85」======
-http://47.108.180.154:8985/sign?key=114514
-======「8.9.88」======
-http://47.108.180.154:8988/sign?key=114514
-======「8.9.90」======
-http://47.108.180.154:8990/sign?key=114514
-======「8.9.93」======
-http://47.108.180.154:8993/sign?key=114514
-```
-</details>
-
-</details>
-
-<br>
-    <img src="图片/机器人配置.png" width="50%">
+4. 设置主人：发送 `#设置主人`，`日志获取验证码`并发送（QQ设置主人）
 
 5. 触发滑动验证，需要获取ticket通过验证，请选择获取方式:`这里选择 0.自动获取ticket 进行扫码即可`
 
-6. 查看云崽bot是否正常运行，如运行成功请关掉云崽重新输入`node app`并回车启动机器人
-
-7. 连接本地bot(给云崽机器人QQ发送)
+6. 连接本地bot(给云崽机器人QQ发送)
 
 ```
 #ws添加连接
@@ -587,7 +582,7 @@ zhenxun_bot,1
 ```
 ws://127.0.0.1:8080/onebot/v11/ws/
 ``` 
-8. 发送`#ws查看连接`来查看是否连接成功
+7. 发送`#ws查看连接`来查看是否连接成功
 
 出现带以下内容的图片，则代表连接成功
 ```
@@ -596,7 +591,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 当前状态: 已连接
 ```
 
-9. 关于screen命令说明：
+8. 关于screen命令说明：
 
 * screen命令一般用于Linux的持久化运行
 * 其中下方命令当中的name为创建screen窗口的名称
@@ -605,6 +600,12 @@ screen -S name //创建一个screen窗口
 screen -r -d name //强制打开这个screen窗口
 screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
+```
+
+## 后续启动云崽
+```
+screen -r -d yunzai
+node app
 ```
 
 ### 注意不要关闭云崽和真寻本体
@@ -670,12 +671,13 @@ pnpm add icqq@npm:@icqqjs/icqq
 
 ### ④下载配置Gensokyo
 
-1. 下载gensokyo-linux-amd64（取用v408，更新时间2024.5.19，且此时应该在root/Bot目录）若发现教程的Gensokyo版本更新，可以选择无视更新
+1. 下载gensokyo-linux-amd64（取用v423，更新时间2024.6.9）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
+cd /root/Bot/
 git clone --depth 1 -b gensokyo-linux-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
 ```
 
-2. 打开下载的`Gensokyo`后并双击打开`config.yml`（此时应该在root/Bot/Gensokyo路径中）
+2. 打开下载的`Gensokyo`后并双击打开`config.yml`
 
 3. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~10行
 <br>

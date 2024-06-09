@@ -1,3 +1,4 @@
+cd /root/Bot/
 if ! type node >/dev/null 2>&1; then
 echo 'NodeJs 未安装'
 echo '正在安装NodeJs中'
@@ -12,18 +13,21 @@ else
 echo '安装NodeJs成功'
 fi
 else
-echo 'NodeJs已安装，恭喜你认真看教程了！'
 fi
-echo '正在下载喵崽'
-git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git ./Bot/Miao-Yunzai/
-cd Bot/Miao-Yunzai
-echo '正在下载喵崽'
-git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git ./Miao-Yunzai/
-cd Miao-Yunzai
-echo '正在下载喵喵插件'
-git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
-echo '正在下载ws插件'
+if dpkg -l | grep -q "^ii  fonts-wqy-microhei"; then
+echo "fonts-wqy-microhei已安装"
+else
+echo '正在安装中文字体-文泉驿微米黑中'
+sudo apt install -y fonts-wqy-microhei
+echo "fonts-wqy-microhei安装完成"
+fi
+echo '正在下载TRSS云崽(机器人本体)'
+git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai ./Bot/TRSS-Yunzai
+cd Bot/TRSS-Yunzai
+echo '正在下载ws插件（连接OneBot）'
 git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
+echo '正在安装ICQQ插件中(登录QQ)'
+git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai-ICQQ-Plugin ./plugins/ICQQ-Plugin
 if ! type pnpm >/dev/null 2>&1; then
 echo 'pnpm未安装'
 echo '正在安装pnpm中'
@@ -36,7 +40,6 @@ else
 echo 'pnpm安装成功'
 fi
 else
-echo 'pnpm已安装，恭喜你认真看教程了！'
 fi
 echo '正在安装依赖'
 pnpm i
