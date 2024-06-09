@@ -388,13 +388,19 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 
 [点击此处下载签名和Go-cqhttp](https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
 
-下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`一会要用
+下载后请配置`go-cqhttp_windows_amd64`而`unidbg-fetch-qsign-1.1.9`一会要用
 
 ## ②配置Go-cqhttp
 
 1.打开config.yml文件，修改`QQ账号和密码`保存即可（先不要重新启动！！！）
 <br>
     <img src="图片/账号.png" width="70%">
+
+2.如果你打算使用他人签名请修改`go-cqhttp_windows_amd64/config.yml`中`35-36行内容`（注意缩进）后保存修改即可
+```
+url: 'https://huai-huai-8-9-78.hf.space'
+key: 'ngm'
+```
 
 # 部署签名api（可选后面使用他人签名）
 
@@ -430,31 +436,25 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 
 ### ④启动 Go-cqhttp
 
-1.如果你打算使用他人签名请修改`go-cqhttp_windows_amd64/config.yml`中`35-36行内容`（注意缩进）后保存修改即可
-```
-url: 'https://huai-huai-8-9-78.hf.space'
-key: 'ngm'
-```
+1.返回上一目录打开`go-cqhttp_windows_amd64`文件
 
-2.返回上一目录打开`windows_amd64`文件
-
-3.双击 `go-cqhttp.bat` 进行验证即可
+2.双击 `go-cqhttp.bat` 进行验证即可
 <br>
     <img src="图片/gocq_bat.png" width="50%">
 
-4.如果出现以下内容则不用管它，不影响登录和使用 **（如果你看着变扭请看下一条）** 
+3.如果出现以下内容则不用管它，不影响登录和使用 **（如果你看着变扭请看下一条）** 
 
 ```
 [WARNING]: Callback error: Packet timed out, Or response data is empty
 [ERROR]: Protocol -> parse incoming packet error: return code unsuccessful: -10005
 ```
 
-5.在gocq运行的页面中使用`ctrl+c`后输入下方内容回车重新启动即可
+4.在gocq运行的页面中使用`ctrl+c`后输入下方内容回车重新启动即可
 ```
 go-cqhttp
 ```
 
-6.自动提交滑块ticket无反应
+5.自动提交滑块ticket无反应
 - 这个不知道有没有解决办法
 - 如果没反应请使用`2. 手动抓取提交`
 - [使用安卓手机点击此处下载](https://maupdate.rainchan.win/txcaptcha.apk)
