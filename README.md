@@ -25,19 +25,19 @@
 
 ## 聊天群QQ：778502891
 
-## 部署问题找我（可能没时间看，但一定会回）QQ：1991682159
+## 部署问题找我（可能没时间看，但一定会回）QQ：536606294
 
 ## 与真寻相关  
 
 1. 有什么问题可以在本库提Issues或者加上方聊群询问
 
-2. linux系统的教程请查看[linux分支](https://gitee.com/SHIKEAIXY/zhenxun/tree/linux)
+2. linux系统的教程请查看[linux分支](https://gitee.com/SHIKEAIXY/zhenxun/tree/linux) | 或查看[Web教程](https://docs.qsyhh.icu/docs/linux)
 
 3. [点击查看zhenxun_bot的介绍](https://github.com/HibiKier/zhenxun_bot/blob/main/README.md)
 
 4. [点击查看zhenxun_bot的版本号](https://github.com/HibiKier/zhenxun_bot/releases)
 
-5. [点击查看zhenxun_bot使用说明](https://hibikier.github.io/zhenxun_bot/ )
+5. [点击查看zhenxun_bot使用说明](https://hibikier.github.io/zhenxun_bot)
 
 ## 介绍
 
@@ -47,14 +47,14 @@
 
 3. 真寻bot非常可爱 嗯 非常可爱！！！非常可爱！！！非常可爱！！！
 
-4. 真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [~~go-cqhttp~~](https://github.com/Mrs4s/go-cqhttp) 的开发，以 [postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
+4. 真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [~~Go-cqhttp~~](https://github.com/Mrs4s/go-cqhttp) 的开发，以 [postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
 
 <a href='https://gitee.com/SHIKEAIXY/zhenxun/stargazers'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/star.svg?theme=dark' alt='star的人'></img></a>
 <a href='https://gitee.com/SHIKEAIXY/zhenxun/members'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/fork.svg?theme=dark' alt='fork的人'></img></a>
-[![](https://img.shields.io/badge/python-v3.8+-DeepSkyBlue)](https://www.python.org)
-[![](https://img.shields.io/badge/poetry-brightgreen.svg)](https://python-poetry.org)
-[![](https://img.shields.io/badge/nonebot-2.0.0-yellow)](https://nb2.baka.icu)
-[![](https://img.shields.io/badge/go--cqhttp-1.0.0-red)](https://docs.go-cqhttp.org/)
+[![](https://img.shields.io/badge/Python-v3.8+-DeepSkyBlue)](https://www.python.org)
+[![](https://img.shields.io/badge/Poetry-brightgreen.svg)](https://python-poetry.org)
+[![](https://img.shields.io/badge/Nonebot-2.0.0-yellow)](https://nb2.baka.icu)
+[![](https://img.shields.io/badge/Go--cqhttp-1.0.0-red)](https://docs.go-cqhttp.org/)
 [![](https://img.shields.io/badge/TRSS--Yunzai/Miao--Yunzai-ws--plugin-red)](https://gitee.com/xiaoye12123/ws-plugin)
 [![](https://img.shields.io/badge/Gensokyo-QQAPI-red)](https://github.com/Hoshinonyaruko/Gensokyo)
 
@@ -62,35 +62,25 @@
 
 # 一 准备工作
 
-## 首先你应该准备一个2核4G+并且是win10+(2016+推荐最新)的服务器
+## 首先你应该准备一个2核4G+并且是Win10+(2016+推荐最新)的服务器
 
-## 安装 版本大于3.8且小于3.11的python 与 poetry
+## 安装 版本大于3.9以上Python 与 任意版本的Poetry
 
 ### ①安装python
 
-这里我推荐安装python3.10
+这里我推荐安装Python3.10
 
-[点击下载py3.10](https://yshs.lanzouy.com/iFMpG0gdwt9a)
+[点击下载Py3.10](https://musetransfer.com/s/mpvqvvofz)
 
 下面两个对钩点上 然后点击Install Now等待安装完成
 <br>
     <img src="图片/py安装.png" width="50%">
 
-安装完成打开cmd输入py 查看是否有py版本输出
+安装完成打开cmd输入py 查看是否有Py版本输出
 
 ### ②安装poetry
 
-1. 打开Powershell（需要管理员权限）运行
-
-不会打开？不要慌 点击此处 [如何在Windows 10/11中打开PowerShell](https://www.51cto.com/article/696873.html)
-
-打开后输入下面内容并回车（安装时间较长）
-
-```
-(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
-```
-
-1.1 使用pip安装（此步骤无需进行2的变量环节）
+1. 使用pip安装
 ```
 python -m pip install -U pip
 ```
@@ -98,19 +88,15 @@ python -m pip install -U pip
 pip install poetry
 ```
 
-2. 然后将`%APPDATA%\Python\Scripts`添加到PATH环境变量(位置在右键此电脑→属性→高级系统设置→环境变量)
-<br>
-    <img src="图片/变量.png" width="50%">
-
-3. 打开cmd发送poetry查看是否有版本输出
+2. 打开cmd发送poetry查看是否有版本输出
 
 如果没有请重启电脑 重新打开cmd输入 poetry
 
 还不行？[点击此处解决](https://www.baidu.com)
 
-# 二 安装postgresql
+# 二 安装Postgresql
 
-## ①下载postgresql数据库
+## ①下载Postgresql数据库
 [点击此处将下载Postgresql-15.1-1版本安装包](https://get.enterprisedb.com/postgresql/postgresql-15.1-1-windows-x64.exe)
 
 不想要15.1版本的可以自行下载别的版本（目前只要是9.0以上的版本都可以）
@@ -135,7 +121,7 @@ pip install poetry
 <br>
     <img src="图片/数据存储路径.png" width="50%">
 
-5.输入postgres用户的密码，例如：zhenxun（防止后期问题请按照本教程的密码输入 上下全部输入zhenxun）
+5.输入Postgres用户的密码，例如：zhenxun（防止后期问题请按照本教程的密码输入 上下全部输入zhenxun）
 <br>
     <img src="图片/数据库密码.png" width="50%">
 
@@ -153,7 +139,7 @@ pip install poetry
 
 ## ③配置连接
 
-1.找到安装的pgAdmin启动数据库 并启动
+1.找到安装的PgAdmin启动数据库 并启动
 
 打开方法一： 在应用中搜索 pgAdmin 点击展开 找到下面图片显示的打开即可
 <br>
@@ -385,9 +371,9 @@ python bot.py
 # 四 连接zhenxun_bot
 
 <details>
-  <summary>使用go-cqhttp连接真寻bot（不建议）</summary>
+  <summary>使用Go-cqhttp连接真寻bot（不建议）</summary>
 
-## ①下载go-cqhttp 
+## ①下载Go-cqhttp 
 
 ### gitee下载
 
@@ -400,21 +386,21 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 ```
 ### zip下载 (不建议!)
 
-[点击此处下载签名和go-cqhttp](https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
+[点击此处下载签名和Go-cqhttp](https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
 
 下载后请配置`windows_amd64`而`unidbg-fetch-qsign-1.1.9`一会要用
 
-## ②配置go-cqhttp
+## ②配置Go-cqhttp
 
 1.打开config.yml文件，修改`QQ账号和密码`保存即可（先不要重新启动！！！）
 <br>
     <img src="图片/账号.png" width="70%">
 
-# 部署签名api
+# 部署签名api（可选后面使用他人签名）
 
 ### ①下载java 
 
-1.[点击此处下载jdk](https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jdk/x64/windows/OpenJDK17U-jdk_x64_windows_hotspot_17.0.11_9.msi)
+1.[点击此处下载Jdk](https://mirrors.tuna.tsinghua.edu.cn/Adoptium/18/jdk/x64/windows/OpenJDK18U-jdk_x64_windows_hotspot_18.0.2.1_1.msi)
 
 2.安装完成后打开cmd运行`java`查看是否有输出
 
@@ -442,34 +428,41 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 <br>
     <img src="图片/签名配置端口key.png" width="50%">
 
-### ④启动 go-cqhttp
+### ④启动 Go-cqhttp
 
-1.返回上一目录打开`windows_amd64`文件
+1.如果你打算使用他人签名请修改`go-cqhttp_windows_amd64/config.yml`中`35-36行内容`（注意缩进）后保存修改即可
+```
+url: 'https://huai-huai-8-9-78.hf.space'
+key: 'ngm'
+```
 
-2.双击 `go-cqhttp.bat` 进行验证即可
+2.返回上一目录打开`windows_amd64`文件
+
+3.双击 `go-cqhttp.bat` 进行验证即可
 <br>
     <img src="图片/gocq_bat.png" width="50%">
 
-3.如果出现以下内容则不用管它，不影响登录和使用 **（如果你看着变扭请看下一条）** 
+4.如果出现以下内容则不用管它，不影响登录和使用 **（如果你看着变扭请看下一条）** 
 
 ```
 [WARNING]: Callback error: Packet timed out, Or response data is empty
 [ERROR]: Protocol -> parse incoming packet error: return code unsuccessful: -10005
 ```
 
-4.在gocq运行的页面中使用`ctrl+c`后输入下方内容回车重新启动即可
+5.在gocq运行的页面中使用`ctrl+c`后输入下方内容回车重新启动即可
 ```
 go-cqhttp
 ```
 
-5.自动提交滑块ticket无反应
+6.自动提交滑块ticket无反应
 - 这个不知道有没有解决办法
 - 如果没反应请使用`2. 手动抓取提交`
 - [使用安卓手机点击此处下载](https://maupdate.rainchan.win/txcaptcha.apk)
 
+
 ### ⑤关于其他签名协议登录
 
-1.现在个个版本都不稳定，看你63版本到最新版本哪个能登了
+1.现在个个版本都不稳定，看你73版本到最新版本哪个能登了
 
 2.换登录版本教程在`go-cqhttp_windows_amd64\data\versions\修改版本.md`中
 
@@ -496,7 +489,7 @@ go-cqhttp
 
 3. 右键鼠标打开`Open Git Bash here`
 
-win11需先点击显示更多选项后才显示`Open Git Bash here`
+Win11需先点击显示更多选项后才显示`Open Git Bash here`
 <br>
     <img src="图片/win11打开git.png" width="40%">
 <br>
@@ -513,13 +506,10 @@ bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/master/Yunzai.sh)
 &nbsp;2.1. 在cmd依次输入以下内容并回车 
 
 ```
-git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git ./Yunzai/Miao-Yunzai/
+git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai ./Yunzai/TRSS-Yunzai
 ```
 ```
-cd Yunzai/Miao-Yunzai
-```
-```
-git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
+cd Yunzai/TRSS-Yunzai
 ```
 ```
 npm --registry=https://registry.npmmirror.com install pnpm -g
@@ -529,13 +519,10 @@ npm --registry=https://registry.npmmirror.com install pnpm -g
 pnpm config set registry https://registry.npmmirror.com
 ```
 ```
-pnpm install -P
-```
-```
 git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
 ```
 ```
-pnpm install --filter=ws-plugin
+pnpm i
 ```
 ```
 cd ..
@@ -543,15 +530,8 @@ cd ..
 ```
 git clone --depth 1 -b redis https://gitee.com/SHIKEAIXYY/Trss-ComWeChat-Yunzai.git ./redis
 ```
-```
-git clone --depth 1 https://gitee.com/touchscale/Qsign.git ./Qsign
-```
 </details>
 &nbsp;
-
-4. 下载jdk
-
-[点击此处下载jdk](https://mirrors.tuna.tsinghua.edu.cn/Adoptium/17/jdk/x64/windows/OpenJDK17U-jdk_x64_windows_hotspot_17.0.11_9.msi)
 
 #### ②说明
 
@@ -559,9 +539,8 @@ git clone --depth 1 https://gitee.com/touchscale/Qsign.git ./Qsign
 
 2. `redis`为数据库
 
-3. `Miao-Yunzai`为机器人本体
+3. `Trss-Yunzai`为机器人本体
 
-4. `Qsign`为签名api
 
 ### ③启动云崽
 
@@ -569,101 +548,63 @@ git clone --depth 1 https://gitee.com/touchscale/Qsign.git ./Qsign
 
 2. 运行`redis`数据库（运行`redis/双击我启动redis.bat`即可）
 
-3. 运行`Qsign`（运行`Qsign/一键startAPI.bat`即可）默认是80的签名，端口为801，秘钥为114514
+3. 启动机器人并配置
+ - 在`TRSS-Yunzai`目录下cmd输入`node app`即可
+```
+node app
+```
 
-4. 启动机器人并配置
+# 手动部署签名api（如果打算使用他人的api可跳过）
 
-在`Miao-Yunzai`目录下cmd输入`node app`即可
+### ①下载java 
+
+1.[点击此处下载Jdk](https://mirrors.tuna.tsinghua.edu.cn/Adoptium/18/jdk/x64/windows/OpenJDK18U-jdk_x64_windows_hotspot_18.0.2.1_1.msi)
+
+2.安装完成后打开cmd运行`java`查看是否有输出
+
+[如果没有输出点击此处查看如何配置变量，如果你看不懂那就没办法了](https://blog.csdn.net/qq_41436122/article/details/82620080)
+
+配置完成后重新启动服务器后再打开cmd运行`java`查看是否有输出
+
+### ②使用
+
+1.下载Qsign(请在Yunzai目录克隆)
+
+```
+git clone --depth 1 https://gitee.com/SHIKEAIXYY/Qsign
+```
+
+2.运行`一键startAPI.bat`启动签名，自行根据提示配置TRSS路径
+
+没有闪退即可使用（默认使用8.9.78版本）
+
+3.切记api不要关闭！！！
 
 #### ④机器人配置
 
-1. 请输入机器人QQ号(建议用小号)：`这里输入机器人的QQ号即可`
+1. 等待Bot的启动完成
 
-2. 请输入登录密码(为空则扫码登录)：`这里输入机器人的QQ密码即可`
-
-3. 请选择登录端口：`这里请通过方向键选择aPad！！！`（下面的图片选错了别跟着图片走！！！）
-
-4. 请输入主人QQ号：`这里输入用来管理机器人的QQ号即可`
-
-5. 请输入签名API地址（可留空）：`这里输入下方内容即可`
-
+2. 对`该窗口(运行Yunzai的Cmd)`输入`以下内容并回车`
+ - 上方自建签名
 ```
-http://127.0.0.1:801/sign?key=114514
+#QQ签名http://127.0.0.1:801/sign?key=114514
+```
+ - 使用他人签名
+```
+#QQ签名https://huai-huai-8-9-78.hf.space/sign?key=ngm
 ```
 
-<details>
-  <summary>使用他人提供的签名API</summary>
-
-1. 签名API推荐使用78或85.
-2. 由于签名API来自他人部署可能不稳定谨慎使用
-3. API收集来自煌,聊群：695596638
-
-<details>
-  <summary>煌提供的签名API</summary>
-
-1. 煌群：695596638
-
+3. 对`该窗口(运行Yunzai的Cmd)`输入`以下内容并回车`
+ - 密码登录：QQ号 114514 密码 1919810 登录设备 安卓手机(1)/平板(2)
 ```
-======「8.9.78」======
-https://huai-huai-8-9-78.hf.space/sign?key=ngm
+#QQ设置114514:1919810:2
 ```
-</details>
 
-<details>
-  <summary>叽叽叽提供的签名API</summary>
-
-1. 叽叽叽群：未知
-
-```
-======「8.9.78/83/90/93」======
-http://114.132.243.116:10078/sign?key=114514
-======「在config/bot.yaml里添加：（XXX为版本如ver: 83）」======
-======「ver: XXX」======
-```
-</details>
-
-<details>
-  <summary>小运提供的签名API</summary>
-
-1. 小运群：未知
-
-```
-======「8.9.78」======
-ttp://salipet.com:1535/sign?key=2394
-======「8.9.83」======
-http://salipet.com:1692/sign?key=2394
-```
-</details>
-
-<details>
-  <summary>咕咕咕提供的签名API</summary>
-
-1. 咕咕咕群：235589956或339695166
-2. 签名状态：http://47.108.180.154:3001/status/qsign
-```
-======「8.9.78」======
-http://47.108.180.154:8978/sign?key=114514  
-======「8.9.85」======
-http://47.108.180.154:8985/sign?key=114514
-======「8.9.88」======
-http://47.108.180.154:8988/sign?key=114514
-======「8.9.90」======
-http://47.108.180.154:8990/sign?key=114514
-======「8.9.93」======
-http://47.108.180.154:8993/sign?key=114514
-```
-</details>
-
-</details>
-
-<br>
-    <img src="图片/机器人配置.png" width="50%">
+4. 设置主人：发送 `#设置主人`，`日志获取验证码`并发送（QQ设置主人）
 
 5. 触发滑动验证，需要获取ticket通过验证，请选择获取方式:`这里选择 0.自动获取ticket 进行扫码即可`
 
-6. 查看云崽bot是否正常运行，如运行成功请关掉云崽重新输入`node app`并回车启动机器人
-
-7. 连接本地bot(给云崽机器人QQ发送)
+6. 连接本地bot(给云崽机器人QQ发送)
 
 ```
 #ws添加连接
@@ -674,7 +615,7 @@ zhenxun_bot,1
 ```
 ws://127.0.0.1:8080/onebot/v11/ws/
 ``` 
-8. 发送`#ws查看连接`来查看是否连接成功
+7. 发送`#ws查看连接`来查看是否连接成功
 
 出现带以下内容的图片，则代表连接成功
 ```
@@ -745,7 +686,7 @@ pnpm add icqq@npm:@icqqjs/icqq
 
 ### ④下载配置Gensokyo
 
-1.下载gensokyo-windows-amd64（取用v408，更新时间2024.5.19）若发现教程的Gensokyo版本更新，可以选择无视更新
+1.下载gensokyo-windows-amd64（取用v423，更新时间2024.6.9）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
 git clone --depth 1 -b gensokyo-windows-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
 ```
