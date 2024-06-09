@@ -1,6 +1,6 @@
 ## 关于本库
 
-1. 本库取自[Gensokyo](https://github.com/Hoshinonyaruko/Gensokyo/releases/tag/408%2Fmerge)408版本的gensokyo-windows-amd64.exe
+1. 本库取自[Gensokyo](https://github.com/Hoshinonyaruko/Gensokyo/releases/tag/423%2Fmerge)423版本的gensokyo-windows-amd64.exe
 2. 本库修改了 ws_address 为 zhenxun_bot的8080端口
 * ws://127.0.0.1:8080/onebot/v11/ws/
 3. 本库修改了 text_intent 为群
