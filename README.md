@@ -313,7 +313,7 @@ screen -S name -X quit  //删除这个screen窗口
 <details>
   <summary>使用go-cqhttp连接真寻bot（不建议）</summary>
 
-# 再提醒你一句，gocq作者已经不再更新，签名服务以无法解决gocq45问题
+# 再提醒你一句，gocq作者已经不再更新，签名服务以无法解决Gocq45问题
 
 ## ①安装go-cqhttp
 
@@ -332,8 +332,12 @@ git clone -b go-cqhttp_1.2.0_linux_arm64.deb --depth 1 https://gitee.com/SHIKEAI
 ## ②配置Go-cqhttp
 
 1.打开config.yml文件，修改`QQ账号和密码`保存即可（先不要重新启动！！！）
-<br>
-    <img src="图片/账号.png" width="70%">
+
+2.如果你打算使用他人签名请修改`go-cqhttp_linux_amd64/config.yml`中`35-36行内容`（注意缩进）后保存修改即可
+```
+url: 'https://huai-huai-8-9-78.hf.space'
+key: 'ngm'
+```
 
 # 部署签名api（可选后面使用他人签名）
 
@@ -363,18 +367,10 @@ cd /root/Gocq&Qsugn/unidbg-fetch-qsign-1.1.9/unidbg-fetch-qsign&&bash bin/unidbg
 2.key默认为`114514`
 
 3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.71`则打开`8.9.71\config.json`进行修改并修改gocq的配置文件
-<br>
-    <img src="图片/签名配置端口key.png" width="50%">
 
 ### ④启动 Go-cqhttp
 
-1.如果你打算使用他人签名请修改`go-cqhttp_linux_amd64/config.yml`中`35-36行内容`（注意缩进）后保存修改即可
-```
-url: 'https://huai-huai-8-9-78.hf.space'
-key: 'ngm'
-```
-
-2. 启动go-cqhttp
+1. 启动go-cqhttp
 
 输入以下内容回车即可
 ```
@@ -383,22 +379,22 @@ cd /root/Bot/Gocq&Qsugn/go-cqhttp_linux_amd64
 go-cqhttp
 ```
 
-3. 我说过Gocq寄了，无法登录就更换签名版本（唯一的办法，不一定能行）
+2. 我说过Gocq寄了，无法登录就更换签名版本（唯一的办法，不一定能行）
 
-4. 如果出现以下内容则不用管它，不影响登录和使用
+3. 如果出现以下内容则不用管它，不影响登录和使用
 
 ```
 [WARNING]: Callback error: Packet timed out, Or response data is empty
 [ERROR]: Protocol -> parse incoming packet error: return code unsuccessful: -10005
 ```
 
-5. 自动提交滑块ticket无反应
+4. 自动提交滑块ticket无反应
 - 这个不知道有没有解决办法
 - 如果没反应请使用`2. 手动抓取提交`
 - [使用安卓手机点击此处下载](https://maupdate.rainchan.win/txcaptcha.apk)
 
 
-6. 关于screen命令说明：
+5. 关于screen命令说明：
 
 * screen命令一般用于Linux的持久化运行
 * 其中下方命令当中的name为创建screen窗口的名称
