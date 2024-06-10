@@ -853,10 +853,10 @@ git clone --depth 1 -b ComChat https://gitee.com/SHIKEAIXY/zhenxun.git ./ComWeCh
 <br>
     <img src="图片/Cheat8.png" width="35%"> 
 
-10. 然后`左键点击参数`修改为`下方内容`（使用最新3.9.10.19）
+10. 然后`左键点击参数`修改为`下方内容`（使用最新3.9.10.27）
 
 ```
-63090A19
+63090A1B
 ```
 <br>
     <img src="图片/Cheat9.png" width="35%"> 
