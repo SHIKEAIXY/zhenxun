@@ -495,6 +495,8 @@ Win11需先点击显示更多选项后才显示`Open Git Bash here`
 <br>
     <img src="图片/win打开git2.png" width="40%">
  
+因为TRSS Yunzai不依赖与Miao-Plugin与Genshin(俩大型原神插件)，所以本教程使用TRSS崽
+
 然后运行下方命令
 ```
 bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/master/Yunzai.sh)
@@ -632,7 +634,9 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 私库ICQQ，需你的 GitHub 账号（且在库内）
 
 ```
+cd plugins/ICQQ-Plugin
 pnpm login --scope=@icqqjs --auth-type=legacy --registry=https://npm.pkg.github.com
+// 执行完成后需输入账号+密码/密钥
 pnpm add icqq@npm:@icqqjs/icqq
 ```
 
