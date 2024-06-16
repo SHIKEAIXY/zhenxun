@@ -546,6 +546,8 @@ screen -r yunzai
 node app
 ```
 
+当你启动报错237频繁登录/非常用设备登录时，因尝试与载挂Bot的设备同一网络登录/在本地设备（可登录Bot的设备）进行登录后复制Yunzai/data/icqq/QQ号整个文件夹到服务器的Yunzai/data/路径中后重试
+
 1. 等待Bot的启动完成
 
 2. 对`该窗口(运行Yunzai的Cmd)`输入`以下内容并回车`
