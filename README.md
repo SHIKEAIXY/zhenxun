@@ -448,6 +448,8 @@ sudo apt-get install -y nodejs
 
 2.安装云崽机器人
 
+因为TRSS Yunzai不依赖与Miao-Plugin与Genshin(俩大型原神插件)，所以本教程使用TRSS崽
+
 ``` 
 bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/linux/Yunzai.sh)
 ```
@@ -612,7 +614,9 @@ node app
 私库ICQQ，需你的 GitHub 账号（且在库内）
 
 ```
+cd plugins/ICQQ-Plugin
 pnpm login --scope=@icqqjs --auth-type=legacy --registry=https://npm.pkg.github.com
+// 执行完成后需输入账号+密码/密钥
 pnpm add icqq@npm:@icqqjs/icqq
 ```
 
