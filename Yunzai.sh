@@ -7,7 +7,7 @@ if ! type node >/dev/null 2>&1; then
     echo 'Node.js 未安装'
     echo '正在安装 Node.js 中'
     sudo apt install -y apt-transport-https curl ca-certificates software-properties-common
-    curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+    curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
     sudo apt-get install -y nodejs
 
     # 再次检查是否安装成功
