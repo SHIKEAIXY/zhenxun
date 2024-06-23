@@ -514,14 +514,17 @@ git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai ./Yunzai/TRSS-Yunza
 cd Yunzai/TRSS-Yunzai
 ```
 ```
+git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai-ICQQ-Plugin /root/Bot/XiaoYu-Bot/plugins/ICQQ-Plugin
+```
+```
+git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
+```
+```
 npm --registry=https://registry.npmmirror.com install pnpm -g
 ```
 ```
 //可选
 pnpm config set registry https://registry.npmmirror.com
-```
-```
-git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
 ```
 ```
 pnpm i
