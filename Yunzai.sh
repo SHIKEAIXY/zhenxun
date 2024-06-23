@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /root/Bot/
+cd /root/
 
 # 检查是否安装了 Node.js
 if ! type node >/dev/null 2>&1; then
