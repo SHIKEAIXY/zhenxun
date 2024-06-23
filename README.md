@@ -178,7 +178,7 @@ sudo apt install git
 ---
 
 <details>
-  <summary>安装dev分支重构真寻bot(逐渐完善中...但不推荐安装)</summary>
+  <summary>安装dev分支重构真寻bot(逐渐完善中...推荐安装)</summary>
 
 <br>
     <img src="图片/dev真寻.png" width="50%">
@@ -244,7 +244,7 @@ dev分支支持更多协议端，如DODO,Kook等，但还在完善，仅部署QQ
 ---
 
 <details>
-  <summary>main主分支真寻bot(推荐)</summary>
+  <summary>main主分支真寻bot</summary>
 
 1.github下载真寻本体
 
@@ -335,11 +335,11 @@ git clone -b go-cqhttp_1.2.0_linux_arm64.deb --depth 1 https://gitee.com/SHIKEAI
 
 2.如果你打算使用他人签名请修改`go-cqhttp_linux_amd64/config.yml`中`35-36行内容`（注意缩进）后保存修改即可
 ```
-url: 'https://huai-huai-8-9-78.hf.space'
-key: 'ngm'
+url: 'https://hlhs-nb.cn/signed'
+key: '114514'
 ```
 
-# 部署签名api（可选后面使用他人签名）
+# 部署签名api（可选后面使用他人签名）推荐他人API
 
 ### ①下载java 
 
@@ -353,10 +353,10 @@ sudo apt install openjdk-18-jdk
 1.输入
 ```
 screen -S api
-cd /root/Gocq&Qsugn/unidbg-fetch-qsign-1.1.9/unidbg-fetch-qsign&&bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.78
+cd /root/Gocq&Qsugn/unidbg-fetch-qsign-1.1.9/unidbg-fetch-qsign&&bash bin/unidbg-fetch-qsign --basePath=txlib/9.0.8
 ```
 
-没有闪退即可使用（默认使用8.9.78版本）
+没有闪退即可使用（默认使用9.0.8版本）
 
 2.切记api不要关闭！！！
 
@@ -366,7 +366,7 @@ cd /root/Gocq&Qsugn/unidbg-fetch-qsign-1.1.9/unidbg-fetch-qsign&&bash bin/unidbg
 
 2.key默认为`114514`
 
-3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.71`则打开`8.9.71\config.json`进行修改并修改gocq的配置文件
+3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`9.0.8`则打开`9.0.8\config.json`进行修改并修改gocq的配置文件
 
 ### ④启动 Go-cqhttp
 
@@ -407,7 +407,7 @@ screen -S name -X quit  //删除这个screen窗口
 
 ### ⑤关于其他签名协议登录
 
-1.现在个个版本都不稳定，看你73版本到最新版本哪个能登了
+1.现在个个版本都不稳定，看你9.0.0版本到最新版本哪个能登了
 
 2.换登录版本教程在`go-cqhttp_linux_amd64\data\versions\修改版本.md`中
 
@@ -427,7 +427,7 @@ screen -S name -X quit  //删除这个screen窗口
 <details>
   <summary>使用宝塔面板安装node.js</summary>
 
-打开宝塔的软件商店搜索`Node.js版本管理器`并下载20.9.0的版本（也可以下载16/18的版本）
+打开宝塔的软件商店搜索`Node.js版本管理器`并下载20.9.0的版本（不可以下载低于18的版本）
 <br>
     <img src="图片/下载node管理器.png" width="70%">
 
@@ -440,7 +440,7 @@ screen -S name -X quit  //删除这个screen窗口
 
 ```
 sudo apt install apt-transport-https curl ca-certificates software-properties-common
-curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
@@ -469,14 +469,17 @@ git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai ./Yunzai/TRSS-Yunza
 cd Yunzai/TRSS-Yunzai
 ```
 ```
+git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai-ICQQ-Plugin ./plugins/ICQQ-Plugin
+```
+```
+git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
+```
+```
 npm --registry=https://registry.npmmirror.com install pnpm -g
 ```
 ```
 //可选
 pnpm config set registry https://registry.npmmirror.com
-```
-```
-git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
 ```
 ```
 pnpm i
@@ -519,7 +522,7 @@ sudo systemctl enable redis-server
 
 </details>
 
-4. 自建签名（如使用他人api可跳过）
+4. 自建签名（如使用他人api可跳过）推荐他人API
 
 先安装一下Jdk
 ```
@@ -532,10 +535,10 @@ cd /root/Bot/
 git clone --depth 1 https://gitee.com/touchscale/Qsign
 ```
 
-然后启动unidbg-fetch-qsign（此处的8.9.78可修改）
+然后启动unidbg-fetch-qsign（此处的9.0.8可修改）
 ```
 screen -S api
-cd Qsign/unidbg-fetch-qsign&&bash bin/unidbg-fetch-qsign --basePath=txlib/8.9.78
+cd Qsign/unidbg-fetch-qsign&&bash bin/unidbg-fetch-qsign --basePath=txlib/9.0.8
 ```
 
 #### ④机器人/配置（此时应该在root/Bot目录执行）
@@ -557,11 +560,11 @@ node app
 ```
  - 使用他人签名
 ```
-#QQ签名https://huai-huai-8-9-78.hf.space/sign?key=ngm
+#QQ签名https://hlhs-nb.cn/signed/?key=114514
 ```
 
 3. 对`该窗口(运行Yunzai的Cmd)`输入`以下内容并回车`
- - 密码登录：QQ号 114514 密码 1919810 登录设备 安卓手机(1)/平板(2)
+ - 密码登录：QQ号 114514 密码 1919810 登录设备 安卓手机(1)/平板(2)，使用扫码登录因密码留空
 ```
 #QQ设置114514:1919810:2
 ```
@@ -672,7 +675,7 @@ pnpm add icqq@npm:@icqqjs/icqq
 
 ### ④下载配置Gensokyo
 
-1. 下载gensokyo-linux-amd64（取用v423，更新时间2024.6.9）若发现教程的Gensokyo版本更新，可以选择无视更新
+1. 下载gensokyo-linux-amd64（取用v435，更新时间2024.6.20）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
 cd /root/Bot/
 git clone --depth 1 -b gensokyo-linux-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
