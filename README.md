@@ -194,7 +194,7 @@ ok火速下一步
 ---
 
 <details>
-  <summary>安装dev分支重构真寻bot(逐渐完善中...但不推荐安装)</summary>
+  <summary>安装dev分支重构真寻bot(逐渐完善中...推荐安装)</summary>
 
 <br>
     <img src="图片/dev真寻.png" width="50%">
@@ -287,7 +287,7 @@ dev分支支持更多协议端，如DODO,Kook等，但还在完善，仅部署QQ
 ---
 
 <details>
-  <summary>main主分支真寻bot(推荐)</summary>
+  <summary>main主分支真寻bot</summary>
 
 1.github下载真寻本体
 
@@ -396,10 +396,10 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
 <br>
     <img src="图片/账号.png" width="70%">
 
-2.如果你打算使用他人签名请修改`go-cqhttp_windows_amd64/config.yml`中`35-36行内容`（注意缩进）后保存修改即可
+2.如果你打算使用他人签名请修改`go-cqhttp_windows_amd64/config.yml`中`35-36行内容`（注意缩进）后保存修改即可（推荐他人API）
 ```
-url: 'https://huai-huai-8-9-78.hf.space'
-key: 'ngm'
+url: 'https://hlhs-nb.cn/signed'
+key: '114514'
 ```
 
 # 部署签名api（可选后面使用他人签名）
@@ -418,7 +418,7 @@ key: 'ngm'
 
 1.打开`1.1.9unidbg_and_gocq\unidbg-fetch-qsign-1.1.9`双击运行`一键启动.bat` (就[下载go-cqhttp](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/README.md#%E4%B8%8B%E8%BD%BDgo-cqhttp)下载的那个文件里面)
 
-没有闪退即可使用（默认使用8.9.78版本）
+没有闪退即可使用（默认使用9.0.8版本）
 
 2.签名启动成功后再重新启动 go-cqhttp.bat 登录即可
 
@@ -430,7 +430,7 @@ key: 'ngm'
 
 2.key默认为`1314`
 
-3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`8.9.71`则打开`8.9.71\config.json`进行修改并修改gocq的配置文件
+3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`9.0.8`则打开`9.0.8\config.json`进行修改并修改gocq的配置文件
 <br>
     <img src="图片/签名配置端口key.png" width="50%">
 
@@ -462,7 +462,7 @@ go-cqhttp
 
 ### ⑤关于其他签名协议登录
 
-1.现在个个版本都不稳定，看你73版本到最新版本哪个能登了
+1.现在个个版本都不稳定，看你9.0.0版本到最新版本哪个能登了
 
 2.换登录版本教程在`go-cqhttp_windows_amd64\data\versions\修改版本.md`中
 
@@ -558,7 +558,7 @@ node app
 
 当你启动报错237频繁登录/非常用设备登录时，因尝试与载挂Bot的设备同一网络登录/在本地设备（可登录Bot的设备）进行登录后复制Yunzai/data/icqq/QQ号整个文件夹到服务器的Yunzai/data/路径中后重试
 
-# 手动部署签名api（如果打算使用他人的api可跳过）
+# 手动部署签名api（如果打算使用他人的api可跳过）推荐他人API
 
 ### ①下载java 
 
@@ -578,9 +578,9 @@ node app
 git clone --depth 1 https://gitee.com/SHIKEAIXYY/Qsign
 ```
 
-2.运行`一键startAPI.bat`启动签名，自行根据提示配置TRSS路径
+2.运行`一键startAPI.bat`启动签名
 
-没有闪退即可使用（默认使用8.9.78版本）
+没有闪退即可使用（默认使用9.0.8版本）
 
 3.切记api不要关闭！！！
 
@@ -595,11 +595,11 @@ git clone --depth 1 https://gitee.com/SHIKEAIXYY/Qsign
 ```
  - 使用他人签名
 ```
-#QQ签名https://huai-huai-8-9-78.hf.space/sign?key=ngm
+#QQ签名https://hlhs-nb.cn/signed/?key=114514
 ```
 
 3. 对`该窗口(运行Yunzai的Cmd)`输入`以下内容并回车`
- - 密码登录：QQ号 114514 密码 1919810 登录设备 安卓手机(1)/平板(2)
+ - 密码登录：QQ号 114514 密码 1919810 登录设备 安卓手机(1)/平板(2)，使用扫码登录因密码留空
 ```
 #QQ设置114514:1919810:2
 ```
@@ -692,7 +692,7 @@ pnpm add icqq@npm:@icqqjs/icqq
 
 ### ④下载配置Gensokyo
 
-1.下载gensokyo-windows-amd64（取用v423，更新时间2024.6.9）若发现教程的Gensokyo版本更新，可以选择无视更新
+1.下载gensokyo-windows-amd64（取用v435，更新时间2024.6.20）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
 git clone --depth 1 -b gensokyo-windows-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
 ```
