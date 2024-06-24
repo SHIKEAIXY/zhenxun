@@ -364,7 +364,7 @@ python bot.py
 
 </details>
 
-主分支相对稳定，部署QQ机器人，强烈推荐使用！
+主分支相对稳定，其实压根不带更新的，太老了，不是很推荐使用
 
 ---
 
@@ -695,7 +695,7 @@ pnpm add icqq@npm:@icqqjs/icqq
 
 ### ④下载配置Gensokyo
 
-1.下载gensokyo-windows-amd64（取用v435，更新时间2024.6.20）若发现教程的Gensokyo版本更新，可以选择无视更新
+1.下载gensokyo-windows-amd64（取用v436，更新时间2024.6.23）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
 git clone --depth 1 -b gensokyo-windows-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
 ```
