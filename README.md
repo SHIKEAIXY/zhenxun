@@ -293,7 +293,7 @@ python3 bot.py
 
 </details>
 
-主分支相对稳定，部署QQ机器人，强烈推荐使用！
+主分支相对稳定，其实压根不带更新的，太老了，不是很推荐使用
 
 ---
 
@@ -549,7 +549,7 @@ screen -r yunzai
 node app
 ```
 
-当你启动报错237频繁登录/非常用设备登录时，因尝试与载挂Bot的设备同一网络登录/在本地设备（可登录Bot的设备）进行登录后复制Yunzai/data/icqq/QQ号整个文件夹到服务器的Yunzai/data/路径中后重试
+当你启动报错237频繁登录/非常用设备登录时，因尝试扫码/与载挂Bot的设备同一网络登录/在本地设备（可登录Bot的设备）进行登录后复制Yunzai/data/icqq/QQ号整个文件夹到服务器的Yunzai/data/路径中后重试
 
 1. 等待Bot的启动完成
 
@@ -675,7 +675,7 @@ pnpm add icqq@npm:@icqqjs/icqq
 
 ### ④下载配置Gensokyo
 
-1. 下载gensokyo-linux-amd64（取用v435，更新时间2024.6.20）若发现教程的Gensokyo版本更新，可以选择无视更新
+1. 下载gensokyo-linux-amd64（取用v436，更新时间2024.6.23）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
 cd /root/Bot/
 git clone --depth 1 -b gensokyo-linux-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
