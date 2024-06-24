@@ -31,7 +31,7 @@
 
 1. 有什么问题可以在本库提Issues或者加上方聊群询问
 
-2. linux系统的教程请查看[linux分支](https://gitee.com/SHIKEAIXY/zhenxun/tree/linux) | 或查看[Web教程](https://docs.qsyhh.icu/docs/linux)
+2. linux系统的教程请查看[linux分支](https://gitee.com/SHIKEAIXY/zhenxun/tree/linux) | 或查看[Web教程](https://docs.qsyhh.icu/docs/linux/)
 
 3. [点击查看zhenxun_bot的介绍](https://github.com/HibiKier/zhenxun_bot/blob/main/README.md)
 
@@ -97,9 +97,9 @@ pip install poetry
 # 二 安装Postgresql
 
 ## ①下载Postgresql数据库
-[点击此处将下载Postgresql-15.1-1版本安装包](https://get.enterprisedb.com/postgresql/postgresql-15.1-1-windows-x64.exe)
+[点击此处将下载Postgresql-16.3-2版本安装包](https://get.enterprisedb.com/postgresql/postgresql-16.3-2-windows-x64.exe)
 
-不想要15.1版本的可以自行下载别的版本（目前只要是9.0以上的版本都可以）
+不想要16.3-2版本的可以自行下载别的版本（尽量使用新版）
 
 ## ②安装postgresql数据库
 
@@ -141,7 +141,7 @@ pip install poetry
 
 1.找到安装的PgAdmin启动数据库 并启动
 
-打开方法一： 在应用中搜索 pgAdmin 点击展开 找到下面图片显示的打开即可
+在应用中搜索 pgAdmin 点击展开 找到下面图片显示的打开即可
 <br>
     <img src="图片/启动数据库.png" width="80%">
 
@@ -189,7 +189,7 @@ ok火速下一步
 
 请安装Git，已有可跳过
 
-[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.43.0-rc0.windows.1/Git-2.43.0-rc0-64-bit.exe)
+[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.45.2.windows.1/Git-2.45.2-64-bit.exe)
 
 ---
 
@@ -379,7 +379,7 @@ python bot.py
 
 请安装Git，已有可跳过
 
-[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.43.0-rc0.windows.1/Git-2.43.0-rc0-64-bit.exe)
+[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.45.2.windows.1/Git-2.45.2-64-bit.exe)
 
 ```
 git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
@@ -481,7 +481,7 @@ go-cqhttp
 
 1. 请安装Git，已有可跳过
 
-[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.43.0-rc0.windows.1/Git-2.43.0-rc0-64-bit.exe)
+[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.45.2.windows.1/Git-2.45.2-64-bit.exe)
 
 2. 下载node.js
 
