@@ -27,7 +27,7 @@
 
 1. 有什么问题可以在本库提Issues或者加上方聊群询问
 
-2. Windows系统的教程请查看[master分支](https://gitee.com/SHIKEAIXY/zhenxun) | 或查看[Web教程](https://docs.qsyhh.icu/docs/windows)
+2. Windows系统的教程请查看[master分支](https://gitee.com/SHIKEAIXY/zhenxun) | 或查看[Web教程](https://docs.qsyhh.icu/docs/windows/)
 
 3. [点击查看zhenxun_bot的介绍](https://github.com/HibiKier/zhenxun_bot/blob/main/README.md)
 
@@ -164,6 +164,37 @@ exit
 ```
 
 </details>
+
+### 备份PostgreSQL数据库
+
+1. 打开终端，输入：（创建文件夹+赋予权限）
+
+```
+mkdir -p /tmp/Postgres-BF
+sudo chmod -R 777 /tmp/Postgres-BF
+```
+
+2. 输入：（进入postgres，备份，输入密码，退出）
+
+```
+sudo -su postgres
+pg_dump -U postgres -W -F t -b -v -f "/tmp/Postgres-BF/zhenxun.tar" zhenxun
+zhenxun // 这里是上一条命令输入的密码！！！
+exit
+```
+
+3. 备份的数据将在`/tmp/Postgres-BF/zhenxun.tar`
+
+### 恢复备份的PostgreSQL数据库
+
+1. 终端输入：（赋予权限，进入postgres，恢复备份，退出）
+
+```
+sudo chmod -R 777 /tmp/Postgres-BF
+sudo -su postgres
+pg_restore -U postgres -d zhenxun -v "/tmp/Postgres-BF/zhenxun.tar"
+exit
+```
 
 ok火速下一步
 
