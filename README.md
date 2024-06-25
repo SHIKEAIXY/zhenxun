@@ -157,9 +157,9 @@ sudo apt install -y postgresql postgresql-contrib
 ```
 sudo su - postgres
 psql
-CREATE USER zhenxun WITH PASSWORD 'zhenxun'
-CREATE DATABASE zhenxun OWNER zhenxun
-exit
+CREATE USER zhenxun WITH PASSWORD 'zhenxun';
+CREATE DATABASE zhenxun OWNER zhenxun;
+\q
 exit
 ```
 
@@ -176,6 +176,7 @@ sudo chmod -R 777 /tmp/Postgres-BF
 
 2. 输入：（进入postgres，备份，输入密码，退出）
 
+注意！！！需要完成`安装PostgreSQL数据库`全部步骤才能备份数据库
 ```
 sudo -su postgres
 pg_dump -U postgres -W -F t -b -v -f "/tmp/Postgres-BF/zhenxun.tar" zhenxun
@@ -187,7 +188,9 @@ exit
 
 ### 恢复备份的PostgreSQL数据库
 
-1. 终端输入：（赋予权限，进入postgres，恢复备份，退出）
+注意！！！需要完成`安装PostgreSQL数据库 + 备份PostgreSQL数据库`全部步骤才能备份数据库
+
+1. 终端输入：（赋予权限，进入postgres，恢复备份，退出），/tmp/Postgres-BF/zhenxun.tar是已有的备份压缩文件
 
 ```
 sudo chmod -R 777 /tmp/Postgres-BF
