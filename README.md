@@ -145,9 +145,29 @@ pip install poetry
 <br>
     <img src="图片/启动数据库.png" width="80%">
 
-[是英文怎么办？点击此处解决](https://blog.csdn.net/weixin_46329056/article/details/125929563?ydreferer=aHR0cHM6Ly93d3cuYmFpZHUuY29tL2xpbms%2FdXJsPUwzNmhIRml6RjMwd2QzWnFEanFpY0NLYzFGbmlGUktRTXhCU21UTmFObjZNM0NxLUY5YzJzYV9IY2kzekV5bEVlTTctNzZnWjVmNC15aTI3ZjE3V3JJVDRnUzMtejdlTHp6aFJPY1Y2Tm9XJndkPSZlcWlkPTgyNjY3OTdjMDAwZTA0NGEwMDAwMDAwMjY0M2FiNDZj)
+设置中文：
+
+点击左上角的`file`
+<br>
+    <img src="图片/数据库中文.png" width="50%">
+
+然后再点击左上角的`Preferences`
+<br>
+    <img src="图片/数据库中文2.png" width="50%">
+
+然后依次点击图片中数字的位置
+<br>
+    <img src="图片/数据库中文3.png" width="50%">
 
 2.新建连接
+
+点击`Servers`
+<br>
+    <img src="图片/添加数据库-1.png" width="50%">
+
+然后输入密码勾选保存后确定即可（密码是zhenxun 前面设置的密码）
+<br>
+    <img src="图片/添加数据库0.png" width="50%">
 
 左侧栏右键点击后选择，在点击ServersRegister服务器
 <br>
@@ -198,6 +218,8 @@ ok火速下一步
 
 <br>
     <img src="图片/dev真寻.png" width="50%">
+    
+虽然但是...阿米已经写很多了，没写的一些比如抽卡...主分支的不是也寄了嘛...
     
 1.github下载真寻本体
 
@@ -287,7 +309,7 @@ dev分支支持更多协议端，如DODO,Kook等，但还在完善，仅部署QQ
 ---
 
 <details>
-  <summary>main主分支真寻bot</summary>
+  <summary>main主分支真寻bot（不推荐使用）</summary>
 
 1.github下载真寻本体
 
