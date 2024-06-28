@@ -216,6 +216,8 @@ sudo apt install git
 
 <br>
     <img src="图片/dev真寻.png" width="50%">
+
+虽然但是...阿米已经写很多了，没写的一些比如抽卡...主分支的不是也寄了嘛...
     
 1.github下载真寻本体
 
@@ -273,12 +275,12 @@ python bot.py
 
 </details>
 
-dev分支支持更多协议端，如DODO,Kook等，但还在完善，仅部署QQ真寻暂不建议使用
+dev分支支持更多协议端，如DODO,Kook等，但还在完善，不过强烈推荐使用
 
 ---
 
 <details>
-  <summary>main主分支真寻bot</summary>
+  <summary>main主分支真寻bot（不推荐使用）</summary>
 
 1.github下载真寻本体
 
