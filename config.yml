@@ -136,7 +136,7 @@ settings:
   downtime_message : "小真寻正在维护中嗷~请不要担心,维护结束就能继续和大家见面啦~维护时间:(1小时)"
 
   #增长营销类(推荐gensokyo-broadcast项目)
-  self_introduce : ["你好鸭！我是绪山真寻～",""]          #自我介绍,可设置多个随机发送,当不为空时,机器人被邀入群会发送自定义自我介绍 需手动添加新textintent   - "GroupAddRobotEventHandler"   - "GroupDelRobotEventHandler"
+  self_introduce : ["你好鸭！我是绪山真寻～",""]          #自我介绍,可设置多个随机发送,当不为空时,机器人被邀入群会发送自定义自我介绍 需手动打开textintent   - "GroupAddRobotEventHandler"   - "GroupDelRobotEventHandler"
 
 
   #API修改
@@ -146,7 +146,7 @@ settings:
   get_g_list_guilds : "10"          #在获取群列表api时,一次返回的频道数量.这里是string,不要去掉引号.最大100(5分钟内连续请求=翻页),获取全部请开启get_g_list_return_guilds.
   get_g_list_return_guilds : true   #获取群列表时是否返回频道列表.
   forward_msg_limit : 3             #发送折叠转发信息时的最大限制条数 若要发转发信息 请设置lazy_message_id为true
-  custom_bot_name : "Gensokyo全域机器人"   #自定义api返回的机器人名字,会在api调用中返回,默认Gensokyo全域机器人
+  custom_bot_name : "Gensokyo真寻机器人"   #自定义api返回的机器人名字,会在api调用中返回,默认Gensokyo全域机器人
   transform_api_ids : true          #对get_group_menmber_list\get_group_member_info\get_group_list生效,是否在其中返回转换后的值(默认转换,不转换请自行处理插件逻辑,比如调用gsk的http api转换)
   auto_put_interaction : false      #自动回应按钮回调的/interactions/{interaction_id} 注本api需要邮件申请,详细方法参考群公告:196173384
   put_interaction_delay : 0         #单位毫秒 表示回应已收到回调类型的按钮的毫秒数 会按用户进行区分 非全局delay
@@ -163,7 +163,7 @@ settings:
   transfer_url : true                #默认开启,关闭后自理url发送,配置server_dir为你的域名,配置crt和key后,将域名/url和/image在q.qq.com后台通过校验,自动使用302跳转处理机器人发出的所有域名.
 
   #框架修改
-  title : "Gensokyo © 2023 - Hoshinonyaruko"              #程序的标题 如果多个机器人 可根据标题区分
+  title : "Gensokyo © 2023 - zhenxun_bot"              #程序的标题 如果多个机器人 可根据标题区分
   frp_port : "0"                    #不使用请保持为0,frp的端口,frp有内外端口,请在frp软件设置gensokyo的port,并将frp显示的对外端口填入这里
  
   #MD相关
@@ -190,10 +190,13 @@ settings:
   me_prefix : "/me"                 #需设置   #增强配置项  master_id 可触发
   unlock_prefix : "/unlock"         #频道私信卡住了? gsk可以帮到你 在任意子频道发送unlock 你会收到来自机器人的频道私信
   link_prefix : "/link"             #友情链接配置 配置custom_template_id后可用(https://www.yuque.com/km57bt/hlhnxg/tzbr84y59dbz6pib)
+  auto_link : false                 #友情链接最高礼仪,机器人被添加到群内时发送友情链接.
   music_prefix : "点歌"             #[CQ:music,type=qq,id=123] 在消息文本组合qq音乐歌曲id,可以发送点歌,这是歌曲按钮第二个按钮的填充内容,应为你的机器人点歌插件的指令.
-  link_bots : ["",""]               #发送友情链接时 下方按钮携带的机器人 格式 "appid-qq-name","appid-qq-name"
+  link_bots : ["",""]               #发送友情链接时 下方按钮携带的机器人 格式 "appid-qq-name","appid-qq-name"或"http://xxx.com-文字" 链接中的-号自行用%2D替换 如 cgi-bin替换为cgi%2Dbin
   link_text : ""                    #友情链接文本 不可为空!
   link_pic : ""                     #友情链接图片 可为空 需url图片 可带端口 不填可能会有显示错误
+  link_lines : 2                    #内置的/link指令按钮列数(默认一行2个按钮)
+  link_num : 6                      #在link_bots随机选n个bot上友情链接,在link_bots中随机n个,避免用户选择困难,少即是多
 
   #HTTP API配置-正向http
   http_address: ""                  #http监听地址 与websocket独立 示例:0.0.0.0:5700 为空代表不开启

@@ -1,6 +1,6 @@
 ## 关于本库
 
-1. 本库取自[Gensokyo](https://github.com/Hoshinonyaruko/Gensokyo/releases/tag/436%2Fmerge)436版本的linux-amd64
+1. 本库取自[Gensokyo](https://github.com/Hoshinonyaruko/Gensokyo/releases/tag/443%2Fmerge)443版本的linux-amd64
 2. 本库修改了 ws_address 为 zhenxun_bot的8080端口
 * ws://127.0.0.1:8080/onebot/v11/ws/
 3. 本库修改了 text_intent 为群
