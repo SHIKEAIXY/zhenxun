@@ -3,25 +3,25 @@ version: 1
 settings:
   #反向ws设置
   ws_address: ["ws://127.0.0.1:8080/onebot/v11/ws/"] # WebSocket服务的地址 支持多个["","",""]
-  ws_token: [""]                    #连接wss地址时服务器所需的token,按顺序一一对应,如果是ws地址,没有密钥,请留空.["","",""]
+  ws_token: ["","",""]              #连接wss地址时服务器所需的token,按顺序一一对应,如果是ws地址,没有密钥,请留空.
   reconnect_times : 100             #反向ws连接失败后的重试次数,希望一直重试,可设置9999
   heart_beat_interval : 5           #反向ws心跳间隔 单位秒 推荐5-10
   launch_reconnect_times : 1        #启动时尝试反向ws连接次数,建议先打开应用端再开启gensokyo,因为启动时连接会阻塞webui启动,默认只连接一次,可自行增大
 
   #基础设置
-  app_id: 123456                                     # 你的应用ID
-  uin : 123456                                       # 你的机器人QQ号,点击机器人资料卡查看或QQ开发平台查看
-  use_uin : true                                     # false=使用appid作为机器人id,true=使用机器人QQ号,需设置正确的uin
-  token: "abcdef"                                    # 你的应用令牌
-  client_secret: "abcdef"                            # 你的客户端密钥
-  shard_count: 1                                     #分片数量 默认1
-  shard_id: 0                                        #当前分片id 默认从0开始,详细请看 https://bot.q.qq.com/wiki/develop/api/gateway/reference.html
+  app_id: 123456                    # 你的应用ID
+  uin : 123456                      # 你的机器人QQ号,点击机器人资料卡查看  
+  use_uin : false                   # false=使用appid作为机器人id,true=使用机器人QQ号,需设置正确的uin
+  token: "abcdef"                   # 你的应用令牌
+  client_secret: "abcdef"           # 你的客户端密钥
+  shard_count: 1                    #分片数量 默认1
+  shard_id: 0                       #当前分片id 默认从0开始,详细请看 https://bot.q.qq.com/wiki/develop/api/gateway/reference.html
 
   #事件订阅
-  text_intent:
+  text_intent:                                       # 请根据公域 私域来选择intent,错误的intent将连接失败
     # - "ATMessageEventHandler"                      # 频道at信息
     # - "DirectMessageHandler"                       # 私域频道私信(dms)
-    # - "ReadyHandler"                               # 连接成功
+    - "ReadyHandler"                                 # 连接成功
     # - "ErrorNotifyHandler"                         # 连接关闭
     # - "GuildEventHandler"                          # 频道事件
     # - "MemberEventHandler"                         # 频道成员新增
@@ -29,7 +29,7 @@ settings:
     # - "CreateMessageHandler"                       # 频道不at信息 私域机器人需要开启 公域机器人开启会连接失败
     # - "InteractionHandler"                         # 添加频道互动回应 卡片按钮data回调事件
     - "GroupATMessageEventHandler"                   # 群at信息 仅频道机器人时候需要注释
-    # - "C2CMessageEventHandler"                     # 群私聊 仅频道机器人时候需要注释
+    - "C2CMessageEventHandler"                       # 群私聊 仅频道机器人时候需要注释
     # - "ThreadEventHandler"                         # 频道发帖事件 仅频道私域机器人可用
     # - "GroupAddRobotEventHandler"                  # self_introduce推销
     # - "GroupDelRobotEventHandler"                  # self_introduce推销
@@ -40,13 +40,13 @@ settings:
   global_forum_to_channel: false                     # 是否将频道帖子信息转化为频道 子频道信息 如果开启global_channel_to_group会进一步转换为群信息
   global_interaction_to_message : false              # 是否将按钮和表态回调转化为消息 仅在设置了按钮回调中的message时有效
   global_group_msg_rre_to_message : false            # 是否将用户开关机器人资料页的机器人推送开关 产生的事件转换为文本信息并发送给应用端.false将使用onebotv11的notice类型上报.
-  global_group_msg_reject_message : "机器人主动消息被关闭"  # 当开启 global_group_msg_rre_to_message 时,机器人主动信息被关闭将上报的信息. 自行添加intent - GroupMsgRejectHandler
-  global_group_msg_receive_message : "机器人主动消息被开启" # 建议设置为无规则复杂随机内容,避免用户指令内容碰撞. 自行添加 intent - GroupMsgReceiveHandler
-  hash_id : false                                    # 使用hash来进行idmaps转换,可以让user_id不是123开始的递增值
+  global_group_msg_reject_message : "小真寻主动消息被关闭"  # 当开启 global_group_msg_rre_to_message 时,机器人主动信息被关闭将上报的信息. 自行添加intent - GroupMsgRejectHandler
+  global_group_msg_receive_message : "小真寻主动消息被开启" # 建议设置为无规则复杂随机内容,避免用户指令内容碰撞. 自行添加 intent - GroupMsgReceiveHandler
+  hash_id : true                                    # 使用hash来进行idmaps转换,可以让user_id不是123开始的递增值
   idmap_pro : false                                  # 需开启hash_id配合,高级id转换增强,可以多个真实值bind到同一个虚拟值,对于每个用户,每个群\私聊\判断私聊\频道,都会产生新的虚拟值,但可以多次bind,bind到同一个数字.数据库负担会变大.
 
   #Gensokyo互联类
-  server_dir: "192.168.137.1"                        # Lotus地址.不带http头的域名或ip,提供图片上传服务的服务器(图床)需要带端口号. 如果需要发base64图,需为公网ip,且开放对应端口
+  server_dir: "192.168.135.1"                        # Lotus地址.不带http头的域名或ip,提供图片上传服务的服务器(图床)需要带端口号. 如果需要发base64图,需为公网ip,且开放对应端口
   port: "15630"                                      # Lotus端口.idmaps和图床对外开放的端口号,若要连接到另一个gensokyo,也是链接端口
   backup_port : "5200"                               # 当totus为ture时,port值不再是本地webui的端口,使用lotus_Port来访问webui
   lotus: false                                       # lotus特性默认为false,当为true时,将会连接到另一个lotus为false的gensokyo。使用它提供的图床和idmaps服务(场景:同一个机器人在不同服务器运行,或内网需要发送base64图)。如果需要发送base64图片,需要设置正确的公网server_dir和开放对应的port, lotus鉴权 设置后,从gsk需要保持相同密码来访问主gsk
@@ -88,12 +88,12 @@ settings:
   save_logs : false                 #自动储存日志
 
   #webui设置
-  disable_webui: false              #禁用webui
-  server_user_name : "zhenxun"      #默认网页面板用户名
-  server_user_password : "zhenxun"  #默认网页面板密码
+  disable_webui: false                #禁用webui
+  server_user_name : "zhenxun"        #默认网页面板用户名
+  server_user_password : "zhenxun"    #默认网页面板密码
 
   #指令魔法类
-  remove_prefix : false             #是否忽略公域机器人指令前第一个/
+  remove_prefix : true              #是否忽略公域机器人指令前第一个/
   remove_at : false                 #是否忽略公域机器人指令前第一个[CQ:aq,qq=机器人] 场景(公域机器人,但插件未适配at开头)
   remove_bot_at_group : true        #因为群聊机器人不支持发at,开启本开关会自动隐藏群机器人发出的at(不影响频道场景)
   add_at_group : true               #自动在群聊指令前加上at,某些机器人写法特别,必须有at才反应时,请打开,默认请关闭(如果需要at,不需要at指令混杂,请优化代码适配群场景,群场景目前没有at概念)
@@ -133,10 +133,10 @@ settings:
   dev_message_id : false            #在沙盒和测试环境使用无限制msg_id 仅沙盒有效,正式环境请关闭,内测结束后,tx侧未来会移除
   send_error : true                 #将报错用文本发出,避免机器人被审核报无响应
   save_error : false                #将保存保存在log文件夹,方便开发者定位发送错误.
-  downtime_message : "小真寻正在维护中嗷~请不要担心,维护结束就能继续和大家见面啦~维护时间:(1小时)"
+  downtime_message : "小真寻正在维护嗷~请不要担心,维护结束就回来~维护时间:(1小时)"
 
   #增长营销类(推荐gensokyo-broadcast项目)
-  self_introduce : ["你好鸭！我是绪山真寻～",""]          #自我介绍,可设置多个随机发送,当不为空时,机器人被邀入群会发送自定义自我介绍 需手动打开textintent   - "GroupAddRobotEventHandler"   - "GroupDelRobotEventHandler"
+  self_introduce : ["你好鸭！我是绪山真寻～","小真寻很高兴认识大家鸭~",""]          #自我介绍,可设置多个随机发送,当不为空时,机器人被邀入群会发送自定义自我介绍 需手动添加新textintent   - "GroupAddRobotEventHandler"   - "GroupDelRobotEventHandler"
 
 
   #API修改
@@ -184,6 +184,7 @@ settings:
   #错误临时修复类
   fix_11300: false                  #修复11300报错,需要在develop_bot_id填入自己机器人的appid. 11300原因暂时未知,临时修复方案.
   http_only_bot : false             #这个配置项会自动配置,请不要修改,保持false.
+  do_not_replace_appid : false      #在频道内机器人尝试at自己回at不到,保持false.群内机器人有发送用户头像url的需求时,true(因为用户头像url包含了appid,如果false就会出错.)
   
   #内置指令类
   bind_prefix : "/bind"             #需设置   #增强配置项  master_id 可触发
