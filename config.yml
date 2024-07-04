@@ -31,8 +31,8 @@ settings:
     - "GroupATMessageEventHandler"                   # 群at信息 仅频道机器人时候需要注释
     - "C2CMessageEventHandler"                       # 群私聊 仅频道机器人时候需要注释
     # - "ThreadEventHandler"                         # 频道发帖事件 仅频道私域机器人可用
-    # - "GroupAddRobotEventHandler"                  # self_introduce推销
-    # - "GroupDelRobotEventHandler"                  # self_introduce推销
+    - "GroupAddRobotEventHandler"                    # self_introduce推销，入群自动发送消息
+    - "GroupDelRobotEventHandler"                    # self_introduce推销，入群自动发送消息
 
   #转换类
   global_channel_to_group: true                      # 是否将频道转换成群 默认true
@@ -133,10 +133,10 @@ settings:
   dev_message_id : false            #在沙盒和测试环境使用无限制msg_id 仅沙盒有效,正式环境请关闭,内测结束后,tx侧未来会移除
   send_error : true                 #将报错用文本发出,避免机器人被审核报无响应
   save_error : false                #将保存保存在log文件夹,方便开发者定位发送错误.
-  downtime_message : "小真寻正在维护嗷~请不要担心,维护结束就回来~维护时间:(1小时)"
+  downtime_message : "小真寻和美波里出去玩辣！请不要担心，会快就会和大家再次见面嗷~"
 
   #增长营销类(推荐gensokyo-broadcast项目)
-  self_introduce : ["你好鸭！我是绪山真寻～","小真寻很高兴认识大家鸭~",""]          #自我介绍,可设置多个随机发送,当不为空时,机器人被邀入群会发送自定义自我介绍 需手动添加新textintent   - "GroupAddRobotEventHandler"   - "GroupDelRobotEventHandler"
+  self_introduce : ["你好鸭！我是绪山真寻～","小真寻很高兴认识大家鸭~"]          #自我介绍,可设置多个随机发送,当不为空时,机器人被邀入群会发送自定义自我介绍 需手动添加新textintent   - "GroupAddRobotEventHandler"   - "GroupDelRobotEventHandler"
 
 
   #API修改
