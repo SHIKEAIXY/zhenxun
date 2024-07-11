@@ -6,3 +6,5 @@
 4. 本库修改了 server_user_name 和 server_user_password 为zhenxun
 5. 本库修改了 add_at_group 为true
 6. 添加订阅 self_introduce 并默认注释
+7. 开启 remove_prefix
+8. 修改 forward_msg_limit
