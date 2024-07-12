@@ -27,7 +27,7 @@
 
 ## 与真寻相关  
 
-1. 有什么问题可以在本库提Issues或者加上方聊群询问
+1. 有什么问题可以在本库提Issues
 
 2. linux系统的教程请查看[linux分支](https://gitee.com/SHIKEAIXY/zhenxun/tree/linux) | 或查看[Web教程](https://docs.qsyhh.icu/docs/linux/)
 
@@ -648,7 +648,7 @@ git clone --depth 1 -b gensokyo-windows-amd64 https://gitee.com/SHIKEAIXY/zhenxu
 <br><img src="Img/Gensokyo/防火墙4.png" width="50%">
 
 然后填写端口`15630`并下一页
-<br><img src="Img/防火墙5.png" width="50%">
+<br><img src="Img/Gensokyo/防火墙5.png" width="50%">
 
 然后一直下一页即可，名字随便起
 
