@@ -1,7 +1,7 @@
 </div>
 <div align="center">
 <br>
-    <img src="Img/真寻.png" width="80%">
+    <img src="Img真寻.png" width="80%">
 
 </div>
 
@@ -41,7 +41,7 @@
 
 1. 一个Windows系统的[zhenxun_bot](https://github.com/HibiKier/zhenxun_bot)安装教程
 
-2. 需要有一定的基础(x) 如果没有一些基础的话可会困难重重哒 为了自己喜欢的真寻加油鸭！
+2. 需要有一定的基础 如果没有一些基础的话可会困难重重哒 为了自己喜欢的真寻加油鸭！
 
 3. 真寻bot非常可爱 嗯 非常可爱！！！非常可爱！！！非常可爱！！！
 
@@ -70,7 +70,8 @@
 [点击下载Py3.10](https://musetransfer.com/s/mpvqvvofz)
 
 下面两个对钩点上 然后点击Install Now等待安装完成
-<br><img src="Img/python安装/py安装.png" width="50%">
+
+<br><img src="Imgpy安装.png" width="50%">
 
 安装完成打开cmd输入py 查看是否有Py版本输出
 
@@ -88,12 +89,11 @@ pip install poetry
 
 如果没有请重启电脑 重新打开cmd输入 poetry
 
-还不行？[点击此处解决](https://cn.bing.com)
+还不行？[点击此处解决](https://www.baidu.com)
 
 # 二 安装Postgresql
 
 ## ①下载Postgresql数据库
-
 [点击此处将下载Postgresql-16.3-2版本安装包](https://get.enterprisedb.com/postgresql/postgresql-16.3-2-windows-x64.exe)
 
 不想要16.3-2版本的可以自行下载别的版本（尽量使用新版）
@@ -101,105 +101,104 @@ pip install poetry
 ## ②安装postgresql数据库
 
 1.双击安装程序，点击Next（打不开报错？系统用户名不能是中文，计算机名也不能是中文，其他问题。。。不要找我 我也不会）
-
-<br><img src="Img/postgresql数据库/安装数据库.png" width="50%">
+<br>
+    <img src="Img安装数据库.png" width="50%">
 
 2.选择安装路径（对路径没有要求不用改 默认c盘），继续Next
 
 安装路径中不要出现中文！（防止报错）
-
-<br><img src="Img/postgresql数据库/数据库安装路径.png" width="50%">
+<br>
+    <img src="Img数据库安装路径.png" width="50%">
 
 3.去掉即可，不影响使用，Stack BuilderNext
-
-<br><img src="Img/postgresql数据库/取消Stack Builder安装.png" width="50%">
-
+<br>
+    <img src="Img取消Stack Builder安装.png" width="50%">
 
 4.数据存储路径（对路径没有要求不用改 默认c盘），Next
-
-<br><img src="Img/postgresql数据库/数据存储路径.png" width="50%">
+<br>
+    <img src="Img数据存储路径.png" width="50%">
 
 5.输入Postgres用户的密码，例如：zhenxun（防止后期问题请按照本教程的密码输入 上下全部输入zhenxun）
-
-<br><img src="Img/postgresql数据库/数据库密码.png" width="50%">
+<br>
+    <img src="Img数据库密码.png" width="50%">
 
 6.默认端口，Next
-
-<br><img src="Img/postgresql数据库/数据库端口.png" width="50%">
+<br>
+    <img src="Img数据库端口.png" width="50%">
 
 7.接下来一路点Next直到进入安装
-
-<br><img src="Img/postgresql数据库/一路下一步.png" width="50%">
+<br>
+    <img src="Img一路下一步.png" width="50%">
 
 8.显示下面的图 代表你安装完成
-
-<br><img src="Img/postgresql数据库/数据库安装完成.png" width="50%">
+<br>
+    <img src="Img数据库安装完成.png" width="50%">
 
 ## ③配置连接
 
 1.找到安装的PgAdmin启动数据库 并启动
 
 在应用中搜索 pgAdmin 点击展开 找到下面图片显示的打开即可
-
-<br><img src="Img/postgresql数据库/启动数据库.png" width="80%">
+<br>
+    <img src="Img启动数据库.png" width="80%">
 
 设置中文：
 
 点击左上角的`file`
-
-<br><img src="Img/postgresql数据库/数据库中文.png" width="50%">
+<br>
+    <img src="Img数据库中文.png" width="50%">
 
 然后再点击左上角的`Preferences`
-
-<br><img src="Img/postgresql数据库/数据库中文2.png" width="50%">
+<br>
+    <img src="Img数据库中文2.png" width="50%">
 
 然后依次点击图片中数字的位置
-
-<br><img src="Img/postgresql数据库/数据库中文3.png" width="50%">
+<br>
+    <img src="Img数据库中文3.png" width="50%">
 
 2.新建连接
 
 点击`Servers`
-
-<br><img src="Img/postgresql数据库/添加数据库-1.png" width="50%">
+<br>
+    <img src="Img添加数据库-1.png" width="50%">
 
 然后输入密码勾选保存后确定即可（密码是zhenxun 前面设置的密码）
-
-<br><img src="Img/postgresql数据库/添加数据库0.png" width="50%">
+<br>
+    <img src="Img添加数据库0.png" width="50%">
 
 左侧栏右键点击后选择，在点击ServersRegister服务器
-
-<br><img src="Img/postgresql数据库/添加数据库.png" width="50%">
+<br>
+    <img src="Img添加数据库.png" width="50%">
 
 随便给它起一个响亮的名字（
-
-<br><img src="Img/postgresql数据库/真寻名字.png" width="50%">
+<br>
+    <img src="Img真寻名字.png" width="50%">
 
 填写配置，如果是连接远程服务器的话对应的服务器IP，本地的话可以直接填写 就是安装时配置的端口，没有修改的话默认
 
-就是安装时配置的密码主机名称/地址127.0.0.1端口5432 密码就是你安装是输入的密码（本教程前面用的是zhenxun）
-
-<br><img src="Img/postgresql数据库/编辑数据库1.png" width="50%">
+就是安装时配置
+的密码主机名称/地址127.0.0.1端口5432 密码就是你安装是输入的密码（本教程前面用的是zhenxun）
+<br>
+    <img src="Img编辑数据库1.png" width="50%">
 
  3.点击保存
-
 左侧栏会出现一个可爱真寻
-
-<br><img src="Img/postgresql数据库/编辑数据库2.png" width="50%">
+<br>
+    <img src="Img编辑数据库2.png" width="50%">
 
 ## ④新建数据库
 
 1.点击展开
 
 2.右击，选择后点击数据库创建数据库
-
-<br><img src="Img/postgresql数据库/新建数据库.png" width="50%">
+<br>
+    <img src="Img新建数据库.png" width="50%">
 
 3.直接创建
 
 设置数据库名称后点击保存 
-
-<br><img src="Img/postgresql数据库/保存数据库.png" width="50%">
+<br>
+    <img src="Img保存数据库.png" width="50%">
 
 ok火速下一步
 
@@ -214,7 +213,8 @@ ok火速下一步
 <details>
   <summary>安装dev分支重构真寻bot(逐渐完善中...推荐安装)</summary>
 
-<br><img src="Img/安装真寻/dev真寻.png" width="50%">
+<br>
+    <img src="Imgdev真寻.png" width="50%">
     
 虽然但是...阿米已经写很多了，没写的一些比如抽卡...主分支的不是也寄了嘛...
     
@@ -282,12 +282,12 @@ database: str = ""   #数据库名称
 ```
 
 5.由于dev默认开启kaihiela(kook)，不连接将会无法启动，非使用kook连接需手动把env.dev里如图内容注释或删掉
-
-<br><img src="Img/安装真寻/kook问题.png" width="50%">
+<br>
+    <img src="Imgkook问题.png" width="50%">
 
 6.由于dev版中由于数据迁移所用，暂未考虑新建数据库没有sign_group_users所导致无法启动，应删zhenxun/builtin_plugins/_init_.py中删除如图内容
-
-<br><img src="Img/安装真寻/数据库表.png" width="50%">
+<br>
+    <img src="Img数据库表.png" width="50%">
 
 7.启动真寻(虚拟环境内)，会在 zhenxun/configs 和 data/configs 目录下生成各种配置文件
 
@@ -390,6 +390,108 @@ python bot.py
 # 四 连接zhenxun_bot
 
 <details>
+  <summary>使用Go-cqhttp连接真寻bot（不建议）</summary>
+
+## ①下载Go-cqhttp 
+
+### gitee下载
+
+请安装Git，已有可跳过
+
+[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.45.2.windows.1/Git-2.45.2-64-bit.exe)
+
+```
+git clone --depth 1 https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq.git
+```
+### zip下载 (不建议!)
+
+[点击此处下载签名和Go-cqhttp](https://gitee.com/SHIKEAIXYY/1.1.9unidbg_and_gocq/repository/archive/master.zip)
+
+下载后请配置`go-cqhttp_windows_amd64`而`unidbg-fetch-qsign-1.1.9`一会要用
+
+## ②配置Go-cqhttp
+
+1.打开config.yml文件，修改`QQ账号和密码`保存即可（先不要重新启动！！！）
+<br>
+    <img src="Img账号.png" width="70%">
+
+2.如果你打算使用他人签名请修改`go-cqhttp_windows_amd64/config.yml`中`35-36行内容`（注意缩进）后保存修改即可（推荐他人API）
+```
+url: 'https://hlhs-nb.cn/signed'
+key: '114514'
+```
+
+# 部署签名api（可选后面使用他人签名）
+
+### ①下载java 
+
+1.[点击此处下载Jdk](https://mirrors.tuna.tsinghua.edu.cn/Adoptium/18/jdk/x64/windows/OpenJDK18U-jdk_x64_windows_hotspot_18.0.2.1_1.msi)
+
+2.安装完成后打开cmd运行`java`查看是否有输出
+
+[如果没有输出点击此处查看如何配置变量，如果你看不懂那就没办法了](https://blog.csdn.net/qq_41436122/article/details/82620080)
+
+配置完成后重新启动服务器后再打开cmd运行`java`查看是否有输出
+
+### ②使用
+
+1.打开`1.1.9unidbg_and_gocq\unidbg-fetch-qsign-1.1.9`双击运行`一键启动.bat` (就[下载go-cqhttp](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/README.md#%E4%B8%8B%E8%BD%BDgo-cqhttp)下载的那个文件里面)
+
+没有闪退即可使用（默认使用9.0.8版本）
+
+2.签名启动成功后再重新启动 go-cqhttp.bat 登录即可
+
+3.切记api不要关闭！！！
+
+### ③配置
+
+1.端口默认是`520`
+
+2.key默认为`1314`
+
+3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`9.0.8`则打开`9.0.8\config.json`进行修改并修改gocq的配置文件
+<br>
+    <img src="Img签名配置端口key.png" width="50%">
+
+### ④启动 Go-cqhttp
+
+1.返回上一目录打开`go-cqhttp_windows_amd64`文件
+
+2.双击 `go-cqhttp.bat` 进行验证即可
+<br>
+    <img src="Imggocq_bat.png" width="50%">
+
+3.如果出现以下内容则不用管它，不影响登录和使用 **（如果你看着变扭请看下一条）** 
+
+```
+[WARNING]: Callback error: Packet timed out, Or response data is empty
+[ERROR]: Protocol -> parse incoming packet error: return code unsuccessful: -10005
+```
+
+4.在gocq运行的页面中使用`ctrl+c`后输入下方内容回车重新启动即可
+```
+go-cqhttp
+```
+
+5.自动提交滑块ticket无反应
+- 这个不知道有没有解决办法
+- 如果没反应请使用`2. 手动抓取提交`
+- [使用安卓手机点击此处下载](https://maupdate.rainchan.win/txcaptcha.apk)
+
+
+### ⑤关于其他签名协议登录
+
+1.现在个个版本都不稳定，看你9.0.0版本到最新版本哪个能登了
+
+2.换登录版本教程在`go-cqhttp_windows_amd64\data\versions\修改版本.md`中
+
+### 如果你使用了gocq还登录上就别~~作~~让他好好run
+
+</details>
+
+---
+
+<details>
   <summary>使用[云崽]的[ws插件]跳过gocq使用icqq连接真寻bot</summary>
 
 ## 安装云崽
@@ -400,17 +502,17 @@ python bot.py
 
 [点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.45.2.windows.1/Git-2.45.2-64-bit.exe)
 
-2. 下载Node.Js（20以上的Node.Js！！！）
+2. 下载node.js
 
-[点击此处下载Node.Js](https://mirrors.tuna.tsinghua.edu.cn/nodejs-release/v20.9.0/node-v20.9.0-x86.msi)
+[点击此处下载node.js](https://mirrors.tuna.tsinghua.edu.cn/nodejs-release/v20.9.0/node-v20.9.0-x86.msi)
 
 3. 右键鼠标打开`Open Git Bash here`
 
 Win11需先点击显示更多选项后才显示`Open Git Bash here`
-
-<br><img src="Img/打开Git/win11打开git.png" width="40%">
-
-<br><img src="Img/打开Git/win打开git2.png" width="40%">
+<br>
+    <img src="Imgwin11打开git.png" width="40%">
+<br>
+    <img src="Imgwin打开git2.png" width="40%">
  
 因为TRSS Yunzai不依赖与Miao-Plugin与Genshin(俩大型原神插件)，所以本教程使用TRSS崽
 
@@ -431,7 +533,7 @@ git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai ./Yunzai/TRSS-Yunza
 cd Yunzai/TRSS-Yunzai
 ```
 ```
-git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai-ICQQ-Plugin ./plugins/ICQQ-Plugin
+git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai-ICQQ-Plugin /root/Bot/XiaoYu-Bot/plugins/ICQQ-Plugin
 ```
 ```
 git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
@@ -455,43 +557,6 @@ git clone --depth 1 -b redis https://gitee.com/SHIKEAIXYY/Trss-ComWeChat-Yunzai.
 </details>
 &nbsp;
 
-#### 配置ICQQ版本信息
-
-1. 打开路径`Yunzai\TRSS-Yunzai\plugins\ICQQ-Plugin\node_modules\icqq\lib\core`
- - `没有node_modules`这个文件夹就是你依赖没装（pnpm i）
-
-2. 找到`device.js`文件并打开
-
-3. 翻到第`261`行
-
-<br><img src="Img/修改ICQQ版本/修改ICQQ.png" width="50%">
-
-4. 在`261`行后面换成转到`262`行
-
-<br><img src="Img/修改ICQQ版本/修改ICQQ2.png" width="50%">
-
-5. 在`262`行顶格位置粘贴下方内容后保存即可
-
-<br><img src="Img/修改ICQQ版本/修改ICQQ3.png" width="50%">
-
-```
-    {
-        name: "A9.0.70.e4b76fcc",
-        version: "9.0.70.17645",
-        ver: "9.0.70",
-        subid: 537228487,
-        apad_subid: 537228526,
-        qua: "V1_AND_SQ_9.0.70_6698_YYB_D",
-        channel: "GuanWang",
-        sdkver: "6.0.0.2561",
-        buildtime: 0x666bfec0,
-        bitmap: 0x08f7ff7c,
-        ssover: 0x15,
-    },
-```
-
-6. 至此修改完成
-
 #### ②说明
 
 1. 安装完的`云崽`和`数据库`在你bat运行的同级目录`Yunzai`的文件夹中
@@ -499,6 +564,7 @@ git clone --depth 1 -b redis https://gitee.com/SHIKEAIXYY/Trss-ComWeChat-Yunzai.
 2. `redis`为数据库
 
 3. `Trss-Yunzai`为机器人本体
+
 
 ### ③启动云崽
 
@@ -512,18 +578,44 @@ git clone --depth 1 -b redis https://gitee.com/SHIKEAIXYY/Trss-ComWeChat-Yunzai.
 node app
 ```
 
-当你启动报错237频繁登录/非常用设备登录：
+当你启动报错237频繁登录/非常用设备登录时，因尝试扫码/与载挂Bot的设备同一网络登录/在本地设备（可登录Bot的设备）进行登录后复制Yunzai/data/icqq/QQ号整个文件夹到服务器的Yunzai/data/路径中后重试
 
- - 尝试扫码登录Bot
- - 与载挂Bot的设备同一网络登录
- - 在本地常用设备（可登录Bot的设备）进行登录后复制Yunzai/data/icqq/QQ号整个文件夹到服务器的Yunzai/data/路径中后重试
+# 手动部署签名api（如果打算使用他人的api可跳过）推荐他人API
+
+### ①下载java 
+
+1.[点击此处下载Jdk](https://mirrors.tuna.tsinghua.edu.cn/Adoptium/18/jdk/x64/windows/OpenJDK18U-jdk_x64_windows_hotspot_18.0.2.1_1.msi)
+
+2.安装完成后打开cmd运行`java`查看是否有输出
+
+[如果没有输出点击此处查看如何配置变量，如果你看不懂那就没办法了](https://blog.csdn.net/qq_41436122/article/details/82620080)
+
+配置完成后重新启动服务器后再打开cmd运行`java`查看是否有输出
+
+### ②使用
+
+1.下载Qsign(请在Yunzai目录克隆)
+
+```
+git clone --depth 1 https://gitee.com/SHIKEAIXYY/Qsign
+```
+
+2.运行`一键startAPI.bat`启动签名
+
+没有闪退即可使用（默认使用9.0.8版本）
+
+3.切记api不要关闭！！！
 
 #### ④机器人配置
 
 1. 等待Bot的启动完成
 
 2. 对`该窗口(运行Yunzai的Cmd)`输入`以下内容并回车`
- - 白嫖hlh佬
+ - 上方自建签名
+```
+#QQ签名http://127.0.0.1:801/sign?key=114514
+```
+ - 使用他人签名
 ```
 #QQ签名https://hlhs-nb.cn/signed/?key=114514
 ```
@@ -577,10 +669,10 @@ pnpm add icqq@npm:@icqqjs/icqq
 ---
 
 <details>
-  <summary>使用Gensokyo(QQBot)连接真寻bot(需要公网IP)</summary>
+  <summary>使用Gensokyo(QQBot)连接真寻bot</summary>
 
 # 没必要评价第三方好还是官方好，各有各的好处和弊端，能接受就用，接受不了就别用，别一天天的骂来骂去，~~你就算骂也别骂到人家开发者上去，咱能不能有点良心？~~ 
-# 别拿着建议的理由去骂开发者，人家更不更新跟你什么关系，没强迫你更新吧？
+# 别拿着建议的理由去骂开发者，人家更不更新跟你什么关系，没强迫你更新吧？你要是认为Gensokyo更新太快就别用，把开发者气跑了你就开心高兴了？
 
 ### ①说明：
 
@@ -596,20 +688,33 @@ pnpm add icqq@npm:@icqqjs/icqq
 
 6. `Gensokyo` QQ群：196173384
 
-### ②注册个体账号
+### ②注册企业账号
 
-1. 注册一个企业qq开放平台账号：[点我前往注册](https://q.qq.com/#/register?developerType=1)
+1. 随随便便注册一个企业qq开放平台账号：https://q.qq.com
+<br>
+    <img src="Img企业注册.png" width="50%">
 
 2. 登录企业qq开放平台账号并创建机器人
+<br>
+    <img src="Img创建机器人.png" width="50%">
 
-<br><img src="Img/Gensokyo/创建机器人.png" width="50%">
+3. 填好信息后点击下一步
 
-3. 填好信息后点击下一步（我相信你会）
+4. 打开后点击`基础信息-信息`
+<br>
+    <img src="Img资质认证.png" width="50%">
+
+5. 点击`详情`
+<br>
+    <img src="Img资质认证2.png" width="50%">
+
+6. 点击`进入认证`后填写相关信息并点击提交审核进行认证（目前不认证无法上线机器人，可沙箱使用）
+<br>
+    <img src="Img资质认证3.png" width="50%">
 
 ### ④下载配置Gensokyo
 
-1. 下载gensokyo-windows-amd64（取用v459，更新时间2024.7.10）若发现教程的Gensokyo版本更新，可以选择无视更新
-
+1.下载gensokyo-windows-amd64（取用v459，更新时间2024.7.10）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
 git clone --depth 1 -b gensokyo-windows-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
 ```
@@ -617,42 +722,50 @@ git clone --depth 1 -b gensokyo-windows-amd64 https://gitee.com/SHIKEAIXY/zhenxu
 2. 打开下载的`Gensokyo`后并双击打开`config.yml`
 
 3. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`QQ号 ID 令牌 秘钥`填写到`config.yml配置文件`的7~9行
+<br>
+    <img src="Img配置Gensokyo2.png" width="50%">
+<br>
+    <img src="Img配置Gensokyo.png" width="50%">
 
-<br><img src="Img/Gensokyo/配置Gensokyo2.png" width="50%">
+4. 将自己服务器的公网ip填入`server_dir`
+<br>
+    <img src="Img配置Gensokyo3.png" width="50%">
 
-<br><img src="Img/Gensokyo/配置Gensokyo.png" width="50%">
-
-4. 填写公网IP至开放平台（不填写无法上线和连接Bot）
-
-<br><img src="Img/Gensokyo/配置开放平台IP.png" width="50%">
-
-5. 将自己服务器的公网ip填入`server_dir`
-
-<br><img src="Img/Gensokyo/配置Gensokyo3.png" width="50%">
-
-6. 并开放端口号`15630`（不配置将无法发送图片）
+5. 并开放端口号`15630`（不配置将无法发送图片）
 
 打开防火墙(不会可以`按住win键+R键`输入`Firewall.cpl`并点击确定)
-
-<br><img src="Img/Gensokyo/防火墙.png" width="50%">
+<br>
+    <img src="Img防火墙.png" width="50%">
 
 打开防火墙后点击`高级设置`
-
-<br><img src="Img/Gensokyo/防火墙2.png" width="50%">
+<br>
+    <img src="Img防火墙2.png" width="50%">
 
 然后点击`入站规则`并`新建规则`
-
-<br><img src="Img/Gensokyo/防火墙3.png" width="50%">
+<br>
+    <img src="Img防火墙3.png" width="50%">
 
 选择端口后下一页
-<br><img src="Img/Gensokyo/防火墙4.png" width="50%">
+<br>
+    <img src="Img防火墙4.png" width="50%">
 
 然后填写端口`15630`并下一页
-<br><img src="Img/防火墙5.png" width="50%">
+<br>
+    <img src="Img防火墙5.png" width="50%">
 
 然后一直下一页即可，名字随便起
 
-记得服务器控制台那边也要开放端口`15630`！！！
+6. 如果你没有公网ip可使用早苗的图床
+
+将`server_dir`和`port`修改为下方内容
+
+```
+server_dir: "sanae.online"
+port: "443" 
+``` 
+然后将`lotus`的`false`设置为`true`后保存即可使用
+<br>
+    <img src="ImgGensokyo图床.png" width="50%">
 
 7. 以上完成后双击运行`gensokyo.bat`不出意外就可以运行了
 
@@ -663,15 +776,13 @@ git clone --depth 1 -b gensokyo-windows-amd64 https://gitee.com/SHIKEAIXY/zhenxu
 2. 再次回到网站`q.qq.com`
 
 3. 点击`开发-沙箱配置`后找到`在QQ群配置`将聊群修改为刚刚创建的聊群（如果失败就几秒后再试试）
-<br><img src="Img/Gensokyo/机器人沙箱.png" width="50%">
+<br>
+    <img src="Img机器人沙箱.png" width="50%">
 
 4. 接下来回到QQ打开刚刚创建的聊群，点击右上角的`三个横杠`，点击`管理群-群机器人`，找到你的机器人点击添加
 
-5. 接下来@机器人并发送真寻帮助查看是否可以发图  如：@绪山小真寻 真寻帮助
-
+5. 接下来@机器人并发送真寻帮助查看是否可以发图  如：@冰祈 真寻帮助
 6. 如果不行自己查看上文中让填写的ip是否为公网ip并且开放了端口号，如都设置了还不行那就找作者去，我不到啊
-
-## 至于怎么上线你自己研究吧
 
 **注意！！！**
  
@@ -733,55 +844,57 @@ git clone --depth 1 -b ComChat https://gitee.com/SHIKEAIXY/zhenxun.git ./ComWeCh
 [点我下载Cheat Engine](https://www.cheatengine.org/downloads.php)
 
 1. 下载完成后`点击`
-
-<br><img src="Img/Cheat/Cheat1.png" width="35%">
+<br>
+    <img src="ImgCheat1.png" width="35%">
 
 2. 打开`微信`（待扫码状态）
 
 3. 选择`Processes`
-
-<br><img src="Img/Cheat/Cheat2.png" width="35%">
+<br>
+    <img src="ImgCheat2.png" width="35%">
 
 4. 找到`数字/字母-Wechat.exe`后点击
-
-<br><img src="Img/Cheat/Cheat3.png" width="35%">
+<br>
+    <img src="ImgCheat3.png" width="35%">
 
 5. 再点击`Open`
-
-<br><img src="Img/Cheat/Cheat4.png" width="35%">
+<br>
+    <img src="ImgCheat4.png" width="35%">
 
 6. `勾选Hex`后`替换000000`为`下方内容`即可
 
 ```
 6307001E
 ```
-
-<br><img src="Img/Cheat/Cheat5.png" width="35%">
+<br>
+    <img src="ImgCheat5.png" width="35%">
 
 7. 然后点击`FIrst Scan`
-
-<br><img src="Img/Cheat/Cheat6.png" width="35%">
+<br>
+    <img src="ImgCheat6.png" width="35%">
 
 8. 然后`ctrl+A全选`后`点击箭头`
-
-<br><img src="Img/Cheat/Cheat7.png" width="35%">
+<br>
+    <img src="ImgCheat7.png" width="35%">
 
 9. 然后继续`ctrl+A全选`下面的内容
-
-<br><img src="Img/Cheat/Cheat8.png" width="35%"> 
+<br>
+    <img src="ImgCheat8.png" width="35%"> 
 
 10. 然后`左键点击参数`修改为`下方内容`（使用最新3.9.11.17）
 
 ```
 63090B11
 ```
-<br><img src="Img/Cheat/Cheat9.png" width="35%"> 
+<br>
+    <img src="ImgCheat9.png" width="35%"> 
 
 11. 然后点击`OK`
 
 12. 保存修改数据（并非永久生效，重新登录需再次修改，本步骤是保存CT文件，方便下次进行修改）
 
-<br><img src="Img/Cheat/Cheat10.png" width="35%"> 
+<br>
+    <img src="ImgCheat10.png" width="35%"> 
 
 </details>
 
