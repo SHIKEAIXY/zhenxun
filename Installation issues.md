@@ -6,7 +6,7 @@
 
 #### 报错图：
 <br>
-    <img src="图片/pyproject.toml.png" width="70%">
+    <img src="Img/Iss/pyproject.toml.png" width="70%">
 
 #### 原因：
 
