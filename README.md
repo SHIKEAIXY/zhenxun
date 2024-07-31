@@ -1,6 +1,6 @@
 </div>
 <div align="center">
-<br><img src="真寻.png" width="80%">
+<br><img src="Img/真寻.png" width="80%">
 
 </div>
 
@@ -107,8 +107,10 @@ wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo 
  
 4. 点击右上角三个点 然后 点击打开终端 再点击右上角➕ 最后点击新建SSH
   - 和3类似
+<br><img src="Img/SSH/NMM2.png" width="70%">
   
 5. 连接新创建的SSH即可
+<br><img src="Img/SSH/NMM3.png" width="70%">
 
 </details>
 
@@ -285,6 +287,18 @@ poetry shell
 python bot.py
 ```
 
+
+8. 关于screen命令说明：
+
+* screen命令一般用于Linux的持久化运行
+* 其中下方命令当中的name为创建screen窗口的名称
+```
+screen -S name //创建一个screen窗口
+screen -r -d name //强制打开这个screen窗口
+screen -ls     //查看全部screen窗口
+screen -S name -X quit  //删除这个screen窗口
+```
+
 </details>
 
 dev分支支持更多协议端，如DODO,Kook等，但还在完善，不过强烈推荐使用
@@ -339,11 +353,6 @@ poetry shell
 python3 bot.py
 ```
 
-</details>
-
-主分支相对稳定，其实压根不带更新的，太老了，不是很推荐使用
-
----
 
 6. 关于screen命令说明：
 
@@ -356,8 +365,13 @@ screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
 ```
 
-# 五 连接zhenxun_bot
+</details>
 
+主分支相对稳定，其实压根不带更新的，太老了，不是很推荐使用
+
+---
+
+# 五 连接zhenxun_bot
 
 <details>
   <summary>使用[云崽]的[ws插件]跳过gocq使用icqq连接真寻bot</summary>
