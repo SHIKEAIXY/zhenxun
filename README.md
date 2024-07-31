@@ -1,9 +1,12 @@
 </div>
 <div align="center">
-<br>
-    <img src="图片/真寻.png" width="80%">
+<br><img src="真寻.png" width="80%">
 
 </div>
+
+## [点击此处查看真寻bot安装时报错的解决问题](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/Installation%20issues.md)
+
+还未完善...
 
 # 前言
 
@@ -21,11 +24,9 @@
 
 ## 聊天群QQ：778502891
 
-## 部署问题找我（可能没时间看，但一定会回）QQ：536606294
-
 ## 与真寻相关  
 
-1. 有什么问题可以在本库提Issues或者加上方聊群询问
+1. 有什么问题可以在本库提Issues
 
 2. Windows系统的教程请查看[master分支](https://gitee.com/SHIKEAIXY/zhenxun) | 或查看[Web教程](https://docs.qsyhh.icu/docs/windows/)
 
@@ -37,26 +38,25 @@
 
 ## 介绍
 
-1. 一个linux（Ubuntu）系统的[zhenxun_bot](https://github.com/HibiKier/zhenxun_bot)安装教程
+1. 一个Linux(Ubuntu)系统的[zhenxun_bot](https://github.com/HibiKier/zhenxun_bot)安装教程
 
-2. 需要有一定的基础 如果没有一些基础的话可会困难重重哒 为了自己喜欢的真寻加油鸭！
+2. 需要有一定的基础(x) 如果没有一些基础的话可会困难重重哒 为了自己喜欢的真寻加油鸭！
 
 3. 真寻bot非常可爱 嗯 非常可爱！！！非常可爱！！！非常可爱！！！
 
-4. 真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [~~Go-cqhttp~~](https://github.com/Mrs4s/go-cqhttp) 的开发，以 [Postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
+4. 真寻bot是一个基于 [Nonebot2](https://github.com/nonebot/nonebot2) 和 [~~Go-cqhttp~~](https://github.com/Mrs4s/go-cqhttp) 的开发，以 [postgresql](https://www.postgresql.org/) 作为数据库，非常可爱的绪山真寻bot
 
 <a href='https://gitee.com/SHIKEAIXY/zhenxun/stargazers'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/star.svg?theme=dark' alt='star的人'></img></a>
-<a href='https://gitee.com/SHIKEAIXY/zhenxun/members'><img src='https://gitee.com/SHIKEAIXY/zhenxun/badge/fork.svg?theme=dark' alt='fork的人'></img></a>
-[![](https://img.shields.io/badge/Python-v3.9+-DeepSkyBlue)](https://www.python.org)
+
+[![](https://img.shields.io/badge/Python-v3.8+-DeepSkyBlue)](https://www.python.org)
 [![](https://img.shields.io/badge/Poetry-brightgreen.svg)](https://python-poetry.org)
 [![](https://img.shields.io/badge/Nonebot-2.0.0-yellow)](https://nb2.baka.icu)
-[![](https://img.shields.io/badge/Ggo--cqhttp-1.0.0-red)](https://docs.go-cqhttp.org/)
-[![](https://img.shields.io/badge/TRSS--Yunzai/Miao--Yunzai-ws--plugin-red)](https://gitee.com/xiaoye12123/ws-plugin)
+[![](https://img.shields.io/badge/TRSS--Yunzai-ws--plugin-red)](https://gitee.com/xiaoye12123/ws-plugin)
 [![](https://img.shields.io/badge/Gensokyo-QQAPI-red)](https://github.com/Hoshinonyaruko/Gensokyo)
 
 # 正文啦！
 
-# 一 首先你应该准备一个Ubuntu 22并且是2H2G+的服务器
+# 一 首先你应该准备一个Ubuntu 22+并且是2H2G+的服务器
 
 # 二 安装宝塔面板或者XTerminal
 
@@ -69,28 +69,46 @@
 wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh ed8484bec
 ```
 
-### 等待安装完成后打开面板（密码请牢记，如无法打开请开放端口）
+### 等待安装完成后打开面板（密码请牢记，如无法打开请开放终端宝塔给出的端口号）
 
 </details>
 
 <details>
-  <summary>安装XTerminal（无安卓和苹果端）</summary>
+  <summary>安装XTerminal(Windows)</summary>
 
 1. [点击此处下载XTerminal](https://www.xterminal.cn)
 
 2. 下载完成后打开点击新建服务器（+号）
-<br>
-    <img src="图片/XTerminal新建ssh.png" width="70%">
+<br><img src="Img/SSH/XTerminal新建ssh.png" width="70%">
 
 3. 写上一个名字/ip地址/登录密码后创建即可
-<br>
-    <img src="图片/XTerminal绑定ssh.png" width="70%">
+<br><img src="Img/SSH/XTerminal绑定ssh.png" width="70%">
 
-3.1 你的登录密码会在你的服务商控制台显示（不知道在哪里就去百度搜，太多了我没办法去列举每个服务商不一样）
+ - 你的登录密码会在你的服务商控制台显示（不知道在哪里可以去百度搜下）
 
 4. 创建完成点击连接
-<br>
-    <img src="图片/XTerminal连接ssh.png" width="70%">
+<br><img src="Img/SSH/XTerminal连接ssh.png" width="70%">
+
+</details>
+
+<details>
+  <summary>安装NMM（Android）</summary>
+  
+1. [点击此处下载NMM](https://musetransfer.com/s/xx40nl4cv)
+
+2. 打开NMM左上角三个横杠再点击➕最后选择SFTP
+<br><img src="Img/SSH/NMM.png" width="70%">
+
+3. 填写配置确定即可
+ - 主机：IP
+ - 用户名：默认为root（一般情况）
+ - 密码：登录密码
+ - 其他任意
+ 
+4. 点击右上角三个点 然后 点击打开终端 再点击右上角➕ 最后点击新建SSH
+  - 和3类似
+  
+5. 连接新创建的SSH即可
 
 </details>
 
@@ -98,7 +116,7 @@ wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo 
 
 ### ①安装poetry与ffmpeg和中文字体
 
-##### 由于Ubuntu 22系统自带python3.10，这里无需再次安装
+##### 由于Ubuntu 22+  系统自带python3.10，这里无需再次安装
 
 1. 打开终端依次输入下方内容进行安装
 
@@ -119,31 +137,28 @@ sudo fc-cache -f -v
 
 <details>
   <summary>使用宝塔面板安装PostgreSQL数据库</summary>
+  
+宝塔也可以SSH连接，也可以用apt安装
 
 1. 打开软件商店搜索PostgreSQL管理器并安装（默认安装即可）
-<br>
-    <img src="图片/安装PostgreSQL管理器.png" width="70%">
+<br><img src="Img/宝塔/安装PostgreSQL管理器.png" width="70%">
 
 2. 安装完成后点击`设置`
-<br>
-    <img src="图片/安装PostgreSQL.png" width="70%">
+<br><img src="Img/宝塔/安装PostgreSQL.png" width="70%">
 
 3. 然后点击`版本管理`，安装12.10版本（时间较长）
-<br>
-    <img src="图片/安装PostgreSQL2.png" width="70%">
+<br><img src="Img/宝塔/安装PostgreSQL2.png" width="70%">
 
 4. 安装完成后点击`数据库列表`创建/添加数据库
-<br>
-    <img src="图片/创建PostgreSQL.png" width="70%">
+<br><img src="Img/宝塔/创建PostgreSQL.png" width="70%">
 
 5. `数据库名/用户名/密码`全部填写`zhenxun`后点击`确定`
-<br>
-    <img src="图片/创建PostgreSQL2.png" width="70%">
+<br><img src="Img/宝塔/创建PostgreSQL2.png" width="70%">
 
 </details>
 
 <details>
-  <summary>使用XTerminal(终端)安装PostgreSQL数据库</summary>
+  <summary>使用XTerminal/NMM(终端)安装PostgreSQL数据库</summary>
 
 1. 安装PostgreSQL数据库
 
@@ -174,7 +189,7 @@ mkdir -p /tmp/Postgres-BF
 sudo chmod -R 777 /tmp/Postgres-BF
 ```
 
-2. 输入：（进入postgres，备份，输入密码，退出）
+2. 输入：（进入postgres，备份，输入密码zhenxun，退出）
 
 注意！！！需要完成`安装PostgreSQL数据库`全部步骤才能备份数据库
 ```
@@ -214,8 +229,7 @@ sudo apt install git
 <details>
   <summary>安装dev分支重构真寻bot(逐渐完善中...推荐安装)</summary>
 
-<br>
-    <img src="图片/dev真寻.png" width="50%">
+<br><img src="Img/真寻/dev真寻.png" width="50%">
 
 虽然但是...阿米已经写很多了，没写的一些比如抽卡...主分支的不是也寄了嘛...
     
@@ -248,12 +262,10 @@ sed -i 's/SUPERUSERS.*/SUPERUSERS=["123456789"]/g' .env.dev
 ```
 
 4.由于dev默认开启kaihiela(kook)，不连接将会无法启动，非使用kook连接需手动把env.dev里如图内容注释或删掉
-<br>
-    <img src="图片/kook问题.png" width="50%">
+<br><img src="Img/真寻/kook问题.png" width="50%">
 
 5.由于dev版中由于数据迁移所用，暂未考虑新建数据库没有sign_group_users所导致无法启动，应删zhenxun/builtin_plugins/_init_.py中删除如图内容
-<br>
-    <img src="图片/数据库表.png" width="50%">
+<br><img src="Img/真寻/数据库表.png" width="50%">
 
 6.启动真寻(虚拟环境内)，会在 zhenxun/configs 和 data/configs 目录下生成各种配置文件
 
@@ -346,113 +358,9 @@ screen -S name -X quit  //删除这个screen窗口
 
 # 五 连接zhenxun_bot
 
-<details>
-  <summary>使用go-cqhttp连接真寻bot（不建议）</summary>
-
-# 再提醒你一句，gocq作者已经不再更新，签名服务以无法解决Gocq45问题
-
-## ①安装go-cqhttp
-
-1. 下载go-cqhttp
-
-### gitee下载
-
-```
-cd /root/Bot
-git clone --depth 1 https://gitee.com/SHIKEAIXYY/Qsign.git ./Gocq&Qsugn/unidbg-fetch-qsign-1.1.9
-git clone -b go-cqhttp_1.2.0_linux_arm64.deb --depth 1 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gocq&Qsugn/go-cqhttp_linux_amd64
-```
-
-下载后请配置`linux_amd64`而`unidbg-fetch-qsign-1.1.9`一会要用
-
-## ②配置Go-cqhttp
-
-1.打开config.yml文件，修改`QQ账号和密码`保存即可（先不要重新启动！！！）
-
-2.如果你打算使用他人签名请修改`go-cqhttp_linux_amd64/config.yml`中`35-36行内容`（注意缩进）后保存修改即可
-```
-url: 'https://hlhs-nb.cn/signed'
-key: '114514'
-```
-
-# 部署签名api（可选后面使用他人签名）推荐他人API
-
-### ①下载java 
-
-1.下载Jdk
-```
-sudo apt install openjdk-18-jdk
-```
-
-### ②使用
-
-1.输入
-```
-screen -S api
-cd /root/Gocq&Qsugn/unidbg-fetch-qsign-1.1.9/unidbg-fetch-qsign&&bash bin/unidbg-fetch-qsign --basePath=txlib/9.0.8
-```
-
-没有闪退即可使用（默认使用9.0.8版本）
-
-2.切记api不要关闭！！！
-
-### ③配置
-
-1.端口默认是`801`
-
-2.key默认为`114514`
-
-3.如需修改可打开`unidbg-fetch-qsign-1.1.9\txlib`找到你要修改的版本打开这个文件如修改`9.0.8`则打开`9.0.8\config.json`进行修改并修改gocq的配置文件
-
-### ④启动 Go-cqhttp
-
-1. 启动go-cqhttp
-
-输入以下内容回车即可
-```
-screen -S gocq
-cd /root/Bot/Gocq&Qsugn/go-cqhttp_linux_amd64
-go-cqhttp
-```
-
-2. 我说过Gocq寄了，无法登录就更换签名版本（唯一的办法，不一定能行）
-
-3. 如果出现以下内容则不用管它，不影响登录和使用
-
-```
-[WARNING]: Callback error: Packet timed out, Or response data is empty
-[ERROR]: Protocol -> parse incoming packet error: return code unsuccessful: -10005
-```
-
-4. 自动提交滑块ticket无反应
-- 这个不知道有没有解决办法
-- 如果没反应请使用`2. 手动抓取提交`
-- [使用安卓手机点击此处下载](https://maupdate.rainchan.win/txcaptcha.apk)
-
-
-5. 关于screen命令说明：
-
-* screen命令一般用于Linux的持久化运行
-* 其中下方命令当中的name为创建screen窗口的名称
-```
-screen -S name //创建一个screen窗口
-screen -r -d name //强制打开这个screen窗口
-screen -ls     //查看全部screen窗口
-screen -S name -X quit  //删除这个screen窗口
-```
-
-### ⑤关于其他签名协议登录
-
-1.现在个个版本都不稳定，看你9.0.0版本到最新版本哪个能登了
-
-2.换登录版本教程在`go-cqhttp_linux_amd64\data\versions\修改版本.md`中
-
-</details>
-
----
 
 <details>
-  <summary>使用[云崽]的[ws插件]跳过gocq使用icqq连接真寻bot（在2024年2月5号的晚上7点ICQQ删库...建议各位早日使用Gensokyo）</summary>
+  <summary>使用[云崽]的[ws插件]跳过gocq使用icqq连接真寻bot</summary>
 
 ## 安装云崽
 
@@ -462,15 +370,16 @@ screen -S name -X quit  //删除这个screen窗口
 
 <details>
   <summary>使用宝塔面板安装node.js</summary>
+  
+宝塔也可以SSH连接，也可以用apt安装
 
 打开宝塔的软件商店搜索`Node.js版本管理器`并下载20.9.0的版本（不可以下载低于18的版本）
-<br>
-    <img src="图片/下载node管理器.png" width="70%">
+<br><img src="Img/宝塔/下载node管理器.png" width="70%">
 
 </details>
 
 <details>
-  <summary>使用XTerminal安装node.js</summary>
+  <summary>使用XTerminal/NMM安装node.js</summary>
 
 终端依次输入下方内容
 
@@ -529,12 +438,14 @@ pnpm i
 <details>
   <summary>使用宝塔面板安装redis数据库</summary>
 
+宝塔也可以SSH连接，也可以用apt安装
+
 还是打开软件商店搜索`redis`（剩下的你自己搞吧，这么简单你不会还不会吧？）
 
 </details>
 
 <details>
-  <summary>使用XTerminal安装redis数据库</summary>
+  <summary>使用XTerminal/NMM安装redis数据库</summary>
 
 终端输入下方内容
 
@@ -558,24 +469,42 @@ sudo systemctl enable redis-server
 
 </details>
 
-4. 自建签名（如使用他人api可跳过）推荐他人API
+#### ③配置ICQQ版本信息
 
-先安装一下Jdk
+1. 打开路径`Yunzai\TRSS-Yunzai\plugins\ICQQ-Plugin\node_modules\icqq\lib\core`
+ - `没有node_modules`这个文件夹就是你依赖没装（pnpm i）
+
+2. 找到`device.js`文件并打开
+
+3. 翻到第`261`行
+
+<br><img src="Img/修改ICQQ版本/修改ICQQ.png" width="50%">
+
+4. 在`261`行后面换成转到`262`行
+
+<br><img src="Img/修改ICQQ版本/修改ICQQ2.png" width="50%">
+
+5. 在`262`行顶格位置粘贴下方内容后保存即可
+
+<br><img src="Img/修改ICQQ版本/修改ICQQ3.png" width="50%">
+
 ```
-sudo apt install openjdk-18-jdk
+    {
+        name: "A9.0.70.e4b76fcc",
+        version: "9.0.70.17645",
+        ver: "9.0.70",
+        subid: 537228487,
+        apad_subid: 537228526,
+        qua: "V1_AND_SQ_9.0.70_6698_YYB_D",
+        channel: "GuanWang",
+        sdkver: "6.0.0.2561",
+        buildtime: 0x666bfec0,
+        bitmap: 0x08f7ff7c,
+        ssover: 0x15,
+    },
 ```
 
-然后下载unidbg-fetch-qsign
-```
-cd /root/Bot/
-git clone --depth 1 https://gitee.com/touchscale/Qsign
-```
-
-然后启动unidbg-fetch-qsign（此处的9.0.8可修改）
-```
-screen -S api
-cd Qsign/unidbg-fetch-qsign&&bash bin/unidbg-fetch-qsign --basePath=txlib/9.0.8
-```
+6. 至此修改完成
 
 #### ④机器人/配置（此时应该在root/Bot目录执行）
 
@@ -585,16 +514,24 @@ screen -r yunzai
 node app
 ```
 
-当你启动报错237频繁登录/非常用设备登录时，因尝试扫码/与载挂Bot的设备同一网络登录/在本地设备（可登录Bot的设备）进行登录后复制Yunzai/data/icqq/QQ号整个文件夹到服务器的Yunzai/data/路径中后重试
+3. 启动机器人
+ - 在`TRSS-Yunzai`目录下cmd输入`node app`即可
+```
+node app
+```
+
+当你启动报错237频繁登录/非常用设备登录：
+
+ - 尝试扫码登录Bot
+ - 与载挂Bot的设备同一网络登录
+ - 在本地常用设备（可登录Bot的设备）进行登录后复制Yunzai/data/icqq/QQ号整个文件夹到服务器的Yunzai/data/路径中后重试
+ 
+4. 配置机器人
 
 1. 等待Bot的启动完成
 
 2. 对`该窗口(运行Yunzai的Cmd)`输入`以下内容并回车`
- - 上方自建签名
-```
-#QQ签名http://127.0.0.1:801/sign?key=114514
-```
- - 使用他人签名
+ - 白嫖hlh佬
 ```
 #QQ签名https://hlhs-nb.cn/signed/?key=114514
 ```
@@ -668,8 +605,7 @@ pnpm add icqq@npm:@icqqjs/icqq
 <details>
   <summary>使用Gensokyo(QQBot)连接真寻bot</summary>
 
-# 没必要评价第三方好还是官方好，各有各的好处和弊端，能接受就用，接受不了就别用，别一天天的骂来骂去，~~你就算骂也别骂到人家开发者上去，咱能不能有点良心？~~
-# 别拿着建议的理由去骂开发者，人家更不更新跟你什么关系，没强迫你更新吧？你要是认为Gensokyo更新太快就别用，把开发者气跑了你就开心高兴了？
+# 没必要评价第三方好还是官方好，各有各的好处和弊端，能接受就用，接受不了就别用，别一天天的骂来骂去
 
 ### ①说明：
 
@@ -685,31 +621,17 @@ pnpm add icqq@npm:@icqqjs/icqq
 
 6. `Gensokyo` QQ群：196173384
 
-### ②注册企业账号
+### ②注册个体账号
 
-1. 随随便便注册一个企业qq开放平台账号：https://q.qq.com
-<br>
-    <img src="图片/企业注册.png" width="50%">
+1. 注册一个企业qq开放平台账号：[点我前往注册](https://q.qq.com/#/register?developerType=1)
 
 2. 登录企业qq开放平台账号并创建机器人
-<br>
-    <img src="图片/创建机器人.png" width="50%">
 
-3. 填好信息后点击下一步
+<br><img src="Img/Gensokyo/创建机器人.png" width="50%">
 
-4. 打开后点击`基础信息-信息`
-<br>
-    <img src="图片/资质认证.png" width="50%">
+3. 填好信息后点击下一步（我相信你会）
 
-5. 点击`详情`
-<br>
-    <img src="图片/资质认证2.png" width="50%">
-
-6. 点击`进入认证`后填写相关信息并点击提交审核进行认证（目前不认证无法上线机器人，可沙箱使用）
-<br>
-    <img src="图片/资质认证3.png" width="50%">
-
-### ④下载配置Gensokyo
+### ③下载配置Gensokyo
 
 1. 下载gensokyo-linux-amd64（取用v459，更新时间2024.7.10）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
@@ -720,28 +642,15 @@ git clone --depth 1 -b gensokyo-linux-amd64 https://gitee.com/SHIKEAIXY/zhenxun.
 2. 打开下载的`Gensokyo`后并双击打开`config.yml`
 
 3. 打开之前的网站`q.qq.com`点击`开发-开发设置`并复制`ID 令牌 秘钥`填写到`config.yml配置文件`的7~10行
-<br>
-    <img src="图片/配置Gensokyo2.png" width="50%">
-<br>
-    <img src="图片/配置Gensokyo.png" width="50%">
+<br><img src="Img/Gensokyo/配置Gensokyo2.png" width="50%">
+<br><img src="Img/Gensokyo/配置Gensokyo.png" width="50%">
 
 4. 将自己服务器的公网ip填入`server_dir`
-<br>
-    <img src="图片/配置Gensokyo3.png" width="50%">
+<br><img src="Img/Gensokyo/配置Gensokyo3.png" width="50%">
 
 5. 并开放端口号`15630`（不配置将无法发送图片，不会就百度搜下吧）
 
-6. 如果你没有公网ip可使用早苗的图床
-
-将`server_dir`和`port`修改为下方内容
-
-```
-server_dir: "sanae.online"
-port: "443" 
-``` 
-然后将`lotus`的`false`设置为`true`后保存即可使用
-<br>
-    <img src="图片/Gensokyo图床.png" width="50%">
+6. 记得服务器控制台那边也要开放端口`15630`！！！
 
 7. 以上完成后，输入下方内容命令（此时应该在root/Bot/Gensokyo路径中）
 
@@ -769,14 +678,15 @@ screen -S name -X quit  //删除这个screen窗口
 2. 再次回到网站`q.qq.com`
 
 3. 点击`开发-沙箱配置`后找到`在QQ群配置`将聊群修改为刚刚创建的聊群（如果失败就几秒后再试试）
-<br>
-    <img src="图片/机器人沙箱.png" width="50%">
+<br><img src="Img/Gensokyo/机器人沙箱.png" width="50%">
 
 4. 接下来回到QQ打开刚刚创建的聊群，点击右上角的`三个横杠`，点击`管理群-群机器人`，找到你的机器人点击添加
 
-5. 接下来@机器人并发送真寻帮助查看是否可以发图  如：@冰祈 真寻帮助
+5. 接下来@机器人并发送真寻帮助查看是否可以发图  如：@绪山小真寻 真寻帮助
 
 6. 如果不行自己查看上文中让填写的ip是否为公网ip并且开放了端口号，如都设置了还不行那就去Gensokyo群问，我不到啊
+
+## 至于怎么上线你自己研究吧
 
 **注意！！！**
  
