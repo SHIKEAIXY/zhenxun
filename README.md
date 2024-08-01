@@ -778,7 +778,7 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 
 ---
 
-# 六 重新启动真寻
+# 四 重新启动真寻
 
 关机/页面关上了该怎么重新启动真寻？
 
@@ -807,7 +807,9 @@ screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
 ```
 
-# 七 真寻插件下载
+---
+
+# 五 真寻插件下载
  
 [插件安装问题](https://github.com/zhenxun-org/nonebot_plugins_zhenxun_bot/issues/27)
 
