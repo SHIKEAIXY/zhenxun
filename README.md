@@ -60,6 +60,8 @@
 
 ## ➊ 首先你应该准备一个Ubuntu 22+并且是2H2G+的服务器
 
+---
+
 ## ➋ 安装 宝塔面板 / XTerminal / JuiceSSH+NMM
 
 <details>
@@ -136,6 +138,8 @@ NMM是用来文件管理
 sudo apt update && sudo apt upgrade && sudo apt install -y screen && sudo pip install --upgrade pip && sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple && sudo apt update && sudo apt install -y wget git screen ffmpeg && sudo apt install -y python3-pip && sudo pip install poetry && sudo apt install fonts-wqy-microhei && sudo fc-cache -f -v
 ```
 
+---
+
 ## ➍️安装PostgreSQL数据库
 
 <details>
@@ -158,9 +162,9 @@ sudo apt update && sudo apt upgrade && sudo apt install -y screen && sudo pip in
 5. `数据库名/用户名/密码`全部填写`zhenxun`后点击`确定`
 <br><img src="Img/宝塔/创建PostgreSQL2.png" width="70%">
 
-</details>
-
 ---
+
+</details>
 
 <details>
   <summary>②使用XTerminal/JuiceSSH(终端)安装PostgreSQL数据库</summary>
@@ -235,6 +239,8 @@ ok火速下一步
 ```
 sudo apt install git
 ```
+
+---
 
 <details>
   <summary>①安装dev分支重构真寻bot(逐渐完善中...推荐安装)</summary>
@@ -384,7 +390,7 @@ screen -S name -X quit  //删除这个screen窗口
 <details>
   <summary>①使用[云崽]的[ws插件]跳过gocq使用icqq连接真寻bot</summary>
 
-### 1⃣️安装前置
+### ➊ 安装前置
 
 1. 下载node.js
 
@@ -409,7 +415,7 @@ sudo apt install apt-transport-https curl ca-certificates software-properties-co
 
 </details>
 
-### 2⃣️安装机器人和插件
+### ➋ 安装机器人和插件
 
 1.安装云崽机器人
 
@@ -453,7 +459,7 @@ pnpm i
 </details>
 &nbsp;
 
-#i## 3⃣️安装redis数据库
+#i## ➌ 安装redis数据库
 
 <details>
   <summary>①使用宝塔面板安装redis数据库</summary>
@@ -489,7 +495,7 @@ sudo systemctl enable redis-server
 
 </details>
 
-#### 4⃣️配置ICQQ版本信息
+#### ➍️配置ICQQ版本信息
 
 1. 打开路径`Yunzai\TRSS-Yunzai\plugins\ICQQ-Plugin\node_modules\icqq\lib\core`
  - `没有node_modules`这个文件夹就是你依赖没装（pnpm i）
@@ -526,7 +532,7 @@ sudo systemctl enable redis-server
 
 6. 至此修改完成
 
-### 5⃣启动️机器人
+### ➎ 启动️机器人
 
 1. 执行
 
@@ -548,7 +554,7 @@ node app
  - 与载挂Bot的设备同一网络登录
  - 在本地常用设备（可登录Bot的设备）进行登录后复制Yunzai/data/icqq/QQ号整个文件夹到服务器的Yunzai/data/路径中后重试
  
-### 6⃣️配置机器人
+### ➏ ️配置机器人
 
 1. 等待Bot的启动完成
 
@@ -618,7 +624,7 @@ node app
 
 # 没必要评价第三方好还是官方好，各有各的好处和弊端，能接受就用，接受不了就别用，别一天天的骂来骂去
 
-### 1⃣️说明：
+### ➊️说明：
 
 1. 新框架`Gensokyo` 视频：https://www.bilibili.com/video/BV1Aw411K7Z5
 
@@ -632,7 +638,9 @@ node app
 
 6. `Gensokyo` QQ群：196173384
 
-### 2⃣️注册个体账号
+---
+
+### ➋️注册个体账号
 
 1. 注册一个企业qq开放平台账号：[点我前往注册](https://q.qq.com/#/register?developerType=1)
 
@@ -642,7 +650,9 @@ node app
 
 3. 填好信息后点击下一步（我相信你会）
 
-### 3⃣️下载配置Gensokyo
+---
+
+### ➌ 下载配置Gensokyo
 
 1. 下载gensokyo-linux-amd64（取用v459，更新时间2024.7.10）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
@@ -682,7 +692,9 @@ screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
 ```
 
-### 4⃣️配置沙箱使用机器人
+---
+
+### ➍️配置沙箱使用机器人
 
 1. 打开QQ点击新创建聊群（不超过20人的群）
 
