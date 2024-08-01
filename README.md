@@ -58,9 +58,9 @@
 
 # 一 前置准备
 
-## 1⃣️首先你应该准备一个Ubuntu 22+并且是2H2G+的服务器
+## ➊ 首先你应该准备一个Ubuntu 22+并且是2H2G+的服务器
 
-## 2⃣️安装 宝塔面板 / XTerminal / JuiceSSH+NMM
+## ➋ 安装 宝塔面板 / XTerminal / JuiceSSH+NMM
 
 <details>
   <summary>①安装宝塔面板（不建议）</summary>
@@ -72,6 +72,8 @@ wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo 
 ```
 
 ### 等待安装完成后打开面板（密码请牢记，如无法打开请开放终端宝塔给出的端口号）
+
+---
 
 </details>
 
@@ -90,6 +92,8 @@ wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo 
 
 4. 创建完成点击连接
 <br><img src="Img/SSH/XTerminal连接ssh.png" width="70%">
+
+---
 
 </details>
 
@@ -120,7 +124,9 @@ NMM是用来文件管理
  - 最后确定输入密码
 </details>
 
-## 2⃣️安装poetry与ffmpeg和中文字体等
+---
+
+## ➌安装poetry与ffmpeg和中文字体等
 
 ##### 由于Ubuntu 22+  系统自带python3.10，这里无需再次安装
 
@@ -130,7 +136,7 @@ NMM是用来文件管理
 sudo apt update && sudo apt upgrade && sudo apt install -y screen && sudo pip install --upgrade pip && sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple && sudo apt update && sudo apt install -y wget git screen ffmpeg && sudo apt install -y python3-pip && sudo pip install poetry && sudo apt install fonts-wqy-microhei && sudo fc-cache -f -v
 ```
 
-## 3⃣️安装PostgreSQL数据库
+## ➍️安装PostgreSQL数据库
 
 <details>
   <summary>①使用宝塔面板安装PostgreSQL数据库</summary>
@@ -154,6 +160,8 @@ sudo apt update && sudo apt upgrade && sudo apt install -y screen && sudo pip in
 
 </details>
 
+---
+
 <details>
   <summary>②使用XTerminal/JuiceSSH(终端)安装PostgreSQL数据库</summary>
 
@@ -174,11 +182,14 @@ CREATE DATABASE zhenxun OWNER zhenxun;
 \q
 exit
 ```
+---
 
 </details>
 
 <details>
-  <summary>②备份PostgreSQL数据库（提供方法，无需看该步骤）</summary>
+  <summary>③备份PostgreSQL数据库（提供方法，无需看该步骤）</summary>
+  
+### ➊ 备份数据库
 
 1. 打开终端，输入：（创建文件夹+赋予权限）
 
@@ -199,7 +210,7 @@ exit
 
 3. 备份的数据将在`/tmp/Postgres-BF/zhenxun.tar`
 
-### 恢复备份的PostgreSQL数据库
+### ➋恢复备份的PostgreSQL数据库
 
 注意！！！需要完成`安装PostgreSQL数据库 + 备份PostgreSQL数据库`全部步骤才能备份数据库
 
@@ -215,6 +226,8 @@ exit
 
 ok火速下一步
 
+---
+
 # 二 开始安装真寻本体
 
 首先安装Git，以有可跳过
@@ -222,8 +235,6 @@ ok火速下一步
 ```
 sudo apt install git
 ```
-
----
 
 <details>
   <summary>①安装dev分支重构真寻bot(逐渐完善中...推荐安装)</summary>
