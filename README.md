@@ -56,12 +56,14 @@
 
 # 正文啦！
 
-# 一 首先你应该准备一个Ubuntu 22+并且是2H2G+的服务器
+# 一 前置准备
 
-# 二 安装宝塔面板或者XTerminal
+## 1⃣️首先你应该准备一个Ubuntu 22+并且是2H2G+的服务器
+
+## 2⃣️安装 宝塔面板 / XTerminal / JuiceSSH+NMM
 
 <details>
-  <summary>安装宝塔面板（不建议）</summary>
+  <summary>①安装宝塔面板（不建议）</summary>
 
 ### 打开服务器控制台找到SSH连接工具输入下方内容回车即可
 
@@ -74,7 +76,7 @@ wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo 
 </details>
 
 <details>
-  <summary>安装XTerminal(Windows)</summary>
+  <summary>②安装XTerminal(Windows)</summary>
 
 1. [点击此处下载XTerminal](https://www.xterminal.cn)
 
@@ -92,9 +94,13 @@ wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo 
 </details>
 
 <details>
-  <summary>安装NMM（Android）</summary>
+  <summary>③安装JuiceSSH+NMM（Android）</summary>
   
-1. [点击此处下载NMM](https://musetransfer.com/s/xx40nl4cv)
+JuiceSSH是SSH终端连接
+
+NMM是用来文件管理
+
+1. [点击此处下载JuiceSSH+NMM](https://musetransfer.com/s/zp0v5jxym)
 
 2. 打开NMM左上角三个横杠再点击➕最后选择SFTP
 <br><img src="Img/SSH/NMM.png" width="70%">
@@ -105,40 +111,29 @@ wget -O install.sh https://download.bt.cn/install/install-ubuntu_6.0.sh && sudo 
  - 密码：登录密码
  - 其他任意
  
-4. 点击右上角三个点 然后 点击打开终端 再点击右上角➕ 最后点击新建SSH
-  - 和3类似
-<br><img src="Img/SSH/NMM2.png" width="70%">
+4. 打开JuiceSSH点击快速连接
+<br><img src="Img/SSH/JuiceSSH.png" width="70%">
   
-5. 连接新创建的SSH即可
-<br><img src="Img/SSH/NMM3.png" width="70%">
-
+5. 配置连接
+ - 格式就是：登录名@IP
+ - 如：root@111.45.14
+ - 最后确定输入密码
 </details>
 
-# 二 前置准备
-
-### ①安装poetry与ffmpeg和中文字体
+## 2⃣️安装poetry与ffmpeg和中文字体等
 
 ##### 由于Ubuntu 22+  系统自带python3.10，这里无需再次安装
 
-1. 打开终端依次输入下方内容进行安装
+1. 打开终端输入下方内容进行安装
 
 ```
-sudo apt update
-sudo apt upgrade
-sudo apt install -y screen
-sudo pip install --upgrade pip
-sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-sudo apt update && sudo apt install -y wget git screen ffmpeg
-sudo apt install -y python3-pip
-sudo pip install poetry
-sudo apt install fonts-wqy-microhei
-sudo fc-cache -f -v
+sudo apt update && sudo apt upgrade && sudo apt install -y screen && sudo pip install --upgrade pip && sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple && sudo apt update && sudo apt install -y wget git screen ffmpeg && sudo apt install -y python3-pip && sudo pip install poetry && sudo apt install fonts-wqy-microhei && sudo fc-cache -f -v
 ```
 
-# 三 安装PostgreSQL数据库
+## 3⃣️安装PostgreSQL数据库
 
 <details>
-  <summary>使用宝塔面板安装PostgreSQL数据库</summary>
+  <summary>①使用宝塔面板安装PostgreSQL数据库</summary>
   
 宝塔也可以SSH连接，也可以用apt安装
 
@@ -160,7 +155,7 @@ sudo fc-cache -f -v
 </details>
 
 <details>
-  <summary>使用XTerminal/NMM(终端)安装PostgreSQL数据库</summary>
+  <summary>②使用XTerminal/JuiceSSH(终端)安装PostgreSQL数据库</summary>
 
 1. 安装PostgreSQL数据库
 
@@ -182,7 +177,8 @@ exit
 
 </details>
 
-### 备份PostgreSQL数据库
+<details>
+  <summary>②备份PostgreSQL数据库（提供方法，无需看该步骤）</summary>
 
 1. 打开终端，输入：（创建文件夹+赋予权限）
 
@@ -215,10 +211,11 @@ sudo -su postgres
 pg_restore -U postgres -d zhenxun -v "/tmp/Postgres-BF/zhenxun.tar"
 exit
 ```
+</details>
 
 ok火速下一步
 
-# 四 开始安装真寻本体
+# 二 开始安装真寻本体
 
 首先安装Git，以有可跳过
 
@@ -229,7 +226,7 @@ sudo apt install git
 ---
 
 <details>
-  <summary>安装dev分支重构真寻bot(逐渐完善中...推荐安装)</summary>
+  <summary>①安装dev分支重构真寻bot(逐渐完善中...推荐安装)</summary>
 
 <br><img src="Img/真寻/dev真寻.png" width="50%">
 
@@ -306,7 +303,7 @@ dev分支支持更多协议端，如DODO,Kook等，但还在完善，不过强�
 ---
 
 <details>
-  <summary>main主分支真寻bot（不推荐使用）</summary>
+  <summary>②main主分支真寻bot（不推荐使用）</summary>
 
 1.github下载真寻本体
 
@@ -371,19 +368,17 @@ screen -S name -X quit  //删除这个screen窗口
 
 ---
 
-# 五 连接zhenxun_bot
+# 三 连接zhenxun_bot
 
 <details>
-  <summary>使用[云崽]的[ws插件]跳过gocq使用icqq连接真寻bot</summary>
+  <summary>①使用[云崽]的[ws插件]跳过gocq使用icqq连接真寻bot</summary>
 
-## 安装云崽
-
-### ①安装前置
+### 1⃣️安装前置
 
 1. 下载node.js
 
 <details>
-  <summary>使用宝塔面板安装node.js</summary>
+  <summary>①使用宝塔面板安装node.js</summary>
   
 宝塔也可以SSH连接，也可以用apt安装
 
@@ -393,19 +388,19 @@ screen -S name -X quit  //删除这个screen窗口
 </details>
 
 <details>
-  <summary>使用XTerminal/NMM安装node.js</summary>
+  <summary>②使用XTerminal/JuiceSSH安装node.js</summary>
 
-终端依次输入下方内容
+终端依次下方内容
 
 ```
-sudo apt install apt-transport-https curl ca-certificates software-properties-common
-curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt-get install -y nodejs
+sudo apt install apt-transport-https curl ca-certificates software-properties-common && curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt-get install -y nodejs
 ```
 
 </details>
 
-2.安装云崽机器人
+### 2⃣️安装机器人和插件
+
+1.安装云崽机器人
 
 因为TRSS Yunzai不依赖与Miao-Plugin与Genshin(俩大型原神插件)，所以本教程使用TRSS崽
 
@@ -416,7 +411,7 @@ bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/linux/Yunzai.sh)
 <details>
   <summary>如果不想使用sh一键下载可点击此处手动下载</summary>
 
-&nbsp;2.1. 输入以下内容并回车 
+&nbsp; 输入以下内容并回车 
 
 ```
 cd /root/Bot/
@@ -447,10 +442,10 @@ pnpm i
 </details>
 &nbsp;
 
-3. 安装redis数据库
+#i## 3⃣️安装redis数据库
 
 <details>
-  <summary>使用宝塔面板安装redis数据库</summary>
+  <summary>①使用宝塔面板安装redis数据库</summary>
 
 宝塔也可以SSH连接，也可以用apt安装
 
@@ -459,7 +454,7 @@ pnpm i
 </details>
 
 <details>
-  <summary>使用XTerminal/NMM安装redis数据库</summary>
+  <summary>②使用XTerminal/JuiceSSH安装redis数据库</summary>
 
 终端输入下方内容
 
@@ -483,7 +478,7 @@ sudo systemctl enable redis-server
 
 </details>
 
-#### ③配置ICQQ版本信息
+#### 4⃣️配置ICQQ版本信息
 
 1. 打开路径`Yunzai\TRSS-Yunzai\plugins\ICQQ-Plugin\node_modules\icqq\lib\core`
  - `没有node_modules`这个文件夹就是你依赖没装（pnpm i）
@@ -520,7 +515,9 @@ sudo systemctl enable redis-server
 
 6. 至此修改完成
 
-#### ④机器人/配置（此时应该在root/Bot目录执行）
+### 5⃣启动️机器人
+
+1. 执行
 
 ```
 cd TRSS-Yunzai
@@ -528,7 +525,7 @@ screen -r yunzai
 node app
 ```
 
-3. 启动机器人
+2. 启动机器人
  - 在`TRSS-Yunzai`目录下cmd输入`node app`即可
 ```
 node app
@@ -540,7 +537,7 @@ node app
  - 与载挂Bot的设备同一网络登录
  - 在本地常用设备（可登录Bot的设备）进行登录后复制Yunzai/data/icqq/QQ号整个文件夹到服务器的Yunzai/data/路径中后重试
  
-4. 配置机器人
+### 6⃣️配置机器人
 
 1. 等待Bot的启动完成
 
@@ -601,27 +598,16 @@ node app
 
 如果连接失败大概率就是你关了真寻或者真寻启动失败了
 
-### 更新ICQQ
-
-私库ICQQ，需你的 GitHub 账号（且在库内）
-
-```
-cd plugins/ICQQ-Plugin
-pnpm login --scope=@icqqjs --auth-type=legacy --registry=https://npm.pkg.github.com
-// 执行完成后需输入账号+密码/密钥
-pnpm add icqq@npm:@icqqjs/icqq
-```
-
 </details>
 
 ---
 
 <details>
-  <summary>使用Gensokyo(QQBot)连接真寻bot</summary>
+  <summary>②使用Gensokyo(QQBot)连接真寻bot</summary>
 
 # 没必要评价第三方好还是官方好，各有各的好处和弊端，能接受就用，接受不了就别用，别一天天的骂来骂去
 
-### ①说明：
+### 1⃣️说明：
 
 1. 新框架`Gensokyo` 视频：https://www.bilibili.com/video/BV1Aw411K7Z5
 
@@ -635,7 +621,7 @@ pnpm add icqq@npm:@icqqjs/icqq
 
 6. `Gensokyo` QQ群：196173384
 
-### ②注册个体账号
+### 2⃣️注册个体账号
 
 1. 注册一个企业qq开放平台账号：[点我前往注册](https://q.qq.com/#/register?developerType=1)
 
@@ -645,7 +631,7 @@ pnpm add icqq@npm:@icqqjs/icqq
 
 3. 填好信息后点击下一步（我相信你会）
 
-### ③下载配置Gensokyo
+### 3⃣️下载配置Gensokyo
 
 1. 下载gensokyo-linux-amd64（取用v459，更新时间2024.7.10）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
@@ -685,7 +671,7 @@ screen -ls     //查看全部screen窗口
 screen -S name -X quit  //删除这个screen窗口
 ```
 
-### ⑤配置沙箱使用机器人
+### 4⃣️配置沙箱使用机器人
 
 1. 打开QQ点击新创建聊群（不超过20人的群）
 
