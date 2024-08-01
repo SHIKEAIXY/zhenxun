@@ -116,6 +116,7 @@ NMM是用来文件管理
  - 用户名：默认为root（一般情况）
  - 密码：登录密码
  - 其他任意
+ <br><img src="Img/SSH/NMM2.png" width="70%">
  
 4. 打开JuiceSSH点击快速连接
 <br><img src="Img/SSH/JuiceSSH.png" width="70%">
@@ -130,12 +131,12 @@ NMM是用来文件管理
 
 ## ➌安装poetry与ffmpeg和中文字体等
 
-##### 由于Ubuntu 22+  系统自带python3.10，这里无需再次安装
+##### 由于Ubuntu22+  系统自带python3.10，这里无需再次安装
 
 1. 打开终端输入下方内容进行安装
 
 ```
-sudo apt update && sudo apt upgrade && sudo apt install -y screen && sudo pip install --upgrade pip && sudo pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple && sudo apt update && sudo apt install -y wget git screen ffmpeg && sudo apt install -y python3-pip && sudo pip install poetry && sudo apt install fonts-wqy-microhei && sudo fc-cache -f -v
+apt update && apt upgrade && apt install -y wget git screen ffmpeg python3-pip && pip install --upgrade pip && pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple && pip install poetry && apt install fonts-wqy-microhei && fc-cache -f -v
 ```
 
 ---
@@ -234,14 +235,6 @@ ok火速下一步
 
 # 二 开始安装真寻本体
 
-首先安装Git，以有可跳过
-
-```
-sudo apt install git
-```
-
----
-
 <details>
   <summary>①安装dev分支重构真寻bot(逐渐完善中...推荐安装)</summary>
 
@@ -252,23 +245,13 @@ sudo apt install git
 1.github下载真寻本体
 
 ```
-cd /root/
-git clone --depth 1 -b dev https://github.com/HibiKier/zhenxun_bot ./Bot/zhenxun_bot
+git clone --depth 1 -b dev https://github.com/HibiKier/zhenxun_bot /root/Bot/zhenxun_bot
 ```
 
 2.依次执行下面内容安装依赖以及连接数据库
 
 ```
-cd Bot/zhenxun_bot
-
-sed -i 's|bind.*|bind: str = "postgres://zhenxun:zhenxun@127.0.0.1:5432/zhenxun"|g' zhenxun/configs/config.py
-poetry shell
-poetry add pyyaml@latest
-poetry lock --no-update
-poetry install
-sudo pip install playwright
-playwright install chromium
-exit
+cd /root/Bot/zhenxun_bot && sed -i 's|bind.*|bind: str = "postgres://zhenxun:zhenxun@127.0.0.1:5432/zhenxun"|g' zhenxun/configs/config.py && poetry shell && poetry add pyyaml@latest && poetry lock --no-update && poetry install && pip install playwright && playwright install chromium && exit
 ```
 
 3.设置超级用户，复制命令后将123456789修改完自己大号的QQ号
@@ -286,32 +269,24 @@ sed -i 's/SUPERUSERS.*/SUPERUSERS=["123456789"]/g' .env.dev
 6.启动真寻(虚拟环境内)，会在 zhenxun/configs 和 data/configs 目录下生成各种配置文件
 
 ```
-screen -S zhenxundev
+screen -R zhenxundev
 poetry shell
 python bot.py
 ```
 
-（如果你没有这些需求可以忽略这步，毕竟默认配置了）
+#### 如果需要退出screen则 Ctrl+a+d 退出
+
+（如果你没有这些需求可以忽略这步，毕竟默认存在配置）
 
 7.打开 zhenxun/configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
 
 ```
-screen -r zhenxundev
+screen -R zhenxundev
 poetry shell
 python bot.py
 ```
 
-
-8. 关于screen命令说明：
-
-* screen命令一般用于Linux的持久化运行
-* 其中下方命令当中的name为创建screen窗口的名称
-```
-screen -S name //创建一个screen窗口
-screen -r -d name //强制打开这个screen窗口
-screen -ls     //查看全部screen窗口
-screen -S name -X quit  //删除这个screen窗口
-```
+#### 如果需要退出screen则 Ctrl+a+d 退出
 
 </details>
 
@@ -325,22 +300,13 @@ dev分支支持更多协议端，如DODO,Kook等，但还在完善，不过强�
 1.github下载真寻本体
 
 ```
-cd /root/
-git clone --depth 1 https://github.com/HibiKier/zhenxun_bot ./Bot/zhenxun_bot
+git clone --depth 1 https://github.com/HibiKier/zhenxun_bot /root/Bot/zhenxun_bot
 ```
 
 2.依次执行下面内容安装依赖以及连接数据库
 
 ```
-cd Bot/zhenxun_bot
-
-sed -i 's|bind.*|bind: str = "postgres://zhenxun:zhenxun@127.0.0.1:5432/zhenxun"|g' configs/config.py
-poetry shell
-poetry add pyyaml@latest
-poetry lock --no-update
-poetry install
-sudo pip install playwright
-playwright install chromium
+cd root/Bot/zhenxun_bot && sed -i 's|bind.*|bind: str = "postgres://zhenxun:zhenxun@127.0.0.1:5432/zhenxun"|g' configs/config.py && poetry shell && poetry add pyyaml@latest && poetry lock --no-update && poetry install && pip install playwright && playwright install chromium
 ```
 
 3.设置超级用户，复制命令后将123456789修改完自己大号的QQ号
@@ -357,27 +323,19 @@ poetry shell
 python bot.py
 ```
 
+#### 如果需要退出screen则 Ctrl+a+d 退出
+
 （如果你没有这些需求可以忽略这步，毕竟默认配置了）
 
 5.打开 configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
 
 ```
-screen -r zhenxun
+screen -R zhenxun
 poetry shell
 python3 bot.py
 ```
 
-
-6. 关于screen命令说明：
-
-* screen命令一般用于Linux的持久化运行
-* 其中下方命令当中的name为创建screen窗口的名称
-```
-screen -S name //创建一个screen窗口
-screen -r -d name //强制打开这个screen窗口
-screen -ls     //查看全部screen窗口
-screen -S name -X quit  //删除这个screen窗口
-```
+#### 如果需要退出screen则 Ctrl+a+d 退出
 
 </details>
 
@@ -410,7 +368,7 @@ screen -S name -X quit  //删除这个screen窗口
 终端依次下方内容
 
 ```
-sudo apt install apt-transport-https curl ca-certificates software-properties-common && curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash - && sudo apt-get install -y nodejs
+apt install apt-transport-https curl ca-certificates software-properties-common && curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash - && apt-get install -y nodejs
 ```
 
 </details>
@@ -421,43 +379,11 @@ sudo apt install apt-transport-https curl ca-certificates software-properties-co
 
 因为TRSS Yunzai不依赖与Miao-Plugin与Genshin(俩大型原神插件)，所以本教程使用TRSS崽
 
-``` 
-bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/linux/Yunzai.sh)
-```
-
-<details>
-  <summary>如果不想使用sh一键下载可点击此处手动下载</summary>
-
-&nbsp; 输入以下内容并回车 
+输入以下内容并回车 
 
 ```
-cd /root/Bot/
+git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai /root/Bot/Yunzai/TRSS-Yunzai && git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai-ICQQ-Plugin /root/Bot/Yunzai/TRSS-Yunzai/plugins/ICQQ-Plugin && git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git /root/Bot/Yunzai/TRSS-Yunzai/plugins/ws-plugin/ && npm --registry=https://registry.npmmirror.com install pnpm -g && pnpm config set registry https://registry.npmmirror.com && pnpm i
 ```
-```
-git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai ./Yunzai/TRSS-Yunzai
-```
-```
-cd Yunzai/TRSS-Yunzai
-```
-```
-git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai-ICQQ-Plugin ./plugins/ICQQ-Plugin
-```
-```
-git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
-```
-```
-npm --registry=https://registry.npmmirror.com install pnpm -g
-```
-```
-//可选
-pnpm config set registry https://registry.npmmirror.com
-```
-```
-pnpm i
-```
-
-</details>
-&nbsp;
 
 #i## ➌ 安装redis数据库
 
@@ -538,9 +464,11 @@ sudo systemctl enable redis-server
 
 ```
 cd TRSS-Yunzai
-screen -r yunzai
+screen -R yunzai
 node app
 ```
+
+#### 如果需要退出screen则 Ctrl+a+d 退出
 
 2. 启动机器人
  - 在`TRSS-Yunzai`目录下cmd输入`node app`即可
@@ -594,22 +522,14 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 当前状态: 已连接
 ```
 
-8. 关于screen命令说明：
-
-* screen命令一般用于Linux的持久化运行
-* 其中下方命令当中的name为创建screen窗口的名称
-```
-screen -S name //创建一个screen窗口
-screen -r -d name //强制打开这个screen窗口
-screen -ls     //查看全部screen窗口
-screen -S name -X quit  //删除这个screen窗口
-```
-
 ## 后续启动云崽
+
 ```
-screen -r -d yunzai
+screen -R yunzai
 node app
 ```
+
+#### 如果需要退出screen则 Ctrl+a+d 退出
 
 ### 注意不要关闭云崽和真寻本体
 
@@ -656,8 +576,7 @@ node app
 
 1. 下载gensokyo-linux-amd64（取用v459，更新时间2024.7.10）若发现教程的Gensokyo版本更新，可以选择无视更新
 ```
-cd /root/Bot/
-git clone --depth 1 -b gensokyo-linux-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git ./Gensokyo
+git clone --depth 1 -b gensokyo-linux-amd64 https://gitee.com/SHIKEAIXY/zhenxun.git /root/Bot/Gensokyo
 ```
 
 2. 打开下载的`Gensokyo`后并双击打开`config.yml`
@@ -676,21 +595,12 @@ git clone --depth 1 -b gensokyo-linux-amd64 https://gitee.com/SHIKEAIXY/zhenxun.
 7. 以上完成后，输入下方内容命令（此时应该在root/Bot/Gensokyo路径中）
 
 ```
-screen -S gsk
+screen -R gsk
 chmod +x gensokyo-linux-amd64
 sudo ./gensokyo-linux-amd64
 ```
 
-8. 关于screen命令说明：
-
-* screen命令一般用于Linux的持久化运行
-* 其中下方命令当中的name为创建screen窗口的名称
-```
-screen -S name //创建一个screen窗口
-screen -r -d name //强制打开这个screen窗口
-screen -ls     //查看全部screen窗口
-screen -S name -X quit  //删除这个screen窗口
-```
+#### 如果需要退出screen则 Ctrl+a+d 退出
 
 ---
 
@@ -785,9 +695,9 @@ ws://127.0.0.1:8080/onebot/v11/ws/
 1. 打开真寻根目录cmd运行（root/Bot/zhenxun_bot）
 
 ```
-screen -r -d zhenxun
+screen -r -R zhenxun
 如果你使用的是dev版真寻应使用
-screen -r -d zhenxundev
+screen -r -R zhenxundev
 ```
 ```
 poetry shell
@@ -796,16 +706,7 @@ poetry shell
 python3 bot.py
 ```
 
-2. 关于screen命令说明：
-
-* screen命令一般用于Linux的持久化运行
-* 其中下方命令当中的name为创建screen窗口的名称
-```
-screen -S name //创建一个screen窗口
-screen -r -d name //强制打开这个screen窗口
-screen -ls     //查看全部screen窗口
-screen -S name -X quit  //删除这个screen窗口
-```
+#### 如果需要退出screen则 Ctrl+a+d 退出
 
 ---
 
