@@ -59,9 +59,11 @@
 
 # 一 准备工作
 
-## 首先你应该准备一个2核4G+并且是Win10+(2016+推荐最新)的服务器(推荐使用Linux)
+## ➊ 首先你应该准备一个2核4G+并且是Win10+(2016+推荐最新)的服务器(推荐使用Linux)
 
-## 安装 版本大于3.9以上Python 与 任意版本的Poetry
+---
+
+## ➋安装 版本大于3.9以上Python 与 任意版本的Poetry
 
 ### ①安装python
 
@@ -90,15 +92,17 @@ pip install poetry
 
 还不行？[点击此处解决](https://cn.bing.com)
 
-# 二 安装Postgresql
+---
 
-## ①下载Postgresql数据库
+## ➌ 安装Postgresql
+
+### ①下载Postgresql数据库
 
 [点击此处将下载Postgresql-16.3-2版本安装包](https://get.enterprisedb.com/postgresql/postgresql-16.3-2-windows-x64.exe)
 
 不想要16.3-2版本的可以自行下载别的版本（尽量使用新版）
 
-## ②安装postgresql数据库
+### ②安装postgresql数据库
 
 1.双击安装程序，点击Next（打不开报错？系统用户名不能是中文，计算机名也不能是中文，其他问题。。。不要找我 我也不会）
 
@@ -135,7 +139,7 @@ pip install poetry
 
 <br><img src="Img/postgresql数据库/数据库安装完成.png" width="50%">
 
-## ③配置连接
+### ③配置连接
 
 1.找到安装的PgAdmin启动数据库 并启动
 
@@ -181,13 +185,13 @@ pip install poetry
 
 <br><img src="Img/postgresql数据库/编辑数据库1.png" width="50%">
 
- 3.点击保存
+3.点击保存
 
 左侧栏会出现一个可爱真寻
 
 <br><img src="Img/postgresql数据库/编辑数据库2.png" width="50%">
 
-## ④新建数据库
+### ④新建数据库
 
 1.点击展开
 
@@ -203,7 +207,7 @@ pip install poetry
 
 ok火速下一步
 
-# 三 开始安装真寻本体
+## 二 开始安装真寻本体
 
 请安装Git，已有可跳过
 
@@ -212,7 +216,7 @@ ok火速下一步
 ---
 
 <details>
-  <summary>安装dev分支重构真寻bot(逐渐完善中...推荐安装)</summary>
+  <summary>①安装dev分支重构真寻bot(逐渐完善中...推荐安装)</summary>
 
 <br><img src="Img/安装真寻/dev真寻.png" width="50%">
     
@@ -306,7 +310,7 @@ dev分支支持更多协议端，如DODO,Kook等，但还在完善，仅部署QQ
 ---
 
 <details>
-  <summary>main主分支真寻bot（不推荐使用）</summary>
+  <summary>②main主分支真寻bot（不推荐使用）</summary>
 
 1.github下载真寻本体
 
@@ -387,7 +391,7 @@ python bot.py
 
 ---
 
-# 四 连接zhenxun_bot
+# 三 连接zhenxun_bot
 
 <details>
   <summary>使用[云崽]的[ws插件]跳过gocq使用icqq连接真寻bot</summary>
@@ -396,15 +400,11 @@ python bot.py
 
 ### ①安装前置
 
-1. 请安装Git，已有可跳过
-
-[点击我进行下载Git](https://registry.npmmirror.com/-/binary/git-for-windows/v2.45.2.windows.1/Git-2.45.2-64-bit.exe)
-
-2. 下载Node.Js（20以上的Node.Js！！！）
+1. 下载Node.Js（20以上的Node.Js！！！）
 
 [点击此处下载Node.Js](https://mirrors.tuna.tsinghua.edu.cn/nodejs-release/v20.9.0/node-v20.9.0-x86.msi)
 
-3. 右键鼠标打开`Open Git Bash here`
+2. 右键鼠标打开`Open Git Bash here`
 
 Win11需先点击显示更多选项后才显示`Open Git Bash here`
 
