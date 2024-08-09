@@ -5,6 +5,8 @@
 
 </div>
 
+# 后续教程将只在Web更新
+
 ## [点击此处查看真寻bot安装时报错的解决问题](https://gitee.com/SHIKEAIXY/zhenxun/blob/master/Installation%20issues.md)
 
 还未完善...
