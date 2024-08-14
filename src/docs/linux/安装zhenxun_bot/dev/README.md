@@ -10,7 +10,7 @@ tag:
 
 ![dev真寻](../../Img/安装真寻/dev真寻.png)
 
-虽然但是...阿米已经写很多了，没写的一些比如抽卡...主分支的不是也寄了嘛...
+虽然但是...阿米已经写很多了，并不比主分支差...
     
 1.github下载真寻本体
 
@@ -18,34 +18,45 @@ tag:
 git clone --depth 1 -b dev https://mirror.ghproxy.com/https://github.com/HibiKier/zhenxun_bot.git /root/Bot/zhenxun_bot
 ```
 
-2.执行下面内容安装依赖以及连接数据库
+2.执行下面内容安装依赖
 
 ```
-cd /root/Bot/zhenxun_bot && sed -i 's|bind.*|bind: str = "postgres://zhenxun:zhenxun@127.0.0.1:5432/zhenxun"|g' zhenxun/configs/config.py && poetry shell
+cd /root/Bot/zhenxun_bot && && poetry shell
 ```
+本方法使用阿里镜像源进行安装可开启VPN直接使用pip install直接进行下载（安装时间较长属于正常情况）
 ```
-poetry add pyyaml@latest && poetry lock --no-update && poetry install && pip install playwright && playwright install chromium
-```
-
-3.设置超级用户，复制命令后将123456789修改完自己大号的QQ号
-
-```
-sed -i 's/SUPERUSERS.*/SUPERUSERS=["123456789"]/g' .env.dev
+poetry config repositories.ali https://mirrors.aliyun.com/pypi/simple/ && poetry install
 ```
 
-4.由于dev默认开启kaihiela(kook)，不连接将会无法启动，非使用kook连接需手动把env.dev里如图内容注释掉！！！
+3. 启动真寻(虚拟环境内)，会在 zhenxun/configs/ 和 data/ 目录下生成各种配置文件
 
-![kainhiela](../../Img/安装真寻/kook问题.png)
+ - 这里启动会报错是正常的，因为要先生成一下数据文件再进行配置，不要担心！
 
-5.由于dev版中由于数据迁移所用，暂未考虑新建数据库没有sign_group_users所导致无法启动，应注释掉zhenxun/builtin_plugins/_init_.py中如图内容
+```
+python bot.py
+```
 
-![sign_group_users](../../Img/安装真寻/数据库表.png)
+4. 设置超级用户，复制命令后将123456789修改完自己大号的QQ号
 
-6.启动真寻(虚拟环境内)，会在 zhenxun/configs 和 data/configs 目录下生成各种配置文件
+```
+cd /root/Bot/zhenxun_bot && sed -i 's/SUPERUSERS.*/SUPERUSERS=["123456789"]/g' .env.dev
+cd /root/Bot/zhenxun_bot && sed -i '/PLATFORM_SUPERUSERS =/{N; s/\("qq": \[""\]\)/\1, "qq": \["123456789"\]/;}' .env.dev
+```
+
+5. 配置数据库连接
+
+```
+cd /root/Bot/zhenxun_bot && sed -i 's|"bind": ""|"bind": "postgres://zhenxun:zhenxun@127.0.0.1:5432/zhenxun"|g' data/database.json
+```
+
+6. 打开 zhenxun/configs/config.yaml，里面包含的是各种插件的配置项
+ - （如果你没有这些需求可以忽略这步，毕竟默认存在配置）
+
+7. 启动真寻（下载一些资源可能需要VPN）
 
 ```
 screen -R zhenxundev
-poetry shell
+cd /root/Bot/zhenxun_bot && poetry shell
 python bot.py
 ```
 
@@ -53,14 +64,12 @@ python bot.py
 
 （如果你没有这些需求可以忽略这步，毕竟默认存在配置）
 
-7.打开 zhenxun/configs/config.yaml，里面包含的是各种插件的配置项，填写完毕后重启真寻Bot
+8. 等待最后一步出现类似下面的内容就彻底启动完成了（首次启动时间较长属于正常情况）
 
 ```
-screen -R zhenxundev
-poetry shell
-python bot.py
+[INFO] uvicorn | Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
 ```
 
-#### 如果需要退出screen则 Ctrl+a+d 退出
+---
 
 ## [ 前往连接真寻](../../连接zhenxun_bot/)

@@ -23,7 +23,7 @@ actions:
 
 highlights:
   - header: 前言
-    description: 大家都知道一键脚本这个东西吧。
+    description: 另外大家都知道一键脚本这个东西吧。
     image: /assets/image/features.svg
     bgImage: https://theme-hope-assets.vuejs.press/bg/9-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/9-dark.svg

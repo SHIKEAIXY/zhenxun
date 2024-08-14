@@ -26,46 +26,15 @@ Win11需先点击显示更多选项后才显示`Open Git Bash here`
  
 因为TRSS Yunzai不依赖与Miao-Plugin与Genshin(俩大型原神插件)，所以本教程使用TRSS崽
 
-然后运行下方命令
-```
-bash <(curl -L https://gitee.com/SHIKEAIXY/zhenxun/raw/master/Yunzai.sh)
-```
+然后依次运行下方命令
 
-<details>
-  <summary>如果不想使用sh一键下载可点击此处手动下载</summary>
-
-&nbsp;2.1. 在cmd依次输入以下内容并回车 
-
+``` 
+git clone --depth 1 -b redis https://gitee.com/SHIKEAIXYY/Trss-ComWeChat-Yunzai.git ./Yunzai/redis && git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai ./Yunzai/TRSS-Yunzai && cd Yunzai/TRSS-Yunzai && git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai-ICQQ-Plugin ./plugins/ICQQ-Plugin && git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/ && npm --registry=https://registry.npmmirror.com install pnpm -g 
 ```
-git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai ./Yunzai/TRSS-Yunzai
+这里需要关闭cmd后重新打开一个cmd才可以用不然会报错没有pnpm（打开位置和刚刚一样即可）
 ```
-```
-cd Yunzai/TRSS-Yunzai
-```
-```
-git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai-ICQQ-Plugin ./plugins/ICQQ-Plugin
-```
-```
-git clone --depth=1 https://gitee.com/xiaoye12123/ws-plugin.git ./plugins/ws-plugin/
-```
-```
-npm --registry=https://registry.npmmirror.com install pnpm -g
-```
-```
-//可选
-pnpm config set registry https://registry.npmmirror.com
-```
-```
-pnpm i
-```
-```
-cd ..
-```
-```
-git clone --depth 1 -b redis https://gitee.com/SHIKEAIXYY/Trss-ComWeChat-Yunzai.git ./redis
-```
-</details>
-&nbsp;
+pnpm config set registry https://registry.npmmirror.com && cd Yunzai/TRSS-Yunzai && pnpm i
+``` 
 
 #### 配置ICQQ版本信息
 
@@ -124,12 +93,6 @@ git clone --depth 1 -b redis https://gitee.com/SHIKEAIXYY/Trss-ComWeChat-Yunzai.
 node app
 ```
 
-当你启动报错237频繁登录/非常用设备登录：
-
- - 尝试扫码登录Bot
- - 与载挂Bot的设备同一网络登录
- - 在本地常用设备（可登录Bot的设备）进行登录后复制Yunzai/data/icqq/QQ号整个文件夹到服务器的Yunzai/data/路径中后重试
-
 #### ④机器人配置
 
 1. 等待Bot的启动完成
@@ -145,12 +108,22 @@ node app
 ```
 #QQ设置114514:1919810:2
 ```
+4. 然后根据提示输入（在cmd内输入即可）
+ - 如果你是服务器不是一个网络则发送：网页反代
+ - 如果是一个网络则发送：网页
 
-4. 设置主人：发送 `#设置主人`，`日志获取验证码`并发送（QQ设置主人）
+5. 最后点击URL进行验证即可：如图
 
-5. 触发滑动验证，需要获取ticket通过验证，请选择获取方式:`这里选择 0.自动获取ticket 进行扫码即可`
+![yunzai](../../Img/Yunzai/配置云崽.png)
 
-6. 连接本地bot(给云崽机器人QQ发送)
+当你启动报错237频繁登录/非常用设备登录：
+ - 尝试扫码登录Bot
+ - 与载挂Bot的设备同一网络登录：网页反代
+ - 在本地常用设备（可登录Bot的设备）进行登录后复制plugins\ICQQ-Plugin\Model\device.js整个文件到服务器的plugins\ICQQ-Plugin\Model\后重试
+
+6. 设置主人：发送 `#设置主人`，`日志获取验证码`并发送（在QQ设置主人：大号给Bot小号发）
+
+7. 连接本地bot(给云崽机器人QQ发送)
 
 ```
 #ws添加连接
